@@ -36,7 +36,7 @@ while {true} do {
     //"pulse_2" setMarkerAlpha 1;
     //"pulse_3" setMarkerAlpha 1;
     sleep 2;
-  	["pulse_1",[100,100],3] spawn BIS_fnc_resizeMarker;
+    ["pulse_1",[100,100],3] spawn BIS_fnc_resizeMarker;
     //["pulse_2",[100,100],3] spawn BIS_fnc_resizeMarker;
     //["pulse_3",[100,100],3] spawn BIS_fnc_resizeMarker;
     sleep 2;
