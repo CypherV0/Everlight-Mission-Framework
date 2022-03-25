@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=256;
+		nextID=258;
 	};
 	class MarkerIDProvider
 	{
@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14838.261,176.23436,16563.654};
-		dir[]={-0.50565255,-0.7042647,0.49857563};
-		up[]={-0.50165045,0.70970279,0.49463052};
-		aside[]={0.70218629,5.2660471e-007,0.7121442};
+		pos[]={14706.371,231.50848,16723.691};
+		dir[]={-0.0071781226,-0.99994999,0.0069620521};
+		up[]={-0.71779215,0.00999978,0.69618571};
+		aside[]={0.69622052,0,0.71782804};
 	};
 };
 binarizationWanted=0;
@@ -408,8 +408,8 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="TMF_ORBATMarkersFT";
-			expression="false";
+			property="TMF_ORBATMarkersFT_Directional";
+			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
 			class Value
 			{
 				class data
@@ -427,8 +427,8 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
-			property="TMF_ORBATMarkersFT_Directional";
-			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
+			property="TMF_ORBATMarkersFT";
+			expression="false";
 			class Value
 			{
 				class data
@@ -2963,13 +2963,13 @@ class Mission
 	};
 	class Entities
 	{
-		items=54;
+		items=56;
 		class Item0
 		{
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14667.046,17.91,16695.67};
+				position[]={14689.688,17.91,16698.195};
 			};
 			title="Squad Medical Crates";
 			description="Each of these medical crates re-supplies a full squad." \n "" \n "Don't add or remove anything from the crate";
@@ -2980,7 +2980,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14664.083,17.91,16690.717};
+				position[]={14655.621,17.91,16688.631};
 			};
 			title="Optics Crate";
 			description="Use this if your mission allows for players to choose their preferred optic. Delete this if you're doing Cold War era US or Soviet, or Guerilla." \n "Don't add or remove anything from the crate";
@@ -2991,7 +2991,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14671.593,17.91,16700.93};
+				position[]={14681.353,17.91,16706.371};
 			};
 			title="Fireteam Crates";
 			description="Each crate re-supplies a single Fireteam. " \n "" \n "There is custom code on these crates for 3D text." \n "Don't add or remove anything from the crate";
@@ -3002,8 +3002,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14674.578,18.089985,16705.18};
-				angles[]={0,2.2792146,0};
+				position[]={14660.288,18.089985,16708.893};
+				angles[]={-0,2.2792146,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3043,8 +3043,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14675.37,18.089985,16704.367};
-				angles[]={0,2.2790229,0};
+				position[]={14661.08,18.089985,16708.08};
+				angles[]={-0,2.2790229,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3084,8 +3084,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14678.253,18.120529,16708.553};
-				angles[]={0,2.289547,0};
+				position[]={14678.042,18.120529,16726.662};
+				angles[]={-0,2.289547,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3125,7 +3125,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14674.986,17.91,16704.717};
+				position[]={14660.696,17.91,16708.43};
 			};
 			title="Launcher Crates";
 			description="Each launcher crate re-supplies an entire squad." \n "" \n "There is custom code on these crates for 3D text." \n "Don't add or remove anything from the crate";
@@ -3136,7 +3136,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14678.56,17.91,16708.344};
+				position[]={14678.349,17.91,16726.453};
 				angles[]={5.6992373,0,5.6362686};
 			};
 			title="Explosives Crate";
@@ -3148,7 +3148,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14661.806,17.91,16692.293};
+				position[]={14663.253,17.91,16682.043};
 			};
 			title="Optics Crate (AK)";
 			id=51;
@@ -3158,10 +3158,10 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14621.017,17.91,16665.549};
+				position[]={14621.322,17.91,16665.785};
 			};
-			title="Settings Part 1 (DO THIS FIRST)";
-			description="- Before doing ANYTHING else, on your toolbar (top of screen) go to ""Tools -> Utilities -> Scenario Attributes Manager"", click ""Create Template From Scenario"". Call it Everlight Framework." \n "" \n "- From this point onward, when you begin creating a mission, you will open the Scenario Attributes Manager, select the Everlight Framework template you saved, and click ""Apply Template""." \n "" \n "This ensures most of the important settings are already done for you. " \n "Please do not touch or change any settings that are not listed in the instructions.";
+			title="Settings Part 1";
+			description="Did you complete the steps in ""First Time Setup""? If not, do it now." \n "" \n "EVERY TIME AFTER - From this point onward, when you begin creating a mission, you will open the Scenario Attributes Manager, select the Everlight Framework template you saved, and click ""Apply Template""." \n "" \n "This ensures most of the important settings are already done for you. " \n "Please do not touch or change any settings that are not listed in the instructions.";
 			id=52;
 		};
 		class Item10
@@ -3191,8 +3191,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14661.153,18.291529,16692.947};
-				angles[]={0,4.629416,0};
+				position[]={14662.601,18.291529,16682.697};
+				angles[]={-0,4.629416,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3230,8 +3230,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14672.74,18.120043,16701.168};
-				angles[]={0,2.2849052,0};
+				position[]={14682.5,18.120043,16706.609};
+				angles[]={-0,2.2849052,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3271,8 +3271,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14671.868,18.120043,16701.945};
-				angles[]={0,2.2849052,0};
+				position[]={14681.628,18.120043,16707.387};
+				angles[]={-0,2.2849052,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3312,8 +3312,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14671.456,18.120043,16699.84};
-				angles[]={0,2.2848976,0};
+				position[]={14681.216,18.120043,16705.281};
+				angles[]={-0,2.2848976,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3353,8 +3353,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14670.585,18.120043,16700.617};
-				angles[]={0,2.2848976,0};
+				position[]={14680.345,18.120043,16706.059};
+				angles[]={-0,2.2848976,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3394,8 +3394,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14667.912,17.91,16695.732};
-				angles[]={0,2.3056321,0};
+				position[]={14690.554,17.91,16698.258};
+				angles[]={-0,2.3056321,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3637,8 +3637,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14667.111,17.91,16696.268};
-				angles[]={0,2.2627845,0};
+				position[]={14689.753,17.91,16698.793};
+				angles[]={-0,2.2627845,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3880,8 +3880,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14663.307,18.291529,16691.09};
-				angles[]={0,4.629416,0};
+				position[]={14654.845,18.291529,16689.004};
+				angles[]={-0,4.629416,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3919,7 +3919,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14651.403,17.91,16742.078};
+				position[]={14677.506,17.91,16745.344};
 			};
 			title="Always hover over any comments to reveal details";
 			description="Good job!";
@@ -3930,8 +3930,8 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14772.078,17.91,16658.047};
-				angles[]={0,3.8999383,0};
+				position[]={14734.207,17.91,16682.611};
+				angles[]={-0,3.8999383,0};
 			};
 			title="Mission Title Splash Text";
 			description="Remember to open this ""Mission Start Trigger"" and replace ""Mission Title"" with ""Whatever your mission is called"". Don't delete the quotation marks in the code. This title will appear when the admin turns off SafeStart.";
@@ -3940,8 +3940,8 @@ class Mission
 		class Item22
 		{
 			dataType="Trigger";
-			position[]={14778.555,17.91,16664.531};
-			angle=3.8993413;
+			position[]={14740.92,17.91,16685.068};
+			angle=3.8993411;
 			class Attributes
 			{
 				text="SafeStart Control";
@@ -3959,8 +3959,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14764.981,17.91,16650.551};
-				angles[]={0,3.8996038,0};
+				position[]={14739.115,17.91,16687.037};
+				angles[]={-0,3.8996038,0};
 			};
 			id=83;
 			type="TMF_safestart_module";
@@ -3993,8 +3993,8 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14786.079,17.91,16671.588};
-				angles[]={0,3.8993485,0};
+				position[]={14743.286,17.91,16691.658};
+				angles[]={-0,3.8993485,0};
 			};
 			title="Allowed Equipment";
 			description="In the Briefing Trigger, you'll find code with words like ""Map"" and ""Yes"" or ""Pilots"", etc. This will show players what types of equipment they have (or are allowed to have) at their disposal." \n "" \n "The items are Map, GPS, NVG/IR, Flashlights, Flares, Radios." \n "The choices for these are: Yes, No, Pilots, Leaders." \n "" \n "If your mission involves players having no access to radios, for example, you'd find ""Radios"" in the code and change the following ""Yes"" to ""No"". Likewise, if leaders are allowed to have them but no one else, change it to ""Leaders""." \n "" \n "Please also remember to change the color of the item and the permission both to #FFFFFF that way the change will stand out.";
@@ -4003,7 +4003,7 @@ class Mission
 		class Item25
 		{
 			dataType="Trigger";
-			position[]={14785.463,17.91,16670.719};
+			position[]={14742.67,17.91,16690.789};
 			angle=1.5707964;
 			class Attributes
 			{
@@ -4023,7 +4023,7 @@ class Mission
 		class Item26
 		{
 			dataType="Trigger";
-			position[]={14771.773,17.91,16657.266};
+			position[]={14733.902,17.91,16681.83};
 			class Attributes
 			{
 				text="Mission Start Trigger";
@@ -4040,7 +4040,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14768.084,17.91,16669.42};
+				position[]={14734.934,17.91,16690.775};
 			};
 			title="SafeStart";
 			description="This cluster of 3 triggers and 1 module are for our SafeStart system and Briefing Timer, which you've probably seen on the right side of your screen during a briefing." \n "" \n "You should highlight this cluster and in the bottom right corner of the screen click the + icon to save as a Custom Composition, as you'll use it in every mission you create.";
@@ -4051,7 +4051,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14756.338,17.91,16737.82};
+				position[]={14749.077,17.91,16741.168};
 			};
 			title="Assign Gear (changing factions)";
 			description="If you want to change the faction of these units, you'll need to do them ONE. AT. A. TIME. " \n "" \n "Double click on a unit, scroll to the very bottom of their Attributes to find ""Assign Gear"" and change the Faction of the unit. Don't change the loadout field (medics already have the medic trait, pilots already have the pilot trait, etc and changing the loadout to a different role entirely is not good practice)";
@@ -4069,7 +4069,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14710.214,17.911438,16753.5};
+						position[]={14707.891,17.911438,16757.338};
 						angles[]={0,5.5930123,0};
 					};
 					side="West";
@@ -4392,7 +4392,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14712.852,17.911438,16753.436};
+						position[]={14710.528,17.911438,16757.273};
 						angles[]={0,5.5930123,0};
 					};
 					side="West";
@@ -4779,7 +4779,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14713.74,17.911438,16773.141};
+						position[]={14713,17.911438,16774.83};
 						angles[]={0,5.4866166,0};
 					};
 					side="West";
@@ -5111,7 +5111,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14716.338,17.911438,16772.512};
+						position[]={14715.598,17.911438,16774.201};
 						angles[]={0,5.5318909,0};
 					};
 					side="West";
@@ -5448,7 +5448,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14714.384,17.911438,16770.93};
+						position[]={14713.644,17.911438,16772.619};
 						angles[]={0,5.5930295,0};
 					};
 					side="West";
@@ -5816,7 +5816,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14710.532,17.911438,16749.279};
+						position[]={14708.209,17.911438,16753.117};
 						angles[]={0,5.2734947,0};
 					};
 					side="West";
@@ -6134,7 +6134,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14710.321,17.91144,16746.48};
+						position[]={14707.998,17.91144,16750.318};
 						angles[]={0,5.2734828,0};
 					};
 					side="West";
@@ -6420,8 +6420,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14710.578,17.91144,16743.635};
-						angles[]={0,5.272027,0};
+						position[]={14708.255,17.91144,16747.473};
+						angles[]={-0,5.272027,0};
 					};
 					side="West";
 					flags=4;
@@ -6701,7 +6701,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14712.935,17.911438,16747.385};
+						position[]={14710.611,17.911438,16751.223};
 						angles[]={0,5.2734885,0};
 					};
 					side="West";
@@ -7056,7 +7056,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14716.165,17.911438,16754.627};
+						position[]={14713.842,17.911438,16758.465};
 						angles[]={0,5.3150864,0};
 					};
 					side="West";
@@ -7374,7 +7374,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14719.23,17.911438,16754.572};
+						position[]={14716.907,17.911438,16758.41};
 						angles[]={0,5.3150759,0};
 					};
 					side="West";
@@ -7659,7 +7659,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14717.881,17.911438,16752.492};
+						position[]={14715.558,17.911438,16756.33};
 						angles[]={0,5.3150797,0};
 					};
 					side="West";
@@ -7940,8 +7940,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14722.367,17.911438,16754.33};
-						angles[]={0,5.3137078,0};
+						position[]={14720.044,17.911438,16758.168};
+						angles[]={-0,5.3137078,0};
 					};
 					side="West";
 					flags=4;
@@ -8294,7 +8294,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14740.584,17.911438,16758.826};
+						position[]={14736.161,17.911438,16761.605};
 						angles[]={0,5.5929079,0};
 					};
 					side="West";
@@ -8573,7 +8573,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14747.581,17.911438,16756.971};
+						position[]={14743.158,17.911438,16759.75};
 						angles[]={0,5.5316639,0};
 					};
 					side="West";
@@ -8849,8 +8849,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14743.842,17.911438,16758.02};
-						angles[]={0,5.5316639,0};
+						position[]={14739.419,17.911438,16760.799};
+						angles[]={-0,5.5316639,0};
 					};
 					side="West";
 					flags=4;
@@ -9180,7 +9180,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14735.51,17.911438,16752.967};
+						position[]={14731.087,17.911438,16755.746};
 						angles[]={0,5.6271162,0};
 					};
 					side="West";
@@ -9470,7 +9470,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14739.213,17.911438,16752.525};
+						position[]={14734.79,17.911438,16755.305};
 						angles[]={0,5.5316639,0};
 					};
 					side="West";
@@ -9824,7 +9824,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14729.824,17.911438,16747.684};
+						position[]={14725.401,17.911438,16750.463};
 						angles[]={0,5.6271162,0};
 					};
 					side="West";
@@ -10104,7 +10104,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14733.53,17.911438,16747.24};
+						position[]={14729.107,17.911438,16750.02};
 						angles[]={0,5.5316639,0};
 					};
 					side="West";
@@ -10384,7 +10384,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14737.119,17.911438,16746.008};
+						position[]={14732.696,17.911438,16748.787};
 						angles[]={0,5.5316639,0};
 					};
 					side="West";
@@ -10727,7 +10727,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14736.954,17.91,16753.469};
+				position[]={14732.531,17.91,16756.248};
 			};
 			title="Platoon Attachments";
 			description="HAT, MAT, MMG, HMG (not present) are Platoon Attachments. Based on your mission needs, you might use none of these at all, or you might use 2 MMG teams, or a mix. It's up to you and the mission design.";
@@ -10738,7 +10738,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14713.995,17.91,16751.447};
+				position[]={14711.672,17.91,16755.285};
 			};
 			title="Infantry Squad";
 			description="Made up of 1 Squad Lead element and 2 Fireteams. The Fireteams are then divided into 2 color teams (already done, don't worry).";
@@ -10749,7 +10749,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14715.137,17.91,16771.822};
+				position[]={14714.396,17.91,16773.512};
 			};
 			title="Platoon HQ";
 			description="This is the Platoon leadership element. The PltCo and PltSgt communicate with Squad Leaders, Attachment Leaders, and Support elements (like CAS or logistics).";
@@ -14968,7 +14968,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14735.032,17.91,16772.785};
+				position[]={14732.709,17.91,16776.623};
 			};
 			title="SF Teams";
 			description="The SF structure is a great alternative to the standard Infantry Squad structure while we're still growing our player-count." \n "" \n "The PltHQ and Platoon Attachments remain the same, but rather than a 10-player Squad with 3 separate leaders (1 SL and 2 FTLs), an SF Team is comprised of just 6 players with only 1 leader. " \n "Keep in mind, SF Teams can operate independently of one another, where as an Infantry Squad's teams all operate close together.";
@@ -14986,7 +14986,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14731.613,17.911438,16771.768};
+						position[]={14729.29,17.911438,16775.605};
 						angles[]={0,5.2132111,0};
 					};
 					side="West";
@@ -15311,7 +15311,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14731.501,17.911438,16768.773};
+						position[]={14729.178,17.911438,16772.611};
 						angles[]={0,5.2132053,0};
 					};
 					side="West";
@@ -15599,7 +15599,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14732.615,17.911438,16763.107};
+						position[]={14730.292,17.911438,16766.945};
 						angles[]={0,5.2131991,0};
 					};
 					side="West";
@@ -15882,8 +15882,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14731.93,17.911438,16765.947};
-						angles[]={0,5.2117438,0};
+						position[]={14729.606,17.911438,16769.785};
+						angles[]={-0,5.2117438,0};
 					};
 					side="West";
 					flags=4;
@@ -16164,7 +16164,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14733.954,17.911438,16769.891};
+						position[]={14731.631,17.911438,16773.729};
 						angles[]={0,5.5327401,0};
 					};
 					side="West";
@@ -16476,7 +16476,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14736.01,17.911438,16767.699};
+						position[]={14733.687,17.911438,16771.537};
 						angles[]={0,5.2132111,0};
 					};
 					side="West";
@@ -16833,7 +16833,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14736.727,17.911438,16776.988};
+						position[]={14734.403,17.911438,16780.826};
 						angles[]={0,5.3955631,0};
 					};
 					side="West";
@@ -17158,7 +17158,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14738.21,17.911438,16774.389};
+						position[]={14735.887,17.911438,16778.227};
 						angles[]={0,5.4435945,0};
 					};
 					side="West";
@@ -17446,7 +17446,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14742.146,17.911438,16770.162};
+						position[]={14739.823,17.911438,16774};
 						angles[]={0,5.2743154,0};
 					};
 					side="West";
@@ -17729,8 +17729,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14740.064,17.911438,16772.213};
-						angles[]={0,5.379436,0};
+						position[]={14737.741,17.911438,16776.051};
+						angles[]={-0,5.379436,0};
 					};
 					side="West";
 					flags=4;
@@ -18011,7 +18011,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14739.57,17.911438,16776.857};
+						position[]={14737.247,17.911438,16780.695};
 						angles[]={0,5.5327458,0};
 					};
 					side="West";
@@ -18323,7 +18323,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14742.186,17.911438,16776.557};
+						position[]={14739.862,17.911438,16780.395};
 						angles[]={0,5.4229822,0};
 					};
 					side="West";
@@ -18673,7 +18673,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14750.546,17.91,16744.021};
+				position[]={14743.285,17.91,16747.369};
 			};
 			title="Helicopter Pilot";
 			id=216;
@@ -18683,7 +18683,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14745.212,17.91,16738.945};
+				position[]={14737.951,17.91,16742.293};
 			};
 			title="Fixed-Wing Pilot";
 			id=217;
@@ -18693,7 +18693,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14755.817,17.91,16748.842};
+				position[]={14748.557,17.91,16752.189};
 			};
 			title="Vehicle Crew";
 			id=218;
@@ -18703,7 +18703,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14724.438,17.91,16762.018};
+				position[]={14722.115,17.91,16765.855};
 			};
 			title="<- Choose between Infantry or SF ->";
 			id=219;
@@ -18713,7 +18713,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14741.475,17.91,16600.676};
+				position[]={14784.021,17.91,16796.332};
 			};
 			title="Questions?";
 			description="Ask me as many questions as you need. I'm here to help!";
@@ -18731,7 +18731,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14744.19,17.911438,16740.168};
+						position[]={14736.93,17.911438,16743.516};
 						angles[]={0,5.4125972,0};
 					};
 					side="West";
@@ -19079,8 +19079,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14749.523,17.911438,16745.094};
-						angles[]={0,5.3940969,0};
+						position[]={14742.263,17.911438,16748.441};
+						angles[]={-0,5.3940969,0};
 					};
 					side="West";
 					flags=6;
@@ -19391,8 +19391,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14751.667,17.911438,16744.947};
-						angles[]={0,5.3940969,0};
+						position[]={14744.406,17.911438,16748.295};
+						angles[]={-0,5.3940969,0};
 					};
 					side="West";
 					flags=4;
@@ -19758,7 +19758,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14754.922,17.911438,16750.002};
+						position[]={14747.661,17.911438,16753.35};
 						angles[]={0,5.4385505,0};
 					};
 					side="West";
@@ -20051,7 +20051,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14756.884,17.911438,16749.947};
+						position[]={14749.623,17.911438,16753.295};
 						angles[]={0,5.4385505,0};
 					};
 					side="West";
@@ -20344,7 +20344,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14758.571,17.911438,16750.066};
+						position[]={14751.311,17.911438,16753.414};
 						angles[]={0,5.4385505,0};
 					};
 					side="West";
@@ -20685,11 +20685,33 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14704.841,17.91,16629.834};
+				position[]={14766.008,17.91,16812.213};
 			};
 			title="Insertion";
 			description="Methods of insertion:" \n "- Starting in the spawn location" \n "- Teleporting from spawn to the starting location" \n "- Driving from spawn to the starting location" \n "- Teleporting with vehicles to the starting location, then driving" \n "- Paradrop" \n "" \n "*Spawn* is where we do the briefing phase so take that into account." \n "" \n "If you require paradrop insertion OR a teleport insertion for your mission, ask me to help you set it up. " \n "For beginners, I generally recommend sticking to more traditional (less prone to breaking) methods of insertion until you're experienced, but if you're confident that it's the right choice, I will help set it up.";
 			id=255;
+		};
+		class Item54
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={14652.158,17.91,16640.121};
+			};
+			title="How to use this on another terrain";
+			description="1- Complete the ""First Time Setup"" instructions" \n "" \n "2- Copy EVERYTHING here (zoom out until you can see everything, then use Ctrl+A to highlight everything in your view, and Ctrl+C to copy it all)" \n "" \n "3- Select ""New"" in the top left, and choose the terrain you want" \n "" \n "4- Ctrl+V to paste everything onto the new terrain." \n "" \n "5- Start with ""Settings Part 1"" and continue from there.";
+			id=256;
+		};
+		class Item55
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={14613.297,17.91,16674.195};
+			};
+			title="First Time Setup";
+			description="FIRST TIME ONLY - Before doing ANYTHING else, on your toolbar (top of screen) go to ""Tools -> Utilities -> Scenario Attributes Manager"", click ""Create Template From Scenario"". Call it Everlight Framework.";
+			id=257;
 		};
 	};
 };
