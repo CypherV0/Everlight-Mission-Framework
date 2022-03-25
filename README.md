@@ -2,7 +2,7 @@
 
 To use this template:
 
-- Download it
+- Download the Everlight_Mission_Framework folder
 - Unzip it
 - Place the Everlight_Mission_Framework folder in your MPMissions folder, located in Documents\Arma 3 - Other Profiles\*YourProfileName*
 - If you do not have an MPMissions folder for some reason, go to that location, create a new folder called MPMissions, done.
