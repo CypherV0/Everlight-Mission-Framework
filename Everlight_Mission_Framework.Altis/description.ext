@@ -88,6 +88,24 @@ class CfgLoadouts
 		#include "loadouts\MARSOC_D.hpp" // (No spaces)
 	};
 
+	class EMC_EnE_NVG // (No spaces)
+	{
+		displayName = "EMC E&E with NVG"; // (Spaces allowed)
+		#include "loadouts\EMC_EnE_NVG.hpp" // (No spaces)
+	};
+
+	class CAF_INF // (No spaces)
+	{
+		displayName = "CAF Infantry"; // (Spaces allowed)
+		#include "loadouts\CAF_INFANTRY.hpp" // (No spaces)
+	};
+
+	class CAF_SF // (No spaces)
+	{
+		displayName = "CAF Special Forces"; // (Spaces allowed)
+		#include "loadouts\CAF_SF.hpp" // (No spaces)
+	};
+
 };
 
 ////////////////////////////////////////////////////////////////////////////////
