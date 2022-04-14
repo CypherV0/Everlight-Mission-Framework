@@ -106,6 +106,12 @@ class CfgLoadouts
 		#include "loadouts\CAF_SF.hpp" // (No spaces)
 	};
 
+	class SWAT_MP7 // (No spaces)
+	{
+		displayName = "SWAT with MP7"; // (Spaces allowed)
+		#include "loadouts\SWAT_MP7.hpp" // (No spaces)
+	};
+
 };
 
 ////////////////////////////////////////////////////////////////////////////////
