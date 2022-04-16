@@ -109,6 +109,7 @@ class g : r
 class m : r
 {
     displayName = "Medic";
+    code = "_this setUnitTrait [""Medic"", true]";
     insignias[] = {"MedB"};
     vest[] = {
         "rhs_6b23_medic"

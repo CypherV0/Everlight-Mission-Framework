@@ -112,6 +112,7 @@ class g : r
 class m : r
 {
     displayName = "Medic";
+    code = "_this setUnitTrait [""Medic"", true]";
     insignias[] = {"MedB"};
     vest[] = {
         "rhsusf_plateframe_medic"
@@ -158,7 +159,7 @@ class smg : r
 };
 class ftl : g
 {
-    displayName = "Not used";
+    displayName = "Fireteam Leader";
     magazines[] += {"hlc_12Rnd_357SIG_B_P226"};
     backpackItems[] +=
     {
@@ -177,7 +178,7 @@ class ftl : g
 };
 class sl : ftl
 {
-    displayName = "SF Leader";
+    displayName = "Squad Leader";
     items[] += {"ACRE_PRC152"};
 };
 class pl : sl

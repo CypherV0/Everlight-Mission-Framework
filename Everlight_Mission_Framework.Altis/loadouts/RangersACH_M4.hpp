@@ -114,6 +114,7 @@ class g : r
 class m : r
 {
     displayName = "Medic";
+    code = "_this setUnitTrait [""Medic"", true]";
     insignias[] = {"MedB"};
     magazines[] = {
         LIST_7("rhs_mag_30Rnd_556x45_M855A1_Stanag"),
