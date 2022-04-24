@@ -118,6 +118,12 @@ class CfgLoadouts
 		#include "loadouts\Stranded_SF_D.hpp" // (No spaces)
 	};
 
+	class US_Marines_D // (No spaces)
+	{
+		displayName = "US Marines Desert"; // (Spaces allowed)
+		#include "loadouts\US_Marines_D.hpp" // (No spaces)
+	};
+
 };
 
 ////////////////////////////////////////////////////////////////////////////////
