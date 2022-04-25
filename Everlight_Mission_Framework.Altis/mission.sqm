@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=285;
+		nextID=296;
 	};
 	class MarkerIDProvider
 	{
@@ -24,16 +24,17 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14715.858,230.46082,16715.816};
-		dir[]={-0.0071715857,-0.99994999,0.0069687846};
-		up[]={-0.71713847,0.00999978,0.69685894};
-		aside[]={0.69689381,0,0.71717435};
+		pos[]={14717.033,226.88049,16716.725};
+		dir[]={-0.0071860948,-0.99994999,0.0069538224};
+		up[]={-0.71858937,0.00999978,0.69536281};
+		aside[]={0.69539756,0,0.71862531};
 	};
 };
 binarizationWanted=0;
 sourceName="Everlight_Mission_Framework";
 addons[]=
 {
+	"Desert",
 	"A3_Supplies_F_Exp_Ammoboxes",
 	"ace_dragging",
 	"ace_medical_treatment",
@@ -78,226 +79,231 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=33;
+		items=34;
 		class Item0
+		{
+			className="Desert";
+			name="Desert";
+		};
+		class Item1
 		{
 			className="A3_Supplies_F_Exp";
 			name="Arma 3 Apex - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item1
+		class Item2
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item2
+		class Item3
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item3
+		class Item4
 		{
 			className="TMF_safestart";
 			name="TMF: Safestart";
 			author="Head";
 			url="http://www.teamonetactical.com";
 		};
-		class Item4
+		class Item5
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item5
+		class Item6
 		{
 			className="rhsusf_c_weapons";
 			name="RHSUSF Weapons & Accessories";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item6
+		class Item7
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item7
+		class Item8
 		{
 			className="niaweapons_226";
 			name="niaweapons_226";
 			author="toadie";
 		};
-		class Item8
+		class Item9
 		{
 			className="rhssaf_c_weapons";
 			name="RHS: SAF Weapons configuration";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item9
+		class Item10
 		{
 			className="dvk_gear_altcsat_volto";
 			name="dvk_gear_altcsat_volto";
 			author="Davik";
 		};
-		class Item10
+		class Item11
 		{
 			className="rhsusf_c_troops";
 			name="RHSUSF Infantry & Equipment";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item11
+		class Item12
 		{
 			className="acre_sys_prc343";
 			name="ACRE2 - AN/PRC-343";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item12
+		class Item13
 		{
 			className="acre_sys_prc152";
 			name="ACRE2 - AN/PRC-152";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item13
+		class Item14
 		{
 			className="A3_Weapons_F_Mark";
 			name="Arma 3 Marksmen - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item14
+		class Item15
 		{
 			className="ace_laser";
 			name="ACE3 - Laser";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item15
+		class Item16
 		{
 			className="ace_compat_rhs_usf3";
 			name="ACE3 - RHS USF Compatibility";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item16
+		class Item17
 		{
 			className="rhsusf_sounds";
 			name="USF Sounds";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item17
+		class Item18
 		{
 			className="A3_Weapons_F_Tank";
 			name="Arma 3 Tank - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item18
+		class Item19
 		{
 			className="SMA_Eotech_552";
 			name="SMA_Eotech_552";
 			author="Specialist Military Arms";
 		};
-		class Item19
+		class Item20
 		{
 			className="acre_main";
 			name="ACRE2 - Main";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item20
+		class Item21
 		{
 			className="STOP_BLUFOR_Config";
 			name="STOP_BLUFOR_Config";
 		};
-		class Item21
+		class Item22
 		{
 			className="A3_Characters_F_Jets";
 			name="Arma 3 Jets - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item22
+		class Item23
 		{
 			className="ace_optics";
 			name="ACE3 - Optics";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item23
+		class Item24
 		{
 			className="ace_goggles";
 			name="ACE3 - Goggles";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item24
+		class Item25
 		{
 			className="ace_hearing";
 			name="ACE3 - Hearing";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item25
+		class Item26
 		{
 			className="ace_grenades";
 			name="ACE3 - Grenades";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item26
+		class Item27
 		{
 			className="ace_maptools";
 			name="ACE3 - Map Tools";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item27
+		class Item28
 		{
 			className="ace_microdagr";
 			name="ACE3 - MicroDAGR";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item28
+		class Item29
 		{
 			className="A3_Weapons_F_Kart";
 			name="Arma 3 Karts - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item29
+		class Item30
 		{
 			className="ace_overheating";
 			name="ACE3 - Overheating";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item30
+		class Item31
 		{
 			className="UK3CB_Factions_Weapons";
 			name="3CB Factions - Weapons";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item31
+		class Item32
 		{
 			className="SMA_CMORE";
 			name="SMA_CMORE";
 			author="Specialist Military Arms";
 		};
-		class Item32
+		class Item33
 		{
 			className="ace_nightvision";
 			name="ACE3 - Night Vision";
@@ -351,7 +357,7 @@ class CustomAttributes
 		name="TMF_ORBAT_Settings";
 		class Attribute0
 		{
-			property="TMF_ORBATRenameFakeAttribute";
+			property="TMF_ORBATMarkersFT";
 			expression="false";
 			class Value
 			{
@@ -364,7 +370,7 @@ class CustomAttributes
 							"BOOL"
 						};
 					};
-					value=1;
+					value=0;
 				};
 			};
 		};
@@ -408,25 +414,6 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="TMF_ORBATMarkersFT";
-			expression="false";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"BOOL"
-						};
-					};
-					value=0;
-				};
-			};
-		};
-		class Attribute4
-		{
 			property="TMF_ORBATMarkersFT_Directional";
 			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
 			class Value
@@ -444,7 +431,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute5
+		class Attribute4
 		{
 			property="TMF_ORBATSettings";
 			expression="false";
@@ -460,6 +447,25 @@ class CustomAttributes
 						};
 					};
 					value="[[1,[[0,"""","""","""",""Platoon"",0],[]]]]";
+				};
+			};
+		};
+		class Attribute5
+		{
+			property="TMF_ORBATRenameFakeAttribute";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"BOOL"
+						};
+					};
+					value=1;
 				};
 			};
 		};
@@ -2999,129 +3005,6 @@ class Mission
 		};
 		class Item3
 		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14674.273,18.089985,16714.014};
-				angles[]={-0,2.2792146,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="addMissionEventHandler [""Draw3D"",  " \n "{   " \n "if (supply5 distance player > 3) exitWith {};  " \n "if (cursorObject isNotEqualTo supply5) exitWith {};  " \n "drawIcon3D ["""", [.8,.8,.8,1], visiblePosition supply5 vectorAdd [0,0,.3], 0.2, 0.2, 45, ""AT Crate"", 2, 0.03, ""PuristaMedium""];  " \n "}];";
-				name="supply5";
-			};
-			id=30;
-			type="Box_Syndicate_WpsLaunch_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""rhs_weap_M136""],[5]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item4
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14675.065,18.089985,16713.201};
-				angles[]={-0,2.2790229,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="addMissionEventHandler [""Draw3D"",  " \n "{   " \n "if (supply6 distance player > 3) exitWith {};  " \n "if (cursorObject isNotEqualTo supply6) exitWith {};  " \n "drawIcon3D ["""", [.8,.8,.8,1], visiblePosition supply6 vectorAdd [0,0,.3], 0.2, 0.2, 45, ""AT Crate"", 2, 0.03, ""PuristaMedium""];  " \n "}];";
-				name="supply6";
-			};
-			id=31;
-			type="Box_Syndicate_WpsLaunch_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""rhs_weap_M136""],[5]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item5
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14667.365,18.120529,16720.57};
-				angles[]={-0,2.289547,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="addMissionEventHandler [""Draw3D"",  " \n "{   " \n "if (supply5 distance player > 3) exitWith {};  " \n "if (cursorObject isNotEqualTo supply5) exitWith {};  " \n "drawIcon3D ["""", [.8,.8,.8,1], visiblePosition supply5 vectorAdd [0,0,.3], 0.2, 0.2, 45, ""Explosives"", 2, 0.03, ""PuristaMedium""];  " \n "}];";
-				name="supply7";
-			};
-			id=43;
-			type="Box_IED_Exp_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[""rhsusf_m112x4_mag""],[8]],[[""ACE_Clacker"",""ACE_DefusalKit""],[4,4]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item6
-		{
 			dataType="Comment";
 			class PositionInfo
 			{
@@ -3131,7 +3014,7 @@ class Mission
 			description="Each launcher crate re-supplies an entire squad." \n "" \n "There is custom code on these crates for 3D text." \n "Don't add or remove anything from the crate";
 			id=44;
 		};
-		class Item7
+		class Item4
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -3143,7 +3026,7 @@ class Mission
 			description="There is custom code on these crates for 3D text." \n "You CAN change the charges, but you must test to make sure it isn't too heavy for a player to lift";
 			id=45;
 		};
-		class Item8
+		class Item5
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -3153,7 +3036,7 @@ class Mission
 			title="Optics Crate (AK)";
 			id=51;
 		};
-		class Item9
+		class Item6
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -3164,7 +3047,7 @@ class Mission
 			description="Did you complete the steps in ""First Time Setup""? If not, do it now." \n "" \n "EVERY TIME AFTER - From this point onward, when you begin creating a mission, you will open the Scenario Attributes Manager, select the Everlight Framework template you saved, and click ""Apply Template""." \n "" \n "This ensures most of the important settings are already done for you. " \n "Please do not touch or change any settings that are not listed in the instructions.";
 			id=52;
 		};
-		class Item10
+		class Item7
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -3175,7 +3058,7 @@ class Mission
 			description="- On your toolbar, go to ""Attributes -> General"" and set the Mission Title and Author Name. Do NOT change anything else in this menu." \n "" \n "- Next, go to ""Attributes -> Environment"" and set the date, time and weather for the mission. " \n "" \n "Tip 1: The time of year has an effect on the Sun's position in the sky." \n "Tip 2: The lunar cycle has an effect on the brightness of the night, ie. a full moon will grant near perfect visibility, while a new moon will provide next to zero visibility. So for a night mission, choose the day of the month accordingly.";
 			id=53;
 		};
-		class Item11
+		class Item8
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -3186,7 +3069,7 @@ class Mission
 			description="The first time you save your mission, you'll need to use ""Save As"" and give your mission FILE a name and location. Choose MPMissions for the location, and then use the following format for the name:" \n "" \n "xx_yy_zz" \n "xx - First two letters of your name" \n "yy - The recommended minimum number of players" \n "zz - The mission name" \n "" \n "Example: CY_14_MyMissionName" \n "Would be a mission by Cypher, for 14 or more players, called My Mission Name." \n "" \n "When you believe you're finished and ready to test the mission on the dedicated server, be sure to head to Scenario -> Export -> Export to Multiplayer" \n "" \n "After you've used ""Save As"" to give your mission file a name, all of the files and folders (EXCEPT the file called mission.sqf) need to be copied over from the ""Everlight_Mission_Framework"" folder to the new mission folder. " \n "NOTE: Your mission folders can be found in ""Documents\Arma 3 - Other Profiles\*YourProfileName*\MPMissions""";
 			id=55;
 		};
-		class Item12
+		class Item9
 		{
 			dataType="Object";
 			class PositionInfo
@@ -3225,7 +3108,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item13
+		class Item10
 		{
 			dataType="Object";
 			class PositionInfo
@@ -3266,130 +3149,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item14
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14681.628,18.120043,16707.387};
-				angles[]={0,2.2849052,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="addMissionEventHandler [""Draw3D"",  " \n "{   " \n "if (supply3 distance player > 3) exitWith {};  " \n "if (cursorObject isNotEqualTo supply3) exitWith {};  " \n "drawIcon3D ["""", [.8,.8,.8,1], visiblePosition supply3 vectorAdd [0,0,.3], 0.2, 0.2, 45, ""FT Crate"", 2, 0.03, ""PuristaMedium""];  " \n "}];";
-				name="supply3";
-			};
-			id=39;
-			type="Box_Syndicate_Ammo_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""ACE_40mm_Flare_white"",""SmokeShellRed"",""SmokeShellBlue"",""rhs_mag_m67"",""rhsusf_200rnd_556x45_mixed_box"",""rhs_mag_M433_HEDP"",""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""],[5,5,5,10,5,5,10,5,10,10,35,10]],[[""ACE_fieldDressing""],[10]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item15
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14681.216,18.120043,16705.281};
-				angles[]={0,2.2848976,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="addMissionEventHandler [""Draw3D"",  " \n "{   " \n "if (supply2 distance player > 3) exitWith {};  " \n "if (cursorObject isNotEqualTo supply2) exitWith {};  " \n "drawIcon3D ["""", [.8,.8,.8,1], visiblePosition supply2 vectorAdd [0,0,.3], 0.2, 0.2, 45, ""FT Crate"", 2, 0.03, ""PuristaMedium""];  " \n "}];";
-				name="supply2";
-			};
-			id=42;
-			type="Box_Syndicate_Ammo_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""ACE_40mm_Flare_white"",""SmokeShellRed"",""SmokeShellBlue"",""rhs_mag_m67"",""rhsusf_200rnd_556x45_mixed_box"",""rhs_mag_M433_HEDP"",""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""],[5,5,5,10,5,5,10,5,10,10,35,10]],[[""ACE_fieldDressing""],[10]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item16
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14680.345,18.120043,16706.059};
-				angles[]={0,2.2848976,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="addMissionEventHandler [""Draw3D"",  " \n "{   " \n "if (supply1 distance player > 3) exitWith {};  " \n "if (cursorObject isNotEqualTo supply1) exitWith {};  " \n "drawIcon3D ["""", [.8,.8,.8,1], visiblePosition supply1 vectorAdd [0,0,.3], 0.2, 0.2, 45, ""FT Crate"", 2, 0.03, ""PuristaMedium""];  " \n "}];";
-				name="supply1";
-			};
-			id=41;
-			type="Box_Syndicate_Ammo_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""ACE_40mm_Flare_white"",""SmokeShellRed"",""SmokeShellBlue"",""rhs_mag_m67"",""rhsusf_200rnd_556x45_mixed_box"",""rhs_mag_M433_HEDP"",""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""],[5,5,5,10,5,5,10,5,10,10,35,10]],[[""ACE_fieldDressing""],[10]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item17
+		class Item11
 		{
 			dataType="Object";
 			class PositionInfo
@@ -3632,7 +3392,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item18
+		class Item12
 		{
 			dataType="Object";
 			class PositionInfo
@@ -3875,7 +3635,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item19
+		class Item13
 		{
 			dataType="Object";
 			class PositionInfo
@@ -3914,7 +3674,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item20
+		class Item14
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -3925,7 +3685,7 @@ class Mission
 			description="Good job!";
 			id=93;
 		};
-		class Item21
+		class Item15
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -3937,11 +3697,11 @@ class Mission
 			description="Remember to open this ""Mission Start Trigger"" and replace ""Mission Title"" with ""Whatever your mission is called"". Don't delete the quotation marks in the code. This title will appear when the admin turns off SafeStart.";
 			id=89;
 		};
-		class Item22
+		class Item16
 		{
 			dataType="Trigger";
 			position[]={14740.92,17.91,16685.068};
-			angle=3.8993409;
+			angle=3.8993406;
 			class Attributes
 			{
 				text="SafeStart Control";
@@ -3954,7 +3714,7 @@ class Mission
 			id=90;
 			type="TMF_safestart_emptyDetector";
 		};
-		class Item23
+		class Item17
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3988,7 +3748,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item24
+		class Item18
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -4000,7 +3760,7 @@ class Mission
 			description="In the Briefing Trigger, you'll find code with words like ""Map"" and ""Yes"" or ""Pilots"", etc. This will show players what types of equipment they have (or are allowed to have) at their disposal." \n "" \n "The items are Map, GPS, NVG/IR, Flashlights, Flares, Radios." \n "The choices for these are: Yes, No, Pilots, Leaders." \n "" \n "If your mission involves players having no access to radios, for example, you'd find ""Radios"" in the code and change the following ""Yes"" to ""No"". Likewise, if leaders are allowed to have them but no one else, change it to ""Leaders""." \n "" \n "Please also remember to change the color of the item and the permission both to #FFFFFF that way the change will stand out.";
 			id=84;
 		};
-		class Item25
+		class Item19
 		{
 			dataType="Trigger";
 			position[]={14742.67,17.91,16690.789};
@@ -4020,7 +3780,7 @@ class Mission
 			id=85;
 			type="EmptyDetectorAreaR50";
 		};
-		class Item26
+		class Item20
 		{
 			dataType="Trigger";
 			position[]={14733.902,17.91,16681.83};
@@ -4035,7 +3795,7 @@ class Mission
 			id=91;
 			type="EmptyDetector";
 		};
-		class Item27
+		class Item21
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -4046,7 +3806,7 @@ class Mission
 			description="This cluster of 3 triggers and 1 module are for our SafeStart system and Briefing Timer, which you've probably seen on the right side of your screen during a briefing." \n "" \n "You should highlight this cluster and in the bottom right corner of the screen click the + icon to save as a Custom Composition, as you'll use it in every mission you create.";
 			id=94;
 		};
-		class Item28
+		class Item22
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -4057,7 +3817,7 @@ class Mission
 			description="If you want to change the faction of these units, you'll need to do them ONE. AT. A. TIME. " \n "" \n "Double click on a unit, scroll to the very bottom of their Attributes to find ""Assign Gear"" and change the Faction of the unit. Don't change the loadout field (medics already have the medic trait, pilots already have the pilot trait, etc and changing the loadout to a different role entirely is not good practice)";
 			id=98;
 		};
-		class Item29
+		class Item23
 		{
 			dataType="Group";
 			side="West";
@@ -4767,7 +4527,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item30
+		class Item24
 		{
 			dataType="Group";
 			side="West";
@@ -5804,7 +5564,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item31
+		class Item25
 		{
 			dataType="Group";
 			side="West";
@@ -7042,7 +6802,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item32
+		class Item26
 		{
 			dataType="Group";
 			side="West";
@@ -7939,7 +7699,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14706.717,17.911438,16753.129};
-						angles[]={-0,5.3137078,0};
+						angles[]={0,5.3137078,0};
 					};
 					side="West";
 					flags=4;
@@ -8280,7 +8040,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item33
+		class Item27
 		{
 			dataType="Group";
 			side="West";
@@ -8848,7 +8608,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14739.704,17.911438,16763.885};
-						angles[]={-0,5.5316639,0};
+						angles[]={0,5.5316639,0};
 					};
 					side="West";
 					flags=4;
@@ -9166,7 +8926,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item34
+		class Item28
 		{
 			dataType="Group";
 			side="West";
@@ -9810,7 +9570,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item35
+		class Item29
 		{
 			dataType="Group";
 			side="West";
@@ -10720,7 +10480,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item36
+		class Item30
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -10731,7 +10491,7 @@ class Mission
 			description="HAT, MAT, MMG, HMG (not present) are Platoon Attachments. Based on your mission needs, you might use none of these at all, or you might use 2 MMG teams, or a mix. It's up to you and the mission design.";
 			id=133;
 		};
-		class Item37
+		class Item31
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -10742,7 +10502,7 @@ class Mission
 			description="Made up of 1 Squad Lead element and 2 Fireteams. The Fireteams are then divided into 2 color teams (already done, don't worry).";
 			id=134;
 		};
-		class Item38
+		class Item32
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -10753,7 +10513,7 @@ class Mission
 			description="This is the Platoon leadership element. The PltCo and PltSgt communicate with Squad Leaders, Attachment Leaders, and Support elements (like CAS or logistics).";
 			id=135;
 		};
-		class Item39
+		class Item33
 		{
 			dataType="Group";
 			side="West";
@@ -14939,7 +14699,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item40
+		class Item34
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -14950,7 +14710,7 @@ class Mission
 			description="Due to slots being lost when players disconnect, we always include a substantial number of extra slots for them to take when they reconnect." \n "" \n "Extra slots aren't just for disconnects, though. It also helps to have a buffer of extra slots just in case more players join than the mission creator expected.";
 			id=188;
 		};
-		class Item41
+		class Item35
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -14961,7 +14721,7 @@ class Mission
 			description="Now it's time to go to the mission folder to create your briefing. Inside the mission folder you will find a text file named ""READ ME FOR INSTRUCTIONS"". Please open it and follow along in order to find the correct briefing file." \n "" \n "NOTE: Your mission folders can be found in ""Documents\Arma 3 - Other Profiles\*YourProfileName*\MPMissions""";
 			id=189;
 		};
-		class Item42
+		class Item36
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -14972,7 +14732,7 @@ class Mission
 			description="The SF structure is a great alternative to the standard Infantry Squad structure while we're still growing our player-count.";
 			id=190;
 		};
-		class Item43
+		class Item37
 		{
 			dataType="Group";
 			side="West";
@@ -15881,7 +15641,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14737.107,17.911438,16787.678};
-						angles[]={-0,5.2117438,0};
+						angles[]={0,5.2117438,0};
 					};
 					side="West";
 					flags=4;
@@ -16819,7 +16579,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item44
+		class Item38
 		{
 			dataType="Group";
 			side="West";
@@ -17728,7 +17488,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14745.242,17.911438,16793.943};
-						angles[]={-0,5.379436,0};
+						angles[]={0,5.379436,0};
 					};
 					side="West";
 					flags=4;
@@ -18666,7 +18426,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item45
+		class Item39
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -18676,7 +18436,7 @@ class Mission
 			title="Helicopter Pilot";
 			id=216;
 		};
-		class Item46
+		class Item40
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -18686,7 +18446,7 @@ class Mission
 			title="Fixed-Wing Pilot";
 			id=217;
 		};
-		class Item47
+		class Item41
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -18696,7 +18456,7 @@ class Mission
 			title="Vehicle Crew";
 			id=218;
 		};
-		class Item48
+		class Item42
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -18707,7 +18467,7 @@ class Mission
 			description="The PltHQ and Platoon Attachments remain the same, but rather than a 10-player Squad with 3 separate leaders (1 SL and 2 FTLs), an SF Team is comprised of just 6 players with only 1 leader. " \n "Keep in mind, SF Teams can operate independently of one another, where as an Infantry Squad's teams all operate close together.";
 			id=219;
 		};
-		class Item49
+		class Item43
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -18718,7 +18478,7 @@ class Mission
 			description="Ask me as many questions as you need. I'm here to help!";
 			id=243;
 		};
-		class Item50
+		class Item44
 		{
 			dataType="Group";
 			side="West";
@@ -19066,7 +18826,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item51
+		class Item45
 		{
 			dataType="Group";
 			side="West";
@@ -19079,7 +18839,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14742.548,17.911438,16751.527};
-						angles[]={-0,5.3940969,0};
+						angles[]={0,5.3940969,0};
 					};
 					side="West";
 					flags=6;
@@ -19391,7 +19151,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14744.691,17.911438,16751.381};
-						angles[]={-0,5.3940969,0};
+						angles[]={0,5.3940969,0};
 					};
 					side="West";
 					flags=4;
@@ -19745,7 +19505,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item52
+		class Item46
 		{
 			dataType="Group";
 			side="West";
@@ -20679,7 +20439,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item53
+		class Item47
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -20690,7 +20450,7 @@ class Mission
 			description="Methods of insertion:" \n "- Starting in the spawn location" \n "- Teleporting from spawn to the starting location" \n "- Driving from spawn to the starting location" \n "- Teleporting with vehicles to the starting location, then driving" \n "- Paradrop" \n "" \n "*Spawn* is where we do the briefing phase so take that into account." \n "" \n "If you require paradrop insertion OR a teleport insertion for your mission, ask me to help you set it up. " \n "For beginners, I generally recommend sticking to more traditional (less prone to breaking) methods of insertion until you're experienced, but if you're confident that it's the right choice, I will help set it up.";
 			id=255;
 		};
-		class Item54
+		class Item48
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -20701,7 +20461,7 @@ class Mission
 			description="1- Complete the ""First Time Setup"" instructions" \n "" \n "2- Copy EVERYTHING here (zoom out until you can see everything, then use Ctrl+A to highlight everything in your view, and Ctrl+C to copy it all)" \n "" \n "3- Select ""New"" in the top left, and choose the terrain you want" \n "" \n "4- Ctrl+V to paste everything onto the new terrain." \n "" \n "5- Start with ""Settings Part 1"" and continue from there.";
 			id=256;
 		};
-		class Item55
+		class Item49
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -20712,7 +20472,7 @@ class Mission
 			description="FIRST TIME ONLY - Before doing ANYTHING else, on your toolbar (top of screen) go to ""Tools -> Utilities -> Scenario Attributes Manager"", click ""Create Template From Scenario"". Call it Everlight Framework.";
 			id=257;
 		};
-		class Item56
+		class Item50
 		{
 			dataType="Group";
 			side="West";
@@ -21422,7 +21182,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item57
+		class Item51
 		{
 			dataType="Group";
 			side="West";
@@ -22037,8 +21797,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14703.366,17.91144,16733.807};
-						angles[]={-0,5.272027,0};
+						position[]={14703.366,17.911438,16733.807};
+						angles[]={0,5.2720289,0};
 					};
 					side="West";
 					flags=4;
@@ -22155,7 +21915,6 @@ class Mission
 					};
 					id=264;
 					type="rhsusf_usmc_marpat_wd_autorifleman_m249_ass";
-					atlOffset=1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -22230,7 +21989,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=2;
+									value=0;
 								};
 							};
 						};
@@ -22661,7 +22420,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item58
+		class Item52
 		{
 			dataType="Group";
 			side="West";
@@ -23558,7 +23317,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14715.155,17.911438,16744.502};
-						angles[]={-0,5.3137078,0};
+						angles[]={0,5.3137078,0};
 					};
 					side="West";
 					flags=4;
@@ -23899,7 +23658,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item59
+		class Item53
 		{
 			dataType="Group";
 			side="West";
@@ -24808,7 +24567,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14744.579,17.911438,16779.514};
-						angles[]={-0,5.2117438,0};
+						angles[]={0,5.2117438,0};
 					};
 					side="West";
 					flags=4;
@@ -25746,7 +25505,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item60
+		class Item54
 		{
 			dataType="Group";
 			side="West";
@@ -26655,7 +26414,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14754.64,17.911438,16788.02};
-						angles[]={-0,5.379436,0};
+						angles[]={0,5.379436,0};
 					};
 					side="West";
 					flags=4;
@@ -27591,6 +27350,252 @@ class Mission
 					};
 				};
 				nAttributes=3;
+			};
+		};
+		class Item55
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14667.598,18.120529,16720.385};
+				angles[]={0,2.2895403,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="addMissionEventHandler [""Draw3D"",  " \n "{   " \n "if (supply7 distance player > 3) exitWith {};  " \n "if (cursorObject isNotEqualTo supply7) exitWith {};  " \n "drawIcon3D ["""", [.8,.8,.8,1], visiblePosition supply7 vectorAdd [0,0,.3], 0.2, 0.2, 45, ""Explosives"", 2, 0.03, ""PuristaMedium""];  " \n "}];";
+				name="supply7";
+			};
+			id=287;
+			type="Box_IED_Exp_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""rhsusf_m112x4_mag""],[8]],[[""ACE_Clacker"",""ACE_DefusalKit""],[4,4]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item56
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14675.07,18.089985,16713.256};
+				angles[]={-0,2.2790229,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="addMissionEventHandler [""Draw3D"",  " \n "{   " \n "if (supply6 distance player > 3) exitWith {};  " \n "if (cursorObject isNotEqualTo supply6) exitWith {};  " \n "drawIcon3D ["""", [.8,.8,.8,1], visiblePosition supply6 vectorAdd [0,0,.3], 0.2, 0.2, 45, ""AT Crate"", 2, 0.03, ""PuristaMedium""];  " \n "}];";
+				name="supply6";
+			};
+			id=289;
+			type="Box_Syndicate_WpsLaunch_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""rhs_weap_M136""],[5]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item57
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14674.264,18.089985,16713.965};
+				angles[]={-0,2.279016,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="addMissionEventHandler [""Draw3D"",  " \n "{   " \n "if (supply5 distance player > 3) exitWith {};  " \n "if (cursorObject isNotEqualTo supply5) exitWith {};  " \n "drawIcon3D ["""", [.8,.8,.8,1], visiblePosition supply5 vectorAdd [0,0,.3], 0.2, 0.2, 45, ""AT Crate"", 2, 0.03, ""PuristaMedium""];  " \n "}];";
+				name="supply5";
+			};
+			id=291;
+			type="Box_Syndicate_WpsLaunch_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""rhs_weap_M136""],[5]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item58
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14680.305,18.120043,16706.166};
+				angles[]={-0,2.2848976,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="addMissionEventHandler [""Draw3D"",  " \n "{   " \n "if (supply1 distance player > 3) exitWith {};  " \n "if (cursorObject isNotEqualTo supply1) exitWith {};  " \n "drawIcon3D ["""", [.8,.8,.8,1], visiblePosition supply1 vectorAdd [0,0,.3], 0.2, 0.2, 45, ""FT Crate"", 2, 0.03, ""PuristaMedium""];  " \n "}];";
+				name="supply1";
+			};
+			id=293;
+			type="Box_Syndicate_Ammo_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""ACE_40mm_Flare_white"",""SmokeShellRed"",""SmokeShellBlue"",""rhs_mag_m67"",""rhsusf_200rnd_556x45_mixed_box"",""rhs_mag_M433_HEDP"",""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""],[5,5,5,10,5,5,10,5,10,10,35,10]],[[""ACE_fieldDressing""],[10]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item59
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14681.274,18.120043,16705.328};
+				angles[]={-0,2.2848976,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="addMissionEventHandler [""Draw3D"",  " \n "{   " \n "if (supply2 distance player > 3) exitWith {};  " \n "if (cursorObject isNotEqualTo supply2) exitWith {};  " \n "drawIcon3D ["""", [.8,.8,.8,1], visiblePosition supply2 vectorAdd [0,0,.3], 0.2, 0.2, 45, ""FT Crate"", 2, 0.03, ""PuristaMedium""];  " \n "}];";
+				name="supply2";
+			};
+			id=294;
+			type="Box_Syndicate_Ammo_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""ACE_40mm_Flare_white"",""SmokeShellRed"",""SmokeShellBlue"",""rhs_mag_m67"",""rhsusf_200rnd_556x45_mixed_box"",""rhs_mag_M433_HEDP"",""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""],[5,5,5,10,5,5,10,5,10,10,35,10]],[[""ACE_fieldDressing""],[10]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item60
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14681.545,18.120043,16707.49};
+				angles[]={-0,2.2849052,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="addMissionEventHandler [""Draw3D"",  " \n "{   " \n "if (supply3 distance player > 3) exitWith {};  " \n "if (cursorObject isNotEqualTo supply3) exitWith {};  " \n "drawIcon3D ["""", [.8,.8,.8,1], visiblePosition supply3 vectorAdd [0,0,.3], 0.2, 0.2, 45, ""FT Crate"", 2, 0.03, ""PuristaMedium""];  " \n "}];";
+				name="supply3";
+			};
+			id=295;
+			type="Box_Syndicate_Ammo_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""ACE_40mm_Flare_white"",""SmokeShellRed"",""SmokeShellBlue"",""rhs_mag_m67"",""rhsusf_200rnd_556x45_mixed_box"",""rhs_mag_M433_HEDP"",""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""],[5,5,5,10,5,5,10,5,10,10,35,10]],[[""ACE_fieldDressing""],[10]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
 			};
 		};
 	};
