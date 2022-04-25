@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=296;
+		nextID=325;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=87;
+		nextID=98;
 	};
 	class Camera
 	{
-		pos[]={14717.033,226.88049,16716.725};
-		dir[]={-0.0071860948,-0.99994999,0.0069538224};
-		up[]={-0.71858937,0.00999978,0.69536281};
-		aside[]={0.69539756,0,0.71862531};
+		pos[]={14719.704,235.72971,16713.424};
+		dir[]={-0.0071685109,-0.99994999,0.0069719478};
+		up[]={-0.71683103,0.00999978,0.69717526};
+		aside[]={0.69721013,0,0.71686685};
 	};
 };
 binarizationWanted=0;
@@ -73,13 +73,15 @@ addons[]=
 	"UK3CB_Factions_Weapons_MP5",
 	"SMA_CMORE",
 	"ace_nightvision",
-	"A3_Weapons_F_Items"
+	"A3_Weapons_F_Items",
+	"A3_Characters_F_Exp_Civil",
+	"A3_Modules_F_Curator_Curator"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=34;
+		items=36;
 		class Item0
 		{
 			className="Desert";
@@ -310,6 +312,20 @@ class AddonsMetaData
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
+		class Item34
+		{
+			className="A3_Characters_F_Exp";
+			name="Arma 3 Apex - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item35
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 class DynamicSimulation
@@ -357,8 +373,8 @@ class CustomAttributes
 		name="TMF_ORBAT_Settings";
 		class Attribute0
 		{
-			property="TMF_ORBATMarkersFT";
-			expression="false";
+			property="TMF_ORBATMarkersFT_Directional";
+			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
 			class Value
 			{
 				class data
@@ -414,8 +430,8 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="TMF_ORBATMarkersFT_Directional";
-			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
+			property="TMF_ORBATMarkersFT";
+			expression="false";
 			class Value
 			{
 				class data
@@ -2969,13 +2985,13 @@ class Mission
 	};
 	class Entities
 	{
-		items=61;
+		items=71;
 		class Item0
 		{
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14689.688,17.91,16698.195};
+				position[]={14684.408,17.91,16682.875};
 			};
 			title="Squad Medical Crates";
 			description="Each of these medical crates re-supplies a full squad." \n "" \n "Don't add or remove anything from the crate";
@@ -2986,7 +3002,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14655.621,17.91,16688.631};
+				position[]={14655.835,17.91,16711.371};
 			};
 			title="Optics Crate";
 			description="Use this if your mission allows for players to choose their preferred optic. Delete this if you're doing Cold War era US or Soviet, or Guerilla." \n "Don't add or remove anything from the crate";
@@ -2997,7 +3013,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14681.353,17.91,16706.371};
+				position[]={14676.072,17.91,16691.051};
 			};
 			title="Fireteam Crates";
 			description="Each crate re-supplies a single Fireteam. " \n "" \n "There is custom code on these crates for 3D text." \n "Don't add or remove anything from the crate";
@@ -3008,7 +3024,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14674.682,17.91,16713.551};
+				position[]={14669.401,17.91,16698.23};
 			};
 			title="Launcher Crates";
 			description="Each launcher crate re-supplies an entire squad." \n "" \n "There is custom code on these crates for 3D text." \n "Don't add or remove anything from the crate";
@@ -3019,8 +3035,8 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14667.672,17.91,16720.361};
-				angles[]={5.6992373,0,5.6362686};
+				position[]={14662.392,17.91,16705.041};
+				angles[]={0.00048828125,0,0.00048828125};
 			};
 			title="Explosives Crate";
 			description="There is custom code on these crates for 3D text." \n "You CAN change the charges, but you must test to make sure it isn't too heavy for a player to lift";
@@ -3031,10 +3047,11 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14663.253,17.91,16682.043};
+				position[]={14725.467,17.910431,16643.553};
 			};
 			title="Optics Crate (AK)";
 			id=51;
+			atlOffset=0.00043106079;
 		};
 		class Item6
 		{
@@ -3074,8 +3091,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14662.601,18.291529,16682.697};
-				angles[]={0,4.629416,0};
+				position[]={14724.814,18.29196,16644.207};
+				angles[]={-0,4.629416,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3084,6 +3101,7 @@ class Mission
 			};
 			id=50;
 			type="Box_NATO_Equip_F";
+			atlOffset=0.00043106079;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3113,8 +3131,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14682.5,18.120043,16706.609};
-				angles[]={0,2.2849052,0};
+				position[]={14677.22,18.120043,16691.289};
+				angles[]={-0,2.2849052,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3154,8 +3172,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14690.554,17.91,16698.258};
-				angles[]={0,2.3056321,0};
+				position[]={14685.273,17.91,16682.938};
+				angles[]={-0,2.3056321,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3397,8 +3415,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14689.753,17.91,16698.793};
-				angles[]={0,2.2627845,0};
+				position[]={14684.473,17.91,16683.473};
+				angles[]={-0,2.2627845,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3640,8 +3658,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14654.845,18.291529,16689.004};
-				angles[]={0,4.629416,0};
+				position[]={14655.059,18.291529,16711.744};
+				angles[]={-0,4.629416,0};
 			};
 			side="Empty";
 			flags=4;
@@ -27357,8 +27375,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14667.598,18.120529,16720.385};
-				angles[]={0,2.2895403,0};
+				position[]={14662.317,18.120529,16705.064};
+				angles[]={-0,2.2895403,0};
 			};
 			side="Empty";
 			flags=4;
@@ -27398,7 +27416,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14675.07,18.089985,16713.256};
+				position[]={14669.79,18.089985,16697.936};
 				angles[]={-0,2.2790229,0};
 			};
 			side="Empty";
@@ -27439,7 +27457,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14674.264,18.089985,16713.965};
+				position[]={14668.983,18.089985,16698.645};
 				angles[]={-0,2.279016,0};
 			};
 			side="Empty";
@@ -27480,7 +27498,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14680.305,18.120043,16706.166};
+				position[]={14675.024,18.120043,16690.846};
 				angles[]={-0,2.2848976,0};
 			};
 			side="Empty";
@@ -27521,7 +27539,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14681.274,18.120043,16705.328};
+				position[]={14675.994,18.120043,16690.008};
 				angles[]={-0,2.2848976,0};
 			};
 			side="Empty";
@@ -27562,7 +27580,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14681.545,18.120043,16707.49};
+				position[]={14676.265,18.120043,16692.17};
 				angles[]={-0,2.2849052,0};
 			};
 			side="Empty";
@@ -27592,6 +27610,793 @@ class Mission
 								};
 							};
 							value="[[[[],[]],[[""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""ACE_40mm_Flare_white"",""SmokeShellRed"",""SmokeShellBlue"",""rhs_mag_m67"",""rhsusf_200rnd_556x45_mixed_box"",""rhs_mag_M433_HEDP"",""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""],[5,5,5,10,5,5,10,5,10,10,35,10]],[[""ACE_fieldDressing""],[10]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item61
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14717.738,17.911438,16724.449};
+						angles[]={0,5.4517627,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						description="Admin@Admin1";
+						isPlayable=1;
+					};
+					id=297;
+					type="C_man_1";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TMF_SpecialistMarker";
+							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="["""",""""]";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TMF_assignGear_faction";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="us_army_ocp";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="TMF_assignGear_enabled";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94999999;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01GRE";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="TMF_assignGear_full";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[""pl"",""us_army_ocp"",true]";
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="TMF_assignGear_role";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="pl";
+								};
+							};
+						};
+						nAttributes=8;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=296;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Admin1";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="TMF_groupMarker";
+					expression="[_this,'TMF_groupMarker',_value] call tmf_common_fnc_initGroupVar;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="["""",""Alpha 2-2"","""",0]";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item62
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={14717.703,17.91,16724.75};
+			};
+			title="Admin Slot";
+			description="This is an extra slot for the dedicated Admin to use. It has special attributes and is on the Civilian side, so they do not show up on the map during a mission." \n "" \n "If the Admin disconnects, the slot will be lost, so we have two just in case.";
+			id=298;
+		};
+		class Item63
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14718.772,17.911438,16723.553};
+						angles[]={0,5.4517627,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						description="Admin@Admin2";
+						isPlayable=1;
+					};
+					id=300;
+					type="C_man_1";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TMF_SpecialistMarker";
+							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="["""",""""]";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TMF_assignGear_faction";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="us_army_ocp";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="TMF_assignGear_enabled";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="WhiteHead_29";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94999999;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01GRE";
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="TMF_assignGear_full";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[""pl"",""us_army_ocp"",true]";
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="TMF_assignGear_role";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="pl";
+								};
+							};
+						};
+						nAttributes=9;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=299;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Admin2";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="TMF_groupMarker";
+					expression="[_this,'TMF_groupMarker',_value] call tmf_common_fnc_initGroupVar;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="["""",""Alpha 2-2"","""",0]";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item64
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={14772.418,17.91,16722.328};
+			};
+			id=301;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="76561198015083841";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item65
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={14776.968,17.91,16726.979};
+			};
+			id=302;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="#adminLogged";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item66
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={14771.697,17.91,16727.693};
+			};
+			title="Game Master Modules";
+			description="Don't edit or delete these!";
+			id=304;
+		};
+		class Item67
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={14732.372,18.253292,16637.592};
+				angles[]={0.69711256,0,5.5846124};
+			};
+			title="Fireteam Crates (AK)";
+			description="Same as the regular Fireteam Crates, but for factions that use the AK." \n "Requires a separate MG Crate (PK), as the PK boxes are far too heavy to fit in the main Fireteam Crate.";
+			id=323;
+			atlOffset=0.00043106079;
+		};
+		class Item68
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={14739.43,18.173147,16630.91};
+				angles[]={0.71745259,0,5.6064882};
+			};
+			title="MG Crates (PK)";
+			description="MG Crate (PK), as the PK boxes are far too heavy to fit in the main Fireteam Crate.";
+			id=324;
+			atlOffset=0.00063323975;
+		};
+		class Item69
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14738.997,18.120043,16630.607};
+				angles[]={0,2.3158946,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="addMissionEventHandler [""Draw3D"",  " \n "{   " \n "if (supply9 distance player > 3) exitWith {};  " \n "if (cursorObject isNotEqualTo supply9) exitWith {};  " \n "drawIcon3D ["""", [.8,.8,.8,1], visiblePosition supply9 vectorAdd [0,0,.3], 0.2, 0.2, 45, ""MG Crate"", 2, 0.03, ""PuristaMedium""];  " \n "}];";
+				name="supply9";
+			};
+			id=320;
+			type="Box_Syndicate_Ammo_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""rhssaf_mag_br_m84"",""rhssaf_mag_brd_m83_white"",""rhs_100Rnd_762x54mmR""],[5,5,15]],[[""ACE_fieldDressing""],[10]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item70
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14732.065,18.120043,16637.266};
+				angles[]={0,2.3587425,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="addMissionEventHandler [""Draw3D"",  " \n "{   " \n "if (supply8 distance player > 3) exitWith {};  " \n "if (cursorObject isNotEqualTo supply8) exitWith {};  " \n "drawIcon3D ["""", [.8,.8,.8,1], visiblePosition supply8 vectorAdd [0,0,.3], 0.2, 0.2, 45, ""FT Crate"", 2, 0.03, ""PuristaMedium""];  " \n "}];";
+				name="supply8";
+			};
+			id=322;
+			type="Box_Syndicate_Ammo_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""rhs_30Rnd_762x39mm_polymer"",""rhs_30Rnd_762x39mm_polymer_tracer"",""rhs_VOG25"",""rhs_VG40OP_white"",""rhs_GRD40_White"",""rhs_GRD40_Green"",""rhs_GRD40_Red"",""rhssaf_mag_br_m84"",""rhssaf_mag_brd_m83_white"",""rhssaf_mag_brd_m83_red"",""rhssaf_mag_brd_m83_blue""],[35,10,10,10,5,3,5,10,5,5,5]],[[""ACE_fieldDressing""],[10]],[[],[]]],false]";
 						};
 					};
 				};
