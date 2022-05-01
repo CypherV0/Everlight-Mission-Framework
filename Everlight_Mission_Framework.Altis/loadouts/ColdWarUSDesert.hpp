@@ -45,7 +45,7 @@ class baseMan {// Weaponless baseclass
     backpackItems[] = {};
 
     // This is executed after unit init is complete. argument: _this = _unit.
-    code = "";
+    code = "onMapSingleClick {_shift};";
 
     // These are acre item radios that will be added during the ACRE init. ACRE radios added via any other system will be erased.
     radios[] = {};
@@ -56,7 +56,7 @@ class baseMan {// Weaponless baseclass
 class r : baseMan
 {
     displayName = "Rifleman";
-    backpack[] = {"UK3CB_B_Alice_K"};
+    backpack[] = {};
     headgear[] = {
         "usm_helmet_pasgt_ce_des",
         "usm_helmet_pasgt_ceswd_des"
@@ -68,7 +68,7 @@ class r : baseMan
         "usm_vest_pasgt_lbe_rmp"
     };
     primaryWeapon[] = {
-        "UK3CB_M16A2",
+        "CUP_arifle_M16A2"
     };
     secondaryWeapon[] = {};
     bipod[] = {};
@@ -90,6 +90,13 @@ class r : baseMan
         "ACRE_PRC343"
     };
 };
+class rm : r
+{
+    displayName = "Rifleman (Extra Ammo)";
+    magazines[] += {
+        LIST_5("rhs_mag_30Rnd_556x45_M855A1_Stanag")
+    };
+};
 class g : r
 {
     displayName = "Grenadier";
@@ -97,8 +104,9 @@ class g : r
         "usm_vest_pasgt_lbe_gr"
     };
     primaryWeapon[] = {
-        "UK3CB_M16A2_UGL",
+        "CUP_arifle_M16A2_GL",
     };
+    backpack[] = {"CUP_B_AlicePack_Khaki"};
     backpackItems[] = {
       LIST_10("rhs_mag_M433_HEDP"),
       LIST_5("1Rnd_Smoke_Grenade_shell")};
@@ -107,7 +115,7 @@ class g : r
 class m : r
 {
     displayName = "Medic";
-    code = "_this setUnitTrait [""Medic"", true]";
+    code = "_this setUnitTrait [""Medic"", true]; onMapSingleClick {_shift};";
     insignias[] = {"MedB"};
     magazines[] = {
         LIST_7("rhs_mag_30Rnd_556x45_M855A1_Stanag"),
@@ -132,15 +140,15 @@ class smg : r
     vest[] = {
         "V_TacVest_oli"
     };
-    primaryWeapon[] = {"UK3CB_MP5N"};
-    scope[] = {"sma_cmore"};
-    attachment[] = {"acc_flashlight"};
+    primaryWeapon[] = {"CUP_smg_MP5A5"};
+    scope[] = {};
+    attachment[] = {};
     bipod[] = {};
     backpackItems[] = {};
     sidearmWeapon[] = {"hgun_Pistol_Signal_F"};
     magazines[] =
     {
-        LIST_3("UK3CB_MP5_30Rnd_9x19_Magazine"),
+        LIST_3("CUP_30Rnd_9x19_MP5"),
         "6Rnd_RedSignal_F",
         "SmokeShellRed",
         "ACE_HandFlare_Red",
@@ -161,7 +169,8 @@ class ftl : g
     backpackItems[] +=
     {
         LIST_5("1Rnd_SmokeBlue_Grenade_shell"),
-        LIST_5("1Rnd_SmokeRed_Grenade_shell")
+        LIST_5("1Rnd_SmokeRed_Grenade_shell"),
+        LIST_5("ACE_40mm_Flare_white")
     };
     linkedItems[] =
     {
@@ -187,28 +196,27 @@ class pl : sl
 class ps : pl
 {
     displayName = "Platoon Sergeant";
-    linkedItems[] = {
-        "ItemMap",
-        "ItemCompass",
-        "ItemWatch",
-        "Laserdesignator"
-    };
+};
+class pm : m
+{
+    displayName = "Platoon Medic";
+    items[] += {"ACRE_PRC152"};
 };
 class ar : r
 {
     displayName = "Automatic Rifleman";
-    primaryWeapon[] = {"UK3CB_M60"};
+    vest[] = {
+        "usm_vest_pasgt_lbe_mg"
+    };
+    primaryWeapon[] = {"CUP_lmg_M60"};
     bipod[] = {};
+    backpack[] = {"CUP_B_AlicePack_Khaki"};
     magazines[] =
     {
-        LIST_5("rhsusf_100Rnd_762x51_m62_tracer"),
+        LIST_6("rhsusf_100Rnd_762x51_m62_tracer"),
         LIST_2("rhsusf_mag_15Rnd_9x19_JHP"),
-        "rhs_mag_f1",
+        "rhs_mag_m67",
         "SmokeShell"
-    };
-    backpackItems[] =
-    {
-        LIST_2("rhsusf_100Rnd_762x51_m62_tracer")
     };
     sidearmWeapon[] = {"rhsusf_weap_m9"};
     sidearmAttachments[] = {};
@@ -216,9 +224,10 @@ class ar : r
 class aar : r
 {
     displayName = "Asst. Automatic Rifleman";
+    backpack[] = {"usm_pack_alice"};
     backpackItems[] =
     {
-        LIST_5("rhsusf_100Rnd_762x51_m62_tracer")
+        LIST_8("rhsusf_100Rnd_762x51_m62_tracer")
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
@@ -290,6 +299,7 @@ class vcrew : smg
 class hp : smg
 {
     displayName = "Helicopter Pilot";
+    code = "onMapSingleClick {};";
     headgear[] = {
         "rhsusf_hgu56p",
         "rhsusf_hgu56p_visor"
@@ -323,6 +333,7 @@ class hpst : smg
 class jp : baseMan
 {
     displayName = "Fixed-Wing Pilot";
+    code = "onMapSingleClick {};";
     uniform[] = {"U_B_PilotCoveralls"};
     vest[] = {"V_Rangemaster_belt"};
     backpack[] = {"B_Parachute"};

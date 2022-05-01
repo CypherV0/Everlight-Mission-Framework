@@ -45,7 +45,7 @@ class baseMan {// Weaponless baseclass
     backpackItems[] = {};
 
     // This is executed after unit init is complete. argument: _this = _unit.
-    code = "";
+    code = "onMapSingleClick {_shift};";
 
     // These are acre item radios that will be added during the ACRE init. ACRE radios added via any other system will be erased.
     radios[] = {};
@@ -56,7 +56,7 @@ class baseMan {// Weaponless baseclass
 class r : baseMan
 {
     displayName = "Rifleman";
-    backpack[] = {"UK3CB_CHC_C_B_HIKER"};
+    backpack[] = {"CUP_O_RUS_Patrol_bag_Green"};
     headgear[] = {
         "rhs_altyn_novisor_ess_bala",
         "rhs_altyn_novisor_bala",
@@ -94,6 +94,13 @@ class r : baseMan
         "ACRE_PRC343"
     };
 };
+class rm : r
+{
+    displayName = "Rifleman (Extra Ammo)";
+    magazines[] += {
+        LIST_5("rhs_mag_30Rnd_556x45_M855A1_Stanag")
+    };
+};
 class g : r
 {
     displayName = "Grenadier";
@@ -109,7 +116,7 @@ class g : r
 class m : r
 {
     displayName = "Medic";
-    code = "_this setUnitTrait [""Medic"", true]";
+    code = "_this setUnitTrait [""Medic"", true]; onMapSingleClick {_shift};";
     insignias[] = {"MedB"};
     vest[] = {
         "rhs_6b23_medic"
@@ -138,15 +145,15 @@ class smg : r
     vest[] = {
         "V_TacVest_oli"
     };
-    primaryWeapon[] = {"UK3CB_MP5N"};
-    scope[] = {"sma_cmore"};
-    attachment[] = {"acc_flashlight"};
+    primaryWeapon[] = {"CUP_smg_vityaz"};
+    scope[] = {};
+    attachment[] = {};
     bipod[] = {};
     backpackItems[] = {};
     sidearmWeapon[] = {"hgun_Pistol_Signal_F"};
     magazines[] =
     {
-        LIST_3("UK3CB_MP5_30Rnd_9x19_Magazine"),
+        LIST_3("CUP_30Rnd_9x19_Vityaz"),
         "6Rnd_RedSignal_F",
         "SmokeShellRed",
         "ACE_HandFlare_Red",
@@ -192,12 +199,11 @@ class ps : pl
     vest[] = {
         "rhs_6b23_6sh92_headset_mapcase"
     };
-    linkedItems[] = {
-        "ItemMap",
-        "ItemCompass",
-        "ItemWatch",
-        "Laserdesignator"
-    };
+};
+class pm : m
+{
+    displayName = "Platoon Medic";
+    items[] += {"ACRE_PRC152"};
 };
 class ar : r
 {
@@ -327,6 +333,7 @@ class vcrew : smg
 class hp : smg
 {
     displayName = "Helicopter Pilot";
+    code = "onMapSingleClick {};";
     headgear[] = {
         "rhsusf_hgu56p",
         "rhsusf_hgu56p_visor"
@@ -360,6 +367,7 @@ class hpst : smg
 class jp : baseMan
 {
     displayName = "Fixed-Wing Pilot";
+    code = "onMapSingleClick {};";
     uniform[] = {"U_I_pilotCoveralls"};
     vest[] = {"V_Rangemaster_belt"};
     backpack[] = {"B_Parachute"};
