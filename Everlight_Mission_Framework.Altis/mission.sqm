@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=325;
+		nextID=326;
 	};
 	class MarkerIDProvider
 	{
@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14719.704,235.72971,16713.424};
-		dir[]={-0.0071685109,-0.99994999,0.0069719478};
-		up[]={-0.71683103,0.00999978,0.69717526};
-		aside[]={0.69721013,0,0.71686685};
+		pos[]={14734.885,228.25034,16695.42};
+		dir[]={-0.0071788067,-0.99994999,0.0069613461};
+		up[]={-0.71786058,0.00999978,0.69611514};
+		aside[]={0.69614995,0,0.71789646};
 	};
 };
 binarizationWanted=0;
@@ -373,8 +373,8 @@ class CustomAttributes
 		name="TMF_ORBAT_Settings";
 		class Attribute0
 		{
-			property="TMF_ORBATMarkersFT_Directional";
-			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
+			property="TMF_ORBATMarkersFT";
+			expression="false";
 			class Value
 			{
 				class data
@@ -430,8 +430,8 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="TMF_ORBATMarkersFT";
-			expression="false";
+			property="TMF_ORBATMarkersFT_Directional";
+			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
 			class Value
 			{
 				class data
@@ -834,7 +834,7 @@ class CustomAttributes
 							"STRING"
 						};
 					};
-					value="[[""Briefing"",[1],""briefing\briefing_blufor.sqf""],[""Comms"",[1],""briefing\comms.sqf""],[""Roster"",[1],""briefing\roster.sqf""],[""Keybinds"",[1],""briefing\keybinds.sqf""]]";
+					value="[[""Briefing"",[1,3],""briefing\briefing_blufor.sqf""],[""Comms"",[1,3],""briefing\comms.sqf""],[""Roster"",[1,3],""briefing\roster.sqf""],[""Keybinds"",[1,3],""briefing\keybinds.sqf""]]";
 				};
 			};
 		};
@@ -882,7 +882,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category6
+	class Category7
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -1431,7 +1431,7 @@ class CustomAttributes
 		};
 		nAttributes=18;
 	};
-	class Category7
+	class Category8
 	{
 		name="Scenario";
 		class Attribute0
@@ -2882,14 +2882,12 @@ class Mission
 		briefingName="(Your Title)";
 		resistanceWest=0;
 		startWeather=0.251349;
-		startFog=0.052387301;
 		startWind=0.099629201;
 		startWindDir=90;
 		startRain=0.046948802;
 		startWaves=0.1;
 		startGust=0.097521797;
 		forecastWeather=0.253456;
-		forecastFog=0.050315;
 		forecastWind=0.39885399;
 		forecastWaves=0.2956;
 		forecastRain=1;
@@ -2985,7 +2983,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=71;
+		items=72;
 		class Item0
 		{
 			dataType="Comment";
@@ -3092,7 +3090,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14724.814,18.29196,16644.207};
-				angles[]={-0,4.629416,0};
+				angles[]={0,4.629416,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3132,7 +3130,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14677.22,18.120043,16691.289};
-				angles[]={-0,2.2849052,0};
+				angles[]={0,2.2849052,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3173,7 +3171,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14685.273,17.91,16682.938};
-				angles[]={-0,2.3056321,0};
+				angles[]={0,2.3056321,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3416,7 +3414,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14684.473,17.91,16683.473};
-				angles[]={-0,2.2627845,0};
+				angles[]={0,2.2627845,0};
 			};
 			side="Empty";
 			flags=4;
@@ -3659,7 +3657,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14655.059,18.291529,16711.744};
-				angles[]={-0,4.629416,0};
+				angles[]={0,4.629416,0};
 			};
 			side="Empty";
 			flags=4;
@@ -20486,8 +20484,8 @@ class Mission
 			{
 				position[]={14613.297,17.91,16674.195};
 			};
-			title="First Time Setup";
-			description="FIRST TIME ONLY - Before doing ANYTHING else, on your toolbar (top of screen) go to ""Tools -> Utilities -> Scenario Attributes Manager"", click ""Create Template From Scenario"". Call it Everlight Framework.";
+			title="Setup & Updating";
+			description="Before doing ANYTHING else, on your toolbar (top of screen) go to ""Tools -> Utilities -> Scenario Attributes Manager"", click ""Create Template From Scenario"". Call it Everlight Framework." \n "" \n "Any time you update the mission.sqm for this framework, do this setup again or you'll miss vital changes.";
 			id=257;
 		};
 		class Item50
@@ -27376,7 +27374,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14662.317,18.120529,16705.064};
-				angles[]={-0,2.2895403,0};
+				angles[]={0,2.2895403,0};
 			};
 			side="Empty";
 			flags=4;
@@ -27417,7 +27415,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14669.79,18.089985,16697.936};
-				angles[]={-0,2.2790229,0};
+				angles[]={0,2.2790229,0};
 			};
 			side="Empty";
 			flags=4;
@@ -27458,7 +27456,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14668.983,18.089985,16698.645};
-				angles[]={-0,2.279016,0};
+				angles[]={0,2.279016,0};
 			};
 			side="Empty";
 			flags=4;
@@ -27499,7 +27497,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14675.024,18.120043,16690.846};
-				angles[]={-0,2.2848976,0};
+				angles[]={0,2.2848976,0};
 			};
 			side="Empty";
 			flags=4;
@@ -27540,7 +27538,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14675.994,18.120043,16690.008};
-				angles[]={-0,2.2848976,0};
+				angles[]={0,2.2848976,0};
 			};
 			side="Empty";
 			flags=4;
@@ -27581,7 +27579,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14676.265,18.120043,16692.17};
-				angles[]={-0,2.2849052,0};
+				angles[]={0,2.2849052,0};
 			};
 			side="Empty";
 			flags=4;
@@ -28402,6 +28400,16 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item71
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={14631.46,17.91,16704.361};
+			};
+			title="Version 3";
+			id=325;
 		};
 	};
 };
