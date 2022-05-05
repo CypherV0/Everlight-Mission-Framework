@@ -64,7 +64,8 @@ private _briefing = ["diary", ["Briefing","
 
 <font color='#FFFF00' size='11' face='PuristaMedium'>ADMIN / LOGISTICS</font><br/>
 <font color='#FFFFFF' size='10' face='PuristaMedium'>- Outline available resources (equipment/resupply/etc)</font><br/>
-<font color='#FFFFFF' size='10' face='PuristaMedium'>- Outline of how to use any mission specific features/scripts</font><br/>
+<font color='#FFFFFF' size='10' face='PuristaMedium'>- Outline of how to use any mission specific features/scripts</font><br/><br/>
+<font color='#FFFFFF' size='10' face='PuristaMedium'>Created by YourName </font><br/>
 
 "]];
 
