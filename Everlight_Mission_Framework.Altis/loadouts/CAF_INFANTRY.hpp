@@ -65,7 +65,7 @@ class r : baseMan
         "MNP_Vest_Canada_T"
     };
     primaryWeapon[] = {
-        "hlc_rifle_CQBR",
+        "CUP_arifle_M16A4_Base",
     };
     secondaryWeapon[] = {};
     bipod[] = {"hlc_grip_pmvfg_black"};
@@ -102,7 +102,7 @@ class g : r
         "MNP_Vest_Canada_T"
     };
     primaryWeapon[] = {
-        "hlc_rifle_m4m203",
+        "CUP_arifle_M16A4_GL",
     };
     bipod[] = {};
     scope[] = {"rhsusf_acc_compm4"};
