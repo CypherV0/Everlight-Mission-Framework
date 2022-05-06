@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=326;
+		nextID=344;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=98;
+		nextID=114;
 	};
 	class Camera
 	{
-		pos[]={14734.885,228.25034,16695.42};
-		dir[]={-0.0071788067,-0.99994999,0.0069613461};
-		up[]={-0.71786058,0.00999978,0.69611514};
-		aside[]={0.69614995,0,0.71789646};
+		pos[]={14731.448,227.54953,16695.363};
+		dir[]={-0.0071030133,-0.99994999,0.0070386655};
+		up[]={-0.71028149,0.00999978,0.70384687};
+		aside[]={0.70388204,0,0.71031696};
 	};
 };
 binarizationWanted=0;
@@ -358,7 +358,7 @@ class ScenarioData
 	{
 		gameType="Coop";
 		minPlayers=12;
-		maxPlayers=24;
+		maxPlayers=32;
 	};
 	wreckRemovalMaxTime=3600;
 	corpseManagerMode=3;
@@ -373,7 +373,7 @@ class CustomAttributes
 		name="TMF_ORBAT_Settings";
 		class Attribute0
 		{
-			property="TMF_ORBATMarkersFT";
+			property="TMF_ORBATRenameFakeAttribute";
 			expression="false";
 			class Value
 			{
@@ -386,7 +386,7 @@ class CustomAttributes
 							"BOOL"
 						};
 					};
-					value=0;
+					value=1;
 				};
 			};
 		};
@@ -449,6 +449,25 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
+			property="TMF_ORBATMarkersFT";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"BOOL"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute5
+		{
 			property="TMF_ORBATSettings";
 			expression="false";
 			class Value
@@ -463,25 +482,6 @@ class CustomAttributes
 						};
 					};
 					value="[[1,[[0,"""","""","""",""Platoon"",0],[]]]]";
-				};
-			};
-		};
-		class Attribute5
-		{
-			property="TMF_ORBATRenameFakeAttribute";
-			expression="false";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"BOOL"
-						};
-					};
-					value=1;
 				};
 			};
 		};
@@ -882,7 +882,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category7
+	class Category6
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -1431,7 +1431,7 @@ class CustomAttributes
 		};
 		nAttributes=18;
 	};
-	class Category8
+	class Category7
 	{
 		name="Scenario";
 		class Attribute0
@@ -2983,7 +2983,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=72;
+		items=73;
 		class Item0
 		{
 			dataType="Comment";
@@ -3158,7 +3158,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""ACE_40mm_Flare_white"",""SmokeShellRed"",""SmokeShellBlue"",""rhs_mag_m67"",""rhsusf_200rnd_556x45_mixed_box"",""rhs_mag_M433_HEDP"",""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""],[5,5,5,10,5,5,10,5,10,10,35,10]],[[""ACE_fieldDressing""],[10]],[[],[]]],false]";
+							value="[[[[""rhs_weap_M136""],[1]],[[""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""ACE_40mm_Flare_white"",""SmokeShellRed"",""SmokeShellBlue"",""rhs_mag_m67"",""rhsusf_200rnd_556x45_mixed_box"",""rhs_mag_M433_HEDP"",""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""],[5,5,5,10,5,5,5,5,10,5,35,10]],[[""ACE_fieldDressing""],[10]],[[""B_Kitbag_rgr""],[1]]],false]";
 						};
 					};
 				};
@@ -27525,7 +27525,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""ACE_40mm_Flare_white"",""SmokeShellRed"",""SmokeShellBlue"",""rhs_mag_m67"",""rhsusf_200rnd_556x45_mixed_box"",""rhs_mag_M433_HEDP"",""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""],[5,5,5,10,5,5,10,5,10,10,35,10]],[[""ACE_fieldDressing""],[10]],[[],[]]],false]";
+							value="[[[[""rhs_weap_M136""],[1]],[[""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""ACE_40mm_Flare_white"",""SmokeShellRed"",""SmokeShellBlue"",""rhs_mag_m67"",""rhsusf_200rnd_556x45_mixed_box"",""rhs_mag_M433_HEDP"",""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""],[5,5,5,10,5,5,5,5,10,5,35,10]],[[""ACE_fieldDressing""],[10]],[[""B_Kitbag_rgr""],[1]]],false]";
 						};
 					};
 				};
@@ -27566,7 +27566,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""ACE_40mm_Flare_white"",""SmokeShellRed"",""SmokeShellBlue"",""rhs_mag_m67"",""rhsusf_200rnd_556x45_mixed_box"",""rhs_mag_M433_HEDP"",""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""],[5,5,5,10,5,5,10,5,10,10,35,10]],[[""ACE_fieldDressing""],[10]],[[],[]]],false]";
+							value="[[[[""rhs_weap_M136""],[1]],[[""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""ACE_40mm_Flare_white"",""SmokeShellRed"",""SmokeShellBlue"",""rhs_mag_m67"",""rhsusf_200rnd_556x45_mixed_box"",""rhs_mag_M433_HEDP"",""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""],[5,5,5,10,5,5,5,5,10,5,35,10]],[[""ACE_fieldDressing""],[10]],[[""B_Kitbag_rgr""],[1]]],false]";
 						};
 					};
 				};
@@ -27607,7 +27607,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""ACE_40mm_Flare_white"",""SmokeShellRed"",""SmokeShellBlue"",""rhs_mag_m67"",""rhsusf_200rnd_556x45_mixed_box"",""rhs_mag_M433_HEDP"",""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""],[5,5,5,10,5,5,10,5,10,10,35,10]],[[""ACE_fieldDressing""],[10]],[[],[]]],false]";
+							value="[[[[""rhs_weap_M136""],[1]],[[""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""ACE_40mm_Flare_white"",""SmokeShellRed"",""SmokeShellBlue"",""rhs_mag_m67"",""rhsusf_200rnd_556x45_mixed_box"",""rhs_mag_M433_HEDP"",""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red""],[5,5,5,10,5,5,5,5,10,5,35,10]],[[""ACE_fieldDressing""],[10]],[[""B_Kitbag_rgr""],[1]]],false]";
 						};
 					};
 				};
@@ -28410,6 +28410,46 @@ class Mission
 			};
 			title="Version 3";
 			id=325;
+		};
+		class Item72
+		{
+			dataType="Layer";
+			name="Re-Supply AK";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Layer";
+					name="Modern Re-Supply Crate";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Layer";
+							name="Modern Re-Supply Crate_1";
+							class Entities
+							{
+								items=1;
+								class Item0
+								{
+									dataType="Layer";
+									name="Modern Re-Supply Crate_2";
+									id=339;
+									atlOffset=185.97;
+								};
+							};
+							id=338;
+							atlOffset=185.97;
+						};
+					};
+					id=337;
+					atlOffset=185.97;
+				};
+			};
+			id=341;
+			atlOffset=185.97;
 		};
 	};
 };
