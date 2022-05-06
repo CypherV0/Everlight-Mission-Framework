@@ -77,8 +77,7 @@ class r : baseMan
     attachment[] = {};
     sidearmWeapon[] = {};
     magazines[] = {
-        LIST_7("rhs_mag_30Rnd_556x45_M855A1_Stanag"),
-        LIST_3("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
+        LIST_10("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
         LIST_2("rhs_mag_m67"),
         LIST_2("SmokeShell")
     };
@@ -94,7 +93,7 @@ class rm : r
 {
     displayName = "Rifleman (Extra Ammo)";
     magazines[] += {
-        LIST_5("rhs_mag_30Rnd_556x45_M855A1_Stanag")
+        LIST_5("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red")
     };
 };
 class g : r
@@ -118,8 +117,7 @@ class m : r
     code = "_this setUnitTrait [""Medic"", true]; onMapSingleClick {_shift};";
     insignias[] = {"MedB"};
     magazines[] = {
-        LIST_7("rhs_mag_30Rnd_556x45_M855A1_Stanag"),
-        LIST_3("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
+        LIST_10("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
         LIST_2("SmokeShell"),
         LIST_20("ACE_fieldDressing"),
         LIST_20("ACE_elasticBandage"),
@@ -236,7 +234,7 @@ class rat : r
     displayName = "Rifleman AT";
     backpackItems[] =
     {
-        LIST_5("rhs_mag_30Rnd_556x45_M855A1_Stanag")
+        LIST_5("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red")
     };
     secondaryWeapon[] = {"rhs_weap_m72a7"};
     secondaryAttachments[] = {};

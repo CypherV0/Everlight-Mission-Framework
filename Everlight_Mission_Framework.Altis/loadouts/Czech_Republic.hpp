@@ -96,7 +96,7 @@ class rm : r
 {
     displayName = "Rifleman (Extra Ammo)";
     magazines[] += {
-        LIST_5("rhs_mag_30Rnd_556x45_M855A1_Stanag")
+        LIST_5("rhs_30Rnd_762x39mm_Savz58")
     };
 };
 class g : r
