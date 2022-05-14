@@ -269,7 +269,7 @@ class rat : r
     {
         LIST_5("rhs_30Rnd_762x39mm_tracer")
     };
-    secondaryWeapon[] = {"rhs_weap_rpg26"};
+    secondaryWeapon[] = {"rhs_weap_rpg75"};
     secondaryAttachments[] = {};
 };
 class lat : r
