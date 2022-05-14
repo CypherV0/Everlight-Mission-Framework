@@ -130,6 +130,12 @@ class CfgLoadouts
 		#include "loadouts\SovietArmy.hpp" // (No spaces)
 	};
 
+	class TLA // (No spaces)
+	{
+		displayName = "Tanoan Liberation Army"; // (Spaces allowed)
+		#include "loadouts\TanoanLiberationArmy.hpp" // (No spaces)
+	};
+
 };
 
 ////////////////////////////////////////////////////////////////////////////////
