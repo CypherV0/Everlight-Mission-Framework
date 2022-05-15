@@ -136,6 +136,12 @@ class CfgLoadouts
 		#include "loadouts\TanoanLiberationArmy.hpp" // (No spaces)
 	};
 
+	class IDF // (No spaces)
+	{
+		displayName = "Israeli Defense Force"; // (Spaces allowed)
+		#include "loadouts\IDF.hpp" // (No spaces)
+	};
+
 };
 
 ////////////////////////////////////////////////////////////////////////////////
