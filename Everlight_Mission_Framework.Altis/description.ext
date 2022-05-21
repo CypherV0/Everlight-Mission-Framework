@@ -148,6 +148,12 @@ class CfgLoadouts
 		#include "loadouts\PMC_ACR.hpp" // (No spaces)
 	};
 
+	class SAS_G36C_NVG // (No spaces)
+	{
+		displayName = "SAS with G36C and NVG"; // (Spaces allowed)
+		#include "loadouts\SAS_G36C_NVG.hpp" // (No spaces)
+	};
+
 };
 
 ////////////////////////////////////////////////////////////////////////////////
