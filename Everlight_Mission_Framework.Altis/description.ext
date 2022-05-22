@@ -154,6 +154,12 @@ class CfgLoadouts
 		#include "loadouts\SAS_G36C_NVG.hpp" // (No spaces)
 	};
 
+	class Spetsnaz_NVG // (No spaces)
+	{
+		displayName = "Spetsnaz w/ NVG"; // (Spaces allowed)
+		#include "loadouts\Spetsnaz_NVG.hpp" // (No spaces)
+	};
+
 };
 
 ////////////////////////////////////////////////////////////////////////////////
