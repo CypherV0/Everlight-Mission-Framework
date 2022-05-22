@@ -75,6 +75,10 @@ class r : baseMan
         "H_Booniehat_khk_hs",
         "rhsusf_bowman_cap"
     };
+    hmd[] =
+    {
+        "UK3CB_ANPVS7"
+    };
     vest[] = {
         "CUP_V_B_BAF_DPM_Osprey_Mk3_Rifleman"
     };
