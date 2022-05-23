@@ -1,6 +1,6 @@
 //Compatible with ACE Advanced Medical
 
-tooltip = "Cold War US Woodland by Cypher";
+tooltip = "Cold War US Woodland w/ Fewer Radios by Cypher";
 
 class baseMan {// Weaponless baseclass
     displayName = "Unarmed";
@@ -85,8 +85,7 @@ class r : baseMan
         LIST_10("ACE_fieldDressing"),
         LIST_2("ACE_morphine"),
         LIST_2("ACE_tourniquet"),
-        "ACE_personalAidKit",
-        "ACRE_PRC343"
+        "ACE_personalAidKit"
     };
 };
 class rm : r
@@ -170,6 +169,7 @@ class ftl : g
         LIST_5("1Rnd_SmokeRed_Grenade_shell"),
         LIST_5("ACE_40mm_Flare_white")
     };
+    items[] += {"ACRE_PRC343"};
     linkedItems[] =
     {
         "ItemMap",

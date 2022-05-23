@@ -68,7 +68,7 @@ class r : baseMan
         "usm_vest_pasgt_lbe_rmp"
     };
     primaryWeapon[] = {
-        "CUP_arifle_M16A2",
+        "CUP_arifle_M16A2"
     };
     secondaryWeapon[] = {};
     bipod[] = {};
@@ -103,7 +103,7 @@ class g : r
         "usm_vest_pasgt_lbe_gr"
     };
     primaryWeapon[] = {
-        "CUP_arifle_M16A2_GL",
+        "CUP_arifle_M16A2_GL"
     };
     backpack[] = {"CUP_B_AlicePack_Khaki"};
     backpackItems[] = {
@@ -206,7 +206,7 @@ class ar : r
     vest[] = {
         "usm_vest_pasgt_lbe_mg"
     };
-    primaryWeapon[] = {"CUP_lmg_M60"};
+    primaryWeapon[] = {"UK3CB_M60"};
     bipod[] = {};
     backpack[] = {"CUP_B_AlicePack_Khaki"};
     magazines[] =
