@@ -160,6 +160,18 @@ class CfgLoadouts
 		#include "loadouts\Spetsnaz_NVG.hpp" // (No spaces)
 	};
 
+	class 60s_M14 // (No spaces)
+	{
+		displayName = "60s w/ M14"; // (Spaces allowed)
+		#include "loadouts\60s_M14.hpp" // (No spaces)
+	};
+
+	class 60s_M16 // (No spaces)
+	{
+		displayName = "60s w/ M16"; // (Spaces allowed)
+		#include "loadouts\60s_M16.hpp" // (No spaces)
+	};
+
 };
 
 ////////////////////////////////////////////////////////////////////////////////
