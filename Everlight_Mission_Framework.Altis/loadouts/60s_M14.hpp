@@ -56,7 +56,7 @@ class baseMan {// Weaponless baseclass
 class r : baseMan
 {
     displayName = "Rifleman";
-    backpack[] = {};
+    backpack[] = {"CUP_B_AlicePack_Khaki"};
     headgear[] = {
         "CUP_H_USArmy_Helmet_M1_Olive",
         "CUP_H_USArmy_Helmet_M1_plain_Olive",
