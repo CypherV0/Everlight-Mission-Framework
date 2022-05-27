@@ -172,6 +172,12 @@ class CfgLoadouts
 		#include "loadouts\60s_M16.hpp" // (No spaces)
 	};
 
+	class Gendarmerie // (No spaces)
+	{
+		displayName = "Gendarmerie"; // (Spaces allowed)
+		#include "loadouts\Gendarmerie.hpp" // (No spaces)
+	};
+
 };
 
 ////////////////////////////////////////////////////////////////////////////////
