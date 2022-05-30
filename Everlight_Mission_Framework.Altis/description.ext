@@ -178,6 +178,12 @@ class CfgLoadouts
 		#include "loadouts\Gendarmerie.hpp" // (No spaces)
 	};
 
+	class Stealth // (No spaces)
+	{
+		displayName = "Stealth"; // (Spaces allowed)
+		#include "loadouts\Stealth.hpp" // (No spaces)
+	};
+
 };
 
 ////////////////////////////////////////////////////////////////////////////////
