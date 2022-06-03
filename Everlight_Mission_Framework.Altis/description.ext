@@ -184,6 +184,42 @@ class CfgLoadouts
 		#include "loadouts\Stealth.hpp" // (No spaces)
 	};
 
+	class 90s_US_Army_Desert // (No spaces)
+	{
+		displayName = "90s US Army Desert"; // (Spaces allowed)
+		#include "loadouts\90s_US_Army_Desert.hpp" // (No spaces)
+	};
+
+	class 90s_US_Army_SF_Desert // (No spaces)
+	{
+		displayName = "90s US Army SF Desert"; // (Spaces allowed)
+		#include "loadouts\90s_US_Army_SF_Desert.hpp" // (No spaces)
+	};
+
+	class 90s_US_Army_SF_Desert_NVG // (No spaces)
+	{
+		displayName = "90s US Army SF Desert w/ NVG"; // (Spaces allowed)
+		#include "loadouts\90s_US_Army_SF_Desert_NVG.hpp" // (No spaces)
+	};
+
+	class 2000s_US_Army_Desert // (No spaces)
+	{
+		displayName = "2000s US Army Desert"; // (Spaces allowed)
+		#include "loadouts\2000s_US_Army_Desert.hpp" // (No spaces)
+	};
+
+	class 2000s_US_Army_SF_Desert // (No spaces)
+	{
+		displayName = "2000s US Army SF Desert"; // (Spaces allowed)
+		#include "loadouts\2000s_US_Army_SF_Desert.hpp" // (No spaces)
+	};
+
+	class 2000s_US_Army_SF_Desert_NVG // (No spaces)
+	{
+		displayName = "2000s US Army SF Desert w/ NVG"; // (Spaces allowed)
+		#include "loadouts\2000s_US_Army_SF_Desert_NVG.hpp" // (No spaces)
+	};
+
 };
 
 ////////////////////////////////////////////////////////////////////////////////
