@@ -135,7 +135,7 @@ class smg : r
     };
     secondaryWeapon[] = {};
 };
-class ftl : g
+class ftl : r
 {
     displayName = "Fireteam Leader";
     vest[] = {
