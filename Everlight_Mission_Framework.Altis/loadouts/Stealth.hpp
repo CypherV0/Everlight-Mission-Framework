@@ -75,7 +75,7 @@ class r : baseMan
     };
     sidearmWeapon[] = {};
     magazines[] = {
-        LIST_10("hlc_30Rnd_9x19_SD_MP5")
+        LIST_10("hlc_30Rnd_9x19_SD_MP5"),
         LIST_2("rhs_mag_m67"),
         LIST_2("SmokeShell")
     };
