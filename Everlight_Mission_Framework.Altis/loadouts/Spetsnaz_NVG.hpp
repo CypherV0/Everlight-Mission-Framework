@@ -79,7 +79,7 @@ class r : baseMan
         "rhs_acc_grip_rk6"
     };
     scope[] = {};
-    silencer[] = {};
+    silencer[] = {"rhs_acc_pgs64"};
     attachment[] = {
         "rhs_acc_perst1ik_ris"
     };
@@ -95,6 +95,7 @@ class r : baseMan
         LIST_2("ACE_morphine"),
         LIST_2("ACE_tourniquet"),
         "ACE_personalAidKit",
+        "ACE_Flashlight_XL50",
         "ACRE_PRC343"
     };
 };
@@ -170,8 +171,8 @@ class ftl : g
     displayName = "Fireteam Leader";
     backpackItems[] +=
     {
-        LIST_5("1Rnd_SmokeBlue_Grenade_shell"),
-        LIST_5("1Rnd_SmokeRed_Grenade_shell")
+        LIST_5("rhs_mag_M433_HEDP"),
+        LIST_5("rhs_30Rnd_545x39_7N10_AK")
     };
     linkedItems[] =
     {
@@ -212,8 +213,11 @@ class pm : m
 class ar : r
 {
     displayName = "Automatic Rifleman";
-    primaryWeapon[] = {"UK3CB_RPK"};
-    bipod[] = {};
+    primaryWeapon[] = {"CUP_arifle_RPK74"};
+    silencer[] = {"cup_muzzle_mfsup_flashhider_762x39_black"};
+    attachment[] = {
+        "rhs_acc_perst1ik_ris"
+    };
     magazines[] =
     {
         LIST_2("rhs_75Rnd_762x39mm_tracer"),
@@ -294,6 +298,7 @@ class mg : r
     primaryWeapon[] = {"rhs_weap_pkp"};
     attachment[] = {};
     bipod[] = {};
+    silencer[] = {};
     magazines[] =
     {
         LIST_5("rhs_100Rnd_762x54mmR_green"),

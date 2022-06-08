@@ -88,7 +88,7 @@ class r : baseMan
     secondaryWeapon[] = {};
     bipod[] = {};
     scope[] = {"sma_eotech552", "sma_eotech"};
-    silencer[] = {};
+    silencer[] = {"rhsusf_acc_sfmb556"};
     attachment[] = {
         "cup_acc_anpeq_15_black"
     };
@@ -103,6 +103,7 @@ class r : baseMan
         LIST_2("ACE_morphine"),
         LIST_2("ACE_tourniquet"),
         "ACE_personalAidKit",
+        "ACE_Flashlight_XL50",
         "ACRE_PRC343"
     };
 };
@@ -181,8 +182,8 @@ class ftl : g
     magazines[] += {"hlc_12Rnd_357SIG_B_P226"};
     backpackItems[] +=
     {
-        LIST_5("1Rnd_SmokeBlue_Grenade_shell"),
-        LIST_5("1Rnd_SmokeRed_Grenade_shell")
+        LIST_5("rhs_mag_M433_HEDP"),
+        LIST_5("hlc_30rnd_556x45_EPR_G36")
     };
     linkedItems[] =
     {

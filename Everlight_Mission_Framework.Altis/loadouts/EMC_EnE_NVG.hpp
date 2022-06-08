@@ -91,7 +91,7 @@ class r : baseMan
         "rhsusf_acc_kac_grip",
     };
     scope[] = {"sma_eotech552", "sma_eotech", "rhsusf_acc_compm4" };
-    silencer[] = {};
+    silencer[] = {"rhsusf_acc_sfmb556"};
     attachment[] = {
         "rhsusf_acc_anpeq15side_bk"
     };
@@ -106,6 +106,7 @@ class r : baseMan
         LIST_10("ACE_fieldDressing"),
         LIST_2("ACE_morphine"),
         LIST_2("ACE_tourniquet"),
+        "ACE_Flashlight_XL50",
         "ACE_personalAidKit"
     };
 };
@@ -179,8 +180,8 @@ class ftl : g
     magazines[] += {"hlc_12Rnd_357SIG_B_P226"};
     backpackItems[] +=
     {
-        LIST_5("1Rnd_SmokeBlue_Grenade_shell"),
-        LIST_5("1Rnd_SmokeRed_Grenade_shell")
+        LIST_5("rhs_mag_M433_HEDP"),
+        LIST_5("rhs_mag_30Rnd_556x45_M855A1_PMAG")
     };
     items[] += {"ACRE_PRC343"};
     linkedItems[] =
@@ -216,6 +217,7 @@ class ar : r
     displayName = "Automatic Rifleman";
     primaryWeapon[] = {"LMG_Mk200_black_F"};
     bipod[] = {"rhs_acc_harris_swivel"};
+    scope[] = {};
     magazines[] =
     {
         LIST_3("200Rnd_65x39_cased_Box_Tracer_Red"),

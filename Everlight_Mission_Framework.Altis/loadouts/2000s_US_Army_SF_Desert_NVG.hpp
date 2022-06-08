@@ -98,6 +98,7 @@ class r : baseMan
         LIST_2("ACE_morphine"),
         LIST_2("ACE_tourniquet"),
         "ACE_personalAidKit",
+        "ACE_Flashlight_XL50",
         "ACRE_PRC343"
     };
 };
@@ -174,8 +175,8 @@ class ftl : g
     magazines[] += {"rhsusf_mag_15Rnd_9x19_FMJ"};
     backpackItems[] +=
     {
-        LIST_5("1Rnd_SmokeBlue_Grenade_shell"),
-        LIST_5("1Rnd_SmokeRed_Grenade_shell")
+        LIST_5("rhs_mag_M433_HEDP"),
+        LIST_5("rhs_mag_30Rnd_556x45_M855A1_Stanag")
     };
     linkedItems[] =
     {
@@ -252,6 +253,7 @@ class mg : r
     backpack[] = {"UK3CB_CW_US_B_LATE_B_RIF_04"};
     primaryWeapon[] = {"rhs_weap_m240G"};
     scope[] = {};
+    silencer[] = {};
     attachment[] = {};
     bipod[] = {};
     magazines[] =
