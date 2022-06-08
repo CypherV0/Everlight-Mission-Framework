@@ -84,6 +84,7 @@ class r : baseMan
         LIST_2("ACE_morphine"),
         LIST_2("ACE_tourniquet"),
         "ACE_personalAidKit",
+        "ACE_Flashlight_XL50",
         "ACRE_PRC343"
     };
 };
