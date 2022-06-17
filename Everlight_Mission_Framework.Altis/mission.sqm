@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=344;
+		nextID=352;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=114;
+		nextID=131;
 	};
 	class Camera
 	{
-		pos[]={14731.448,227.54953,16695.363};
-		dir[]={-0.0071030133,-0.99994999,0.0070386655};
-		up[]={-0.71028149,0.00999978,0.70384687};
-		aside[]={0.70388204,0,0.71031696};
+		pos[]={14725.091,226.1716,16703.662};
+		dir[]={-0.0071947509,-0.99994999,0.0069448659};
+		up[]={-0.71945494,0.00999978,0.69446713};
+		aside[]={0.69450188,0,0.71949095};
 	};
 };
 binarizationWanted=0;
@@ -99,14 +99,14 @@ class AddonsMetaData
 			className="ace_dragging";
 			name="ACE3 - Dragging";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item3
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item4
 		{
@@ -188,14 +188,14 @@ class AddonsMetaData
 			className="ace_laser";
 			name="ACE3 - Laser";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item16
 		{
 			className="ace_compat_rhs_usf3";
 			name="ACE3 - RHS USF Compatibility";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item17
 		{
@@ -241,42 +241,42 @@ class AddonsMetaData
 			className="ace_optics";
 			name="ACE3 - Optics";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item24
 		{
 			className="ace_goggles";
 			name="ACE3 - Goggles";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item25
 		{
 			className="ace_hearing";
 			name="ACE3 - Hearing";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item26
 		{
 			className="ace_grenades";
 			name="ACE3 - Grenades";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item27
 		{
 			className="ace_maptools";
 			name="ACE3 - Map Tools";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item28
 		{
 			className="ace_microdagr";
 			name="ACE3 - MicroDAGR";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item29
 		{
@@ -290,7 +290,7 @@ class AddonsMetaData
 			className="ace_overheating";
 			name="ACE3 - Overheating";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item31
 		{
@@ -310,7 +310,7 @@ class AddonsMetaData
 			className="ace_nightvision";
 			name="ACE3 - Night Vision";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item34
 		{
@@ -430,8 +430,8 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="TMF_ORBATMarkersFT_Directional";
-			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
+			property="TMF_ORBATMarkersFT";
+			expression="false";
 			class Value
 			{
 				class data
@@ -449,8 +449,8 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
-			property="TMF_ORBATMarkersFT";
-			expression="false";
+			property="TMF_ORBATMarkersFT_Directional";
+			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
 			class Value
 			{
 				class data
@@ -2983,7 +2983,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=73;
+		items=77;
 		class Item0
 		{
 			dataType="Comment";
@@ -3653,45 +3653,6 @@ class Mission
 		};
 		class Item13
 		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14655.059,18.291529,16711.744};
-				angles[]={0,4.629416,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=7;
-			type="Box_NATO_Equip_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[],[]],[[""rhsusf_acc_compm4"",""rhsusf_acc_T1_high"",""rhsusf_acc_T1_low_fwd"",""rhsusf_acc_mrds"",""rhsusf_acc_mrds_fwd"",""rhsusf_acc_eotech_552"",""rhsusf_acc_eotech_xps3"",""SMA_BARSKA"",""SMA_CMORE"",""SMA_eotech"",""SMA_eotech552""],[10,10,10,10,10,10,10,10,10,10,10]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item14
-		{
 			dataType="Comment";
 			class PositionInfo
 			{
@@ -3701,7 +3662,7 @@ class Mission
 			description="Good job!";
 			id=93;
 		};
-		class Item15
+		class Item14
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -3713,7 +3674,7 @@ class Mission
 			description="Remember to open this ""Mission Start Trigger"" and replace ""Mission Title"" with ""Whatever your mission is called"". Don't delete the quotation marks in the code. This title will appear when the admin turns off SafeStart.";
 			id=89;
 		};
-		class Item16
+		class Item15
 		{
 			dataType="Trigger";
 			position[]={14740.92,17.91,16685.068};
@@ -3730,7 +3691,7 @@ class Mission
 			id=90;
 			type="TMF_safestart_emptyDetector";
 		};
-		class Item17
+		class Item16
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3764,7 +3725,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item18
+		class Item17
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -3776,7 +3737,7 @@ class Mission
 			description="In the Briefing Trigger, you'll find code with words like ""Map"" and ""Yes"" or ""Pilots"", etc. This will show players what types of equipment they have (or are allowed to have) at their disposal." \n "" \n "The items are Map, GPS, NVG/IR, Flashlights, Flares, Radios." \n "The choices for these are: Yes, No, Pilots, Leaders." \n "" \n "If your mission involves players having no access to radios, for example, you'd find ""Radios"" in the code and change the following ""Yes"" to ""No"". Likewise, if leaders are allowed to have them but no one else, change it to ""Leaders""." \n "" \n "Please also remember to change the color of the item and the permission both to #FFFFFF that way the change will stand out.";
 			id=84;
 		};
-		class Item19
+		class Item18
 		{
 			dataType="Trigger";
 			position[]={14742.67,17.91,16690.789};
@@ -3796,7 +3757,7 @@ class Mission
 			id=85;
 			type="EmptyDetectorAreaR50";
 		};
-		class Item20
+		class Item19
 		{
 			dataType="Trigger";
 			position[]={14733.902,17.91,16681.83};
@@ -3811,7 +3772,7 @@ class Mission
 			id=91;
 			type="EmptyDetector";
 		};
-		class Item21
+		class Item20
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -3822,7 +3783,7 @@ class Mission
 			description="This cluster of 3 triggers and 1 module are for our SafeStart system and Briefing Timer, which you've probably seen on the right side of your screen during a briefing." \n "" \n "You should highlight this cluster and in the bottom right corner of the screen click the + icon to save as a Custom Composition, as you'll use it in every mission you create.";
 			id=94;
 		};
-		class Item22
+		class Item21
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -3833,7 +3794,7 @@ class Mission
 			description="If you want to change the faction of these units, you'll need to do them ONE. AT. A. TIME. " \n "" \n "Double click on a unit, scroll to the very bottom of their Attributes to find ""Assign Gear"" and change the Faction of the unit. Don't change the loadout field (medics already have the medic trait, pilots already have the pilot trait, etc and changing the loadout to a different role entirely is not good practice)";
 			id=98;
 		};
-		class Item23
+		class Item22
 		{
 			dataType="Group";
 			side="West";
@@ -4505,7 +4466,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -4543,7 +4504,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item24
+		class Item23
 		{
 			dataType="Group";
 			side="West";
@@ -5542,7 +5503,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -5580,7 +5541,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item25
+		class Item24
 		{
 			dataType="Group";
 			side="West";
@@ -6780,7 +6741,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -6818,7 +6779,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item26
+		class Item25
 		{
 			dataType="Group";
 			side="West";
@@ -8018,7 +7979,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -8056,7 +8017,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item27
+		class Item26
 		{
 			dataType="Group";
 			side="West";
@@ -8904,7 +8865,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -8942,7 +8903,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item28
+		class Item27
 		{
 			dataType="Group";
 			side="West";
@@ -9548,7 +9509,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -9586,7 +9547,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item29
+		class Item28
 		{
 			dataType="Group";
 			side="West";
@@ -10458,7 +10419,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -10496,7 +10457,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item30
+		class Item29
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -10507,7 +10468,7 @@ class Mission
 			description="HAT, MAT, MMG, HMG (not present) are Platoon Attachments. Based on your mission needs, you might use none of these at all, or you might use 2 MMG teams, or a mix. It's up to you and the mission design.";
 			id=133;
 		};
-		class Item31
+		class Item30
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -10518,7 +10479,7 @@ class Mission
 			description="Made up of 1 Squad Lead element and 2 Fireteams. The Fireteams are then divided into 2 color teams (already done, don't worry).";
 			id=134;
 		};
-		class Item32
+		class Item31
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -10529,7 +10490,7 @@ class Mission
 			description="This is the Platoon leadership element. The PltCo and PltSgt communicate with Squad Leaders, Attachment Leaders, and Support elements (like CAS or logistics).";
 			id=135;
 		};
-		class Item33
+		class Item32
 		{
 			dataType="Group";
 			side="West";
@@ -14677,7 +14638,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -14715,7 +14676,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item34
+		class Item33
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -14726,7 +14687,7 @@ class Mission
 			description="Due to slots being lost when players disconnect, we always include a substantial number of extra slots for them to take when they reconnect." \n "" \n "Extra slots aren't just for disconnects, though. It also helps to have a buffer of extra slots just in case more players join than the mission creator expected.";
 			id=188;
 		};
-		class Item35
+		class Item34
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -14737,7 +14698,7 @@ class Mission
 			description="Now it's time to go to the mission folder to create your briefing. Inside the mission folder you will find a text file named ""READ ME FOR INSTRUCTIONS"". Please open it and follow along in order to find the correct briefing file." \n "" \n "NOTE: Your mission folders can be found in ""Documents\Arma 3 - Other Profiles\*YourProfileName*\MPMissions""";
 			id=189;
 		};
-		class Item36
+		class Item35
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -14748,7 +14709,7 @@ class Mission
 			description="The SF structure is a great alternative to the standard Infantry Squad structure while we're still growing our player-count.";
 			id=190;
 		};
-		class Item37
+		class Item36
 		{
 			dataType="Group";
 			side="West";
@@ -16557,7 +16518,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -16595,7 +16556,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item38
+		class Item37
 		{
 			dataType="Group";
 			side="West";
@@ -18404,7 +18365,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -18442,7 +18403,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item39
+		class Item38
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -18452,7 +18413,7 @@ class Mission
 			title="Helicopter Pilot";
 			id=216;
 		};
-		class Item40
+		class Item39
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -18462,7 +18423,7 @@ class Mission
 			title="Fixed-Wing Pilot";
 			id=217;
 		};
-		class Item41
+		class Item40
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -18472,7 +18433,7 @@ class Mission
 			title="Vehicle Crew";
 			id=218;
 		};
-		class Item42
+		class Item41
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -18483,7 +18444,7 @@ class Mission
 			description="The PltHQ and Platoon Attachments remain the same, but rather than a 10-player Squad with 3 separate leaders (1 SL and 2 FTLs), an SF Team is comprised of just 6 players with only 1 leader. " \n "Keep in mind, SF Teams can operate independently of one another, where as an Infantry Squad's teams all operate close together.";
 			id=219;
 		};
-		class Item43
+		class Item42
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -18494,7 +18455,7 @@ class Mission
 			description="Ask me as many questions as you need. I'm here to help!";
 			id=243;
 		};
-		class Item44
+		class Item43
 		{
 			dataType="Group";
 			side="West";
@@ -18804,7 +18765,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -18842,7 +18803,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item45
+		class Item44
 		{
 			dataType="Group";
 			side="West";
@@ -19483,7 +19444,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -19521,7 +19482,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item46
+		class Item45
 		{
 			dataType="Group";
 			side="West";
@@ -20417,7 +20378,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -20455,7 +20416,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item47
+		class Item46
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -20466,7 +20427,7 @@ class Mission
 			description="Methods of insertion:" \n "- Starting in the spawn location" \n "- Teleporting from spawn to the starting location" \n "- Driving from spawn to the starting location" \n "- Teleporting with vehicles to the starting location, then driving" \n "- Paradrop" \n "" \n "*Spawn* is where we do the briefing phase so take that into account." \n "" \n "If you require paradrop insertion OR a teleport insertion for your mission, ask me to help you set it up. " \n "For beginners, I generally recommend sticking to more traditional (less prone to breaking) methods of insertion until you're experienced, but if you're confident that it's the right choice, I will help set it up.";
 			id=255;
 		};
-		class Item48
+		class Item47
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -20477,7 +20438,7 @@ class Mission
 			description="1- Complete the ""First Time Setup"" instructions" \n "" \n "2- Copy EVERYTHING here (zoom out until you can see everything, then use Ctrl+A to highlight everything in your view, and Ctrl+C to copy it all)" \n "" \n "3- Select ""New"" in the top left, and choose the terrain you want" \n "" \n "4- Ctrl+V to paste everything onto the new terrain." \n "" \n "5- Start with ""Settings Part 1"" and continue from there.";
 			id=256;
 		};
-		class Item49
+		class Item48
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -20488,7 +20449,7 @@ class Mission
 			description="Before doing ANYTHING else, on your toolbar (top of screen) go to ""Tools -> Utilities -> Scenario Attributes Manager"", click ""Create Template From Scenario"". Call it Everlight Framework." \n "" \n "Any time you update the mission.sqm for this framework, do this setup again or you'll miss vital changes.";
 			id=257;
 		};
-		class Item50
+		class Item49
 		{
 			dataType="Group";
 			side="West";
@@ -21160,7 +21121,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -21198,7 +21159,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item51
+		class Item50
 		{
 			dataType="Group";
 			side="West";
@@ -22398,7 +22359,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -22436,7 +22397,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item52
+		class Item51
 		{
 			dataType="Group";
 			side="West";
@@ -23636,7 +23597,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -23674,7 +23635,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item53
+		class Item52
 		{
 			dataType="Group";
 			side="West";
@@ -25483,7 +25444,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -25521,7 +25482,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item54
+		class Item53
 		{
 			dataType="Group";
 			side="West";
@@ -27330,7 +27291,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -27368,7 +27329,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item55
+		class Item54
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27409,7 +27370,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item56
+		class Item55
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27450,7 +27411,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item57
+		class Item56
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27491,7 +27452,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item58
+		class Item57
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27532,7 +27493,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item59
+		class Item58
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27573,7 +27534,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item60
+		class Item59
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27614,7 +27575,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item61
+		class Item60
 		{
 			dataType="Group";
 			side="Civilian";
@@ -27805,7 +27766,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -27843,7 +27804,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item62
+		class Item61
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -27854,7 +27815,7 @@ class Mission
 			description="This is an extra slot for the dedicated Admin to use. It has special attributes and is on the Civilian side, so they do not show up on the map during a mission." \n "" \n "If the Admin disconnects, the slot will be lost, so we have two just in case.";
 			id=298;
 		};
-		class Item63
+		class Item62
 		{
 			dataType="Group";
 			side="Civilian";
@@ -28064,7 +28025,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -28102,7 +28063,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item64
+		class Item63
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -28192,7 +28153,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item65
+		class Item64
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -28282,7 +28243,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item66
+		class Item65
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -28293,7 +28254,7 @@ class Mission
 			description="Don't edit or delete these!";
 			id=304;
 		};
-		class Item67
+		class Item66
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -28306,7 +28267,7 @@ class Mission
 			id=323;
 			atlOffset=0.00043106079;
 		};
-		class Item68
+		class Item67
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -28319,7 +28280,7 @@ class Mission
 			id=324;
 			atlOffset=0.00063323975;
 		};
-		class Item69
+		class Item68
 		{
 			dataType="Object";
 			class PositionInfo
@@ -28360,7 +28321,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item70
+		class Item69
 		{
 			dataType="Object";
 			class PositionInfo
@@ -28401,17 +28362,17 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item71
+		class Item70
 		{
 			dataType="Comment";
 			class PositionInfo
 			{
 				position[]={14631.46,17.91,16704.361};
 			};
-			title="Version 3";
+			title="Version 4";
 			id=325;
 		};
-		class Item72
+		class Item71
 		{
 			dataType="Layer";
 			name="Re-Supply AK";
@@ -28450,6 +28411,214 @@ class Mission
 			};
 			id=341;
 			atlOffset=185.97;
+		};
+		class Item72
+		{
+			dataType="Layer";
+			name="Flare Crate M203";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14691.771,18.120043,16676.361};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						init="addMissionEventHandler [""Draw3D"",  " \n "{   " \n "if (flarebox203 distance player > 3) exitWith {};  " \n "if (cursorObject isNotEqualTo flarebox203) exitWith {};  " \n "drawIcon3D ["""", [.8,.8,.8,1], visiblePosition flarebox203 vectorAdd [0,0,.3], 0.2, 0.2, 45, ""Flares"", 2, 0.03, ""PuristaMedium""];  " \n "}];";
+						name="flarebox203";
+					};
+					id=345;
+					type="Box_Syndicate_Ammo_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ammoBox";
+							expression="[_this,_value] call bis_fnc_initAmmoBox;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[[[[],[]],[[""UGL_FlareGreen_F"",""UGL_FlareRed_F"",""UGL_FlareYellow_F"",""ACE_40mm_Flare_white""],[10,10,10,20]],[[],[]],[[],[]]],false]";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_cargo_customName";
+							expression="_this setVariable [""ace_cargo_customName"", _value, true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Flare Crate";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			id=344;
+		};
+		class Item73
+		{
+			dataType="Layer";
+			name="Flare Crate GP";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14746.346,18.120043,16624.43};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						init="addMissionEventHandler [""Draw3D"",  " \n "{   " \n "if (flareboxGP distance player > 3) exitWith {};  " \n "if (cursorObject isNotEqualTo flareboxGP) exitWith {};  " \n "drawIcon3D ["""", [.8,.8,.8,1], visiblePosition flareboxGP vectorAdd [0,0,.3], 0.2, 0.2, 45, ""Flares"", 2, 0.03, ""PuristaMedium""];  " \n "}];";
+						name="flareboxGP";
+					};
+					id=347;
+					type="Box_Syndicate_Ammo_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ammoBox";
+							expression="[_this,_value] call bis_fnc_initAmmoBox;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[[[[],[]],[[""CUP_IlumFlareWhite_GP25_M"",""CUP_FlareGreen_GP25_M"",""CUP_FlareRed_GP25_M"",""CUP_FlareYellow_GP25_M""],[20,10,10,10]],[[],[]],[[],[]]],false]";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_cargo_customName";
+							expression="_this setVariable [""ace_cargo_customName"", _value, true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Flare Crate";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			id=346;
+		};
+		class Item74
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={14746.127,18.301485,16624.701};
+				angles[]={0.78720307,0,0};
+			};
+			title="Flare Crate (AK)";
+			id=348;
+		};
+		class Item75
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={14692.688,17.91,16675.756};
+			};
+			title="Flare Crate";
+			id=349;
+		};
+		class Item76
+		{
+			dataType="Layer";
+			name="Optics Crate";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14654.991,18.291529,16711.658};
+						angles[]={-0,4.629416,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=350;
+					type="Box_NATO_Equip_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ammoBox";
+							expression="[_this,_value] call bis_fnc_initAmmoBox;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[[[[],[]],[[],[]],[[""rhsusf_acc_compm4"",""rhsusf_acc_T1_high"",""rhsusf_acc_T1_low_fwd"",""rhsusf_acc_mrds"",""rhsusf_acc_mrds_fwd"",""rhsusf_acc_eotech_552"",""rhsusf_acc_eotech_xps3"",""SMA_BARSKA"",""SMA_CMORE"",""SMA_eotech"",""SMA_eotech552"",""sma_spitfire_01_black"",""SMA_AIMPOINT"",""CUP_optic_AC11704_Black"",""CUP_optic_HoloBlack"",""CUP_optic_Eotech553_Black""],[10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10]],[[],[]]],false]";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			id=351;
 		};
 	};
 };
