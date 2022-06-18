@@ -226,10 +226,16 @@ class CfgLoadouts
 		#include "loadouts\2000s_US_Army_SF_Desert.hpp" // (No spaces)
 	};
 
-	class 2000s_US_Army_SF_Desert_NVG // (No spaces)
+	class Russia_Winter // (No spaces)
 	{
-		displayName = "2000s US Army SF Desert w/ NVG"; // (Spaces allowed)
-		#include "loadouts\2000s_US_Army_SF_Desert_NVG.hpp" // (No spaces)
+		displayName = "Russia Winter"; // (Spaces allowed)
+		#include "loadouts\Russia_Winter.hpp" // (No spaces)
+	};
+
+	class Russia_Winter_NVG // (No spaces)
+	{
+		displayName = "Russia Winter w/ NVG"; // (Spaces allowed)
+		#include "loadouts\Russia_Winter_NVG.hpp" // (No spaces)
 	};
 
 };
