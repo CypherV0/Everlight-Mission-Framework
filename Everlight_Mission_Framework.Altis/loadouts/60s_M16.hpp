@@ -108,7 +108,7 @@ class g : r
     backpack[] = {"CUP_B_AlicePack_Khaki"};
     backpackItems[] = {
       LIST_10("rhs_mag_M433_HEDP"),
-      LIST_5("1Rnd_Smoke_Grenade_shell"),
+      LIST_2("1Rnd_Smoke_Grenade_shell"),
       "rhs_weap_m79"};
     sidearmWeapon[] = {};
 };
@@ -163,13 +163,13 @@ class ftl : g
     };
     magazines[] +=
     {
-        LIST_2("rhsusf_mag_7x45acp_MHP")
+        LIST_2("rhsusf_mag_7x45acp_MHP"),
+        LIST_5("ACE_40mm_Flare_white")
     };
     backpackItems[] +=
     {
-        LIST_5("1Rnd_SmokeBlue_Grenade_shell"),
-        LIST_5("1Rnd_SmokeRed_Grenade_shell"),
-        LIST_5("ACE_40mm_Flare_white")
+        LIST_2("1Rnd_SmokeBlue_Grenade_shell"),
+        LIST_2("1Rnd_SmokeRed_Grenade_shell")
     };
     linkedItems[] =
     {
