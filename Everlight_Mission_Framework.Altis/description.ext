@@ -124,6 +124,18 @@ class CfgLoadouts
 		#include "loadouts\US_Marines_D.hpp" // (No spaces)
 	};
 
+	class US_Marines_W // (No spaces)
+	{
+		displayName = "US Marines Woodland"; // (Spaces allowed)
+		#include "loadouts\US_Marines_W.hpp" // (No spaces)
+	};
+
+	class US_Marines_S // (No spaces)
+	{
+		displayName = "US Marines Snow"; // (Spaces allowed)
+		#include "loadouts\US_Marines_S.hpp" // (No spaces)
+	};
+
 	class SovietArmy // (No spaces)
 	{
 		displayName = "Soviet Army"; // (Spaces allowed)
