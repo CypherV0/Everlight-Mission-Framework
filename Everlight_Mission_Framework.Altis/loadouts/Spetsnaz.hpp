@@ -208,7 +208,7 @@ class pm : m
 class ar : r
 {
     displayName = "Automatic Rifleman";
-    primaryWeapon[] = {"UK3CB_RPK"};
+    primaryWeapon[] = {"CUP_arifle_RPK74"};
     bipod[] = {};
     magazines[] =
     {

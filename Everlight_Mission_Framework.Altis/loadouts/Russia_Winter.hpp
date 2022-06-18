@@ -1,15 +1,15 @@
 //Compatible with ACE Advanced Medical
 
-tooltip = "Spetsnaz w/ NVG by Cypher";
+tooltip = "Russia Winter by Cypher";
 
 class baseMan {// Weaponless baseclass
     displayName = "Unarmed";
     // All randomized.
-    uniform[] = {"rhs_uniform_gorka_r_g_gloves"};
+    uniform[] = {"CUP_U_O_RUS_Ratnik_Winter"};
     vest[] = {};
     headgear[] = {};
     backpack[] = {};
-    goggles[] = {"default"};
+    goggles[] = {"None", "CUP_G_RUS_Balaclava_Ratnik_winter_v2"};
     hmd[] =
     {
         // "rhsusf_ANPVS_15"
@@ -56,20 +56,16 @@ class baseMan {// Weaponless baseclass
 class r : baseMan
 {
     displayName = "Rifleman";
-    backpack[] = {"CUP_O_RUS_Patrol_bag_Green"};
+    backpack[] = {"CUP_O_RUS_Patrol_bag_Winter"};
     headgear[] = {
-        "rhs_altyn_novisor_ess_bala",
-        "rhs_altyn_novisor_bala",
-        "rhs_altyn_bala",
-        "rhs_altyn_visordown"
+        "CUP_H_RUS_6B47_v2_Winter",
+        "CUP_H_RUS_6B47_v2_GogglesClosed_Winter",
+        "CUP_H_RUS_6B47_v2_GogglesDown_Winter",
+        "CUP_H_RUS_6B47_v2_GogglesUp_Winter"
 
     };
     vest[] = {
-        "rhs_6b23_6sh92"
-    };
-    hmd[] =
-    {
-        "ACE_NVG_Gen4_Black"
+        "CUP_Vest_RUS_6B45_Sh117"
     };
     primaryWeapon[] = {
         "rhs_weap_ak105_zenitco01"
@@ -79,9 +75,9 @@ class r : baseMan
         "rhs_acc_grip_rk6"
     };
     scope[] = {};
-    silencer[] = {"rhs_acc_pgs64"};
+    silencer[] = {"rhs_acc_dtk"};
     attachment[] = {
-        "rhs_acc_perst1ik_ris"
+        "acc_flashlight"
     };
     sidearmWeapon[] = {};
     magazines[] = {
@@ -95,7 +91,6 @@ class r : baseMan
         LIST_2("ACE_morphine"),
         LIST_2("ACE_tourniquet"),
         "ACE_personalAidKit",
-        "ACE_Flashlight_XL50",
         "ACRE_PRC343"
     };
 };
@@ -110,7 +105,7 @@ class g : r
 {
     displayName = "Grenadier";
     vest[] = {
-        "rhs_6b23_6sh92_vog"
+        "CUP_Vest_RUS_6B45_Sh117_VOG"
     };
     sidearmWeapon[] = {"rhs_weap_M320"};
     backpackItems[] = {
@@ -123,9 +118,6 @@ class m : r
     displayName = "Medic";
     code = "_this setUnitTrait [""Medic"", true]; onMapSingleClick {_shift};";
     insignias[] = {"MedB"};
-    vest[] = {
-        "rhs_6b23_medic"
-    };
     magazines[] = {
         LIST_7("rhs_30Rnd_545x39_7N10_AK"),
         LIST_3("rhs_30Rnd_545x39_AK_plum_green"),
@@ -147,6 +139,7 @@ class m : r
 class smg : r
 {
     displayName = "SMG Base (Not for play)";
+    uniform[] = {"UK3CB_CW_SOV_O_LATE_U_H_Pilot_Uniform_01_TTSKO"};
     vest[] = {
         "V_TacVest_oli"
     };
@@ -154,6 +147,7 @@ class smg : r
     scope[] = {};
     attachment[] = {};
     bipod[] = {};
+    backpack[] = {"B_FieldPack_oli"};
     backpackItems[] = {};
     sidearmWeapon[] = {"hgun_Pistol_Signal_F"};
     magazines[] =
@@ -171,8 +165,8 @@ class ftl : g
     displayName = "Fireteam Leader";
     backpackItems[] +=
     {
-        LIST_5("rhs_mag_M433_HEDP"),
-        LIST_5("rhs_30Rnd_545x39_7N10_AK")
+        LIST_5("1Rnd_SmokeBlue_Grenade_shell"),
+        LIST_5("1Rnd_SmokeRed_Grenade_shell")
     };
     linkedItems[] =
     {
@@ -185,25 +179,16 @@ class ftl : g
 class sl : ftl
 {
     displayName = "Squad Leader";
-    vest[] = {
-        "rhs_6b23_6sh92_vog_headset"
-    };
     items[] += {"ACRE_PRC152"};
 };
 class pl : sl
 {
     displayName = "Platoon Commander";
-    vest[] = {
-        "rhs_6b23_6sh92_headset_mapcase"
-    };
     items[] += {"ACRE_PRC152"};
 };
 class ps : pl
 {
     displayName = "Platoon Sergeant";
-    vest[] = {
-        "rhs_6b23_6sh92_headset_mapcase"
-    };
 };
 class pm : m
 {
@@ -214,10 +199,7 @@ class ar : r
 {
     displayName = "Automatic Rifleman";
     primaryWeapon[] = {"CUP_arifle_RPK74"};
-    silencer[] = {"cup_muzzle_mfsup_flashhider_762x39_black"};
-    attachment[] = {
-        "rhs_acc_perst1ik_ris"
-    };
+    bipod[] = {};
     magazines[] =
     {
         LIST_2("rhs_75Rnd_762x39mm_tracer"),
@@ -295,10 +277,12 @@ class hatam : r
 class mg : r
 {
     displayName = "MMG Gunner";
+    vest[] = {
+        "CUP_Vest_RUS_6B45_Sh117_PKP"
+    };
     primaryWeapon[] = {"rhs_weap_pkp"};
     attachment[] = {};
     bipod[] = {};
-    silencer[] = {};
     magazines[] =
     {
         LIST_5("rhs_100Rnd_762x54mmR_green"),
