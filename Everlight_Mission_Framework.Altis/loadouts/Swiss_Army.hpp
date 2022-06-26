@@ -107,7 +107,7 @@ class g : r
     primaryWeapon[] = {
         "CUP_arifle_FNFAL_railed"
     };
-    secondaryWeapon[] = {"rhs_weap_M320"};
+    sidearmWeapon[] = {"rhs_weap_M320"};
     bipod[] = {};
     backpack[] = {"B_Kitbag_rgr"};
     vest[] = {
@@ -116,7 +116,6 @@ class g : r
     backpackItems[] = {
       LIST_10("rhs_mag_M433_HEDP"),
       LIST_5("1Rnd_Smoke_Grenade_shell")};
-    secondaryWeapon[] = {};
 };
 class m : r
 {
