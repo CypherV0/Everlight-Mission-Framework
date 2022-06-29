@@ -88,6 +88,12 @@ class CfgLoadouts
 		#include "loadouts\MARSOC_D.hpp" // (No spaces)
 	};
 
+	class MARSOC_S_NVG // (No spaces)
+	{
+		displayName = "MARSOC Snow w/ NVG"; // (Spaces allowed)
+		#include "loadouts\MARSOC_S_NVG.hpp" // (No spaces)
+	};
+
 	class EMC_EnE_NVG // (No spaces)
 	{
 		displayName = "EMC E&E with NVG"; // (Spaces allowed)
