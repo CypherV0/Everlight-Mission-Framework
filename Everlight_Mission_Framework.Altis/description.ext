@@ -244,10 +244,10 @@ class CfgLoadouts
 		#include "loadouts\Russia_Winter_NVG.hpp" // (No spaces)
 	};
 
-	class Swiss_Army // (No spaces)
+	class Swedish_Army // (No spaces)
 	{
-		displayName = "Swiss Army"; // (Spaces allowed)
-		#include "loadouts\Swiss_Army.hpp" // (No spaces)
+		displayName = "Swedish Army"; // (Spaces allowed)
+		#include "loadouts\Swedish_Army.hpp" // (No spaces)
 	};
 
 };
