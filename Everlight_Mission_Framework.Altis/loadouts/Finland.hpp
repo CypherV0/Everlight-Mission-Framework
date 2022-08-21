@@ -98,6 +98,9 @@ class rm : r
 class g : r
 {
     displayName = "Grenadier";
+    primaryWeapon[] = {
+        "rhs_weap_ak103_gp25"
+    };
     sidearmWeapon[] = {};
     backpackItems[] = {
       LIST_10("rhs_VOG25"),
