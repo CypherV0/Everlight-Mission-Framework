@@ -67,7 +67,7 @@ class r : baseMan
         "rhs_weap_ak103_zenitco01"
     };
     secondaryWeapon[] = {};
-    bipod[] = {};
+    bipod[] = {"rhsusf_acc_grip2"};
     scope[] = {};
     silencer[] = {"rhs_acc_dtk"};
     attachment[] = {
