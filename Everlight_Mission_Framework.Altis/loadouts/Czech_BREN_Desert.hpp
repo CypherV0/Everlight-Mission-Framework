@@ -1,15 +1,15 @@
 //Compatible with ACE Advanced Medical
 
-tooltip = "Czech w/ BREN by Cypher";
+tooltip = "Czech Desert w/ BREN by Cypher";
 
 class baseMan {// Weaponless baseclass
     displayName = "Unarmed";
     // All randomized.
-    uniform[] = {"CUP_U_B_CZ_WDL_NoKneepads", "CUP_U_B_CZ_WDL_Kneepads_Gloves"};
+    uniform[] = {"CUP_U_B_CZ_DST_NoKneepads", "CUP_U_B_CZ_DST_Kneepads_Sleeve"};
     vest[] = {};
     headgear[] = {};
     backpack[] = {};
-    goggles[] = {"G_Combat_Goggles_tna_F", "rhsusf_oakley_goggles_blk", "rhsusf_shemagh_gogg_grn", "rhsusf_shemagh2_gogg_grn", "rhsusf_shemagh2_grn"};
+    goggles[] = {"rhsusf_oakley_goggles_blk", "rhs_googles_black", "rhsusf_shemagh2_gogg_tan", "rhsusf_shemagh2_tan"};
     hmd[] =
     {
         // "rhsusf_ANPVS_15"
@@ -58,13 +58,13 @@ class r : baseMan
     displayName = "Rifleman";
     backpack[] = {"B_Kitbag_cbr"};
     headgear[] = {
-        "CUP_H_CZ_Helmet03",
-        "CUP_H_CZ_Helmet04"
+        "CUP_H_CZ_Helmet01",
+        "CUP_H_CZ_Helmet02"
     };
     vest[] = {
-        "CUP_V_CZ_NPP2006_nk_vz95",
-        "CUP_V_CZ_NPP2006_vz95",
-        "CUP_V_CZ_NPP2006_ok_vz95"
+        "CUP_V_CZ_NPP2006_des",
+        "CUP_V_CZ_NPP2006_nk_des",
+        "CUP_V_CZ_NPP2006_ok_des"
     };
     primaryWeapon[] = {
         "CUP_arifle_CZ805_A1_blk",
@@ -158,7 +158,7 @@ class ftl : g
 {
     displayName = "Fireteam Leader";
     vest[] = {
-        "CUP_V_CZ_NPP2006_co_vz95"
+        "CUP_V_CZ_NPP2006_co_des"
     };
     magazines[] += {"rhssaf_mag_15Rnd_9x19_FMJ"};
     backpackItems[] +=
