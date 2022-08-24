@@ -256,6 +256,12 @@ class CfgLoadouts
 		#include "loadouts\Czech_BREN.hpp" // (No spaces)
 	};
 
+	class Czech_BREN_Desert // (No spaces)
+	{
+		displayName = "Czech Desert w/ BREN"; // (Spaces allowed)
+		#include "loadouts\Czech_BREN_Desert.hpp" // (No spaces)
+	};
+
 	class Finland // (No spaces)
 	{
 		displayName = "Finnish Infantry"; // (Spaces allowed)
