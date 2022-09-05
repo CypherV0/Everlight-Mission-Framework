@@ -389,6 +389,12 @@ class hpst : smg
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
+class pow : baseMan
+{
+    displayName = "POW";
+    goggles[] = {};
+    linkedItems[] = {};
+};
 class jp : baseMan
 {
     displayName = "Fixed-Wing Pilot";
