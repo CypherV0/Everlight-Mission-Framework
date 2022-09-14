@@ -393,7 +393,7 @@ class pow : baseMan
 {
     displayName = "POW";
     goggles[] = {};
-    linkedItems[] = {};
+    linkedItems[] = {"ItemCompass"};
 };
 class jp : baseMan
 {
