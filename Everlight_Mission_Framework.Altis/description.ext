@@ -280,6 +280,12 @@ class CfgLoadouts
 		#include "loadouts\DEA_Multi_NVG.hpp" // (No spaces)
 	};
 
+	class DEA_Black_NVG // (No spaces)
+	{
+		displayName = "DEA Black w/ NVG"; // (Spaces allowed)
+		#include "loadouts\DEA_Black_NVG.hpp" // (No spaces)
+	};
+
 };
 
 ////////////////////////////////////////////////////////////////////////////////
