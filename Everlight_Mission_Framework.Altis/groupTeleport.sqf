@@ -2,7 +2,23 @@
 //Created by Ferdilanz and Cypher with help from Arma community members: pierremgi, mrcurry, and artemoz
 //teleports the group with the leader upon a click of the map, during SafeStart only.
 
-//IMPORTANT! Place inside the init of all leaders: this addAction ["<t color='#0096FF'>Deploy Group</t>","groupTeleport.sqf",[],1,false,true];
+/*IMPORTANT! Place inside the init of all leaders:
+
+this addAction
+[
+  "<t color='#0096FF'>Group Deploy</t>",
+  { execVM "groupTeleport.sqf"; },
+  nil,
+  25,
+  false,
+  true,
+  "",
+  "true",
+  1,
+  false
+];
+
+*/
 
 params ["_leader", "_caller", "_id", "_args"]; //don't know what to do with these params other than _leader
 
