@@ -6,7 +6,7 @@
 
 this addAction
 [
-  "<t color='#0096FF'>Group Deploy</t>",
+  "<t color='#0096FF'>Deploy Group</t>",
   { execVM "groupTeleport.sqf"; },
   nil,
   25,
