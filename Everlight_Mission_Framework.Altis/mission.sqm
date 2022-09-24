@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=385;
+		nextID=387;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=207;
+		nextID=233;
 	};
 	class Camera
 	{
-		pos[]={14719.502,223.89433,16704.414};
-		dir[]={-0.0071336776,-0.99994999,0.007007584};
-		up[]={-0.71334779,0.00999978,0.70073873};
-		aside[]={0.70077378,0,0.7133835};
+		pos[]={14740.822,234.60051,16691.684};
+		dir[]={-0.0071272473,-0.99994999,0.0070141251};
+		up[]={-0.71270478,0.00999978,0.70139277};
+		aside[]={0.70142788,0,0.71274042};
 	};
 };
 binarizationWanted=0;
@@ -2075,7 +2075,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=81;
+		items=82;
 		class Item0
 		{
 			dataType="Comment";
@@ -2577,7 +2577,7 @@ class Mission
 		class Item15
 		{
 			dataType="Trigger";
-			position[]={14740.92,17.91,16685.068};
+			position[]={14740.994,17.91,16685.102};
 			angle=3.8993406;
 			class Attributes
 			{
@@ -2707,6 +2707,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="SL@Alpha SL";
 						isPlayable=1;
 						class Inventory
@@ -3303,6 +3304,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="PltCo@PltHQ";
 						isPlayable=1;
 						class Inventory
@@ -4184,6 +4186,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="FTL@Alpha-1";
 						isPlayable=1;
 						class Inventory
@@ -4383,7 +4386,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -5212,6 +5215,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="FTL@Alpha-2";
 						isPlayable=1;
 						class Inventory
@@ -5411,7 +5415,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=3;
+									value=0;
 								};
 							};
 						};
@@ -6240,6 +6244,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="MMG Gunner@MMG";
 						isPlayable=1;
 						class Inventory
@@ -6970,6 +6975,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="MAT Gunner@MAT";
 						isPlayable=1;
 						class Inventory
@@ -7500,6 +7506,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="HAT Gunner@HAT";
 						isPlayable=1;
 						class Inventory
@@ -11810,6 +11817,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="FTL@Alpha";
 						isPlayable=1;
 						class Inventory
@@ -13351,6 +13359,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="FTL@Bravo";
 						isPlayable=1;
 						class Inventory
@@ -14944,6 +14953,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="Pilot@Reaper-1";
 						isPlayable=1;
 						class Inventory
@@ -15232,6 +15242,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="Heli Pilot@Falcon-1";
 						isPlayable=1;
 						class Inventory
@@ -15791,6 +15802,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="Vehicle Crew@Anvil-1";
 						isPlayable=1;
 						class Inventory
@@ -16602,6 +16614,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="SL@Bravo SL";
 						isPlayable=1;
 						class Inventory
@@ -17198,6 +17211,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="FTL@Bravo-1";
 						isPlayable=1;
 						class Inventory
@@ -17397,7 +17411,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=1;
+									value=0;
 								};
 							};
 						};
@@ -18226,6 +18240,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="FTL@Bravo-2";
 						isPlayable=1;
 						class Inventory
@@ -18425,7 +18440,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=3;
+									value=0;
 								};
 							};
 						};
@@ -19254,6 +19269,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="FTL@Charlie";
 						isPlayable=1;
 						class Inventory
@@ -20795,6 +20811,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="FTL@Delta";
 						isPlayable=1;
 						class Inventory
@@ -22784,8 +22801,8 @@ class Mission
 			{
 				position[]={14631.46,17.91,16704.361};
 			};
-			title="Version 6";
-			description="Changed the admin slots to BLUFOR instead of Civilian because it was conflicting with some of our mission start triggers.";
+			title="Version 7";
+			description="- Removed initPlayerLocal.sqf (you will have to do the same)" \n "- Added ""Deploy Group"" action during SafeStart for leaders, created by Ferdilanz.";
 			id=325;
 		};
 		class Item69
@@ -23025,6 +23042,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="Admin@Admin1";
 						isPlayable=1;
 						class Inventory
@@ -23352,6 +23370,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="Admin@Admin2";
 						isPlayable=1;
 						class Inventory
@@ -24309,6 +24328,20 @@ class Mission
 			title="Optics & Winter Facewear";
 			description="Same Optics, but includes Winter Facewear options for players to customize via ACE Interact.";
 			id=384;
+		};
+		class Item81
+		{
+			dataType="Trigger";
+			position[]={14743.213,17.91,16683.096};
+			class Attributes
+			{
+				condition="part1";
+				onActivation="removeAllActions player;";
+				sizeA=0;
+				sizeB=0;
+			};
+			id=385;
+			type="EmptyDetector";
 		};
 	};
 };
