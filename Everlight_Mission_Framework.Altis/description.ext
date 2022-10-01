@@ -286,6 +286,18 @@ class CfgLoadouts
 		#include "loadouts\DEA_Black_NVG.hpp" // (No spaces)
 	};
 
+	class Germany_G36 // (No spaces)
+	{
+		displayName = "Germany G36"; // (Spaces allowed)
+		#include "loadouts\Germany_G36.hpp" // (No spaces)
+	};
+
+	class Germany_HK416 // (No spaces)
+	{
+		displayName = "Germany HK416"; // (Spaces allowed)
+		#include "loadouts\Germany_HK416.hpp" // (No spaces)
+	};
+
 };
 
 ////////////////////////////////////////////////////////////////////////////////
