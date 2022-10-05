@@ -39,8 +39,6 @@ player createDiaryRecord ["Everlight Keybinds",["Keybinds",
 
           <font color='#BADA55' size='10' face='PuristaSemiBold'>Switch Grenade Type - </font> <font color='#FFFFFF' size='10' face='PuristaSemiBold'>Ctrl+G</font><br/>
 
-          <font color='#BADA55' size='10' face='PuristaSemiBold'>Earplugs - </font> <font color='#FFFFFF' size='10' face='PuristaSemiBold'>Alt+Insert</font><br/>
-
           <font color='#BADA55' size='10' face='PuristaSemiBold'>Compass - </font> <font color='#FFFFFF' size='10' face='PuristaSemiBold'>K</font><br/>
 
           <font color='#BADA55' size='10' face='PuristaSemiBold'>Flashlight / Laser - </font> <font color='#FFFFFF' size='10' face='PuristaSemiBold'>L</font><font color='#BADA55' size='10' face='PuristaSemiBold'> | </font><font color='#007AFF' size='10' face='PuristaSemiBold'>or MiddleMouseBtn</font> <font color='#696969' size='9' face='PuristaMedium'>(Middle Mouse is easier to reach than L, but we'll keep both.)</font><br/>
