@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=233;
+		nextID=298;
 	};
 	class Camera
 	{
-		pos[]={14740.822,234.60051,16691.684};
-		dir[]={-0.0071272473,-0.99994999,0.0070141251};
-		up[]={-0.71270478,0.00999978,0.70139277};
-		aside[]={0.70142788,0,0.71274042};
+		pos[]={14727.542,230.60724,16699.811};
+		dir[]={-0.0071419305,-0.99994999,0.0069991746};
+		up[]={-0.71417308,0.00999978,0.69989783};
+		aside[]={0.69993281,0,0.71420878};
 	};
 };
 binarizationWanted=0;
@@ -404,8 +404,8 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="TMF_ORBATMarkersFT";
-			expression="false";
+			property="TMF_ORBATMarkersFT_Directional";
+			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
 			class Value
 			{
 				class data
@@ -417,8 +417,8 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
-			property="TMF_ORBATMarkersFT_Directional";
-			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
+			property="TMF_ORBATMarkersFT";
+			expression="false";
 			class Value
 			{
 				class data
@@ -2151,7 +2151,7 @@ class Mission
 				position[]={14621.322,17.91,16665.785};
 			};
 			title="Settings Part 1";
-			description="Did you complete the steps in ""First Time Setup""? If not, do it now." \n "" \n "EVERY TIME AFTER - From this point onward, when you begin creating a mission, you will open the Scenario Attributes Manager, select the Everlight Framework template you saved, and click ""Apply Template""." \n "" \n "This ensures most of the important settings are already done for you. " \n "Please do not touch or change any settings that are not listed in the instructions.";
+			description="Did you complete the steps in ""Setup & Updating""? If not, do it now." \n "" \n "EVERY TIME AFTER - From this point onward, when you begin creating a mission, you will open the Scenario Attributes Manager, select the Everlight Framework template you saved, and click ""Apply Template""." \n "" \n "This ensures most of the important settings are already done for you. " \n "Please do not touch or change any settings that are not listed in the instructions.";
 			id=52;
 		};
 		class Item7
@@ -2173,7 +2173,7 @@ class Mission
 				position[]={14637.511,17.91,16652.906};
 			};
 			title="Saving your mission";
-			description="The first time you save your mission, you'll need to use ""Save As"" and give your mission FILE a name and location. Choose MPMissions for the location, and then use the following format for the name:" \n "" \n "xx_yy_zz" \n "xx - First two letters of your name" \n "yy - The recommended minimum number of players" \n "zz - The mission name" \n "" \n "Example: CY_14_MyMissionName" \n "Would be a mission by Cypher, for 14 or more players, called My Mission Name." \n "" \n "When you believe you're finished and ready to test the mission on the dedicated server, be sure to head to Scenario -> Export -> Export to Multiplayer" \n "" \n "After you've used ""Save As"" to give your mission file a name, all of the files and folders (EXCEPT the file called mission.sqf) need to be copied over from the ""Everlight_Mission_Framework"" folder to the new mission folder. " \n "NOTE: Your mission folders can be found in ""Documents\Arma 3 - Other Profiles\*YourProfileName*\MPMissions""";
+			description="The first time you save your mission, you'll need to use ""Save As"" and give your mission FILE a name and location. Choose MPMissions for the location, and then use the following format for the name:" \n "" \n "xx_yy_zz" \n "xx - First two letters of your name" \n "yy - The recommended minimum number of players" \n "zz - The mission name" \n "" \n "Example: CY_14_MyMissionName" \n "Would be a mission by Cypher, for 14 or more players, called My Mission Name." \n "" \n "After you've used ""Save As"" to give your mission file a name, all of the files and folders (EXCEPT the file called mission.sqf) need to be copied over from the ""Everlight_Mission_Framework"" folder to the new mission folder. " \n "NOTE: Your mission folders can be found in ""Documents\Arma 3 - Other Profiles\*YourProfileName*\MPMissions""";
 			id=55;
 		};
 		class Item9
@@ -2685,7 +2685,7 @@ class Mission
 				position[]={14749.362,17.91,16744.254};
 			};
 			title="Assign Gear (changing factions)";
-			description="If you want to change the faction of these units, you'll need to do them ONE. AT. A. TIME. " \n "" \n "Double click on a unit, scroll to the very bottom of their Attributes to find ""Assign Gear"" and change the Faction of the unit. Don't change the loadout field (medics already have the medic trait, pilots already have the pilot trait, etc and changing the loadout to a different role entirely is not good practice)";
+			description="If you want to change the faction of these units, highlight all of them at once and then Right-click on a unit, open their Attributes. Scroll to the very bottom of their Attributes to find ""Assign Gear"" and change ONLY the Faction of the unit. " \n "" \n "DO NOT change the loadout field (medics already have the medic trait, pilots already have the pilot trait, etc and changing the loadout to a different role entirely is not good practice)";
 			id=98;
 		};
 		class Item22
@@ -11998,7 +11998,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="marsoc_d";
+									value="us_army_ocp";
 								};
 							};
 						};
@@ -12063,7 +12063,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[""sl"",""marsoc_d"",true]";
+									value="[""sl"",""us_army_ocp"",true]";
 								};
 							};
 						};
@@ -12238,7 +12238,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="marsoc_d";
+									value="us_army_ocp";
 								};
 							};
 						};
@@ -12303,7 +12303,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[""ar"",""marsoc_d"",true]";
+									value="[""ar"",""us_army_ocp"",true]";
 								};
 							};
 						};
@@ -12473,7 +12473,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="marsoc_d";
+									value="us_army_ocp";
 								};
 							};
 						};
@@ -12538,7 +12538,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[""rat"",""marsoc_d"",true]";
+									value="[""rat"",""us_army_ocp"",true]";
 								};
 							};
 						};
@@ -12707,7 +12707,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="marsoc_d";
+									value="us_army_ocp";
 								};
 							};
 						};
@@ -12772,7 +12772,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[""aar"",""marsoc_d"",true]";
+									value="[""aar"",""us_army_ocp"",true]";
 								};
 							};
 						};
@@ -12971,7 +12971,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="marsoc_d";
+									value="us_army_ocp";
 								};
 							};
 						};
@@ -13036,7 +13036,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[""m"",""marsoc_d"",true]";
+									value="[""m"",""us_army_ocp"",true]";
 								};
 							};
 						};
@@ -13206,7 +13206,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="marsoc_d";
+									value="us_army_ocp";
 								};
 							};
 						};
@@ -13271,7 +13271,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[""rat"",""marsoc_d"",true]";
+									value="[""rat"",""us_army_ocp"",true]";
 								};
 							};
 						};
@@ -13540,7 +13540,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="marsoc_d";
+									value="us_army_ocp";
 								};
 							};
 						};
@@ -13605,7 +13605,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[""sl"",""marsoc_d"",true]";
+									value="[""sl"",""us_army_ocp"",true]";
 								};
 							};
 						};
@@ -13780,7 +13780,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="marsoc_d";
+									value="us_army_ocp";
 								};
 							};
 						};
@@ -13845,7 +13845,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[""ar"",""marsoc_d"",true]";
+									value="[""ar"",""us_army_ocp"",true]";
 								};
 							};
 						};
@@ -14015,7 +14015,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="marsoc_d";
+									value="us_army_ocp";
 								};
 							};
 						};
@@ -14080,7 +14080,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[""rat"",""marsoc_d"",true]";
+									value="[""rat"",""us_army_ocp"",true]";
 								};
 							};
 						};
@@ -14249,7 +14249,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="marsoc_d";
+									value="us_army_ocp";
 								};
 							};
 						};
@@ -14314,7 +14314,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[""aar"",""marsoc_d"",true]";
+									value="[""aar"",""us_army_ocp"",true]";
 								};
 							};
 						};
@@ -14513,7 +14513,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="marsoc_d";
+									value="us_army_ocp";
 								};
 							};
 						};
@@ -14578,7 +14578,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[""m"",""marsoc_d"",true]";
+									value="[""m"",""us_army_ocp"",true]";
 								};
 							};
 						};
@@ -14748,7 +14748,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="marsoc_d";
+									value="us_army_ocp";
 								};
 							};
 						};
@@ -14813,7 +14813,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[""rat"",""marsoc_d"",true]";
+									value="[""rat"",""us_army_ocp"",true]";
 								};
 							};
 						};
@@ -16581,7 +16581,7 @@ class Mission
 				position[]={14652.158,17.91,16640.121};
 			};
 			title="How to use this on another terrain";
-			description="1- Complete the ""First Time Setup"" instructions" \n "" \n "2- Copy EVERYTHING here (zoom out until you can see everything, then use Ctrl+A to highlight everything in your view, and Ctrl+C to copy it all)" \n "" \n "3- Select ""New"" in the top left, and choose the terrain you want" \n "" \n "4- Ctrl+V to paste everything onto the new terrain." \n "" \n "5- Start with ""Settings Part 1"" and continue from there.";
+			description="1- Complete the ""Setup & Updating"" instructions" \n "" \n "2- Copy EVERYTHING here (zoom out until you can see everything, then use Ctrl+A to highlight everything in your view, and Ctrl+C to copy it all)" \n "" \n "3- Select ""New"" in the top left, and choose the terrain you want" \n "" \n "4- Ctrl+V to paste everything onto the new terrain." \n "" \n "5- Start with ""Settings Part 1"" and continue from there.";
 			id=256;
 		};
 		class Item48
@@ -19450,7 +19450,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="marsoc_d";
+									value="us_army_ocp";
 								};
 							};
 						};
@@ -19515,7 +19515,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[""sl"",""marsoc_d"",true]";
+									value="[""sl"",""us_army_ocp"",true]";
 								};
 							};
 						};
@@ -19690,7 +19690,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="marsoc_d";
+									value="us_army_ocp";
 								};
 							};
 						};
@@ -19755,7 +19755,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[""ar"",""marsoc_d"",true]";
+									value="[""ar"",""us_army_ocp"",true]";
 								};
 							};
 						};
@@ -19925,7 +19925,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="marsoc_d";
+									value="us_army_ocp";
 								};
 							};
 						};
@@ -19990,7 +19990,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[""rat"",""marsoc_d"",true]";
+									value="[""rat"",""us_army_ocp"",true]";
 								};
 							};
 						};
@@ -20159,7 +20159,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="marsoc_d";
+									value="us_army_ocp";
 								};
 							};
 						};
@@ -20224,7 +20224,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[""aar"",""marsoc_d"",true]";
+									value="[""aar"",""us_army_ocp"",true]";
 								};
 							};
 						};
@@ -20423,7 +20423,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="marsoc_d";
+									value="us_army_ocp";
 								};
 							};
 						};
@@ -20488,7 +20488,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[""m"",""marsoc_d"",true]";
+									value="[""m"",""us_army_ocp"",true]";
 								};
 							};
 						};
@@ -20658,7 +20658,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="marsoc_d";
+									value="us_army_ocp";
 								};
 							};
 						};
@@ -20723,7 +20723,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[""rat"",""marsoc_d"",true]";
+									value="[""rat"",""us_army_ocp"",true]";
 								};
 							};
 						};
@@ -20992,7 +20992,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="marsoc_d";
+									value="us_army_ocp";
 								};
 							};
 						};
@@ -21057,7 +21057,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[""sl"",""marsoc_d"",true]";
+									value="[""sl"",""us_army_ocp"",true]";
 								};
 							};
 						};
@@ -21232,7 +21232,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="marsoc_d";
+									value="us_army_ocp";
 								};
 							};
 						};
@@ -21297,7 +21297,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[""ar"",""marsoc_d"",true]";
+									value="[""ar"",""us_army_ocp"",true]";
 								};
 							};
 						};
@@ -21467,7 +21467,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="marsoc_d";
+									value="us_army_ocp";
 								};
 							};
 						};
@@ -21532,7 +21532,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[""rat"",""marsoc_d"",true]";
+									value="[""rat"",""us_army_ocp"",true]";
 								};
 							};
 						};
@@ -21701,7 +21701,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="marsoc_d";
+									value="us_army_ocp";
 								};
 							};
 						};
@@ -21766,7 +21766,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[""aar"",""marsoc_d"",true]";
+									value="[""aar"",""us_army_ocp"",true]";
 								};
 							};
 						};
@@ -21965,7 +21965,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="marsoc_d";
+									value="us_army_ocp";
 								};
 							};
 						};
@@ -22030,7 +22030,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[""m"",""marsoc_d"",true]";
+									value="[""m"",""us_army_ocp"",true]";
 								};
 							};
 						};
@@ -22200,7 +22200,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="marsoc_d";
+									value="us_army_ocp";
 								};
 							};
 						};
@@ -22265,7 +22265,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[""rat"",""marsoc_d"",true]";
+									value="[""rat"",""us_army_ocp"",true]";
 								};
 							};
 						};
@@ -22801,8 +22801,8 @@ class Mission
 			{
 				position[]={14631.46,17.91,16704.361};
 			};
-			title="Version 7";
-			description="- Removed initPlayerLocal.sqf (you will have to do the same)" \n "- Added ""Deploy Group"" action during SafeStart for leaders, created by Ferdilanz.";
+			title="Version 8";
+			description="Version 8 Changes:" \n "- Fixed some wording in the Setup & Updating Instructions" \n "- Changed the Assign Gear instructions completely (much easier now)" \n "" \n "Version 7 Changes:" \n "- Removed initPlayerLocal.sqf (you will have to do the same)" \n "- Added ""Deploy Group"" action during SafeStart for leaders, created by Ferdilanz.";
 			id=325;
 		};
 		class Item69
