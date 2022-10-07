@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=298;
+		nextID=311;
 	};
 	class Camera
 	{
-		pos[]={14727.542,230.60724,16699.811};
-		dir[]={-0.0071419305,-0.99994999,0.0069991746};
-		up[]={-0.71417308,0.00999978,0.69989783};
-		aside[]={0.69993281,0,0.71420878};
+		pos[]={14731.197,249.66162,16695.869};
+		dir[]={-0.0071434123,-0.99994999,0.0069976612};
+		up[]={-0.71432126,0.00999978,0.69974649};
+		aside[]={0.69978148,0,0.71435696};
 	};
 };
 binarizationWanted=0;
@@ -404,8 +404,8 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="TMF_ORBATMarkersFT_Directional";
-			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
+			property="TMF_ORBATMarkersFT";
+			expression="false";
 			class Value
 			{
 				class data
@@ -417,8 +417,8 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
-			property="TMF_ORBATMarkersFT";
-			expression="false";
+			property="TMF_ORBATMarkersFT_Directional";
+			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
 			class Value
 			{
 				class data
@@ -2707,7 +2707,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Deploy Group</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="SL@Alpha SL";
 						isPlayable=1;
 						class Inventory
@@ -3304,7 +3304,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Deploy Group</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="PltCo@PltHQ";
 						isPlayable=1;
 						class Inventory
@@ -4186,7 +4186,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Deploy Group</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="FTL@Alpha-1";
 						isPlayable=1;
 						class Inventory
@@ -5215,7 +5215,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Deploy Group</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="FTL@Alpha-2";
 						isPlayable=1;
 						class Inventory
@@ -6244,7 +6244,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Deploy Group</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="MMG Gunner@MMG";
 						isPlayable=1;
 						class Inventory
@@ -6975,7 +6975,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Deploy Group</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="MAT Gunner@MAT";
 						isPlayable=1;
 						class Inventory
@@ -7506,7 +7506,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Deploy Group</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="HAT Gunner@HAT";
 						isPlayable=1;
 						class Inventory
@@ -11817,7 +11817,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Deploy Group</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="FTL@Alpha";
 						isPlayable=1;
 						class Inventory
@@ -13359,7 +13359,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Deploy Group</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="FTL@Bravo";
 						isPlayable=1;
 						class Inventory
@@ -14953,7 +14953,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Deploy Group</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="Pilot@Reaper-1";
 						isPlayable=1;
 						class Inventory
@@ -15242,7 +15242,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
-						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Deploy Group</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="Heli Pilot@Falcon-1";
 						isPlayable=1;
 						class Inventory
@@ -15802,7 +15802,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Deploy Group</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="Vehicle Crew@Anvil-1";
 						isPlayable=1;
 						class Inventory
@@ -16614,7 +16614,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Deploy Group</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="SL@Bravo SL";
 						isPlayable=1;
 						class Inventory
@@ -17211,7 +17211,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Deploy Group</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="FTL@Bravo-1";
 						isPlayable=1;
 						class Inventory
@@ -18240,7 +18240,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Deploy Group</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="FTL@Bravo-2";
 						isPlayable=1;
 						class Inventory
@@ -19269,7 +19269,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Deploy Group</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="FTL@Charlie";
 						isPlayable=1;
 						class Inventory
@@ -20811,7 +20811,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Deploy Group</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="FTL@Delta";
 						isPlayable=1;
 						class Inventory
@@ -22802,7 +22802,7 @@ class Mission
 				position[]={14631.46,17.91,16704.361};
 			};
 			title="Version 8";
-			description="Version 8 Changes:" \n "- Fixed some wording in the Setup & Updating Instructions" \n "- Changed the Assign Gear instructions completely (much easier now)" \n "" \n "Version 7 Changes:" \n "- Removed initPlayerLocal.sqf (you will have to do the same)" \n "- Added ""Deploy Group"" action during SafeStart for leaders, created by Ferdilanz.";
+			description="Version 8 Changes:" \n "- Fixed some wording in the Setup & Updating Instructions" \n "- Changed the Assign Gear instructions completely (much easier now)" \n "- Changed the wording of the group deployment button to ""Deploy Group""" \n "" \n "Version 7 Changes:" \n "- Removed initPlayerLocal.sqf (you will have to do the same)" \n "- Added ""Deploy Group"" action during SafeStart for leaders, created by Ferdilanz.";
 			id=325;
 		};
 		class Item69
@@ -23042,7 +23042,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Deploy Group</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="Admin@Admin1";
 						isPlayable=1;
 						class Inventory
@@ -23370,7 +23370,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Group Deploy</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
+						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Deploy Group</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
 						description="Admin@Admin2";
 						isPlayable=1;
 						class Inventory
