@@ -67,7 +67,7 @@ class r : baseMan
         "UK3CB_G_Neck_Shemag_Tan",
         "UK3CB_G_Neck_Shemag",
         "dvk_tacg_shem_altcsat",
-        "dvk_tacg_shem_w_altcsat"
+        "dvk_tacg_shem_w_altcsat",
         "G_Balaclava_blk"
     };
     backpack[] = {"B_FieldPack_khk"};
