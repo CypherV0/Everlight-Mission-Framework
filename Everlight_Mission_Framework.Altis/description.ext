@@ -298,6 +298,12 @@ class CfgLoadouts
 		#include "loadouts\Germany_HK416.hpp" // (No spaces)
 	};
 
+	class Chedaki // (No spaces)
+	{
+		displayName = "Chedaki"; // (Spaces allowed)
+		#include "loadouts\Chedaki.hpp" // (No spaces)
+	};
+
 };
 
 ////////////////////////////////////////////////////////////////////////////////
