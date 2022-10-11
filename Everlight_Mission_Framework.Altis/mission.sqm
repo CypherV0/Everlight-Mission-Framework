@@ -20,11 +20,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=337;
+		nextID=350;
 	};
 	class Camera
 	{
-		pos[]={14717.986,229.29123,16706.549};
+		pos[]={14728.707,233.8392,16700.354};
 		dir[]={-0.0071344581,-0.99994999,0.007006791};
 		up[]={-0.71342576,0.00999978,0.70065939};
 		aside[]={0.70069444,0,0.71346146};
@@ -404,8 +404,8 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="TMF_ORBATMarkersFT";
-			expression="false";
+			property="TMF_ORBATMarkersFT_Directional";
+			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
 			class Value
 			{
 				class data
@@ -417,8 +417,8 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
-			property="TMF_ORBATMarkersFT_Directional";
-			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
+			property="TMF_ORBATMarkersFT";
+			expression="false";
 			class Value
 			{
 				class data
@@ -12211,7 +12211,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Extra Slots";
+							value="Echo";
 						};
 					};
 				};
@@ -15420,7 +15420,7 @@ class Mission
 					class Attributes
 					{
 						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Deploy Group</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
-						description="Pilot@Reaper-1";
+						description="Pilot@Mage-1";
 						isPlayable=1;
 						class Inventory
 						{
@@ -16229,7 +16229,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Falcon-1";
+							value="Fal-1";
 						};
 					};
 				};
@@ -16269,7 +16269,7 @@ class Mission
 					class Attributes
 					{
 						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Deploy Group</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
-						description="Vehicle Crew@Anvil-1";
+						description="Vehicle Crew@Thunder-1";
 						isPlayable=1;
 						class Inventory
 						{
@@ -17008,7 +17008,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Anvil-1";
+							value="T-1";
 						};
 					};
 				};
@@ -24263,7 +24263,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Admin1";
+							value="Papa Bear";
 						};
 					};
 				};
@@ -24591,7 +24591,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Admin2";
+							value="PapaBear";
 						};
 					};
 				};
