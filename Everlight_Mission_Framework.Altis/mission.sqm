@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=395;
+		nextID=396;
 	};
 	class MarkerIDProvider
 	{
@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=350;
+		nextID=376;
 	};
 	class Camera
 	{
@@ -2075,7 +2075,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=82;
+		items=83;
 		class Item0
 		{
 			dataType="Comment";
@@ -16269,7 +16269,7 @@ class Mission
 					class Attributes
 					{
 						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Deploy Group</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
-						description="Vehicle Crew@Thunder-1";
+						description="Vehicle Commander@Thunder-1";
 						isPlayable=1;
 						class Inventory
 						{
@@ -16514,7 +16514,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Vehicle Crew";
+						description="Vehicle Gunner";
 						isPlayable=1;
 						class Inventory
 						{
@@ -16759,7 +16759,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Vehicle Crew";
+						description="Vehicle Driver";
 						isPlayable=1;
 						class Inventory
 						{
@@ -23733,8 +23733,8 @@ class Mission
 			{
 				position[]={14631.46,17.91,16704.361};
 			};
-			title="Version 8";
-			description="Version 8 Changes:" \n "- Fixed some wording in the Setup & Updating Instructions" \n "- Changed the Assign Gear instructions completely (much easier now)" \n "- Changed the wording of the group deployment button to ""Deploy Group""" \n "" \n "Version 7 Changes:" \n "- Removed initPlayerLocal.sqf (you will have to do the same)" \n "- Added ""Deploy Group"" action during SafeStart for leaders, created by Ferdilanz.";
+			title="Version 9";
+			description="Version 8 Changes:" \n "- Changed Infantry Fireteam size from 4 to 5" \n "- Added a trigger to automatically remove any Fortify Tools and Entrenching Tools from players when SafeStart ends (useful if you want to set up a defensive mission where players can fortify during briefing phase)" \n "- Renamed the ""Vehicle Crew"" members to ""Vehicle Commander"", ""Vehicle Gunner"", and ""Vehicle Driver""" \n "" \n "Version 8 Changes:" \n "- Fixed some wording in the Setup & Updating Instructions" \n "- Changed the Assign Gear instructions completely (much easier now)" \n "- Changed the wording of the group deployment button to ""Deploy Group""" \n "" \n "Version 7 Changes:" \n "- Removed initPlayerLocal.sqf (you will have to do the same)" \n "- Added ""Deploy Group"" action during SafeStart for leaders, created by Ferdilanz.";
 			id=325;
 		};
 		class Item69
@@ -25273,6 +25273,22 @@ class Mission
 				sizeB=0;
 			};
 			id=385;
+			type="EmptyDetector";
+		};
+		class Item82
+		{
+			dataType="Trigger";
+			position[]={14745.93,17.91,16680.574};
+			class Attributes
+			{
+				text="Remove Fortify/Entrenching Tools on Start";
+				condition="part1";
+				onActivation="player removeItem ""ACE_Fortify"";" \n "player removeItem ""ACE_EntrenchingTool"";";
+				sizeA=0;
+				sizeB=0;
+				isServerOnly=1;
+			};
+			id=395;
 			type="EmptyDetector";
 		};
 	};
