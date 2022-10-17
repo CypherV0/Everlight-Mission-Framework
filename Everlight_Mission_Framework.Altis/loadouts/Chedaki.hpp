@@ -5,7 +5,7 @@ tooltip = "Chedaki by Cypher and Ferdilanz";
 class baseMan {// Weaponless baseclass
     displayName = "Unarmed";
     // All randomized.
-    uniform[] = {"UK3CB_CHD_B_U_CombatUniform_02", "UK3CB_CHD_B_U_CombatUniform_03", "UK3CB_CHD_B_U_CombatUniform_01", "UK3CB_CHD_B_U_CombatUniform_07", 'UK3CB_CHD_B_U_H_Pilot_Uniform_03'};
+    uniform[] = {"UK3CB_CHD_O_U_CombatUniform_02", "UK3CB_CHD_O_U_CombatUniform_03", "UK3CB_CHD_O_U_CombatUniform_01", "UK3CB_CHD_O_U_CombatUniform_07", "UK3CB_CHD_O_U_H_Pilot_Uniform_03"};
     vest[] = {};
     headgear[] = {};
     backpack[] = {};
