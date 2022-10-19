@@ -97,6 +97,16 @@ class rm : r
         LIST_5("rhsusf_20Rnd_762x51_m62_Mag")
     };
 };
+class rat : r
+{
+    displayName = "Rifleman AT";
+    backpackItems[] =
+    {
+        LIST_5("rhsusf_20Rnd_762x51_m62_Mag")
+    };
+    secondaryWeapon[] = {"CUP_launch_M72A6_Special"};
+    secondaryAttachments[] = {};
+};
 class g : r
 {
     displayName = "Grenadier";
@@ -133,28 +143,6 @@ class m : r
         LIST_10("ACE_Splint")
     };
     backpack[] = {"usm_pack_m5_medic"};
-};
-class smg : r
-{
-    displayName = "SMG Base (Not for play)";
-    vest[] = {
-        "V_TacVest_oli"
-    };
-    primaryWeapon[] = {"CUP_smg_M3A1"};
-    scope[] = {};
-    attachment[] = {};
-    bipod[] = {};
-    backpackItems[] = {};
-    sidearmWeapon[] = {"hgun_Pistol_Signal_F"};
-    magazines[] =
-    {
-        LIST_3("CUP_30Rnd_45ACP_M3A1_M"),
-        "6Rnd_RedSignal_F",
-        "SmokeShellRed",
-        "ACE_HandFlare_Red",
-        LIST_2("SmokeShell")
-    };
-    secondaryWeapon[] = {};
 };
 class ftl : g
 {
@@ -231,16 +219,6 @@ class aar : r
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
-class rat : r
-{
-    displayName = "Rifleman AT";
-    backpackItems[] =
-    {
-        LIST_5("rhsusf_20Rnd_762x51_m62_Mag")
-    };
-    secondaryWeapon[] = {"CUP_launch_M72A6_Special"};
-    secondaryAttachments[] = {};
-};
 class mat : r
 {
     displayName = "MAT Gunner";
@@ -258,6 +236,28 @@ class mata : r
         LIST_4("MRAWS_HEAT_F")
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
+};
+class smg : r
+{
+    displayName = "SMG Base (Not for play)";
+    vest[] = {
+        "V_TacVest_oli"
+    };
+    primaryWeapon[] = {"CUP_smg_M3A1"};
+    scope[] = {};
+    attachment[] = {};
+    bipod[] = {};
+    backpackItems[] = {};
+    sidearmWeapon[] = {"hgun_Pistol_Signal_F"};
+    magazines[] =
+    {
+        LIST_3("CUP_30Rnd_45ACP_M3A1_M"),
+        "6Rnd_RedSignal_F",
+        "SmokeShellRed",
+        "ACE_HandFlare_Red",
+        LIST_2("SmokeShell")
+    };
+    secondaryWeapon[] = {};
 };
 class vcrew : smg
 {

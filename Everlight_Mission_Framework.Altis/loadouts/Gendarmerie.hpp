@@ -98,6 +98,16 @@ class rm : r
         LIST_5("rhs_mag_30Rnd_556x45_M855A1_Stanag")
     };
 };
+class rat : r
+{
+    displayName = "Rifleman AT";
+    backpackItems[] =
+    {
+        LIST_5("rhs_mag_30Rnd_556x45_M855A1_Stanag")
+    };
+    secondaryWeapon[] = {"rhs_weap_M136"};
+    secondaryAttachments[] = {"rhs_acc_at4_handler"};
+};
 class g : r
 {
     displayName = "Grenadier";
@@ -133,28 +143,6 @@ class m : r
       LIST_5("ACE_bloodIV_250"),
       LIST_10("ACE_Splint")
     };
-};
-class smg : r
-{
-    displayName = "SMG Base (Not for play)";
-    vest[] = {
-        "V_TacVest_gen_F"
-    };
-    primaryWeapon[] = {"CUP_smg_MP5A5"};
-    scope[] = {};
-    attachment[] = {};
-    bipod[] = {};
-    backpackItems[] = {};
-    sidearmWeapon[] = {"hgun_Pistol_Signal_F"};
-    magazines[] =
-    {
-        LIST_3("CUP_30Rnd_9x19_MP5"),
-        "6Rnd_RedSignal_F",
-        "SmokeShellRed",
-        "ACE_HandFlare_Red",
-        LIST_2("SmokeShell")
-    };
-    secondaryWeapon[] = {};
 };
 class ftl : g
 {
@@ -224,16 +212,6 @@ class aar : r
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
-class rat : r
-{
-    displayName = "Rifleman AT";
-    backpackItems[] =
-    {
-        LIST_5("rhs_mag_30Rnd_556x45_M855A1_Stanag")
-    };
-    secondaryWeapon[] = {"rhs_weap_M136"};
-    secondaryAttachments[] = {"rhs_acc_at4_handler"};
-};
 class mg : r
 {
     displayName = "MMG Gunner";
@@ -274,6 +252,28 @@ class mgam : r
     {
         LIST_8("UK3CB_MG3_100rnd_762x51_RT")
     };
+};
+class smg : r
+{
+    displayName = "SMG Base (Not for play)";
+    vest[] = {
+        "V_TacVest_gen_F"
+    };
+    primaryWeapon[] = {"CUP_smg_MP5A5"};
+    scope[] = {};
+    attachment[] = {};
+    bipod[] = {};
+    backpackItems[] = {};
+    sidearmWeapon[] = {"hgun_Pistol_Signal_F"};
+    magazines[] =
+    {
+        LIST_3("CUP_30Rnd_9x19_MP5"),
+        "6Rnd_RedSignal_F",
+        "SmokeShellRed",
+        "ACE_HandFlare_Red",
+        LIST_2("SmokeShell")
+    };
+    secondaryWeapon[] = {};
 };
 class vcrew : smg
 {

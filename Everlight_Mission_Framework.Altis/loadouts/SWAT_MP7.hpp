@@ -97,6 +97,32 @@ class rm : r
         LIST_5("rhsusf_mag_40Rnd_46x30_JHP")
     };
 };
+class rat : r
+{
+    displayName = "Rifleman AT";
+    backpackItems[] =
+    {
+        LIST_5("rhsusf_mag_40Rnd_46x30_JHP")
+    };
+    secondaryWeapon[] = {"rhs_weap_M136"};
+    secondaryAttachments[] = {"rhs_acc_at4_handler"};
+};
+class br : r
+{
+    displayName = "Breacher";
+    primaryWeapon[] = {"rhs_weap_M590_8RD"};
+    bipod[] = {};
+    magazines[] =
+    {
+        LIST_5("rhsusf_8Rnd_Slug"),
+        LIST_5("rhsusf_8Rnd_00Buck"),
+        LIST_2("hlc_12Rnd_357SIG_B_P226"),
+        LIST_2("rhs_mag_mk84"),
+        LIST_2("SmokeShell")
+    };
+    sidearmWeapon[] = {"hlc_pistol_P226R_357Combat"};
+    sidearmAttachments[] = {"hlc_optic_siglite"};
+};
 class g : r
 {
     displayName = "Grenadier (Not for play)";
@@ -137,28 +163,6 @@ class m : r
       LIST_10("ACE_morphine"),
       LIST_10("ACE_tourniquet")
     };
-};
-class smg : r
-{
-    displayName = "SMG Base (Not for play)";
-    vest[] = {
-        "V_TacVest_oli"
-    };
-    primaryWeapon[] = {"CUP_smg_MP5A5"};
-    scope[] = {};
-    attachment[] = {};
-    bipod[] = {};
-    backpackItems[] = {};
-    sidearmWeapon[] = {"hgun_Pistol_Signal_F"};
-    magazines[] =
-    {
-        LIST_3("CUP_30Rnd_9x19_MP5"),
-        "6Rnd_RedSignal_F",
-        "SmokeShellRed",
-        "ACE_HandFlare_Red",
-        LIST_2("SmokeShell")
-    };
-    secondaryWeapon[] = {};
 };
 class ftl : g
 {
@@ -227,32 +231,6 @@ class aar : r
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
-class rat : r
-{
-    displayName = "Rifleman AT";
-    backpackItems[] =
-    {
-        LIST_5("rhsusf_mag_40Rnd_46x30_JHP")
-    };
-    secondaryWeapon[] = {"rhs_weap_M136"};
-    secondaryAttachments[] = {"rhs_acc_at4_handler"};
-};
-class br : r
-{
-    displayName = "Breacher";
-    primaryWeapon[] = {"rhs_weap_M590_8RD"};
-    bipod[] = {};
-    magazines[] =
-    {
-        LIST_5("rhsusf_8Rnd_Slug"),
-        LIST_5("rhsusf_8Rnd_00Buck"),
-        LIST_2("hlc_12Rnd_357SIG_B_P226"),
-        LIST_2("rhs_mag_mk84"),
-        LIST_2("SmokeShell")
-    };
-    sidearmWeapon[] = {"hlc_pistol_P226R_357Combat"};
-    sidearmAttachments[] = {"hlc_optic_siglite"};
-};
 class mg : r
 {
     displayName = "LMG Gunner";
@@ -289,6 +267,28 @@ class mgam : r
     {
         LIST_7("rhsusf_200rnd_556x45_mixed_box")
     };
+};
+class smg : r
+{
+    displayName = "SMG Base (Not for play)";
+    vest[] = {
+        "V_TacVest_oli"
+    };
+    primaryWeapon[] = {"CUP_smg_MP5A5"};
+    scope[] = {};
+    attachment[] = {};
+    bipod[] = {};
+    backpackItems[] = {};
+    sidearmWeapon[] = {"hgun_Pistol_Signal_F"};
+    magazines[] =
+    {
+        LIST_3("CUP_30Rnd_9x19_MP5"),
+        "6Rnd_RedSignal_F",
+        "SmokeShellRed",
+        "ACE_HandFlare_Red",
+        LIST_2("SmokeShell")
+    };
+    secondaryWeapon[] = {};
 };
 class vcrew : smg
 {

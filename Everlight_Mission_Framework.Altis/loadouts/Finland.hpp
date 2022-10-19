@@ -95,6 +95,16 @@ class rm : r
         LIST_5("rhs_30Rnd_762x39mm_polymer")
     };
 };
+class rat : r
+{
+    displayName = "Rifleman AT";
+    backpackItems[] =
+    {
+        LIST_5("rhs_30Rnd_762x39mm_polymer")
+    };
+    secondaryWeapon[] = {"rhs_weap_m72a7"};
+    secondaryAttachments[] = {};
+};
 class g : r
 {
     displayName = "Grenadier";
@@ -129,29 +139,6 @@ class m : r
         LIST_10("ACE_tourniquet"),
         LIST_10("ACE_Splint")
     };
-};
-class smg : r
-{
-    displayName = "SMG Base (Not for play)";
-    vest[] = {
-        "V_TacVest_oli"
-    };
-    primaryWeapon[] = {"CUP_smg_vityaz"};
-    scope[] = {};
-    attachment[] = {};
-    bipod[] = {};
-    backpack[] = {"B_FieldPack_oli"};
-    backpackItems[] = {};
-    sidearmWeapon[] = {"hgun_Pistol_Signal_F"};
-    magazines[] =
-    {
-        LIST_3("CUP_30Rnd_9x19_Vityaz"),
-        "6Rnd_RedSignal_F",
-        "SmokeShellRed",
-        "ACE_HandFlare_Red",
-        LIST_2("SmokeShell")
-    };
-    secondaryWeapon[] = {};
 };
 class ftl : g
 {
@@ -215,16 +202,6 @@ class aar : r
         LIST_7("CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M")
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
-};
-class rat : r
-{
-    displayName = "Rifleman AT";
-    backpackItems[] =
-    {
-        LIST_5("rhs_30Rnd_762x39mm_polymer")
-    };
-    secondaryWeapon[] = {"rhs_weap_m72a7"};
-    secondaryAttachments[] = {};
 };
 class lat : r
 {
@@ -304,6 +281,29 @@ class mgam : r
     {
         LIST_3("UK3CB_MG3_250rnd_762x51_GT")
     };
+};
+class smg : r
+{
+    displayName = "SMG Base (Not for play)";
+    vest[] = {
+        "V_TacVest_oli"
+    };
+    primaryWeapon[] = {"CUP_smg_vityaz"};
+    scope[] = {};
+    attachment[] = {};
+    bipod[] = {};
+    backpack[] = {"B_FieldPack_oli"};
+    backpackItems[] = {};
+    sidearmWeapon[] = {"hgun_Pistol_Signal_F"};
+    magazines[] =
+    {
+        LIST_3("CUP_30Rnd_9x19_Vityaz"),
+        "6Rnd_RedSignal_F",
+        "SmokeShellRed",
+        "ACE_HandFlare_Red",
+        LIST_2("SmokeShell")
+    };
+    secondaryWeapon[] = {};
 };
 class vcrew : smg
 {

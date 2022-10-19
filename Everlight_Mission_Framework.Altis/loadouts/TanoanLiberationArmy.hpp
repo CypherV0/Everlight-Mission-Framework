@@ -110,6 +110,16 @@ class rm : r
         LIST_5("rhs_30Rnd_762x39mm_tracer")
     };
 };
+class rat : r
+{
+    displayName = "Rifleman AT";
+    backpackItems[] =
+    {
+        LIST_5("rhs_30Rnd_762x39mm_tracer")
+    };
+    secondaryWeapon[] = {"rhs_weap_rpg75"};
+    secondaryAttachments[] = {};
+};
 class mark : r
 {
     displayName = "Platoon Marksman";
@@ -164,28 +174,6 @@ class m : r
         LIST_10("ACE_tourniquet"),
         LIST_10("ACE_Splint")
     };
-};
-class smg : r
-{
-    displayName = "SMG Base (Not for play)";
-    vest[] = {
-        "V_TacVest_oli"
-    };
-    primaryWeapon[] = {"CUP_smg_vityaz"};
-    scope[] = {};
-    attachment[] = {};
-    bipod[] = {};
-    backpackItems[] = {};
-    sidearmWeapon[] = {"hgun_Pistol_Signal_F"};
-    magazines[] =
-    {
-        LIST_3("CUP_30Rnd_9x19_Vityaz"),
-        "6Rnd_RedSignal_F",
-        "SmokeShellRed",
-        "ACE_HandFlare_Red",
-        LIST_2("SmokeShell")
-    };
-    secondaryWeapon[] = {};
 };
 class ftl : g
 {
@@ -261,16 +249,6 @@ class aar : r
         LIST_5("rhs_75Rnd_762x39mm_tracer")
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
-};
-class rat : r
-{
-    displayName = "Rifleman AT";
-    backpackItems[] =
-    {
-        LIST_5("rhs_30Rnd_762x39mm_tracer")
-    };
-    secondaryWeapon[] = {"rhs_weap_rpg75"};
-    secondaryAttachments[] = {};
 };
 class lat : r
 {
@@ -351,6 +329,28 @@ class mgam : r
     {
         LIST_4("rhs_100Rnd_762x54mmR_green")
     };
+};
+class smg : r
+{
+    displayName = "SMG Base (Not for play)";
+    vest[] = {
+        "V_TacVest_oli"
+    };
+    primaryWeapon[] = {"CUP_smg_vityaz"};
+    scope[] = {};
+    attachment[] = {};
+    bipod[] = {};
+    backpackItems[] = {};
+    sidearmWeapon[] = {"hgun_Pistol_Signal_F"};
+    magazines[] =
+    {
+        LIST_3("CUP_30Rnd_9x19_Vityaz"),
+        "6Rnd_RedSignal_F",
+        "SmokeShellRed",
+        "ACE_HandFlare_Red",
+        LIST_2("SmokeShell")
+    };
+    secondaryWeapon[] = {};
 };
 class vcrew : smg
 {

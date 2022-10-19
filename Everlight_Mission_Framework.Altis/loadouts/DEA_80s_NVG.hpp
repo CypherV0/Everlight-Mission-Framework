@@ -91,6 +91,12 @@ class r : baseMan
         "ACRE_PRC343"
     };
 };
+class rat : r
+{
+    displayName = "Rifleman AT";
+    secondaryWeapon[] = {"rhs_weap_m72a7"};
+    secondaryAttachments[] = {};
+};
 class g : r
 {
     displayName = "Grenadier";
@@ -123,29 +129,6 @@ class m : r
         LIST_5("ACE_tourniquet"),
         LIST_8("ACE_Splint")
     };
-};
-class smg : r
-{
-    displayName = "SMG Base (Not for play)";
-    uniform[] = {"usm_bdu_btisrl_wdl2", "usm_bdu_bti_wdl2", "usm_bdu_srh_wdl2"};
-    vest[] = {
-        "V_TacVest_oli"
-    };
-    primaryWeapon[] = {"CUP_smg_MP5A5"};
-    scope[] = {};
-    attachment[] = {};
-    bipod[] = {};
-    backpackItems[] = {};
-    sidearmWeapon[] = {"hgun_Pistol_Signal_F"};
-    magazines[] =
-    {
-        LIST_3("CUP_30Rnd_9x19_MP5"),
-        "6Rnd_RedSignal_F",
-        "SmokeShellRed",
-        "ACE_HandFlare_Red",
-        LIST_2("SmokeShell")
-    };
-    secondaryWeapon[] = {};
 };
 class ftl : g
 {
@@ -219,11 +202,28 @@ class aar : r
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
-class rat : r
+class smg : r
 {
-    displayName = "Rifleman AT";
-    secondaryWeapon[] = {"rhs_weap_m72a7"};
-    secondaryAttachments[] = {};
+    displayName = "SMG Base (Not for play)";
+    uniform[] = {"usm_bdu_btisrl_wdl2", "usm_bdu_bti_wdl2", "usm_bdu_srh_wdl2"};
+    vest[] = {
+        "V_TacVest_oli"
+    };
+    primaryWeapon[] = {"CUP_smg_MP5A5"};
+    scope[] = {};
+    attachment[] = {};
+    bipod[] = {};
+    backpackItems[] = {};
+    sidearmWeapon[] = {"hgun_Pistol_Signal_F"};
+    magazines[] =
+    {
+        LIST_3("CUP_30Rnd_9x19_MP5"),
+        "6Rnd_RedSignal_F",
+        "SmokeShellRed",
+        "ACE_HandFlare_Red",
+        LIST_2("SmokeShell")
+    };
+    secondaryWeapon[] = {};
 };
 class vcrew : smg
 {

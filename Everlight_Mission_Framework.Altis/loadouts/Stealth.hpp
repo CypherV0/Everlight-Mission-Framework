@@ -114,28 +114,6 @@ class m : r
         LIST_10("ACE_Splint")
     };
 };
-class smg : r
-{
-    displayName = "SMG Base (Not for play)";
-    vest[] = {
-        "UK3CB_V_Pilot_Vest_Black"
-    };
-    primaryWeapon[] = {"CUP_smg_MP5A5"};
-    scope[] = {};
-    attachment[] = {};
-    bipod[] = {};
-    backpackItems[] = {};
-    sidearmWeapon[] = {"hgun_Pistol_Signal_F"};
-    magazines[] =
-    {
-        LIST_3("CUP_30Rnd_9x19_MP5"),
-        "6Rnd_RedSignal_F",
-        "SmokeShellRed",
-        "ACE_HandFlare_Red",
-        LIST_2("SmokeShell")
-    };
-    secondaryWeapon[] = {};
-};
 class ftl : r
 {
     displayName = "Fireteam Leader";
@@ -172,6 +150,28 @@ class pm : m
 {
     displayName = "Platoon Medic";
     items[] += {"ACRE_PRC152"};
+};
+class smg : r
+{
+    displayName = "SMG Base (Not for play)";
+    vest[] = {
+        "UK3CB_V_Pilot_Vest_Black"
+    };
+    primaryWeapon[] = {"CUP_smg_MP5A5"};
+    scope[] = {};
+    attachment[] = {};
+    bipod[] = {};
+    backpackItems[] = {};
+    sidearmWeapon[] = {"hgun_Pistol_Signal_F"};
+    magazines[] =
+    {
+        LIST_3("CUP_30Rnd_9x19_MP5"),
+        "6Rnd_RedSignal_F",
+        "SmokeShellRed",
+        "ACE_HandFlare_Red",
+        LIST_2("SmokeShell")
+    };
+    secondaryWeapon[] = {};
 };
 class vcrew : smg
 {

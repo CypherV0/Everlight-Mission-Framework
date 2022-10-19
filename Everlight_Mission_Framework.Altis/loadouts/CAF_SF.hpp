@@ -94,6 +94,16 @@ class rm : r
         LIST_5("rhs_mag_30Rnd_556x45_M855A1_Stanag")
     };
 };
+class rat : r
+{
+    displayName = "Rifleman AT";
+    backpackItems[] =
+    {
+        LIST_5("rhs_mag_30Rnd_556x45_M855A1_Stanag")
+    };
+    secondaryWeapon[] = {"rhs_weap_M136"};
+    secondaryAttachments[] = {"rhs_acc_at4_handler"};
+};
 class g : r
 {
     displayName = "Grenadier";
@@ -134,28 +144,6 @@ class m : r
         LIST_10("ACE_Splint")
     };
     backpack[] = {"B_Kitbag_rgr"};
-};
-class smg : r
-{
-    displayName = "SMG Base (Not for play)";
-    vest[] = {
-        "V_TacVest_oli"
-    };
-    primaryWeapon[] = {"CUP_smg_MP5A5"};
-    scope[] = {};
-    attachment[] = {};
-    bipod[] = {};
-    backpackItems[] = {};
-    sidearmWeapon[] = {"hgun_Pistol_Signal_F"};
-    magazines[] =
-    {
-        LIST_3("CUP_30Rnd_9x19_MP5"),
-        "6Rnd_RedSignal_F",
-        "SmokeShellRed",
-        "ACE_HandFlare_Red",
-        LIST_2("SmokeShell")
-    };
-    secondaryWeapon[] = {};
 };
 class ftl : g
 {
@@ -231,16 +219,6 @@ class aar : r
         LIST_4("rhsusf_200rnd_556x45_mixed_box")
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
-};
-class rat : r
-{
-    displayName = "Rifleman AT";
-    backpackItems[] =
-    {
-        LIST_5("rhs_mag_30Rnd_556x45_M855A1_Stanag")
-    };
-    secondaryWeapon[] = {"rhs_weap_M136"};
-    secondaryAttachments[] = {"rhs_acc_at4_handler"};
 };
 class hat : r
 {
@@ -318,6 +296,28 @@ class mgam : r
     {
         LIST_7("rhsusf_100Rnd_762x51_m62_tracer")
     };
+};
+class smg : r
+{
+    displayName = "SMG Base (Not for play)";
+    vest[] = {
+        "V_TacVest_oli"
+    };
+    primaryWeapon[] = {"CUP_smg_MP5A5"};
+    scope[] = {};
+    attachment[] = {};
+    bipod[] = {};
+    backpackItems[] = {};
+    sidearmWeapon[] = {"hgun_Pistol_Signal_F"};
+    magazines[] =
+    {
+        LIST_3("CUP_30Rnd_9x19_MP5"),
+        "6Rnd_RedSignal_F",
+        "SmokeShellRed",
+        "ACE_HandFlare_Red",
+        LIST_2("SmokeShell")
+    };
+    secondaryWeapon[] = {};
 };
 class vcrew : smg
 {
