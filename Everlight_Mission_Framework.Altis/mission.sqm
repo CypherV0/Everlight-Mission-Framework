@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=376;
+		nextID=454;
 	};
 	class Camera
 	{
-		pos[]={14728.707,233.8392,16700.354};
-		dir[]={-0.0071344581,-0.99994999,0.007006791};
-		up[]={-0.71342576,0.00999978,0.70065939};
-		aside[]={0.70069444,0,0.71346146};
+		pos[]={14722.91,236.59584,16697.164};
+		dir[]={-0.0071909321,-0.99994999,0.0069493344};
+		up[]={-0.71904737,0.010001522,0.69488919};
+		aside[]={0.69492394,-4.6566129e-010,0.71908337};
 	};
 };
 binarizationWanted=0;
@@ -352,11 +352,12 @@ class ScenarioData
 		minPlayers=12;
 		maxPlayers=32;
 	};
+	wreckLimit=10;
 	wreckRemovalMaxTime=3600;
 	corpseManagerMode=3;
-	corpseLimit=16;
-	corpseRemovalMaxTime=120;
-	minPlayerDistance=50;
+	corpseLimit=10;
+	corpseRemovalMaxTime=60.000004;
+	minPlayerDistance=25;
 };
 class CustomAttributes
 {
@@ -365,14 +366,14 @@ class CustomAttributes
 		name="TMF_ORBAT_Settings";
 		class Attribute0
 		{
-			property="TMF_ORBATRenameFakeAttribute";
+			property="TMF_ORBATSettings";
 			expression="false";
 			class Value
 			{
 				class data
 				{
-					singleType="BOOL";
-					value=1;
+					singleType="STRING";
+					value="[[1,[[0,"""","""","""",""Platoon"",0],[]]]]";
 				};
 			};
 		};
@@ -404,19 +405,6 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="TMF_ORBATMarkersFT_Directional";
-			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
-			class Value
-			{
-				class data
-				{
-					singleType="BOOL";
-					value=0;
-				};
-			};
-		};
-		class Attribute4
-		{
 			property="TMF_ORBATMarkersFT";
 			expression="false";
 			class Value
@@ -428,16 +416,29 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute5
+		class Attribute4
 		{
-			property="TMF_ORBATSettings";
+			property="TMF_ORBATRenameFakeAttribute";
 			expression="false";
 			class Value
 			{
 				class data
 				{
-					singleType="STRING";
-					value="[[1,[[0,"""","""","""",""Platoon"",0],[]]]]";
+					singleType="BOOL";
+					value=1;
+				};
+			};
+		};
+		class Attribute5
+		{
+			property="TMF_ORBATMarkersFT_Directional";
+			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
+			class Value
+			{
+				class data
+				{
+					singleType="BOOL";
+					value=0;
 				};
 			};
 		};
@@ -2659,7 +2660,7 @@ class Mission
 			{
 				text="Mission Start Trigger";
 				condition="part1";
-				onActivation="deleteVehicle briefingTrigger;" \n "[true] call TMF_safestart_fnc_end;" \n "hintSilent (parseText (format [""<t color='#BADA55' size='.8'>Weapons are live</t>""]));" \n "" \n "[ " \n " [[""Mission Title"",""size='.7'"",'#BADA55']], " \n " safeZoneX / .5, safeZoneH / 2, " \n " true, " \n " ""<t font='PuristaMedium'>%1</t>"", " \n " [], " \n " { false }, " \n " false " \n "] spawn BIS_fnc_typeText2;";
+				onActivation="deleteVehicle briefingTrigger;" \n "[true] call TMF_safestart_fnc_end;" \n "hintSilent (parseText (format [""<t color='#BADA55' size='.8'>Weapons are live</t>""]));" \n "" \n "[ " \n " [[""Mission Title"",""size='1'"",'#BADA55']], " \n " safeZoneX / .5, safeZoneH / 2, " \n " true, " \n " ""<t font='PuristaMedium'>%1</t>"", " \n " [], " \n " { false }, " \n " false " \n "] spawn BIS_fnc_typeText2;";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -3239,6 +3240,8 @@ class Mission
 			};
 			class Attributes
 			{
+				name="alphaSL";
+				init="alphaSL setGroupIDGlobal [""A-SL""];";
 			};
 			id=100;
 			class CustomAttributes
@@ -4134,6 +4137,8 @@ class Mission
 			};
 			class Attributes
 			{
+				name="PltHQ";
+				init="PltHQ setGroupIDGlobal [""PltHQ""];";
 			};
 			id=103;
 			class CustomAttributes
@@ -4386,7 +4391,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=2;
+									value=0;
 								};
 							};
 						};
@@ -5383,6 +5388,8 @@ class Mission
 			};
 			class Attributes
 			{
+				name="alpha1";
+				init="alpha1 setGroupIDGlobal [""A-1""];";
 			};
 			id=107;
 			class CustomAttributes
@@ -5648,7 +5655,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=2;
+									value=0;
 								};
 							};
 						};
@@ -6645,6 +6652,8 @@ class Mission
 			};
 			class Attributes
 			{
+				name="alpha2";
+				init="alpha2 setGroupIDGlobal [""A-2""];";
 			};
 			id=114;
 			class CustomAttributes
@@ -7389,6 +7398,8 @@ class Mission
 			};
 			class Attributes
 			{
+				name="mmg1";
+				init="mmg1 setGroupIDGlobal [""MMG""];";
 			};
 			id=121;
 			class CustomAttributes
@@ -7907,6 +7918,8 @@ class Mission
 			};
 			class Attributes
 			{
+				name="mat1";
+				init="mat1 setGroupIDGlobal [""MAT""];";
 			};
 			id=125;
 			class CustomAttributes
@@ -8656,6 +8669,8 @@ class Mission
 			};
 			class Attributes
 			{
+				name="hat1";
+				init="hat1 setGroupIDGlobal [""HAT""];";
 			};
 			id=128;
 			class CustomAttributes
@@ -12185,6 +12200,8 @@ class Mission
 			};
 			class Attributes
 			{
+				name="echo1";
+				init="echo1 setGroupIDGlobal [""Echo""];";
 			};
 			id=156;
 			class CustomAttributes
@@ -12490,7 +12507,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=3;
+									value=0;
 								};
 							};
 						};
@@ -13463,7 +13480,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=3;
+									value=0;
 								};
 							};
 						};
@@ -13760,6 +13777,8 @@ class Mission
 			};
 			class Attributes
 			{
+				name="alphaSF";
+				init="alphaSF setGroupIDGlobal [""A-SF""];";
 			};
 			id=191;
 			class CustomAttributes
@@ -14032,7 +14051,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=3;
+									value=0;
 								};
 							};
 						};
@@ -15005,7 +15024,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=3;
+									value=0;
 								};
 							};
 						};
@@ -15302,6 +15321,8 @@ class Mission
 			};
 			class Attributes
 			{
+				name="bravoSF";
+				init="bravoSF setGroupIDGlobal [""B-SF""];";
 			};
 			id=198;
 			class CustomAttributes
@@ -15656,6 +15677,8 @@ class Mission
 			};
 			class Attributes
 			{
+				name="mage1";
+				init="mage1 setGroupIDGlobal [""Mage-1""];";
 			};
 			id=205;
 			class CustomAttributes
@@ -15669,7 +15692,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Reaper-1";
+							value="Mage-1";
 						};
 					};
 				};
@@ -16216,6 +16239,8 @@ class Mission
 			};
 			class Attributes
 			{
+				name="falcon1";
+				init="falcon1 setGroupIDGlobal [""Fal-1""];";
 			};
 			id=209;
 			class CustomAttributes
@@ -16995,6 +17020,8 @@ class Mission
 			};
 			class Attributes
 			{
+				name="thunder1";
+				init="thunder1 setGroupIDGlobal [""T-1""];";
 			};
 			id=213;
 			class CustomAttributes
@@ -17036,7 +17063,7 @@ class Mission
 				position[]={14766.008,17.91,16812.213};
 			};
 			title="Insertion";
-			description="Methods of insertion:" \n "- Starting in the spawn location" \n "- Teleporting from spawn to the starting location" \n "- Driving from spawn to the starting location" \n "- Teleporting with vehicles to the starting location, then driving" \n "- Paradrop" \n "" \n "*Spawn* is where we do the briefing phase so take that into account." \n "" \n "If you require paradrop insertion OR a teleport insertion for your mission, ask me to help you set it up. " \n "For beginners, I generally recommend sticking to more traditional (less prone to breaking) methods of insertion until you're experienced, but if you're confident that it's the right choice, I will help set it up.";
+			description="Methods of insertion:" \n "- Starting in the spawn location" \n "- Teleporting from spawn to the starting location" \n "- Driving from spawn to the starting location" \n "- Teleporting with vehicles to the starting location, then driving" \n "- Paradrop" \n "" \n "*Spawn* is where we do the briefing phase so take that into account." \n "" \n "If you require paradrop insertion, ask me to help you set it up with our scripts. " \n "For beginners, I generally recommend sticking to more traditional (less prone to breaking) methods of insertion until you're experienced, but if you're confident that it's the right choice I will help set it up.";
 			id=255;
 		};
 		class Item47
@@ -17612,6 +17639,8 @@ class Mission
 			};
 			class Attributes
 			{
+				name="bravoSL";
+				init="bravoSL setGroupIDGlobal [""B-SL""];";
 			};
 			id=258;
 			class CustomAttributes
@@ -17877,7 +17906,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=2;
+									value=0;
 								};
 							};
 						};
@@ -18874,6 +18903,8 @@ class Mission
 			};
 			class Attributes
 			{
+				name="bravo1";
+				init="bravo1 setGroupIDGlobal [""B-1""];";
 			};
 			id=261;
 			class CustomAttributes
@@ -19139,7 +19170,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=2;
+									value=0;
 								};
 							};
 						};
@@ -20136,6 +20167,8 @@ class Mission
 			};
 			class Attributes
 			{
+				name="bravo2";
+				init="bravo2 setGroupIDGlobal [""B-2""];";
 			};
 			id=266;
 			class CustomAttributes
@@ -20408,7 +20441,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=3;
+									value=0;
 								};
 							};
 						};
@@ -21381,7 +21414,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=3;
+									value=0;
 								};
 							};
 						};
@@ -21678,6 +21711,8 @@ class Mission
 			};
 			class Attributes
 			{
+				name="charlieSF";
+				init="charlieSF setGroupIDGlobal [""C-SF""];";
 			};
 			id=271;
 			class CustomAttributes
@@ -21950,7 +21985,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=3;
+									value=0;
 								};
 							};
 						};
@@ -22923,7 +22958,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=3;
+									value=0;
 								};
 							};
 						};
@@ -23220,6 +23255,8 @@ class Mission
 			};
 			class Attributes
 			{
+				name="deltaSF";
+				init="deltaSF setGroupIDGlobal [""D-SF""];";
 			};
 			id=278;
 			class CustomAttributes
@@ -23733,8 +23770,8 @@ class Mission
 			{
 				position[]={14631.46,17.91,16704.361};
 			};
-			title="Version 9";
-			description="Version 8 Changes:" \n "- Changed Infantry Fireteam size from 4 to 5" \n "- Added a trigger to automatically remove any Fortify Tools and Entrenching Tools from players when SafeStart ends (useful if you want to set up a defensive mission where players can fortify during briefing phase)" \n "- Renamed the ""Vehicle Crew"" members to ""Vehicle Commander"", ""Vehicle Gunner"", and ""Vehicle Driver""" \n "" \n "Version 8 Changes:" \n "- Fixed some wording in the Setup & Updating Instructions" \n "- Changed the Assign Gear instructions completely (much easier now)" \n "- Changed the wording of the group deployment button to ""Deploy Group""" \n "" \n "Version 7 Changes:" \n "- Removed initPlayerLocal.sqf (you will have to do the same)" \n "- Added ""Deploy Group"" action during SafeStart for leaders, created by Ferdilanz.";
+			title="Version 10";
+			description="Version 10 Changes:" \n "- Hardcoded the callsigns, no more needing to manually set them every time you start a new project. Rejoice!" \n "- Fighter Pilot callsign is now correctly set to Mage-1" \n "- Color Teams should be correctly set finally..." \n "- The SF teams are actually called SF teams now (A-SF, B-SF, etc)" \n "- Added a new trigger to auto remove any Fortify/Entrenching tools from player inventories when SafeStart ends" \n "- The Mission Title Splash font is now larger and easier to notice" \n "- Updated the garbage collection to be more strict (should make a slight improvement to performance in sustained large battles)" \n "" \n "Version 9 Changes:" \n "- Changed Infantry Fireteam size from 4 to 5" \n "- Added a trigger to automatically remove any Fortify Tools and Entrenching Tools from players when SafeStart ends (useful if you want to set up a defensive mission where players can fortify during briefing phase)" \n "- Renamed the ""Vehicle Crew"" members to ""Vehicle Commander"", ""Vehicle Gunner"", and ""Vehicle Driver""" \n "" \n "Version 8 Changes:" \n "- Fixed some wording in the Setup & Updating Instructions" \n "- Changed the Assign Gear instructions completely (much easier now)" \n "- Changed the wording of the group deployment button to ""Deploy Group""" \n "" \n "Version 7 Changes:" \n "- Removed initPlayerLocal.sqf (you will have to do the same)" \n "- Added ""Deploy Group"" action during SafeStart for leaders, created by Ferdilanz.";
 			id=325;
 		};
 		class Item69
@@ -24250,6 +24287,8 @@ class Mission
 			};
 			class Attributes
 			{
+				name="admin1";
+				init="admin1 setGroupIDGlobal [""Papa Bear""];";
 			};
 			id=352;
 			class CustomAttributes
@@ -24578,6 +24617,8 @@ class Mission
 			};
 			class Attributes
 			{
+				name="admin2";
+				init="admin2 setGroupIDGlobal [""PapaBear""];";
 			};
 			id=373;
 			class CustomAttributes
