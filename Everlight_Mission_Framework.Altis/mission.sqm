@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=396;
+		nextID=398;
 	};
 	class MarkerIDProvider
 	{
@@ -20,11 +20,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=454;
+		nextID=493;
 	};
 	class Camera
 	{
-		pos[]={14722.91,236.59584,16697.164};
+		pos[]={14718.917,229.97717,16708.623};
 		dir[]={-0.0071909321,-0.99994999,0.0069493344};
 		up[]={-0.71904737,0.010001522,0.69488919};
 		aside[]={0.69492394,-4.6566129e-010,0.71908337};
@@ -405,8 +405,8 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="TMF_ORBATMarkersFT";
-			expression="false";
+			property="TMF_ORBATMarkersFT_Directional";
+			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
 			class Value
 			{
 				class data
@@ -431,8 +431,8 @@ class CustomAttributes
 		};
 		class Attribute5
 		{
-			property="TMF_ORBATMarkersFT_Directional";
-			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
+			property="TMF_ORBATMarkersFT";
+			expression="false";
 			class Value
 			{
 				class data
@@ -6720,7 +6720,7 @@ class Mission
 					class Attributes
 					{
 						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Deploy Group</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
-						description="MMG Gunner@MMG";
+						description="MMG Operator@MMG";
 						isPlayable=1;
 						class Inventory
 						{
@@ -7439,7 +7439,7 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					dataType="Object";
@@ -7453,7 +7453,7 @@ class Mission
 					class Attributes
 					{
 						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Deploy Group</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
-						description="MAT Gunner@MAT";
+						description="MAT Operator@MAT";
 						isPlayable=1;
 						class Inventory
 						{
@@ -7915,6 +7915,238 @@ class Mission
 						nAttributes=8;
 					};
 				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14738.138,17.911438,16757.352};
+						angles[]={0,5.5316639,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="Ammo Man";
+						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_m4a1_carryhandle";
+								optics="rhsusf_acc_compm4";
+								flashlight="acc_flashlight";
+								underBarrel="rhsusf_acc_kac_grip";
+								class primaryMuzzleMag
+								{
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
+									ammoLeft=30;
+								};
+							};
+							class binocular
+							{
+								name="rhssaf_zrak_rd7j";
+							};
+							class uniform
+							{
+								typeName="rhs_uniform_cu_ocp";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="ACRE_PRC343";
+										count=1;
+									};
+									class Item1
+									{
+										name="ACE_fieldDressing";
+										count=10;
+									};
+									class Item2
+									{
+										name="ACE_morphine";
+										count=2;
+									};
+									class Item3
+									{
+										name="ACE_personalAidKit";
+										count=1;
+									};
+									class Item4
+									{
+										name="ACE_tourniquet";
+										count=2;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="rhsusf_iotv_ocp_Rifleman";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="SmokeShell";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_mag_m67";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
+										count=6;
+										ammoLeft=30;
+									};
+									class Item3
+									{
+										name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
+										count=3;
+										ammoLeft=30;
+									};
+								};
+							};
+							class backpack
+							{
+								typeName="rhsusf_assault_eagleaiii_ocp";
+								isBackpack=1;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="MRAWS_HEAT_F";
+										count=4;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							goggles="dvk_tacg_altcsat";
+							headgear="rhsusf_ach_helmet_ESS_ocp_alt";
+						};
+					};
+					id=397;
+					type="B_Soldier_A_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TMF_SpecialistMarker";
+							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="["""",""""]";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TMF_assignGear_faction";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="us_army_ocp";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="TMF_assignGear_enabled";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="TMF_teamColour_colour";
+							expression="_this setVariable ['TMF_teamColour_colour',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.98000002;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="TMF_assignGear_full";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="[""matam"",""us_army_ocp"",true]";
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="TMF_assignGear_role";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="matam";
+								};
+							};
+						};
+						nAttributes=8;
+					};
+				};
 			};
 			class Attributes
 			{
@@ -7986,7 +8218,7 @@ class Mission
 					class Attributes
 					{
 						init="this addAction " \n "[ " \n "  ""<t color='#0096FF'>Deploy Group</t>"", " \n "  { execVM ""groupTeleport.sqf""; }, " \n "  nil, " \n "  25, " \n "  false, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  1, " \n "  false " \n "];";
-						description="HAT Gunner@HAT";
+						description="HAT Operator@HAT";
 						isPlayable=1;
 						class Inventory
 						{
@@ -15407,7 +15639,7 @@ class Mission
 				position[]={14721.586,17.91,16768.623};
 			};
 			title="<- Choose Infantry or SF ->";
-			description="The PltHQ and Platoon Attachments remain the same, but rather than a 12-player Squad with 3 separate leaders (1 SL and 2 FTLs), an SF Team is comprised of just 6 players with only 1 leader. " \n "" \n "Keep in mind, because they have their own Medic and long-range radios, SF Teams can operate independently of one another, where as an Infantry Squad's teams operate fairly close together.";
+			description="The PltHQ and Platoon Attachments remain the same, but you can use either 12-player Squads with 3 separate leaders (1 SL and 2 FTLs), or SF Teams comprised of just 6 players with only 1 leader each. " \n "" \n "****WHICH ONE SHOULD I USE?****" \n "" \n "Keep in mind, because they have their own Medic and long-range radios, SF Teams can operate independently of one another, while an Infantry Squad's teams operate fairly close together. " \n "So if your mission involves players being relatively close to eachother anyway, use the Infantry. " \n "If players will be required to split up to conquer separate objectives, use SF.";
 			id=219;
 		};
 		class Item42
@@ -23770,8 +24002,8 @@ class Mission
 			{
 				position[]={14631.46,17.91,16704.361};
 			};
-			title="Version 10";
-			description="Version 10 Changes:" \n "- Hardcoded the callsigns, no more needing to manually set them every time you start a new project. Rejoice!" \n "- Fighter Pilot callsign is now correctly set to Mage-1" \n "- Color Teams should be correctly set finally..." \n "- The SF teams are actually called SF teams now (A-SF, B-SF, etc)" \n "- Added a new trigger to auto remove any Fortify/Entrenching tools from player inventories when SafeStart ends" \n "- The Mission Title Splash font is now larger and easier to notice" \n "- Updated the garbage collection to be more strict (should make a slight improvement to performance in sustained large battles)" \n "" \n "Version 9 Changes:" \n "- Changed Infantry Fireteam size from 4 to 5" \n "- Added a trigger to automatically remove any Fortify Tools and Entrenching Tools from players when SafeStart ends (useful if you want to set up a defensive mission where players can fortify during briefing phase)" \n "- Renamed the ""Vehicle Crew"" members to ""Vehicle Commander"", ""Vehicle Gunner"", and ""Vehicle Driver""" \n "" \n "Version 8 Changes:" \n "- Fixed some wording in the Setup & Updating Instructions" \n "- Changed the Assign Gear instructions completely (much easier now)" \n "- Changed the wording of the group deployment button to ""Deploy Group""" \n "" \n "Version 7 Changes:" \n "- Removed initPlayerLocal.sqf (you will have to do the same)" \n "- Added ""Deploy Group"" action during SafeStart for leaders, created by Ferdilanz.";
+			title="Version 11";
+			description="Version 11 Changes:" \n "" \n "- Made MAT a 3-player team, as it should have been" \n "" \n "Version 10 Changes:" \n "- Hardcoded the callsigns, no more needing to manually set them every time you start a new project. Rejoice!" \n "- Fighter Pilot callsign is now correctly set to Mage-1" \n "- Color Teams should be correctly set finally..." \n "- The SF teams are actually called SF teams now (A-SF, B-SF, etc)" \n "- Added a new trigger to auto remove any Fortify/Entrenching tools from player inventories when SafeStart ends" \n "- The Mission Title Splash font is now larger and easier to notice" \n "- Updated the garbage collection to be more strict (should make a slight improvement to performance in sustained large battles)" \n "" \n "Version 9 Changes:" \n "- Changed Infantry Fireteam size from 4 to 5" \n "- Added a trigger to automatically remove any Fortify Tools and Entrenching Tools from players when SafeStart ends (useful if you want to set up a defensive mission where players can fortify during briefing phase)" \n "- Renamed the ""Vehicle Crew"" members to ""Vehicle Commander"", ""Vehicle Gunner"", and ""Vehicle Driver""" \n "" \n "Version 8 Changes:" \n "- Fixed some wording in the Setup & Updating Instructions" \n "- Changed the Assign Gear instructions completely (much easier now)" \n "- Changed the wording of the group deployment button to ""Deploy Group""" \n "" \n "Version 7 Changes:" \n "- Removed initPlayerLocal.sqf (you will have to do the same)" \n "- Added ""Deploy Group"" action during SafeStart for leaders, created by Ferdilanz.";
 			id=325;
 		};
 		class Item69
