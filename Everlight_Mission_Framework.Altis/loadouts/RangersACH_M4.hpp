@@ -295,6 +295,14 @@ class mata : r
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
+class matam : r
+{
+    displayName = "MAT Ammo Man";
+    backpackItems[] =
+    {
+        LIST_4("MRAWS_HEAT_F")
+    };
+};
 class smg : r
 {
     displayName = "SMG Base (Not for play)";
