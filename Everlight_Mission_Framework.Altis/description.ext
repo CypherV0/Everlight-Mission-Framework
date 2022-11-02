@@ -304,6 +304,12 @@ class CfgLoadouts
 		#include "loadouts\Chedaki.hpp" // (No spaces)
 	};
 
+	class UN_Czech // (No spaces)
+	{
+		displayName = "United Nations Czech Forces"; // (Spaces allowed)
+		#include "loadouts\UN_Czech_Republic.hpp" // (No spaces)
+	};
+
 };
 
 ////////////////////////////////////////////////////////////////////////////////
