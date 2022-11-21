@@ -64,19 +64,19 @@ class r : baseMan
         "MNP_Vest_FIN_1", "MNP_Vest_FIN_2"
     };
     primaryWeapon[] = {
-        "rhs_weap_ak103_zenitco01"
+        "SMA_Mk16QCB"
     };
     secondaryWeapon[] = {};
-    bipod[] = {"rhsusf_acc_grip2"};
-    scope[] = {};
-    silencer[] = {"rhs_acc_dtk"};
+    bipod[] = {};
+    scope[] = {"sma_eotech552", "sma_eotech", "cup_optic_ac11704_black" };
+    silencer[] = {};
     attachment[] = {
         "acc_flashlight"
     };
     sidearmWeapon[] = {};
     magazines[] = {
-        LIST_7("rhs_30Rnd_762x39mm_polymer"),
-        LIST_3("rhs_30Rnd_762x39mm_polymer_tracer"),
+        LIST_7("rhs_mag_30Rnd_556x45_M855A1_Stanag"),
+        LIST_3("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
         LIST_2("rhs_mag_m67"),
         LIST_2("SmokeShell")
     };
@@ -92,7 +92,7 @@ class rm : r
 {
     displayName = "Rifleman (Extra Ammo)";
     magazines[] += {
-        LIST_5("rhs_30Rnd_762x39mm_polymer")
+        LIST_5("rhs_mag_30Rnd_556x45_M855A1_Stanag")
     };
 };
 class rat : r
@@ -100,7 +100,7 @@ class rat : r
     displayName = "Rifleman AT";
     backpackItems[] =
     {
-        LIST_5("rhs_30Rnd_762x39mm_polymer")
+        LIST_5("rhs_mag_30Rnd_556x45_M855A1_Stanag")
     };
     secondaryWeapon[] = {"rhs_weap_m72a7"};
     secondaryAttachments[] = {};
@@ -109,12 +109,12 @@ class g : r
 {
     displayName = "Grenadier";
     primaryWeapon[] = {
-        "rhs_weap_ak103_gp25"
+        "SMA_Mk16_EGLM"
     };
     sidearmWeapon[] = {};
     backpackItems[] = {
-      LIST_10("rhs_VOG25"),
-      LIST_5("rhs_GRD40_White")};
+      LIST_10("rhs_mag_M433_HEDP"),
+      LIST_5("1Rnd_Smoke_Grenade_shell")};
     secondaryWeapon[] = {};
 };
 class m : r
@@ -124,8 +124,8 @@ class m : r
     insignias[] = {"MedB"};
     backpack[] = {"MNP_B_RUW_CA"};
     magazines[] = {
-        LIST_7("rhs_30Rnd_762x39mm_polymer"),
-        LIST_3("rhs_30Rnd_762x39mm_polymer_tracer"),
+        LIST_7("rhs_mag_30Rnd_556x45_M855A1_Stanag"),
+        LIST_3("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
         LIST_2("rhs_mag_rdg2_white")
     };
     backpackItems[] = {
@@ -146,8 +146,8 @@ class ftl : g
     displayName = "Fireteam Leader";
     backpackItems[] +=
     {
-        LIST_5("rhs_GRD40_Green"),
-        LIST_5("rhs_GRD40_Red")
+        LIST_5("1Rnd_SmokeBlue_Grenade_shell"),
+        LIST_5("1Rnd_SmokeRed_Grenade_shell")
     };
     linkedItems[] =
     {
