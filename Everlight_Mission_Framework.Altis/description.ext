@@ -46,6 +46,12 @@ class CfgLoadouts
 		#include "loadouts\RangersACH_SCAR.hpp" // (No spaces)
 	};
 
+	class RangersACH_Mk16_NVG // (No spaces)
+	{
+		displayName = "Rangers ACH Mk16 w/ NVG"; // (Spaces allowed)
+		#include "loadouts\RangersACH_Mk16_NVG.hpp" // (No spaces)
+	};
+
 	class RangersOPS_M4 // (No spaces)
 	{
 		displayName = "Rangers OPS M4"; // (Spaces allowed)
@@ -266,6 +272,18 @@ class CfgLoadouts
 	{
 		displayName = "Finnish Infantry"; // (Spaces allowed)
 		#include "loadouts\Finland.hpp" // (No spaces)
+	};
+
+	class Finland_SF // (No spaces)
+	{
+		displayName = "Finnish SF"; // (Spaces allowed)
+		#include "loadouts\Finland_SF.hpp" // (No spaces)
+	};
+
+	class Finland_SF_NVG // (No spaces)
+	{
+		displayName = "Finnish SF w/ NVG"; // (Spaces allowed)
+		#include "loadouts\Finland_SF_NVG.hpp" // (No spaces)
 	};
 
 	class DEA_80s_NVG // (No spaces)
