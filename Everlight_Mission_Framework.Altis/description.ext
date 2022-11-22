@@ -4,8 +4,71 @@
 
 class CfgLoadouts
 {
+	class Czech_Republic // (No spaces)
+	{
+		displayName = "Czech Republic"; // (Spaces allowed)
+		#include "loadouts\Czech_Republic.hpp" // (No spaces)
+	};
 
+	class Black_Ops_Heavy_Silent // (No spaces)
+	{
+		displayName = "Black Ops Heavy Silent"; // (Spaces allowed)
+		#include "loadouts\BlackOpsHeavySilent.hpp" // (No spaces)
+	};
 
+	class Cold_War_US_Desert // (No spaces)
+	{
+		displayName = "Cold War US Desert"; // (Spaces allowed)
+		#include "loadouts\ColdWarUSDesert.hpp" // (No spaces)
+	};
+
+	class Cold_War_US_Winter // (No spaces)
+	{
+		displayName = "Cold War US Winter"; // (Spaces allowed)
+		#include "loadouts\ColdWarUSWinter.hpp" // (No spaces)
+	};
+
+	class Cold_War_US_Woodland // (No spaces)
+	{
+		displayName = "Cold War US Woodland"; // (Spaces allowed)
+		#include "loadouts\ColdWarUSWoodland.hpp" // (No spaces)
+	};
+
+	class RangersACH_M4 // (No spaces)
+	{
+		displayName = "Rangers ACH M4"; // (Spaces allowed)
+		#include "loadouts\RangersACH_M4.hpp" // (No spaces)
+	};
+
+	class RangersACH_SCAR // (No spaces)
+	{
+		displayName = "Rangers ACH SCAR"; // (Spaces allowed)
+		#include "loadouts\RangersACH_SCAR.hpp" // (No spaces)
+	};
+
+	class RangersACH_Mk16_NVG // (No spaces)
+	{
+		displayName = "Rangers ACH Mk16 w/ NVG"; // (Spaces allowed)
+		#include "loadouts\RangersACH_Mk16_NVG.hpp" // (No spaces)
+	};
+
+	class RangersOPS_M4 // (No spaces)
+	{
+		displayName = "Rangers OPS M4"; // (Spaces allowed)
+		#include "loadouts\RangersOPS_M4.hpp" // (No spaces)
+	};
+
+	class RangersOPS_SCAR // (No spaces)
+	{
+		displayName = "Rangers OPS SCAR"; // (Spaces allowed)
+		#include "loadouts\RangersOPS_SCAR.hpp" // (No spaces)
+	};
+
+	class SEALs // (No spaces)
+	{
+		displayName = "SEALs"; // (Spaces allowed)
+		#include "loadouts\SEALs.hpp" // (No spaces)
+	};
 
 	class US_ARMY_OCP // (No spaces)
 	{
@@ -13,483 +76,257 @@ class CfgLoadouts
 		#include "loadouts\US_ARMY_OCP.hpp" // (No spaces)
 	};
 
-// To enable a loadout, remove the /* and */ above and below it. The US Army one above is enabled by default.
-
-	/*
-	class Czech_Republic // (No spaces)
-	{
-		displayName = "Czech Republic"; // (Spaces allowed)
-		#include "loadouts\Czech_Republic.hpp" // (No spaces)
-	};
-	 */
-
-
-	/*
-	 class Black_Ops_Heavy_Silent // (No spaces)
-	{
-		displayName = "Black Ops Heavy Silent"; // (Spaces allowed)
-		#include "loadouts\BlackOpsHeavySilent.hpp" // (No spaces)
-	};
-	*/
-
-
-	/*
-	class Cold_War_US_Desert // (No spaces)
-	{
-		displayName = "Cold War US Desert"; // (Spaces allowed)
-		#include "loadouts\ColdWarUSDesert.hpp" // (No spaces)
-	};
-	*/
-
-
-	/*
-	class Cold_War_US_Winter // (No spaces)
-	{
-		displayName = "Cold War US Winter"; // (Spaces allowed)
-		#include "loadouts\ColdWarUSWinter.hpp" // (No spaces)
-	};
-	*/
-
-
-	/*
-	class Cold_War_US_Woodland // (No spaces)
-	{
-		displayName = "Cold War US Woodland"; // (Spaces allowed)
-		#include "loadouts\ColdWarUSWoodland.hpp" // (No spaces)
-	};
-	*/
-
-
-	/*
-	class RangersACH_M4 // (No spaces)
-	{
-		displayName = "Rangers ACH M4"; // (Spaces allowed)
-		#include "loadouts\RangersACH_M4.hpp" // (No spaces)
-	};
-	*/
-
-
-	/*
-	class RangersACH_SCAR // (No spaces)
-	{
-		displayName = "Rangers ACH SCAR"; // (Spaces allowed)
-		#include "loadouts\RangersACH_SCAR.hpp" // (No spaces)
-	};
-	*/
-
-
-	/*
-	class RangersACH_Mk16_NVG // (No spaces)
-	{
-		displayName = "Rangers ACH Mk16 w/ NVG"; // (Spaces allowed)
-		#include "loadouts\RangersACH_Mk16_NVG.hpp" // (No spaces)
-	};
-	*/
-
-
-	/*
-	class RangersOPS_M4 // (No spaces)
-	{
-		displayName = "Rangers OPS M4"; // (Spaces allowed)
-		#include "loadouts\RangersOPS_M4.hpp" // (No spaces)
-	};
-	*/
-
-
-	/*
-	class RangersOPS_SCAR // (No spaces)
-	{
-		displayName = "Rangers OPS SCAR"; // (Spaces allowed)
-		#include "loadouts\RangersOPS_SCAR.hpp" // (No spaces)
-	};
-	*/
-
-
-	/*
-	class SEALs // (No spaces)
-	{
-		displayName = "SEALs"; // (Spaces allowed)
-		#include "loadouts\SEALs.hpp" // (No spaces)
-	};
-	*/
-
-
-	/*
 	class Spetsnaz // (No spaces)
 	{
 		displayName = "Spetsnaz"; // (Spaces allowed)
 		#include "loadouts\Spetsnaz.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class MARSOC_W // (No spaces)
 	{
 		displayName = "MARSOC Woodland"; // (Spaces allowed)
 		#include "loadouts\MARSOC_W.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class MARSOC_D // (No spaces)
 	{
 		displayName = "MARSOC Desert"; // (Spaces allowed)
 		#include "loadouts\MARSOC_D.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class MARSOC_S_NVG // (No spaces)
 	{
 		displayName = "MARSOC Snow w/ NVG"; // (Spaces allowed)
 		#include "loadouts\MARSOC_S_NVG.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class EMC_EnE_NVG // (No spaces)
 	{
 		displayName = "EMC E&E with NVG"; // (Spaces allowed)
 		#include "loadouts\EMC_EnE_NVG.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class CAF_INF // (No spaces)
 	{
 		displayName = "CAF Infantry"; // (Spaces allowed)
 		#include "loadouts\CAF_INFANTRY.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class CAF_SF // (No spaces)
 	{
 		displayName = "CAF Special Forces"; // (Spaces allowed)
 		#include "loadouts\CAF_SF.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class SWAT_MP7 // (No spaces)
 	{
 		displayName = "SWAT with MP7"; // (Spaces allowed)
 		#include "loadouts\SWAT_MP7.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class Stranded_SF_D // (No spaces)
 	{
 		displayName = "Stranded SF Desert"; // (Spaces allowed)
 		#include "loadouts\Stranded_SF_D.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class US_Marines_D // (No spaces)
 	{
 		displayName = "US Marines Desert"; // (Spaces allowed)
 		#include "loadouts\US_Marines_D.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class US_Marines_W // (No spaces)
 	{
 		displayName = "US Marines Woodland"; // (Spaces allowed)
 		#include "loadouts\US_Marines_W.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class US_Marines_S // (No spaces)
 	{
 		displayName = "US Marines Snow"; // (Spaces allowed)
 		#include "loadouts\US_Marines_S.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class SovietArmy // (No spaces)
 	{
 		displayName = "Soviet Army"; // (Spaces allowed)
 		#include "loadouts\SovietArmy.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class TLA // (No spaces)
 	{
 		displayName = "Tanoan Liberation Army"; // (Spaces allowed)
 		#include "loadouts\TanoanLiberationArmy.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class IDF // (No spaces)
 	{
 		displayName = "Israeli Defense Force"; // (Spaces allowed)
 		#include "loadouts\IDF.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class PMC_ACR // (No spaces)
 	{
 		displayName = "PMC with ACR"; // (Spaces allowed)
 		#include "loadouts\PMC_ACR.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class SAS_G36C_NVG // (No spaces)
 	{
 		displayName = "SAS with G36C and NVG"; // (Spaces allowed)
 		#include "loadouts\SAS_G36C_NVG.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class Spetsnaz_NVG // (No spaces)
 	{
 		displayName = "Spetsnaz w/ NVG"; // (Spaces allowed)
 		#include "loadouts\Spetsnaz_NVG.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class 60s_M14 // (No spaces)
 	{
 		displayName = "60s w/ M14"; // (Spaces allowed)
 		#include "loadouts\60s_M14.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class 60s_M16 // (No spaces)
 	{
 		displayName = "60s w/ M16"; // (Spaces allowed)
 		#include "loadouts\60s_M16.hpp" // (No spaces)
-	}; */
+	};
 
-
-	/*
 	class Gendarmerie // (No spaces)
 	{
 		displayName = "Gendarmerie"; // (Spaces allowed)
 		#include "loadouts\Gendarmerie.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class Stealth // (No spaces)
 	{
 		displayName = "Stealth"; // (Spaces allowed)
 		#include "loadouts\Stealth.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class 90s_US_Army_Desert // (No spaces)
 	{
 		displayName = "90s US Army Desert"; // (Spaces allowed)
 		#include "loadouts\90s_US_Army_Desert.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class 90s_US_Army_SF_Desert // (No spaces)
 	{
 		displayName = "90s US Army SF Desert"; // (Spaces allowed)
 		#include "loadouts\90s_US_Army_SF_Desert.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class 90s_US_Army_SF_Desert_NVG // (No spaces)
 	{
 		displayName = "90s US Army SF Desert w/ NVG"; // (Spaces allowed)
 		#include "loadouts\90s_US_Army_SF_Desert_NVG.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class 2000s_US_Army_Desert // (No spaces)
 	{
 		displayName = "2000s US Army Desert"; // (Spaces allowed)
 		#include "loadouts\2000s_US_Army_Desert.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class 2000s_US_Army_SF_Desert // (No spaces)
 	{
 		displayName = "2000s US Army SF Desert"; // (Spaces allowed)
 		#include "loadouts\2000s_US_Army_SF_Desert.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class Russia_Winter // (No spaces)
 	{
 		displayName = "Russia Winter"; // (Spaces allowed)
 		#include "loadouts\Russia_Winter.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class Russia_Winter_NVG // (No spaces)
 	{
 		displayName = "Russia Winter w/ NVG"; // (Spaces allowed)
 		#include "loadouts\Russia_Winter_NVG.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class Swedish_Army // (No spaces)
 	{
 		displayName = "Swedish Army"; // (Spaces allowed)
 		#include "loadouts\Swedish_Army.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class Czech_BREN // (No spaces)
 	{
 		displayName = "Czech w/ BREN"; // (Spaces allowed)
 		#include "loadouts\Czech_BREN.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class Czech_BREN_Desert // (No spaces)
 	{
 		displayName = "Czech Desert w/ BREN"; // (Spaces allowed)
 		#include "loadouts\Czech_BREN_Desert.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class Finland // (No spaces)
 	{
 		displayName = "Finnish Infantry"; // (Spaces allowed)
 		#include "loadouts\Finland.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class Finland_SF // (No spaces)
 	{
 		displayName = "Finnish SF"; // (Spaces allowed)
 		#include "loadouts\Finland_SF.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class Finland_SF_NVG // (No spaces)
 	{
 		displayName = "Finnish SF w/ NVG"; // (Spaces allowed)
 		#include "loadouts\Finland_SF_NVG.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class DEA_80s_NVG // (No spaces)
 	{
 		displayName = "DEA 80s w/ NVG"; // (Spaces allowed)
 		#include "loadouts\DEA_80s_NVG.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class DEA_Multi_NVG // (No spaces)
 	{
 		displayName = "DEA Multicam w/ NVG"; // (Spaces allowed)
 		#include "loadouts\DEA_Multi_NVG.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class DEA_Black_NVG // (No spaces)
 	{
 		displayName = "DEA Black w/ NVG"; // (Spaces allowed)
 		#include "loadouts\DEA_Black_NVG.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class Germany_G36 // (No spaces)
 	{
 		displayName = "Germany G36"; // (Spaces allowed)
 		#include "loadouts\Germany_G36.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class Germany_HK416 // (No spaces)
 	{
 		displayName = "Germany HK416"; // (Spaces allowed)
 		#include "loadouts\Germany_HK416.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class Chedaki // (No spaces)
 	{
 		displayName = "Chedaki"; // (Spaces allowed)
 		#include "loadouts\Chedaki.hpp" // (No spaces)
 	};
-	*/
 
-
-	/*
 	class UN_Czech // (No spaces)
 	{
 		displayName = "United Nations Czech Forces"; // (Spaces allowed)
 		#include "loadouts\UN_Czech_Republic.hpp" // (No spaces)
 	};
-	*/
-
 
 };
 
