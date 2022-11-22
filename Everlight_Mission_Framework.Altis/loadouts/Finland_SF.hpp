@@ -64,7 +64,7 @@ class r : baseMan
         "MNP_Vest_FIN_1", "MNP_Vest_FIN_2"
     };
     primaryWeapon[] = {
-        "SMA_Mk16QCB"
+        "SMA_Mk16_blackQCB"
     };
     secondaryWeapon[] = {};
     bipod[] = {};
@@ -109,7 +109,7 @@ class g : r
 {
     displayName = "Grenadier";
     primaryWeapon[] = {
-        "SMA_Mk16_EGLM"
+        "SMA_MK16_EGLM_black"
     };
     sidearmWeapon[] = {};
     backpackItems[] = {
