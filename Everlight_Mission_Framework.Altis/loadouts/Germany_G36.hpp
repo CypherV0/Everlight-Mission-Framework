@@ -183,18 +183,18 @@ class pm : m
 class ar : r
 {
     displayName = "Automatic Rifleman";
-    primaryWeapon[] = {"CUP_lmg_Mk48_nohg"};
+    primaryWeapon[] = {"CUP_arifle_MG36"};
     bipod[] = {};
     magazines[] =
     {
-        LIST_2("hlc_200Rnd_762x51_T_M60E4"),
+        LIST_3("hlc_100rnd_556x45_M_G36"),
         LIST_2("hlc_12Rnd_357SIG_B_P226"),
         "rhs_mag_m67",
         "SmokeShell"
     };
     backpackItems[] =
     {
-        LIST_2("hlc_200Rnd_762x51_T_M60E4")
+        LIST_5("hlc_100rnd_556x45_M_G36")
     };
     sidearmWeapon[] = {"hlc_pistol_P226R_357Combat"};
     sidearmAttachments[] = {"hlc_optic_siglite"};
@@ -204,7 +204,7 @@ class aar : r
     displayName = "Asst. Automatic Rifleman";
     backpackItems[] =
     {
-        LIST_5("hlc_200Rnd_762x51_T_M60E4")
+        LIST_6("hlc_100rnd_556x45_M_G36")
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
