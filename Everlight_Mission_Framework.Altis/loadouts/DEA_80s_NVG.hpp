@@ -116,19 +116,17 @@ class m : r
     insignias[] = {"MedB"};
     magazines[] = {
         LIST_10("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
-        LIST_2("SmokeShell")
-    };
-    backpack[] = {"usm_pack_m5_medic"};
-    backpackItems[] = {
+        LIST_2("SmokeShell"),
         LIST_20("ACE_fieldDressing"),
         LIST_20("ACE_elasticBandage"),
-        LIST_7("ACE_bloodIV"),
-        LIST_7("ACE_bloodIV_500"),
-        LIST_7("ACE_morphine"),
-        LIST_7("ACE_epinephrine"),
-        LIST_5("ACE_tourniquet"),
-        LIST_8("ACE_Splint")
+        LIST_10("ACE_quikclot"),
+        LIST_20("ACE_bloodIV_500"),
+        LIST_5("ACE_personalAidKit"),
+        LIST_10("ACE_morphine"),
+        LIST_5("ACE_epinephrine"),
+        LIST_10("ACE_tourniquet")
     };
+    backpack[] = {"usm_pack_m5_medic"};
 };
 class ftl : g
 {

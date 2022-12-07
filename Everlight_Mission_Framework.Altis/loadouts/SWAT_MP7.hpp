@@ -151,17 +151,14 @@ class m : r
     magazines[] = {
         LIST_10("rhsusf_mag_40Rnd_46x30_JHP"),
         LIST_2("SmokeShell"),
-        LIST_10("ACE_Splint"),
-        LIST_10("ACE_epinephrine")
-    };
-    backpackItems[] = {
-      LIST_20("ACE_fieldDressing"),
-      LIST_20("ACE_elasticBandage"),
-      LIST_20("ACE_quikclot"),
-      LIST_10("ACE_bloodIV"),
-      LIST_5("ACE_bloodIV_500"),
-      LIST_10("ACE_morphine"),
-      LIST_10("ACE_tourniquet")
+        LIST_20("ACE_elasticBandage"),
+        LIST_5("ACE_epinephrine"),
+        LIST_20("ACE_fieldDressing"),
+        LIST_10("ACE_quikclot"),
+        LIST_20("ACE_bloodIV_500"),
+        LIST_10("ACE_personalAidKit"),
+        LIST_10("ACE_morphine"),
+        LIST_10("ACE_tourniquet")
     };
 };
 class ftl : g

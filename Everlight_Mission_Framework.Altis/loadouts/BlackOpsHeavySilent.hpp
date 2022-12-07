@@ -130,16 +130,14 @@ class m : r
     code = "_this setUnitTrait [""Medic"", true]; onMapSingleClick {_shift};";
     insignias[] = {"MedB"};
     backpackItems[] = {
-        LIST_20("ACE_fieldDressing"),
-        LIST_20("ACE_elasticBandage"),
-        LIST_20("ACE_quikclot"),
-        LIST_10("ACE_bloodIV"),
-        LIST_10("ACE_bloodIV_500"),
-        LIST_10("ACE_morphine"),
-        LIST_10("ACE_epinephrine"),
-        LIST_10("ACE_tourniquet"),
-        LIST_5("ACE_bloodIV_250"),
-        LIST_10("ACE_Splint")
+      LIST_20("ACE_fieldDressing"),
+      LIST_20("ACE_elasticBandage"),
+      LIST_10("ACE_quikclot"),
+      LIST_20("ACE_bloodIV_500"),
+      LIST_10("ACE_personalAidKit"),
+      LIST_10("ACE_morphine"),
+      LIST_5("ACE_epinephrine"),
+      LIST_10("ACE_tourniquet")
     };
 };
 class ftl : g

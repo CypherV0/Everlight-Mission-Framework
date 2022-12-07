@@ -141,14 +141,12 @@ class m : r
     backpackItems[] = {
       LIST_20("ACE_fieldDressing"),
       LIST_20("ACE_elasticBandage"),
-      LIST_20("ACE_quikclot"),
-      LIST_10("ACE_bloodIV"),
-      LIST_10("ACE_bloodIV_500"),
+      LIST_10("ACE_quikclot"),
+      LIST_20("ACE_bloodIV_500"),
+      LIST_10("ACE_personalAidKit"),
       LIST_10("ACE_morphine"),
-      LIST_10("ACE_epinephrine"),
-      LIST_10("ACE_tourniquet"),
-      LIST_5("ACE_bloodIV_250"),
-      LIST_10("ACE_Splint")
+      LIST_5("ACE_epinephrine"),
+      LIST_10("ACE_tourniquet")
     };
 };
 class ftl : g
@@ -242,6 +240,26 @@ class hatam : r
     {
         "rhs_fgm148_magazine_AT"
     };
+};
+class lmg : r
+{
+    displayName = "LMG";
+    primaryWeapon[] = {"CUP_lmg_Mk48"};
+    bipod[] = {};
+    silencer[] = {};
+    magazines[] =
+    {
+        LIST_3("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
+        LIST_2("hlc_12Rnd_357SIG_B_P226"),
+        "rhs_mag_m67",
+        "SmokeShell"
+    };
+    backpackItems[] =
+    {
+        LIST_3("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
+    };
+    sidearmWeapon[] = {"hlc_pistol_P226R_357Combat"};
+    sidearmAttachments[] = {"hlc_optic_siglite"};
 };
 class mg : r
 {
