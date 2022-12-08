@@ -213,7 +213,7 @@ class lat : r
 {
     displayName = "LAT";
     secondaryWeapon[] = {"rhs_weap_rpg7"};
-    secondaryAttachments[] = {"rhs_acc_pgo7v2"};
+    secondaryAttachments[] = {"rhs_acc_pgo7v"};
     magazines[] +=
     {
         "rhs_rpg7_PG7VS_mag"
