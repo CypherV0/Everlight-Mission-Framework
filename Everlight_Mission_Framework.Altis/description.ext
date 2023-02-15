@@ -16,6 +16,12 @@ class CfgLoadouts
 		#include "loadouts\BlackOpsHeavySilent.hpp" // (No spaces)
 	};
 
+	class Black_Ops // (No spaces)
+	{
+		displayName = "Black Ops"; // (Spaces allowed)
+		#include "loadouts\BlackOps.hpp" // (No spaces)
+	};
+
 	class Cold_War_US_Desert // (No spaces)
 	{
 		displayName = "Cold War US Desert"; // (Spaces allowed)
