@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=566;
+		nextID=587;
 	};
 	class Camera
 	{
@@ -405,8 +405,8 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="TMF_ORBATMarkersFT";
-			expression="false";
+			property="TMF_ORBATMarkersFT_Directional";
+			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
 			class Value
 			{
 				class data
@@ -431,8 +431,8 @@ class CustomAttributes
 		};
 		class Attribute5
 		{
-			property="TMF_ORBATMarkersFT_Directional";
-			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
+			property="TMF_ORBATMarkersFT";
+			expression="false";
 			class Value
 			{
 				class data
@@ -16683,7 +16683,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[""vcrew"",""us_army_ocp"",true]";
+									value="[""vcrewco"",""us_army_ocp"",true]";
 								};
 							};
 						};
@@ -16696,7 +16696,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="vcrew";
+									value="vcrewco";
 								};
 							};
 						};
@@ -23875,7 +23875,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14706.123,18.120043,16639.711};
-				angles[]={-0,2.3158946,0};
+				angles[]={0,2.3158946,0};
 			};
 			side="Empty";
 			flags=4;
@@ -23910,7 +23910,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14699.191,18.120043,16646.369};
-				angles[]={-0,2.3587425,0};
+				angles[]={0,2.3587425,0};
 			};
 			side="Empty";
 			flags=4;
@@ -24130,6 +24130,7 @@ class Mission
 			dataType="Layer";
 			name="Optics Crate";
 			id=351;
+			atlOffset=185.97;
 		};
 		class Item72
 		{
@@ -24765,12 +24766,15 @@ class Mission
 							dataType="Layer";
 							name="Optics Crate_1";
 							id=376;
+							atlOffset=185.97;
 						};
 					};
 					id=375;
+					atlOffset=185.97;
 				};
 			};
 			id=378;
+			atlOffset=185.97;
 		};
 		class Item74
 		{
@@ -24802,12 +24806,15 @@ class Mission
 							dataType="Layer";
 							name="Optics Crate_2";
 							id=381;
+							atlOffset=185.97;
 						};
 					};
 					id=380;
+					atlOffset=185.97;
 				};
 			};
 			id=383;
+			atlOffset=185.97;
 		};
 		class Item76
 		{
@@ -24885,7 +24892,7 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14644.731,18.291529,16698.219};
-												angles[]={-0,4.629416,0};
+												angles[]={0,4.629416,0};
 											};
 											side="Empty";
 											flags=4;
@@ -25721,7 +25728,7 @@ class Mission
 											class PositionInfo
 											{
 												position[]={14653.382,18.291529,16689.877};
-												angles[]={-0,4.629416,0};
+												angles[]={0,4.629416,0};
 											};
 											side="Empty";
 											flags=4;
