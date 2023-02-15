@@ -343,6 +343,19 @@ class vcrew : smg
         "rhsusf_cvc_ess"
     };
     items[] += {
+        "ACRE_PRC152",
+        "ToolKit"
+    };
+    linkedItems[] += {"rhssaf_zrak_rd7j","ItemGPS"};
+};
+class vcrewco : smg
+{
+    displayName = "Vehicle Commander";
+    headgear[] = {
+        "rhsusf_cvc_helmet",
+        "rhsusf_cvc_ess"
+    };
+    items[] += {
         LIST_2("ACRE_PRC152"),
         "ToolKit"
     };

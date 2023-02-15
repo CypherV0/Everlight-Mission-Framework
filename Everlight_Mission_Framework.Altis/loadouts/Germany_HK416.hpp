@@ -296,13 +296,25 @@ class vcrew : smg
 {
     displayName = "Vehicle Crew";
     headgear[] = {
-        "rhs_tsh4", "rhs_tsh4_bala", "rhs_tsh4_ess", "rhs_tsh4_ess_bala"
+        "rhs_tsh4_bala", "rhs_tsh4_ess", "rhs_tsh4_ess_bala"
+    };
+    items[] += {
+        "ACRE_PRC152",
+        "ToolKit"
+    };
+    linkedItems[] += {"rhssaf_zrak_rd7j", "ItemGPS"};
+};
+class vcrewco : smg
+{
+    displayName = "Vehicle Commander";
+    headgear[] = {
+        "rhs_tsh4_bala", "rhs_tsh4_ess", "rhs_tsh4_ess_bala"
     };
     items[] += {
         LIST_2("ACRE_PRC152"),
         "ToolKit"
     };
-    linkedItems[] += {"rhssaf_zrak_rd7j","ItemGPS"};
+    linkedItems[] += {"rhssaf_zrak_rd7j", "ItemGPS"};
 };
 class hp : smg
 {

@@ -339,7 +339,7 @@ class vcrew : smg
     items[] += {
         "ToolKit"
     };
-    linkedItems[] += {"rhssaf_zrak_rd7j","ItemGPS"};
+    linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
 class vcst : smg
 {
