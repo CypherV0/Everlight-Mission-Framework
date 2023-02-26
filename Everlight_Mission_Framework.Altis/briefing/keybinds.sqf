@@ -31,10 +31,6 @@ player createDiaryRecord ["Everlight Keybinds",["Keybinds",
 
           <font color='#BADA55' size='10' face='PuristaSemiBold'>Eject - </font> <font color='#FFFFFF' size='10' face='PuristaSemiBold'>2xV</font><br/>
 
-          <font color='#BADA55' size='10' face='PuristaSemiBold'>Speed Limiter On/Off - </font> <font color='#FFFFFF' size='10' face='PuristaSemiBold'>Delete</font> <font color='#696969' size='9' face='PuristaMedium'>(Useful for convoys or driving at infantry pace.)</font><br/>
-
-          <font color='#BADA55' size='10' face='PuristaSemiBold'>Speed Limiter Adjust - </font> <font color='#FFFFFF' size='10' face='PuristaSemiBold'>Ctrl+ScrollWheel</font><br/>
-
           <font color='#BADA55' size='10' face='PuristaSemiBold'>Throw Grenade - </font> <font color='#FFFFFF' size='10' face='PuristaSemiBold'>Shift+G</font><br/>
 
           <font color='#BADA55' size='10' face='PuristaSemiBold'>Switch Grenade Type - </font> <font color='#FFFFFF' size='10' face='PuristaSemiBold'>Ctrl+G</font><br/>
