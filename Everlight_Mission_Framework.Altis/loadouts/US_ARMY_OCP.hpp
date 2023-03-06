@@ -90,6 +90,7 @@ class r : baseMan
         LIST_10("ACE_fieldDressing"),
         LIST_2("ACE_morphine"),
         LIST_2("ACE_tourniquet"),
+        "ACE_epinephrine",
         "ACE_personalAidKit",
         "ACRE_PRC343"
     };
@@ -137,15 +138,16 @@ class m : r
     magazines[] = {
         LIST_7("rhs_mag_30Rnd_556x45_M855A1_Stanag"),
         LIST_3("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
-        LIST_2("SmokeShell"),
-        LIST_20("ACE_fieldDressing"),
-        LIST_20("ACE_elasticBandage"),
-        LIST_10("ACE_quikclot"),
-        LIST_20("ACE_bloodIV_500"),
-        LIST_10("ACE_personalAidKit"),
-        LIST_10("ACE_morphine"),
-        LIST_5("ACE_epinephrine"),
-        LIST_10("ACE_tourniquet")
+        LIST_2("SmokeShell")
+    };
+    backpackItems[] = {
+      LIST_20("ACE_fieldDressing"),
+      LIST_20("ACE_fieldDressing"),
+      LIST_20("ACE_fieldDressing"),
+      LIST_10("ACE_personalAidKit"),
+      LIST_10("ACE_morphine"),
+      LIST_20("ACE_epinephrine"),
+      LIST_20("ACE_tourniquet")
     };
     backpack[] = {"rhsusf_assault_eagleaiii_ocp"};
 };
@@ -400,6 +402,7 @@ class hpst : smg
         LIST_10("ACE_fieldDressing"),
         LIST_2("ACE_morphine"),
         LIST_2("ACE_tourniquet"),
+        "ACE_epinephrine",
         "ACE_personalAidKit",
         "Toolkit"
     };
@@ -426,6 +429,7 @@ class jp : baseMan
         LIST_2("ACE_morphine"),
         LIST_2("ACE_tourniquet"),
         LIST_2("ACRE_PRC152"),
+        "ACE_epinephrine",
         "ACE_microDAGR",
         "ACE_personalAidKit",
         "hgun_Pistol_Signal_F",
