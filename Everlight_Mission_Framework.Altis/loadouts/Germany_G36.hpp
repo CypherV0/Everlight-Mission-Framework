@@ -51,7 +51,7 @@ class baseMan {// Weaponless baseclass
     radios[] = {};
 
     insignias[] = {};
-    faces[] = {"faceset:american"};
+    faces[] = {};
 };
 class r : baseMan
 {
@@ -73,7 +73,7 @@ class r : baseMan
     scope[] = {"sma_eotech552", "sma_eotech", "rhsusf_acc_compm4" };
     silencer[] = {};
     attachment[] = {
-        "acc_flashlight"
+        "everlight_x2000_point"
     };
     sidearmWeapon[] = {};
     magazines[] = {
@@ -210,7 +210,7 @@ class mg : r
 {
     displayName = "MMG Gunner";
     primaryWeapon[] = {"UK3CB_MG3_KWS_B"};
-    attachment[] = {"acc_flashlight"};
+    attachment[] = {"everlight_x2000_point"};
     bipod[] = {};
     magazines[] =
     {

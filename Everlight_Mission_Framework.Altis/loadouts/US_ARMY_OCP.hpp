@@ -51,7 +51,7 @@ class baseMan {// Weaponless baseclass
     radios[] = {};
 
     insignias[] = {};
-    faces[] = {"faceset:american"};
+    faces[] = {};
 };
 class r : baseMan
 {
@@ -78,7 +78,7 @@ class r : baseMan
     bipod[] = {"rhsusf_acc_kac_grip"};
     scope[] = {"rhsusf_acc_compm4"};
     silencer[] = {};
-    attachment[] = {"acc_flashlight"};
+    attachment[] = {"everlight_x2000_point"};
     sidearmWeapon[] = {};
     magazines[] = {
         LIST_7("rhs_mag_30Rnd_556x45_M855A1_Stanag"),
@@ -124,7 +124,7 @@ class g : r
     bipod[] = {};
     scope[] = {"rhsusf_acc_compm4"};
     silencer[] = {};
-    attachment[] = {"acc_flashlight"};
+    attachment[] = {"everlight_x2000_point"};
     backpackItems[] = {
       LIST_10("rhs_mag_M433_HEDP"),
       LIST_5("1Rnd_Smoke_Grenade_shell")};
@@ -299,7 +299,7 @@ class mg : r
         "rhsusf_iotv_ocp_Teamleader"
     };
     primaryWeapon[] = {"rhs_weap_m240B"};
-    attachment[] = {"acc_flashlight"};
+    attachment[] = {"everlight_x2000_point"};
     bipod[] = {};
     magazines[] =
     {

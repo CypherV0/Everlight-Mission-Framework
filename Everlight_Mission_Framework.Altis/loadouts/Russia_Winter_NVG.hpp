@@ -51,7 +51,7 @@ class baseMan {// Weaponless baseclass
     radios[] = {};
 
     insignias[] = {};
-    faces[] = {"faceset:russian"};
+    faces[] = {};
 };
 class r : baseMan
 {
@@ -81,7 +81,7 @@ class r : baseMan
     scope[] = {};
     silencer[] = {"rhs_acc_dtk"};
     attachment[] = {
-        "rhs_acc_perst1ik_ris"
+        "acc_pointer_ir"
     };
     sidearmWeapon[] = {};
     magazines[] = {
@@ -189,7 +189,7 @@ class ar : r
     primaryWeapon[] = {"CUP_arifle_RPK74"};
     silencer[] = {"cup_muzzle_mfsup_flashhider_762x39_black"};
     attachment[] = {
-        "rhs_acc_perst1ik_ris"
+        "acc_pointer_ir"
     };
     bipod[] = {};
     magazines[] =

@@ -51,7 +51,7 @@ class baseMan {// Weaponless baseclass
     radios[] = {};
 
     insignias[] = {};
-    faces[] = {"faceset:american"};
+    faces[] = {};
 };
 class r : baseMan
 {
@@ -75,7 +75,7 @@ class r : baseMan
     bipod[] = {};
     scope[] = {};
     silencer[] = {};
-    attachment[] = {"acc_flashlight"};
+    attachment[] = {"everlight_x2000_point"};
     sidearmWeapon[] = {};
     magazines[] = {
         LIST_10("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),

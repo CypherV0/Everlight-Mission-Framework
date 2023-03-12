@@ -51,7 +51,7 @@ class baseMan {// Weaponless baseclass
     radios[] = {};
 
     insignias[] = {};
-    faces[] = {"faceset:american"};
+    faces[] = {};
 };
 class r : baseMan
 {
@@ -84,7 +84,7 @@ class r : baseMan
     scope[] = {"sma_eotech552", "sma_eotech", "cup_optic_ac11704_black" };
     silencer[] = {"sma_flashhider1"};
     attachment[] = {
-        "cup_acc_anpeq_15_black"
+        "acc_pointer_ir"
     };
     sidearmWeapon[] = {};
     magazines[] = {
@@ -251,7 +251,7 @@ class mg : r
 {
     displayName = "MMG Gunner";
     primaryWeapon[] = {"rhs_weap_m240B"};
-    attachment[] = {"cup_acc_anpeq_15_black"};
+    attachment[] = {"acc_pointer_ir"};
     bipod[] = {};
     silencer[] = {"ace_muzzle_mzls_l"};
     magazines[] =

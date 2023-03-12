@@ -51,7 +51,7 @@ class baseMan {// Weaponless baseclass
     radios[] = {};
 
     insignias[] = {};
-    faces[] = {"faceset:russian"};
+    faces[] = {};
 };
 class r : baseMan
 {
@@ -71,7 +71,7 @@ class r : baseMan
     scope[] = {};
     silencer[] = {"rhs_acc_dtk"};
     attachment[] = {
-        "acc_flashlight"
+        "everlight_x2000_point"
     };
     sidearmWeapon[] = {};
     magazines[] = {

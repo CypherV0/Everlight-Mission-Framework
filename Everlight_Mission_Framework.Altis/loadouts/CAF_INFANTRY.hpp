@@ -51,7 +51,7 @@ class baseMan {// Weaponless baseclass
     radios[] = {};
 
     insignias[] = {};
-    faces[] = {"faceset:american"};
+    faces[] = {};
 };
 class r : baseMan
 {
@@ -71,7 +71,7 @@ class r : baseMan
     bipod[] = {"hlc_grip_pmvfg_black"};
     scope[] = {"sma_eotech552", "sma_eotech", "rhsusf_acc_compm4"};
     silencer[] = {};
-    attachment[] = {"acc_flashlight"};
+    attachment[] = {"everlight_x2000_point"};
     sidearmWeapon[] = {};
     magazines[] = {
         LIST_7("rhs_mag_30Rnd_556x45_M855A1_Stanag"),
@@ -118,7 +118,7 @@ class g : r
     bipod[] = {};
     scope[] = {"rhsusf_acc_compm4"};
     silencer[] = {};
-    attachment[] = {"acc_flashlight"};
+    attachment[] = {"everlight_x2000_point"};
     backpackItems[] = {
       LIST_10("rhs_mag_M433_HEDP"),
       LIST_5("1Rnd_Smoke_Grenade_shell")};
@@ -196,7 +196,7 @@ class ar : r
     primaryWeapon[] = {"rhs_weap_minimi_para_railed"};
     bipod[] = {"rhsusf_acc_kac_grip_saw_bipod", "rhsusf_acc_grip4_bipod"};
     scope[] = {"sma_eotech552"};
-    attachment[] = {"acc_flashlight"};
+    attachment[] = {"everlight_x2000_point"};
     magazines[] =
     {
         LIST_3("rhsusf_200rnd_556x45_mixed_box"),
@@ -277,7 +277,7 @@ class mg : r
 {
     displayName = "MMG Gunner";
     primaryWeapon[] = {"rhs_weap_m240B"};
-    attachment[] = {"acc_flashlight"};
+    attachment[] = {"everlight_x2000_point"};
     bipod[] = {};
     magazines[] =
     {

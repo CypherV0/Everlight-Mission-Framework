@@ -64,7 +64,7 @@ class baseMan {// Weaponless baseclass
     radios[] = {};
 
     insignias[] = {};
-    faces[] = {"faceset:american"};
+    faces[] = {};
 };
 class r : baseMan
 {
@@ -84,7 +84,7 @@ class r : baseMan
     scope[] = {"cup_optic_compm2_low", "cup_optic_compm2_black", "rhsusf_acc_compm4", "cup_optic_ac11704_black", "sma_barska"};
     silencer[] = {};
     attachment[] = {
-        "acc_flashlight"
+        "everlight_x2000_point"
     };
     sidearmWeapon[] = {};
     magazines[] = {
