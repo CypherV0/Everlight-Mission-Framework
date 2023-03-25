@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=408;
+		nextID=414;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=587;
+		nextID=652;
 	};
 	class Camera
 	{
-		pos[]={14734.434,230.12854,16698.143};
-		dir[]={-0.0072055203,-0.99994999,0.0069336914};
-		up[]={-0.72053182,0.00999978,0.69334972};
-		aside[]={0.69338441,0,0.72056788};
+		pos[]={14733.729,230.37828,16697.551};
+		dir[]={-0.0072056055,-0.99994999,0.0069337748};
+		up[]={-0.72053176,0.01000176,0.69334978};
+		aside[]={0.69338441,0,0.72056776};
 	};
 };
 binarizationWanted=0;
@@ -337,7 +337,7 @@ dlcs[]=
 	"SMA",
 	"Jets",
 	"Kart",
-	"UK3CB_BAF_Weapons"
+	"UK3CB_Factions"
 };
 randomSeed=13568944;
 class ScenarioData
@@ -366,14 +366,14 @@ class CustomAttributes
 		name="TMF_ORBAT_Settings";
 		class Attribute0
 		{
-			property="TMF_ORBATSettings";
+			property="TMF_ORBATRenameFakeAttribute";
 			expression="false";
 			class Value
 			{
 				class data
 				{
-					singleType="STRING";
-					value="[[1,[[0,"""","""","""",""Platoon"",0],[]]]]";
+					singleType="BOOL";
+					value=1;
 				};
 			};
 		};
@@ -418,19 +418,6 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
-			property="TMF_ORBATRenameFakeAttribute";
-			expression="false";
-			class Value
-			{
-				class data
-				{
-					singleType="BOOL";
-					value=1;
-				};
-			};
-		};
-		class Attribute5
-		{
 			property="TMF_ORBATMarkersFT";
 			expression="false";
 			class Value
@@ -439,6 +426,19 @@ class CustomAttributes
 				{
 					singleType="BOOL";
 					value=0;
+				};
+			};
+		};
+		class Attribute5
+		{
+			property="TMF_ORBATSettings";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					singleType="STRING";
+					value="[[1,[[0,"""","""","""",""Platoon"",0],[]]]]";
 				};
 			};
 		};
@@ -2076,7 +2076,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=81;
+		items=84;
 		class Item0
 		{
 			dataType="Comment";
@@ -2216,7 +2216,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[],[]],[[],[]],[[""ACE_fieldDressing"",""ACE_tourniquet"",""ACE_morphine"",""ACE_epinephrine"",""ACE_bloodIV_500"",""ACE_personalAidKit""],[100,10,10,10,20,15]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[""ACE_fieldDressing"",""ACE_tourniquet"",""ACE_morphine"",""ACE_epinephrine"",""evlt_medical_basicAid"",""evlt_medical_advancedAid""],[75,15,15,10,15,10]],[[],[]]],false]";
 						};
 					};
 				};
@@ -2369,7 +2369,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[],[]],[[],[]],[[""ACE_fieldDressing"",""ACE_tourniquet"",""ACE_morphine"",""ACE_epinephrine"",""ACE_bloodIV_500"",""ACE_personalAidKit""],[100,10,10,10,20,15]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[""ACE_fieldDressing"",""ACE_tourniquet"",""ACE_morphine"",""ACE_epinephrine"",""evlt_medical_basicAid"",""evlt_medical_advancedAid""],[75,15,15,10,15,10]],[[],[]]],false]";
 						};
 					};
 				};
@@ -23946,8 +23946,8 @@ class Mission
 			{
 				position[]={14631.46,17.91,16704.361};
 			};
-			title="Version 12";
-			description="Version 12 Changes:" \n "" \n "- Updated Optics Crates to be arsenal-based, and they now have Optics, Facewear, and Grips/Bipods." \n "- Removed AK Optics Crate as it's no longer relevant" \n "- Updated Medical Crate contents to reflect the changes to the Medic loadout" \n "- Combined the admin slots into a group" \n "" \n "Version 11 Changes:" \n "" \n "- Made MAT a 3-player team, as it should have been" \n "" \n "Version 10 Changes:" \n "- Hardcoded the callsigns, no more needing to manually set them every time you start a new project. Rejoice!" \n "- Fighter Pilot callsign is now correctly set to Mage-1" \n "- Color Teams should be correctly set finally..." \n "- The SF teams are actually called SF teams now (A-SF, B-SF, etc)" \n "- Added a new trigger to auto remove any Fortify/Entrenching tools from player inventories when SafeStart ends" \n "- The Mission Title Splash font is now larger and easier to notice" \n "- Updated the garbage collection to be more strict (should make a slight improvement to performance in sustained large battles)" \n "" \n "Version 9 Changes:" \n "- Changed Infantry Fireteam size from 4 to 5" \n "- Added a trigger to automatically remove any Fortify Tools and Entrenching Tools from players when SafeStart ends (useful if you want to set up a defensive mission where players can fortify during briefing phase)" \n "- Renamed the ""Vehicle Crew"" members to ""Vehicle Commander"", ""Vehicle Gunner"", and ""Vehicle Driver""" \n "" \n "Version 8 Changes:" \n "- Fixed some wording in the Setup & Updating Instructions" \n "- Changed the Assign Gear instructions completely (much easier now)" \n "- Changed the wording of the group deployment button to ""Deploy Group""" \n "" \n "Version 7 Changes:" \n "- Removed initPlayerLocal.sqf (you will have to do the same)" \n "- Added ""Deploy Group"" action during SafeStart for leaders, created by Ferdilanz.";
+			title="Version 13";
+			description="Version 13 Changes:" \n "" \n "- Added custom Fortify" \n "- Updated Medical Crates" \n "- Updated loadouts for new Medical and Flashlights overhauls" \n "" \n "Version 12 Changes:" \n "" \n "- Updated Optics Crates to be arsenal-based, and they now have Optics, Facewear, and Grips/Bipods." \n "- Removed AK Optics Crate as it's no longer relevant" \n "- Updated Medical Crate contents to reflect the changes to the Medic loadout" \n "- Combined the admin slots into a group" \n "" \n "Version 11 Changes:" \n "" \n "- Made MAT a 3-player team, as it should have been" \n "" \n "Version 10 Changes:" \n "- Hardcoded the callsigns, no more needing to manually set them every time you start a new project. Rejoice!" \n "- Fighter Pilot callsign is now correctly set to Mage-1" \n "- Color Teams should be correctly set finally..." \n "- The SF teams are actually called SF teams now (A-SF, B-SF, etc)" \n "- Added a new trigger to auto remove any Fortify/Entrenching tools from player inventories when SafeStart ends" \n "- The Mission Title Splash font is now larger and easier to notice" \n "- Updated the garbage collection to be more strict (should make a slight improvement to performance in sustained large battles)" \n "" \n "Version 9 Changes:" \n "- Changed Infantry Fireteam size from 4 to 5" \n "- Added a trigger to automatically remove any Fortify Tools and Entrenching Tools from players when SafeStart ends (useful if you want to set up a defensive mission where players can fortify during briefing phase)" \n "- Renamed the ""Vehicle Crew"" members to ""Vehicle Commander"", ""Vehicle Gunner"", and ""Vehicle Driver""" \n "" \n "Version 8 Changes:" \n "- Fixed some wording in the Setup & Updating Instructions" \n "- Changed the Assign Gear instructions completely (much easier now)" \n "- Changed the wording of the group deployment button to ""Deploy Group""" \n "" \n "Version 7 Changes:" \n "- Removed initPlayerLocal.sqf (you will have to do the same)" \n "- Added ""Deploy Group"" action during SafeStart for leaders, created by Ferdilanz.";
 			id=325;
 		};
 		class Item66
@@ -26513,6 +26513,40 @@ class Mission
 				};
 			};
 			id=407;
+		};
+		class Item81
+		{
+			dataType="Trigger";
+			position[]={14761.406,17.91,16701.584};
+			class Attributes
+			{
+				text="Everlight Fortify";
+				onActivation="[west, 2000, [ " \n " " \n "[""Land_BagFence_Long_F"", 10], " \n "[""Land_BagFence_Round_F"", 10], " \n "[""Land_Plank_01_4m_F"", 10], " \n "[""Land_SandbagBarricade_01_hole_F"", 20], " \n "[""Land_HBarrier_5_F"", 30], " \n "[""ACE_envelope_big"", 40], " \n "[""Land_fort_rampart_EP1"", 50], " \n "[""GRAD_envelope_giant"", 60], " \n "[""Land_HBarrierWall4_F"", 70], " \n "[""Land_HBarrierWall_corner_F"", 70], " \n "[""Land_HBarrierWall6_F"", 70], " \n "[""Land_fort_artillery_nest_EP1"", 100] " \n " " \n "]] call ace_fortify_fnc_registerObjects";
+				sizeA=0;
+				sizeB=0;
+				activationType="NOT PRESENT";
+				activationBy="ANY";
+			};
+			id=408;
+			type="EmptyDetector";
+		};
+		class Item82
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={14759.957,17.91,16703.195};
+			};
+			title="Fortify";
+			description="If you aren't planning to let players fortify, you can simply ignore this trigger. If you DO want players to be able to fortify during SafeStart (great for a defense in depth mission), you will need to put down a crate full of fortify tools for them to use. Don't worry, they will automatically be removed when SafeStart ends.";
+			id=409;
+		};
+		class Item83
+		{
+			dataType="Layer";
+			name="Spectator Screen";
+			id=411;
+			atlOffset=185.97;
 		};
 	};
 };
