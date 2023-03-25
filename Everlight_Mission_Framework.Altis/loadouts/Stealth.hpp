@@ -83,8 +83,7 @@ class r : baseMan
         LIST_10("ACE_fieldDressing"),
         LIST_2("ACE_morphine"),
         LIST_2("ACE_tourniquet"),
-        "ACE_epinephrine",
-        "ACE_personalAidKit",
+        "evlt_medical_advancedAid",
         "ACE_Flashlight_XL50",
         "ACRE_PRC343"
     };
@@ -105,11 +104,11 @@ class m : r
     backpackItems[] = {
       LIST_20("ACE_fieldDressing"),
       LIST_20("ACE_fieldDressing"),
-      LIST_20("ACE_fieldDressing"),
-      LIST_10("ACE_personalAidKit"),
+      LIST_10("ACE_fieldDressing"),
+      LIST_15("evlt_medical_basicAid"),
       LIST_10("ACE_morphine"),
-      LIST_20("ACE_epinephrine"),
-      LIST_20("ACE_tourniquet")
+      LIST_10("ACE_epinephrine"),
+      LIST_10("ACE_tourniquet")
     };
 };
 class ftl : r
@@ -224,8 +223,7 @@ class hpst : smg
         LIST_10("ACE_fieldDressing"),
         LIST_2("ACE_morphine"),
         LIST_2("ACE_tourniquet"),
-        "ACE_epinephrine",
-        "ACE_personalAidKit",
+        "evlt_medical_advancedAid",
         "Toolkit"
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
@@ -253,7 +251,7 @@ class jp : baseMan
         LIST_2("ACRE_PRC152"),
         "ACE_epinephrine",
         "ACE_microDAGR",
-        "ACE_personalAidKit",
+        "evlt_medical_advancedAid",
         "hgun_Pistol_Signal_F",
         "ACE_HandFlare_Red",
         "rhs_mag_m18_red",

@@ -74,7 +74,7 @@ class r : baseMan
     scope[] = {"sma_cmore", "sma_micro_t2_lm", "optic_aco_smg" };
     silencer[] = {};
     attachment[] = {
-        "rhsusf_acc_wmx_bk"
+        "everlight_x2000_point"
     };
     sidearmWeapon[] = {};
     magazines[] = {
@@ -86,8 +86,7 @@ class r : baseMan
         LIST_10("ACE_fieldDressing"),
         LIST_2("ACE_morphine"),
         LIST_2("ACE_tourniquet"),
-        "ACE_epinephrine",
-        "ACE_personalAidKit",
+        "evlt_medical_advancedAid",
         "ACRE_PRC343"
     };
 };
@@ -151,14 +150,16 @@ class m : r
     backpack[] = {"UK3CB_LFR_B_B_MESSENGER_MED"};
     magazines[] = {
         LIST_10("rhsusf_mag_40Rnd_46x30_JHP"),
-        LIST_2("SmokeShell"),
+        LIST_2("SmokeShell")
+    };
+    backpackItems[] = {
         LIST_20("ACE_fieldDressing"),
         LIST_20("ACE_fieldDressing"),
-        LIST_20("ACE_fieldDressing"),
-        LIST_10("ACE_personalAidKit"),
+        LIST_10("ACE_fieldDressing"),
+        LIST_15("evlt_medical_basicAid"),
         LIST_10("ACE_morphine"),
-        LIST_20("ACE_epinephrine"),
-        LIST_20("ACE_tourniquet")
+        LIST_10("ACE_epinephrine"),
+        LIST_10("ACE_tourniquet")
     };
 };
 class ftl : g
@@ -340,8 +341,7 @@ class hpst : smg
         LIST_10("ACE_fieldDressing"),
         LIST_2("ACE_morphine"),
         LIST_2("ACE_tourniquet"),
-        "ACE_epinephrine",
-        "ACE_personalAidKit",
+        "evlt_medical_advancedAid",
         "Toolkit"
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
@@ -369,7 +369,7 @@ class jp : baseMan
         LIST_2("ACRE_PRC152"),
         "ACE_epinephrine",
         "ACE_microDAGR",
-        "ACE_personalAidKit",
+        "evlt_medical_advancedAid",
         "hgun_Pistol_Signal_F",
         "ACE_HandFlare_Red",
         "rhs_mag_m18_red",
