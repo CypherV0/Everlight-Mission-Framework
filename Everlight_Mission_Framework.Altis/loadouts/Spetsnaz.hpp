@@ -68,12 +68,10 @@ class r : baseMan
         "rhs_6b23_6sh92"
     };
     primaryWeapon[] = {
-        "rhs_weap_ak105_zenitco01"
+        "CUP_arifle_AK74M_railed"
     };
     secondaryWeapon[] = {};
-    bipod[] = {
-        "rhs_acc_grip_rk6"
-    };
+    bipod[] = {};
     scope[] = {};
     silencer[] = {};
     attachment[] = {
@@ -81,7 +79,7 @@ class r : baseMan
     };
     sidearmWeapon[] = {};
     magazines[] = {
-        LIST_7("rhs_30Rnd_545x39_7N10_AK"),
+        LIST_7("rhs_30Rnd_545x39_7N10_plum_AK"),
         LIST_3("rhs_30Rnd_545x39_AK_plum_green"),
         LIST_2("rhs_mag_rgo"),
         LIST_2("rhs_mag_rdg2_white")
@@ -98,7 +96,7 @@ class rm : r
 {
     displayName = "Rifleman (Extra Ammo)";
     magazines[] += {
-        LIST_5("rhs_30Rnd_545x39_7N10_AK")
+        LIST_5("rhs_30Rnd_545x39_7N10_plum_AK")
     };
 };
 class rat : r
@@ -106,7 +104,7 @@ class rat : r
     displayName = "Rifleman AT";
     backpackItems[] =
     {
-        LIST_5("rhs_30Rnd_545x39_7N10_AK")
+        LIST_5("rhs_30Rnd_545x39_7N10_plum_AK")
     };
     secondaryWeapon[] = {"rhs_weap_rpg26"};
     secondaryAttachments[] = {};
@@ -117,10 +115,12 @@ class g : r
     vest[] = {
         "rhs_6b23_6sh92_vog"
     };
-    sidearmWeapon[] = {"rhs_weap_M320"};
+    primaryWeapon[] = {
+        "CUP_arifle_AK74M_GL_railed"
+    };
     backpackItems[] = {
-      LIST_10("rhs_mag_M433_HEDP"),
-      LIST_5("1Rnd_Smoke_Grenade_shell")};
+      LIST_10("rhs_VOG25"),
+      LIST_5("rhs_GRD40_White")};
     secondaryWeapon[] = {};
 };
 class m : r
@@ -132,7 +132,7 @@ class m : r
         "rhs_6b23_medic"
     };
     magazines[] = {
-        LIST_7("rhs_30Rnd_545x39_7N10_AK"),
+        LIST_7("rhs_30Rnd_545x39_7N10_plum_AK"),
         LIST_3("rhs_30Rnd_545x39_AK_plum_green"),
         LIST_2("rhs_mag_rdg2_white")
     };
@@ -149,10 +149,14 @@ class m : r
 class ftl : g
 {
     displayName = "Fireteam Leader";
+    sidearmWeapon[] = {"rhs_weap_pya"};
+    magazines[] += {
+        LIST_2("rhs_mag_9x19_17")
+    };
     backpackItems[] +=
     {
-        LIST_5("1Rnd_SmokeBlue_Grenade_shell"),
-        LIST_5("1Rnd_SmokeRed_Grenade_shell")
+        LIST_5("rhs_GRD40_Green"),
+        LIST_5("rhs_GRD40_Red")
     };
     linkedItems[] =
     {
@@ -193,18 +197,18 @@ class pm : m
 class ar : r
 {
     displayName = "Automatic Rifleman";
-    primaryWeapon[] = {"CUP_arifle_RPK74"};
+    primaryWeapon[] = {"CUP_arifle_RPK74M_railed"};
     bipod[] = {};
     magazines[] =
     {
-        LIST_2("rhs_75Rnd_762x39mm_tracer"),
+        LIST_4("rhs_60Rnd_545X39_AK_Green"),
         LIST_2("rhs_mag_9x19_17"),
         LIST_2("rhs_mag_rgo"),
         LIST_2("rhs_mag_rdg2_white")
     };
     backpackItems[] =
     {
-        LIST_8("rhs_75Rnd_762x39mm_tracer")
+        LIST_12("rhs_60Rnd_545X39_AK_Green")
     };
     sidearmWeapon[] = {"rhs_weap_pya"};
     sidearmAttachments[] = {};
@@ -214,7 +218,7 @@ class aar : r
     displayName = "Asst. Automatic Rifleman";
     backpackItems[] =
     {
-        LIST_5("rhs_75Rnd_762x39mm_tracer")
+        LIST_12("rhs_60Rnd_545X39_AK_Green")
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
