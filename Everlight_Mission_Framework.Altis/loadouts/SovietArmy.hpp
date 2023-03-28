@@ -263,7 +263,7 @@ class mg : r
     backpack[] = {
         "UK3CB_B_Largepack_Des"
     };
-    primaryWeapon[] = {"rhs_weap_pkp"};
+    primaryWeapon[] = {"rhs_weap_pkm"};
     attachment[] = {};
     bipod[] = {};
     magazines[] =
