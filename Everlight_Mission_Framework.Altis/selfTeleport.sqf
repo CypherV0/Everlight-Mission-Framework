@@ -29,7 +29,7 @@ if !(call TMF_safestart_fnc_isActive) exitWith {};
 
 openMap [true,false];
 
-onMapSingleClick "player setPos _pos;
+onMapSingleClick "vehicle player setPos _pos;
     openMap [false, false];
     onMapSingleClick '';
 ";

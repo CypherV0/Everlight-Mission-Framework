@@ -26,8 +26,15 @@ params ["_leader", "_caller", "_id", "_args"]; //don't know what to do with thes
 // do nothing if teleport is not allowed
 if !(call TMF_safestart_fnc_isActive) exitWith {};
 
-
 openMap [true,false];
+if !(isNull objectParent player) then {
+
+onMapSingleClick "vehicle player setPos _pos;
+    openMap [false, false];
+    onMapSingleClick '';
+";}
+
+else {
 
 onMapSingleClick "
     params ['_pos','_units','_shift','_alt','_dir','_leader','_dist'];
@@ -39,7 +46,7 @@ onMapSingleClick "
     } forEach _teleport;
     openMap [false, false];
     onMapSingleClick '';
-";
+";};
 
 // to clear the map click event handler if user closes the map some other way
 waitUntil {sleep 1;!visibleMap};
