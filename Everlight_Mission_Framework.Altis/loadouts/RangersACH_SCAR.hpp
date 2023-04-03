@@ -152,6 +152,7 @@ class m : r
 class ftl : g
 {
     displayName = "Fireteam Leader";
+    code = "_this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""true"", 1.5,  false]; _this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""true"",  1, false ]; onMapSingleClick {_shift};";
     backpackItems[] +=
     {
         LIST_5("1Rnd_SmokeBlue_Grenade_shell"),

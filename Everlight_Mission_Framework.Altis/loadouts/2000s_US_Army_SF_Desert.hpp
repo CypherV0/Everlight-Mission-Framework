@@ -154,6 +154,7 @@ class m : r
 class ftl : g
 {
     displayName = "Fireteam Leader";
+    code = "_this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""true"", 1.5,  false]; _this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""true"",  1, false ]; onMapSingleClick {_shift};";
     backpack[] = {"UK3CB_CW_US_B_LATE_B_RIF_04"};
     magazines[] += {"rhsusf_mag_15Rnd_9x19_FMJ"};
     backpackItems[] +=
