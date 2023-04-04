@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=718;
+		nextID=740;
 	};
 	class Camera
 	{
-		pos[]={14723.519,230.79694,16705.809};
-		dir[]={-0.0071984925,-0.99995011,0.0069418475};
-		up[]={-0.71978629,0.0099774422,0.69412398};
-		aside[]={0.69415861,4.6566129e-010,0.71982223};
+		pos[]={14723.154,229.75223,16707.133};
+		dir[]={-0.0071669174,-0.99994999,0.0069735851};
+		up[]={-0.71667171,0.00999978,0.697339};
+		aside[]={0.69737387,0,0.71670753};
 	};
 };
 binarizationWanted=0;
@@ -405,8 +405,8 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="TMF_ORBATMarkersFT_Directional";
-			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
+			property="TMF_ORBATMarkersFT";
+			expression="false";
 			class Value
 			{
 				class data
@@ -431,8 +431,8 @@ class CustomAttributes
 		};
 		class Attribute5
 		{
-			property="TMF_ORBATMarkersFT";
-			expression="false";
+			property="TMF_ORBATMarkersFT_Directional";
+			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
 			class Value
 			{
 				class data
@@ -5257,6 +5257,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="SL@Alpha SL";
 						isPlayable=1;
 						class Inventory
@@ -5855,6 +5856,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="PltCo@PltHQ";
 						isPlayable=1;
 						class Inventory
@@ -6738,6 +6740,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="FTL@Alpha-1";
 						isPlayable=1;
 						class Inventory
@@ -7239,7 +7242,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14694.928,17.911438,16742.434};
-						angles[]={-0,5.2720289,0};
+						angles[]={0,5.2720289,0};
 					};
 					side="West";
 					flags=4;
@@ -8001,6 +8004,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="FTL@Alpha-2";
 						isPlayable=1;
 						class Inventory
@@ -8502,7 +8506,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14706.717,17.911438,16753.129};
-						angles[]={-0,5.3137078,0};
+						angles[]={0,5.3137078,0};
 					};
 					side="West";
 					flags=4;
@@ -9264,6 +9268,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="MMG Operator@MMG";
 						isPlayable=1;
 						class Inventory
@@ -9717,7 +9722,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14739.704,17.911438,16763.885};
-						angles[]={-0,5.5316639,0};
+						angles[]={0,5.5316639,0};
 					};
 					side="West";
 					flags=4;
@@ -9996,6 +10001,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="MAT Operator@MAT";
 						isPlayable=1;
 						class Inventory
@@ -10760,6 +10766,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="HAT Operator@HAT";
 						isPlayable=1;
 						class Inventory
@@ -15008,6 +15015,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="FTL@Alpha";
 						isPlayable=1;
 						class Inventory
@@ -15519,7 +15527,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14737.107,17.911438,16787.678};
-						angles[]={-0,5.2117438,0};
+						angles[]={0,5.2117438,0};
 					};
 					side="West";
 					flags=4;
@@ -16551,6 +16559,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="FTL@Bravo";
 						isPlayable=1;
 						class Inventory
@@ -17062,7 +17071,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14745.242,17.911438,16793.943};
-						angles[]={-0,5.379436,0};
+						angles[]={0,5.379436,0};
 					};
 					side="West";
 					flags=4;
@@ -18094,6 +18103,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="Pilot@Mage-1";
 						isPlayable=1;
 						class Inventory
@@ -18378,12 +18388,13 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14742.548,17.911438,16751.527};
-						angles[]={-0,5.3940969,0};
+						angles[]={0,5.3940969,0};
 					};
 					side="West";
 					flags=6;
 					class Attributes
 					{
+						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="Heli Pilot@Falcon-1";
 						isPlayable=1;
 						class Inventory
@@ -18636,7 +18647,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14744.691,17.911438,16751.381};
-						angles[]={-0,5.3940969,0};
+						angles[]={0,5.3940969,0};
 					};
 					side="West";
 					flags=4;
@@ -18945,6 +18956,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="Vehicle Commander@Thunder-1";
 						isPlayable=1;
 						class Inventory
@@ -19725,6 +19737,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="SL@Bravo SL";
 						isPlayable=1;
 						class Inventory
@@ -20323,6 +20336,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="FTL@Bravo-1";
 						isPlayable=1;
 						class Inventory
@@ -20824,7 +20838,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14703.366,17.911438,16733.807};
-						angles[]={-0,5.2720289,0};
+						angles[]={0,5.2720289,0};
 					};
 					side="West";
 					flags=4;
@@ -21586,6 +21600,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="FTL@Bravo-2";
 						isPlayable=1;
 						class Inventory
@@ -22087,7 +22102,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14715.155,17.911438,16744.502};
-						angles[]={-0,5.3137078,0};
+						angles[]={0,5.3137078,0};
 					};
 					side="West";
 					flags=4;
@@ -22849,6 +22864,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="FTL@Charlie";
 						isPlayable=1;
 						class Inventory
@@ -23360,7 +23376,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14744.579,17.911438,16779.514};
-						angles[]={-0,5.2117438,0};
+						angles[]={0,5.2117438,0};
 					};
 					side="West";
 					flags=4;
@@ -24392,6 +24408,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="FTL@Delta";
 						isPlayable=1;
 						class Inventory
@@ -24903,7 +24920,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14754.64,17.911438,16788.02};
-						angles[]={-0,5.379436,0};
+						angles[]={0,5.379436,0};
 					};
 					side="West";
 					flags=4;
@@ -25935,6 +25952,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="Admin@Admin";
 						isPlayable=1;
 						class Inventory
@@ -26219,6 +26237,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="Admin";
 						isPlayable=1;
 						class Inventory
