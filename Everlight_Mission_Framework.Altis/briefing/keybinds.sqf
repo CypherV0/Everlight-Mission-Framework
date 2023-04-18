@@ -39,6 +39,8 @@ player createDiaryRecord ["Everlight Keybinds",["Keybinds",
 
           <font color='#BADA55' size='10' face='PuristaSemiBold'>Flashlight / Laser - </font> <font color='#FFFFFF' size='10' face='PuristaSemiBold'>L</font><font color='#BADA55' size='10' face='PuristaSemiBold'> | </font><font color='#007AFF' size='10' face='PuristaSemiBold'>or MiddleMouseBtn</font> <font color='#696969' size='9' face='PuristaMedium'>(Middle Mouse is easier to reach than L, but we'll keep both.)</font><br/>
 
+          <font color='#BADA55' size='10' face='PuristaSemiBold'>Toggle Flashlight Mode - </font> <font color='#FFFFFF' size='10' face='PuristaSemiBold'>Ctrl+L or Ctrl+ScrollWheel</font><br/>
+
           <font color='#BADA55' size='10' face='PuristaSemiBold'>Point Finger - </font> <font color='#FFFFFF' size='10' face='PuristaSemiBold'>Shift+`</font><br/>
 
           <font color='#BADA55' size='10' face='PuristaSemiBold'>Lower Weapon - </font> <font color='#FFFFFF' size='10' face='PuristaSemiBold'>2xCtrl</font> <font color='#696969' size='9' face='PuristaMedium'>(Uses less stamina while jogging, and good etiquette.)</font><br/>
@@ -58,5 +60,9 @@ player createDiaryRecord ["Everlight Keybinds",["Keybinds",
           <font color='#BADA55' size='10' face='PuristaSemiBold'>Adjust NVG Brightness - </font> <font color='#FFFFFF' size='10' face='PuristaSemiBold'>Alt+PageUp and Alt+PageDown</font><br/>
 
           <font color='#BADA55' size='10' face='PuristaSemiBold'>Zoom In/out - </font> <font color='#FFFFFF' size='10' face='PuristaSemiBold'>[+NUM] and [-NUM]</font><font color='#BADA55' size='10' face='PuristaSemiBold'> | </font><font color='#007AFF' size='10' face='PuristaSemiBold'>UpArrow and DownArrow</font> <font color='#696969' size='9' face='PuristaMedium'>(Most useful for vehicle optics.)</font><br/>
+
+          <font color='#BADA55' size='10' face='PuristaSemiBold'>View Distance Menu - </font> <font color='#FFFFFF' size='10' face='PuristaSemiBold'>P</font><br/>
+
+          <font color='#BADA55' size='10' face='PuristaSemiBold'>View Distance Quick Adjust - </font> <font color='#FFFFFF' size='10' face='PuristaSemiBold'>Ctrl+[ and Ctrl+]</font><br/>
 
 "]];
