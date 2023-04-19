@@ -334,6 +334,12 @@ class CfgLoadouts
 		#include "loadouts\UN_Czech_Republic.hpp" // (No spaces)
 	};
 
+	class MiddleEast_Guerrillas // (No spaces)
+	{
+		displayName = "Middle East Guerrillas"; // (Spaces allowed)
+		#include "loadouts\MiddleEast_Guerrillas.hpp" // (No spaces)
+	};
+
 };
 
 ////////////////////////////////////////////////////////////////////////////////
