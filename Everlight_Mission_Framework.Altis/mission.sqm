@@ -21,14 +21,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=876;
+		nextID=899;
 	};
 	class Camera
 	{
-		pos[]={14732.367,230.67371,16695.648};
-		dir[]={-0.0097818067,-0.99990779,0.0094201174};
-		up[]={-0.72023177,0.013579808,0.69360059};
-		aside[]={0.69366455,9.3132257e-010,0.72029823};
+		pos[]={14722.225,242.12956,16698.438};
+		dir[]={-0.0071563381,-0.99994999,0.006984442};
+		up[]={-0.71561378,0.00999978,0.69842464};
+		aside[]={0.69845957,0,0.71564955};
 	};
 };
 binarizationWanted=0;
@@ -406,8 +406,8 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="TMF_ORBATMarkersFT";
-			expression="false";
+			property="TMF_ORBATMarkersFT_Directional";
+			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
 			class Value
 			{
 				class data
@@ -432,8 +432,8 @@ class CustomAttributes
 		};
 		class Attribute5
 		{
-			property="TMF_ORBATMarkersFT_Directional";
-			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
+			property="TMF_ORBATMarkersFT";
+			expression="false";
 			class Value
 			{
 				class data
@@ -1833,7 +1833,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=85;
+		items=84;
 		class Item0
 		{
 			dataType="Comment";
@@ -2450,7 +2450,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14740.21,17.91,16794.516};
+				position[]={14740.348,17.91,16793.574};
 			};
 			title="SF Teams";
 			description="The SF structure is a great alternative to the standard Infantry Squad structure while we're still growing our player-count.";
@@ -5304,7 +5304,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -5593,7 +5593,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -5858,7 +5858,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -6179,7 +6179,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -6444,7 +6444,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -6773,7 +6773,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -7010,7 +7010,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -7242,7 +7242,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -7475,7 +7475,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -7708,7 +7708,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -7834,7 +7834,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -8150,7 +8150,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -8387,7 +8387,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -8619,7 +8619,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -8852,7 +8852,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -9085,7 +9085,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -9211,7 +9211,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -9532,7 +9532,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -9797,7 +9797,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -10126,7 +10126,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -10363,7 +10363,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -10395,7 +10395,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14704.391,17.911438,16733.281};
-						angles[]={-0,5.2720289,0};
+						angles[]={0,5.2720289,0};
 					};
 					side="West";
 					flags=4;
@@ -10595,7 +10595,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -10828,7 +10828,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -11061,7 +11061,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -11187,7 +11187,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -11503,7 +11503,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -11740,7 +11740,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -11772,7 +11772,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14717.086,17.911438,16744.857};
-						angles[]={-0,5.3137078,0};
+						angles[]={0,5.3137078,0};
 					};
 					side="West";
 					flags=4;
@@ -11972,7 +11972,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -12205,7 +12205,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -12438,7 +12438,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -12564,7 +12564,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -12841,7 +12841,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -13069,7 +13069,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -13297,7 +13297,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -13585,7 +13585,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -13817,7 +13817,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -14049,7 +14049,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -14340,7 +14340,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -14572,7 +14572,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -14800,7 +14800,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -15104,7 +15104,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -15408,7 +15408,7 @@ class Mission
 						class Attribute7
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -15666,7 +15666,7 @@ class Mission
 						class Attribute7
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -15957,7 +15957,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -16202,7 +16202,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -16447,7 +16447,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -16720,7 +16720,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -16935,7 +16935,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -17150,7 +17150,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -17365,7 +17365,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -17580,7 +17580,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -17795,7 +17795,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -18010,7 +18010,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -18225,7 +18225,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -18440,7 +18440,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -18655,7 +18655,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -18870,7 +18870,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -19085,7 +19085,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -19300,7 +19300,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -19515,7 +19515,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -19730,7 +19730,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -19945,7 +19945,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -20021,7 +20021,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14736.79,17.911438,16793.498};
+						position[]={14731.515,17.911438,16789.459};
 						angles[]={0,5.2132111,0};
 					};
 					side="West";
@@ -20029,7 +20029,7 @@ class Mission
 					class Attributes
 					{
 						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
-						description="FTL@Alpha";
+						description="SF Lead@Delta";
 						isPlayable=1;
 						class Inventory
 						{
@@ -20268,7 +20268,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -20299,7 +20299,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14738.538,17.911438,16791.102};
+						position[]={14733.263,17.911438,16787.063};
 						angles[]={0,5.5327458,0};
 					};
 					side="West";
@@ -20532,7 +20532,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -20563,7 +20563,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14736.679,17.911438,16790.504};
+						position[]={14731.403,17.911438,16786.465};
 						angles[]={0,5.2132053,0};
 					};
 					side="West";
@@ -20772,7 +20772,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -20803,8 +20803,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14737.107,17.911438,16787.678};
-						angles[]={0,5.2117438,0};
+						position[]={14731.832,17.911438,16783.639};
+						angles[]={-0,5.2117438,0};
 					};
 					side="West";
 					flags=4;
@@ -21006,7 +21006,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -21037,7 +21037,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14742.396,17.911438,16791.172};
+						position[]={14737.121,17.911438,16787.133};
 						angles[]={0,5.2131939,0};
 					};
 					side="West";
@@ -21241,7 +21241,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -21272,7 +21272,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14739.909,17.911438,16792.486};
+						position[]={14734.634,17.911438,16788.447};
 						angles[]={0,5.2132111,0};
 					};
 					side="West";
@@ -21476,7 +21476,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -21505,8 +21505,8 @@ class Mission
 			};
 			class Attributes
 			{
-				name="alphaSF";
-				init="alphaSF setGroupIDGlobal [""A-SF""];" \n "this setVariable [""BFT_groupMarker_visible"", true]; " \n "this setVariable [""BFT_groupMarker_type"", ""recon""]; " \n "this setVariable [""BFT_groupMarker_color"", ""ColorRed""];";
+				name="deltaSF";
+				init="alphaSF setGroupIDGlobal [""D-SF""];" \n "this setVariable [""BFT_groupMarker_visible"", true]; " \n "this setVariable [""BFT_groupMarker_type"", ""recon""]; " \n "this setVariable [""BFT_groupMarker_color"", ""ColorRed""];";
 			};
 			id=1192;
 			class CustomAttributes
@@ -21533,7 +21533,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Alpha";
+							value="Delta";
 						};
 					};
 				};
@@ -21565,7 +21565,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14741.904,17.911438,16798.719};
+						position[]={14741.861,17.911438,16800.451};
 						angles[]={0,5.3955631,0};
 					};
 					side="West";
@@ -21573,7 +21573,7 @@ class Mission
 					class Attributes
 					{
 						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
-						description="FTL@Bravo";
+						description="SF Lead@Echo";
 						isPlayable=1;
 						class Inventory
 						{
@@ -21812,7 +21812,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -21843,7 +21843,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14744.178,17.911438,16797.402};
+						position[]={14744.135,17.911438,16799.135};
 						angles[]={0,5.5327458,0};
 					};
 					side="West";
@@ -22076,7 +22076,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -22107,7 +22107,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14743.388,17.911438,16796.119};
+						position[]={14743.345,17.911438,16797.852};
 						angles[]={0,5.4435945,0};
 					};
 					side="West";
@@ -22316,7 +22316,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -22347,8 +22347,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14745.242,17.911438,16793.943};
-						angles[]={0,5.379436,0};
+						position[]={14745.199,17.911438,16795.676};
+						angles[]={-0,5.379436,0};
 					};
 					side="West";
 					flags=4;
@@ -22550,7 +22550,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -22581,7 +22581,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14748.401,17.911438,16799.221};
+						position[]={14748.358,17.911438,16800.953};
 						angles[]={0,5.2743154,0};
 					};
 					side="West";
@@ -22785,7 +22785,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -22816,7 +22816,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14745.479,17.911438,16799.137};
+						position[]={14745.436,17.911438,16800.869};
 						angles[]={0,5.4229822,0};
 					};
 					side="West";
@@ -23020,7 +23020,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -23049,8 +23049,8 @@ class Mission
 			};
 			class Attributes
 			{
-				name="bravoSF";
-				init="bravoSF setGroupIDGlobal [""B-SF""];" \n "this setVariable [""BFT_groupMarker_visible"", true]; " \n "this setVariable [""BFT_groupMarker_type"", ""recon""]; " \n "this setVariable [""BFT_groupMarker_color"", ""ColorBlue""];";
+				name="echoSF";
+				init="bravoSF setGroupIDGlobal [""E-SF""];" \n "this setVariable [""BFT_groupMarker_visible"", true]; " \n "this setVariable [""BFT_groupMarker_type"", ""recon""]; " \n "this setVariable [""BFT_groupMarker_color"", ""ColorBlue""];";
 			};
 			id=1199;
 			class CustomAttributes
@@ -23077,7 +23077,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Bravo";
+							value="Echo";
 						};
 					};
 				};
@@ -23109,7 +23109,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14744.263,17.911438,16785.334};
+						position[]={14744.754,17.911438,16789.477};
 						angles[]={0,5.2132111,0};
 					};
 					side="West";
@@ -23117,7 +23117,7 @@ class Mission
 					class Attributes
 					{
 						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
-						description="FTL@Charlie";
+						description="SF Lead@Foxtrot";
 						isPlayable=1;
 						class Inventory
 						{
@@ -23356,7 +23356,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -23387,7 +23387,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14745.711,17.911438,16783.555};
+						position[]={14746.202,17.911438,16787.697};
 						angles[]={0,5.5327458,0};
 					};
 					side="West";
@@ -23620,7 +23620,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -23651,7 +23651,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14744.15,17.911438,16782.34};
+						position[]={14744.642,17.911438,16786.482};
 						angles[]={0,5.2132053,0};
 					};
 					side="West";
@@ -23860,7 +23860,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -23891,8 +23891,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14744.579,17.911438,16779.514};
-						angles[]={0,5.2117438,0};
+						position[]={14745.07,17.911438,16783.656};
+						angles[]={-0,5.2117438,0};
 					};
 					side="West";
 					flags=4;
@@ -24094,7 +24094,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -24125,7 +24125,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14750.285,17.911438,16783.207};
+						position[]={14750.776,17.911438,16787.35};
 						angles[]={0,5.2131939,0};
 					};
 					side="West";
@@ -24329,7 +24329,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -24360,7 +24360,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14747.488,17.911438,16784.217};
+						position[]={14747.979,17.911438,16788.359};
 						angles[]={0,5.2132111,0};
 					};
 					side="West";
@@ -24564,7 +24564,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -24593,8 +24593,8 @@ class Mission
 			};
 			class Attributes
 			{
-				name="charlieSF";
-				init="charlieSF setGroupIDGlobal [""C-SF""];" \n "this setVariable [""BFT_groupMarker_visible"", true]; " \n "this setVariable [""BFT_groupMarker_type"", ""recon""]; " \n "this setVariable [""BFT_groupMarker_color"", ""ColorGUER""];";
+				name="foxtrotSF";
+				init="charlieSF setGroupIDGlobal [""F-SF""];" \n "this setVariable [""BFT_groupMarker_visible"", true]; " \n "this setVariable [""BFT_groupMarker_type"", ""recon""]; " \n "this setVariable [""BFT_groupMarker_color"", ""ColorGUER""];";
 			};
 			id=1206;
 			class CustomAttributes
@@ -24621,7 +24621,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Charlie";
+							value="Foxtrot";
 						};
 					};
 				};
@@ -24642,1550 +24642,6 @@ class Mission
 			};
 		};
 		class Item83
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=6;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14751.302,17.911438,16792.795};
-						angles[]={0,5.3955631,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
-						description="FTL@Delta";
-						isPlayable=1;
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="rhs_weap_m4a1_blockII_M203_bk";
-								optics="SMA_eotech552";
-								flashlight="acc_flashlight";
-								firemode="rhs_weap_m4a1_blockII_M203_bk:Single";
-								class primaryMuzzleMag
-								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-									ammoLeft=30;
-								};
-								class secondaryMuzzleMag
-								{
-									name="rhs_mag_M433_HEDP";
-									ammoLeft=1;
-								};
-							};
-							class handgun
-							{
-								name="hlc_pistol_P226R_357Combat";
-								optics="HLC_optic_Siglite";
-								class primaryMuzzleMag
-								{
-									name="hlc_12Rnd_357SIG_B_P226";
-									ammoLeft=12;
-								};
-							};
-							class binocular
-							{
-								name="rhssaf_zrak_rd7j";
-							};
-							class uniform
-							{
-								typeName="MNP_CombatUniform_DS_B";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=6;
-									class Item0
-									{
-										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item1
-									{
-										name="ACE_fieldDressing";
-										count=10;
-									};
-									class Item2
-									{
-										name="ACE_morphine";
-										count=2;
-									};
-									class Item3
-									{
-										name="ACE_personalAidKit";
-										count=1;
-									};
-									class Item4
-									{
-										name="ACE_tourniquet";
-										count=2;
-									};
-									class Item5
-									{
-										name="ACRE_PRC152";
-										count=1;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_plateframe_grenadier";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=5;
-									class Item0
-									{
-										name="rhs_mag_m67";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="SmokeShell";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="hlc_12Rnd_357SIG_B_P226";
-										count=1;
-										ammoLeft=12;
-									};
-									class Item3
-									{
-										name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-										count=6;
-										ammoLeft=30;
-									};
-									class Item4
-									{
-										name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
-										count=3;
-										ammoLeft=30;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="B_Kitbag_cbr";
-								isBackpack=1;
-								class MagazineCargo
-								{
-									items=4;
-									class Item0
-									{
-										name="1Rnd_Smoke_Grenade_shell";
-										count=5;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="1Rnd_SmokeRed_Grenade_shell";
-										count=5;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="1Rnd_SmokeBlue_Grenade_shell";
-										count=5;
-										ammoLeft=1;
-									};
-									class Item3
-									{
-										name="rhs_mag_M433_HEDP";
-										count=9;
-										ammoLeft=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							goggles="rhsusf_shemagh2_gogg_tan";
-							headgear="rhsusf_mich_bare_norotos_arc_alt_semi";
-						};
-					};
-					id=1214;
-					type="B_Soldier_TL_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="TMF_SpecialistMarker";
-							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="["""",""""]";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="TMF_assignGear_faction";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="us_army_ocp";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="TMF_assignGear_enabled";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="TMF_teamColour_colour";
-							expression="_this setVariable ['TMF_teamColour_colour',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=1.01;
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male06ENG";
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[""sl"",""us_army_ocp"",true]";
-								};
-							};
-						};
-						class Attribute7
-						{
-							property="TMF_assignGear_role";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="sl";
-								};
-							};
-						};
-						nAttributes=8;
-					};
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14753.869,17.911438,16791.504};
-						angles[]={0,5.5327458,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						description="Medic";
-						isPlayable=1;
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="rhs_weap_m4a1_blockII_KAC_bk";
-								optics="SMA_eotech552";
-								flashlight="acc_flashlight";
-								underBarrel="rhsusf_acc_kac_grip";
-								firemode="rhs_weap_m4a1_blockII_KAC_bk:Single";
-								class primaryMuzzleMag
-								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-									ammoLeft=30;
-								};
-							};
-							class uniform
-							{
-								typeName="MNP_CombatUniform_DS_B";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=5;
-									class Item0
-									{
-										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item1
-									{
-										name="ACE_fieldDressing";
-										count=10;
-									};
-									class Item2
-									{
-										name="ACE_morphine";
-										count=2;
-									};
-									class Item3
-									{
-										name="ACE_personalAidKit";
-										count=1;
-									};
-									class Item4
-									{
-										name="ACE_tourniquet";
-										count=2;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_plateframe_medic";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=4;
-									class Item0
-									{
-										name="rhs_mag_m67";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="SmokeShell";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-										count=6;
-										ammoLeft=30;
-									};
-									class Item3
-									{
-										name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
-										count=3;
-										ammoLeft=30;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="B_Kitbag_cbr";
-								isBackpack=1;
-								class ItemCargo
-								{
-									items=8;
-									class Item0
-									{
-										name="ACE_fieldDressing";
-										count=60;
-									};
-									class Item1
-									{
-										name="ACE_bloodIV";
-										count=10;
-									};
-									class Item2
-									{
-										name="ACE_bloodIV_250";
-										count=5;
-									};
-									class Item3
-									{
-										name="ACE_bloodIV_500";
-										count=10;
-									};
-									class Item4
-									{
-										name="ACE_epinephrine";
-										count=10;
-									};
-									class Item5
-									{
-										name="ACE_morphine";
-										count=10;
-									};
-									class Item6
-									{
-										name="ACE_tourniquet";
-										count=10;
-									};
-									class Item7
-									{
-										name="ACE_splint";
-										count=10;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							goggles="rhsusf_shemagh2_gogg_tan";
-							headgear="rhsusf_mich_bare_norotos_arc_alt_semi";
-						};
-					};
-					id=1215;
-					type="rhsusf_army_ucp_medic";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="TMF_SpecialistMarker";
-							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[""x\tmf\addons\orbat\textures\red_cross.paa"",""M""]";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="TMF_assignGear_faction";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="us_army_ocp";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="TMF_assignGear_enabled";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="TMF_teamColour_colour";
-							expression="_this setVariable ['TMF_teamColour_colour',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0.97000003;
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male05ENG";
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[""m"",""us_army_ocp"",true]";
-								};
-							};
-						};
-						class Attribute7
-						{
-							property="TMF_assignGear_role";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="m";
-								};
-							};
-						};
-						nAttributes=8;
-					};
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14752.785,17.911438,16790.195};
-						angles[]={0,5.4435945,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						description="AR";
-						isPlayable=1;
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="rhs_weap_m249_pip_S_para";
-								optics="SMA_eotech552";
-								flashlight="acc_flashlight";
-								underBarrel="rhsusf_acc_grip4_bipod";
-								firemode="rhs_weap_m249_pip_S_para:FullAuto";
-								class primaryMuzzleMag
-								{
-									name="rhsusf_200rnd_556x45_mixed_box";
-									ammoLeft=200;
-								};
-							};
-							class handgun
-							{
-								name="hlc_pistol_P226R_357Combat";
-								optics="HLC_optic_Siglite";
-								class primaryMuzzleMag
-								{
-									name="hlc_12Rnd_357SIG_B_P226";
-									ammoLeft=12;
-								};
-							};
-							class uniform
-							{
-								typeName="MNP_CombatUniform_DS_B";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=5;
-									class Item0
-									{
-										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item1
-									{
-										name="ACE_fieldDressing";
-										count=10;
-									};
-									class Item2
-									{
-										name="ACE_morphine";
-										count=2;
-									};
-									class Item3
-									{
-										name="ACE_personalAidKit";
-										count=1;
-									};
-									class Item4
-									{
-										name="ACE_tourniquet";
-										count=2;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_plateframe_machinegunner";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=4;
-									class Item0
-									{
-										name="rhs_mag_m67";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="SmokeShell";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="hlc_12Rnd_357SIG_B_P226";
-										count=1;
-										ammoLeft=12;
-									};
-									class Item3
-									{
-										name="rhsusf_200rnd_556x45_mixed_box";
-										count=2;
-										ammoLeft=200;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="B_Kitbag_cbr";
-								isBackpack=1;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhsusf_200rnd_556x45_mixed_box";
-										count=2;
-										ammoLeft=200;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							goggles="rhsusf_shemagh2_gogg_tan";
-							headgear="rhsusf_mich_bare_norotos_arc_alt_semi";
-						};
-					};
-					id=1216;
-					type="B_soldier_AR_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="TMF_SpecialistMarker";
-							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="["""",""""]";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="TMF_assignGear_faction";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="us_army_ocp";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="TMF_assignGear_enabled";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="TMF_teamColour_colour";
-							expression="_this setVariable ['TMF_teamColour_colour',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=4;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=1.05;
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male12ENG";
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[""ar"",""us_army_ocp"",true]";
-								};
-							};
-						};
-						class Attribute7
-						{
-							property="TMF_assignGear_role";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="ar";
-								};
-							};
-						};
-						nAttributes=8;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14754.64,17.911438,16788.02};
-						angles[]={0,5.379436,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						description="AAR";
-						isPlayable=1;
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="rhs_weap_m4a1_blockII_KAC_bk";
-								optics="SMA_eotech552";
-								flashlight="acc_flashlight";
-								underBarrel="rhsusf_acc_kac_grip";
-								firemode="rhs_weap_m4a1_blockII_KAC_bk:Single";
-								class primaryMuzzleMag
-								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-									ammoLeft=30;
-								};
-							};
-							class binocular
-							{
-								name="rhssaf_zrak_rd7j";
-							};
-							class uniform
-							{
-								typeName="MNP_CombatUniform_DS_B";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=5;
-									class Item0
-									{
-										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item1
-									{
-										name="ACE_fieldDressing";
-										count=10;
-									};
-									class Item2
-									{
-										name="ACE_morphine";
-										count=2;
-									};
-									class Item3
-									{
-										name="ACE_personalAidKit";
-										count=1;
-									};
-									class Item4
-									{
-										name="ACE_tourniquet";
-										count=2;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_plateframe_rifleman";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=4;
-									class Item0
-									{
-										name="rhs_mag_m67";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="SmokeShell";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-										count=6;
-										ammoLeft=30;
-									};
-									class Item3
-									{
-										name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
-										count=3;
-										ammoLeft=30;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="B_Kitbag_cbr";
-								isBackpack=1;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhsusf_200rnd_556x45_mixed_box";
-										count=5;
-										ammoLeft=200;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							goggles="rhsusf_shemagh2_gogg_tan";
-							headgear="rhsusf_mich_bare_norotos_arc_alt_semi";
-						};
-					};
-					id=1217;
-					type="rhsusf_usmc_marpat_wd_autorifleman_m249_ass";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="TMF_SpecialistMarker";
-							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="["""",""""]";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="TMF_assignGear_faction";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="us_army_ocp";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="TMF_assignGear_enabled";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="TMF_teamColour_colour";
-							expression="_this setVariable ['TMF_teamColour_colour',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=4;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0.95999998;
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male12ENG";
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[""aar"",""us_army_ocp"",true]";
-								};
-							};
-						};
-						class Attribute7
-						{
-							property="TMF_assignGear_role";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="aar";
-								};
-							};
-						};
-						nAttributes=8;
-					};
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14757.746,17.911438,16794.438};
-						angles[]={0,5.2743154,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						description="RAT";
-						isPlayable=1;
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="rhs_weap_m4a1_blockII_KAC_bk";
-								optics="SMA_eotech552";
-								flashlight="acc_flashlight";
-								underBarrel="rhsusf_acc_kac_grip";
-								firemode="rhs_weap_m4a1_blockII_KAC_bk:Single";
-								class primaryMuzzleMag
-								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-									ammoLeft=30;
-								};
-							};
-							class secondaryWeapon
-							{
-								name="rhs_weap_M136";
-								flashlight="rhs_acc_at4_handler";
-							};
-							class uniform
-							{
-								typeName="MNP_CombatUniform_DS_B";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=5;
-									class Item0
-									{
-										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item1
-									{
-										name="ACE_fieldDressing";
-										count=10;
-									};
-									class Item2
-									{
-										name="ACE_morphine";
-										count=2;
-									};
-									class Item3
-									{
-										name="ACE_personalAidKit";
-										count=1;
-									};
-									class Item4
-									{
-										name="ACE_tourniquet";
-										count=2;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_plateframe_rifleman";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=4;
-									class Item0
-									{
-										name="rhs_mag_m67";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="SmokeShell";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-										count=6;
-										ammoLeft=30;
-									};
-									class Item3
-									{
-										name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
-										count=3;
-										ammoLeft=30;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="B_Kitbag_cbr";
-								isBackpack=1;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-										count=5;
-										ammoLeft=30;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							goggles="rhsusf_shemagh2_gogg_tan";
-							headgear="rhsusf_mich_bare_norotos_arc_alt_semi";
-						};
-					};
-					id=1218;
-					type="B_soldier_LAT_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="TMF_SpecialistMarker";
-							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="["""",""""]";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="TMF_assignGear_faction";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="us_army_ocp";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="TMF_assignGear_enabled";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="TMF_teamColour_colour";
-							expression="_this setVariable ['TMF_teamColour_colour',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=3;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=1.03;
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male10ENG";
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[""rat"",""us_army_ocp"",true]";
-								};
-							};
-						};
-						class Attribute7
-						{
-							property="TMF_assignGear_role";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="rat";
-								};
-							};
-						};
-						nAttributes=8;
-					};
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14754.744,17.911438,16793.678};
-						angles[]={0,5.4229822,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						description="RAT";
-						isPlayable=1;
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="rhs_weap_m4a1_blockII_KAC_bk";
-								optics="SMA_eotech552";
-								flashlight="acc_flashlight";
-								underBarrel="rhsusf_acc_kac_grip";
-								firemode="rhs_weap_m4a1_blockII_KAC_bk:Single";
-								class primaryMuzzleMag
-								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-									ammoLeft=30;
-								};
-							};
-							class secondaryWeapon
-							{
-								name="rhs_weap_M136";
-								flashlight="rhs_acc_at4_handler";
-							};
-							class uniform
-							{
-								typeName="MNP_CombatUniform_DS_B";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=5;
-									class Item0
-									{
-										name="ACRE_PRC343";
-										count=1;
-									};
-									class Item1
-									{
-										name="ACE_fieldDressing";
-										count=10;
-									};
-									class Item2
-									{
-										name="ACE_morphine";
-										count=2;
-									};
-									class Item3
-									{
-										name="ACE_personalAidKit";
-										count=1;
-									};
-									class Item4
-									{
-										name="ACE_tourniquet";
-										count=2;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_plateframe_rifleman";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=4;
-									class Item0
-									{
-										name="rhs_mag_m67";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="SmokeShell";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-										count=6;
-										ammoLeft=30;
-									};
-									class Item3
-									{
-										name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
-										count=3;
-										ammoLeft=30;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="B_Kitbag_cbr";
-								isBackpack=1;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-										count=5;
-										ammoLeft=30;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							goggles="rhsusf_shemagh2_gogg_tan";
-							headgear="rhsusf_mich_bare_norotos_arc_alt_semi";
-						};
-					};
-					id=1219;
-					type="B_soldier_LAT_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="TMF_SpecialistMarker";
-							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="["""",""""]";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="TMF_assignGear_faction";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="us_army_ocp";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="TMF_assignGear_enabled";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="TMF_teamColour_colour";
-							expression="_this setVariable ['TMF_teamColour_colour',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=3;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=1.03;
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male10ENG";
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[""rat"",""us_army_ocp"",true]";
-								};
-							};
-						};
-						class Attribute7
-						{
-							property="TMF_assignGear_role";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="rat";
-								};
-							};
-						};
-						nAttributes=8;
-					};
-				};
-			};
-			class Attributes
-			{
-				name="deltaSF";
-				init="deltaSF setGroupIDGlobal [""D-SF""];" \n "this setVariable [""BFT_groupMarker_visible"", true]; " \n "this setVariable [""BFT_groupMarker_type"", ""recon""]; " \n "this setVariable [""BFT_groupMarker_color"", ""ColorOrange""];";
-			};
-			id=1213;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="TMF_groupMarker";
-					expression="[_this,'TMF_groupMarker',_value] call tmf_common_fnc_initGroupVar;";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="[""x\tmf\addons\orbat\textures\red_inf.paa"",""A1"","""",0]";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="groupID";
-					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="Delta";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="TMF_OrbatParent";
-					expression="[_this,'TMF_OrbatParent',_value] call tmf_common_fnc_initGroupVar;";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=1;
-						};
-					};
-				};
-				nAttributes=3;
-			};
-		};
-		class Item84
 		{
 			dataType="Group";
 			side="West";
@@ -26451,7 +24907,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
@@ -26736,7 +25192,7 @@ class Mission
 						class Attribute6
 						{
 							property="TMF_assignGear_full";
-							expression="[_this,  _value] call TMF_assignGear_fnc_helper";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
 							class Value
 							{
 								class data
