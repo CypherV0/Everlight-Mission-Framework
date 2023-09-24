@@ -45,7 +45,7 @@ class baseMan {// Weaponless baseclass
     backpackItems[] = {};
 
     // This is executed after unit init is complete. argument: _this = _unit.
-    code = "onMapSingleClick {_shift};";
+    code = "";
 
     // These are acre item radios that will be added during the ACRE init. ACRE radios added via any other system will be erased.
     radios[] = {};
@@ -127,7 +127,7 @@ class g : r
 class m : r
 {
     displayName = "Medic";
-    code = "_this setUnitTrait [""Medic"", true]; onMapSingleClick {_shift};";
+    code = "_this setUnitTrait [""Medic"", true];";
     insignias[] = {"MedB"};
     backpackItems[] = {
       LIST_20("ACE_fieldDressing"),
@@ -256,7 +256,6 @@ class vcrewco : smg
 class hp : smg
 {
     displayName = "Helicopter Pilot";
-    code = "onMapSingleClick {};";
     headgear[] = {
         "rhsusf_hgu56p",
         "rhsusf_hgu56p_visor"
@@ -290,7 +289,6 @@ class hpst : smg
 class jp : baseMan
 {
     displayName = "Fixed-Wing Pilot";
-    code = "onMapSingleClick {};";
     uniform[] = {"U_B_PilotCoveralls"};
     vest[] = {"V_Rangemaster_belt"};
     backpack[] = {"B_Parachute"};
