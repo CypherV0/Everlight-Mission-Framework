@@ -27,5 +27,6 @@ player createDiaryRecord ["Everlight Comms",["Radio Request",
 
 "<br/>
 If you are missing a 343 radio, take one:
-<execute expression='player addItem ""ACRE_PRC343"";hint ""PRC_343 Added"";'>Take PRC343</execute>"]];
-//Need to change the hint to only show if the addItem was successful
+<execute expression='player addItem ""ACRE_PRC343"";hint ""PRC_343 Added"";'>Take PRC343</execute><br/><br/>
+If you are missing a 152 radio (Leaders SL and above, Crew Commanders, Pilots), take one:
+<execute expression='if ( [""PRIVATE"",""CORPORAL"",""SERGEANT"",""LIEUTENANT"",""CAPTAIN"",""MAJOR"",""COLONEL""] find (rank player) > 1) then {player addItem ""ACRE_PRC152"";hint ""PRC_152 Added"";};'>Take PRC152</execute>"]];
