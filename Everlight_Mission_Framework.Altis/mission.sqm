@@ -13,7 +13,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=1232;
+		nextID=1233;
 	};
 	class MarkerIDProvider
 	{
@@ -21,11 +21,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=899;
+		nextID=922;
 	};
 	class Camera
 	{
-		pos[]={14722.225,242.12956,16698.438};
+		pos[]={14732.373,231.04247,16696.59};
 		dir[]={-0.0071563381,-0.99994999,0.006984442};
 		up[]={-0.71561378,0.00999978,0.69842464};
 		aside[]={0.69845957,0,0.71564955};
@@ -406,8 +406,8 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="TMF_ORBATMarkersFT_Directional";
-			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
+			property="TMF_ORBATMarkersFT";
+			expression="false";
 			class Value
 			{
 				class data
@@ -432,8 +432,8 @@ class CustomAttributes
 		};
 		class Attribute5
 		{
-			property="TMF_ORBATMarkersFT";
-			expression="false";
+			property="TMF_ORBATMarkersFT_Directional";
+			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
 			class Value
 			{
 				class data
@@ -1833,7 +1833,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=84;
+		items=85;
 		class Item0
 		{
 			dataType="Comment";
@@ -3006,10 +3006,10 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14631.46,17.91,16704.361};
+				position[]={14767.706,17.91,16660.373};
 			};
-			title="Version 14";
-			description="Version 14 Changes:" \n "" \n "- Added another slot to standard Fireteams" \n "" \n "Version 13 Changes:" \n "" \n "- Added custom Fortify" \n "- Updated Medical Crates" \n "- Updated loadouts for new Medical and Flashlights overhauls" \n "" \n "Version 12 Changes:" \n "" \n "- Updated Optics Crates to be arsenal-based, and they now have Optics, Facewear, and Grips/Bipods." \n "- Removed AK Optics Crate as it's no longer relevant" \n "- Updated Medical Crate contents to reflect the changes to the Medic loadout" \n "- Combined the admin slots into a group" \n "" \n "Version 11 Changes:" \n "" \n "- Made MAT a 3-player team, as it should have been" \n "" \n "Version 10 Changes:" \n "- Hardcoded the callsigns, no more needing to manually set them every time you start a new project. Rejoice!" \n "- Fighter Pilot callsign is now correctly set to Mage-1" \n "- Color Teams should be correctly set finally..." \n "- The SF teams are actually called SF teams now (A-SF, B-SF, etc)" \n "- Added a new trigger to auto remove any Fortify/Entrenching tools from player inventories when SafeStart ends" \n "- The Mission Title Splash font is now larger and easier to notice" \n "- Updated the garbage collection to be more strict (should make a slight improvement to performance in sustained large battles)" \n "" \n "Version 9 Changes:" \n "- Changed Infantry Fireteam size from 4 to 5" \n "- Added a trigger to automatically remove any Fortify Tools and Entrenching Tools from players when SafeStart ends (useful if you want to set up a defensive mission where players can fortify during briefing phase)" \n "- Renamed the ""Vehicle Crew"" members to ""Vehicle Commander"", ""Vehicle Gunner"", and ""Vehicle Driver""" \n "" \n "Version 8 Changes:" \n "- Fixed some wording in the Setup & Updating Instructions" \n "- Changed the Assign Gear instructions completely (much easier now)" \n "- Changed the wording of the group deployment button to ""Deploy Group""" \n "" \n "Version 7 Changes:" \n "- Removed initPlayerLocal.sqf (you will have to do the same)" \n "- Added ""Deploy Group"" action during SafeStart for leaders, created by Ferdilanz.";
+			title="Version 15";
+			description="Version 15 Changes:" \n "" \n "- Gave a Rank to any leaders, pilots, and crew that require a 152 Radio" \n "- Added a ""Take 152"" code to the comms file which will only work for units of Rank Sergeant and above" \n "- Changed the SF Teams to Delta, Echo, and Foxtrot ";
 			id=325;
 		};
 		class Item48
@@ -5057,6 +5057,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						rank="LIEUTENANT";
 						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="PltCo@PltHQ";
 						isPlayable=1;
@@ -5342,6 +5343,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						rank="SERGEANT";
 						description="PltSgt";
 						isPlayable=1;
 						class Inventory
@@ -5631,6 +5633,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						rank="SERGEANT";
 						description="PltMed";
 						isPlayable=1;
 						class Inventory
@@ -5941,6 +5944,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						rank="SERGEANT";
 						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="SL@Alpha SL";
 						isPlayable=1;
@@ -9294,6 +9298,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						rank="SERGEANT";
 						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="SL@Bravo SL";
 						isPlayable=1;
@@ -12647,6 +12652,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						rank="SERGEANT";
 						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="MMG Operator@MMG";
 						isPlayable=1;
@@ -13380,6 +13386,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						rank="SERGEANT";
 						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="MAT Operator@MAT";
 						isPlayable=1;
@@ -14145,6 +14152,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						rank="SERGEANT";
 						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="HAT Operator@HAT";
 						isPlayable=1;
@@ -14896,6 +14904,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						rank="LIEUTENANT";
 						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="Pilot@Mage-1";
 						isPlayable=1;
@@ -15187,6 +15196,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
+						rank="LIEUTENANT";
 						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="Heli Pilot@Falcon-1";
 						isPlayable=1;
@@ -15446,6 +15456,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						rank="LIEUTENANT";
 						description="Heli Co-Pilot";
 						isPlayable=1;
 						class Inventory
@@ -15749,6 +15760,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						rank="SERGEANT";
 						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="Vehicle Commander@Thunder-1";
 						isPlayable=1;
@@ -20028,6 +20040,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						rank="SERGEANT";
 						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="SF Lead@Delta";
 						isPlayable=1;
@@ -20804,7 +20817,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14731.832,17.911438,16783.639};
-						angles[]={-0,5.2117438,0};
+						angles[]={0,5.2117438,0};
 					};
 					side="West";
 					flags=4;
@@ -21572,6 +21585,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						rank="SERGEANT";
 						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="SF Lead@Echo";
 						isPlayable=1;
@@ -22348,7 +22362,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14745.199,17.911438,16795.676};
-						angles[]={-0,5.379436,0};
+						angles[]={0,5.379436,0};
 					};
 					side="West";
 					flags=4;
@@ -23116,6 +23130,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						rank="SERGEANT";
 						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="SF Lead@Foxtrot";
 						isPlayable=1;
@@ -23892,7 +23907,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14745.07,17.911438,16783.656};
-						angles[]={-0,5.2117438,0};
+						angles[]={0,5.2117438,0};
 					};
 					side="West";
 					flags=4;
@@ -24660,6 +24675,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						rank="CAPTAIN";
 						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="Admin@Admin";
 						isPlayable=1;
@@ -24945,6 +24961,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						rank="CAPTAIN";
 						init="this addAction [""<t color='#0096FF'>Deploy Group</t>"", { execVM ""groupTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"", -1,  false]; " \n "" \n "this addAction [""<t color='#0096FF'>Deploy Self</t>"", { execVM ""selfTeleport.sqf""; }, nil, 25, false,  true,  """",  ""cameraOn == _target"",  -1, false ];";
 						description="Admin";
 						isPlayable=1;
@@ -25255,6 +25272,17 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item84
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={14780.422,17.91,16648.178};
+			};
+			title="Previous Versions";
+			description="Version 14 Changes:" \n "" \n "- Added another slot to standard Fireteams" \n "" \n "Version 13 Changes:" \n "" \n "- Added custom Fortify" \n "- Updated Medical Crates" \n "- Updated loadouts for new Medical and Flashlights overhauls" \n "" \n "Version 12 Changes:" \n "" \n "- Updated Optics Crates to be arsenal-based, and they now have Optics, Facewear, and Grips/Bipods." \n "- Removed AK Optics Crate as it's no longer relevant" \n "- Updated Medical Crate contents to reflect the changes to the Medic loadout" \n "- Combined the admin slots into a group" \n "" \n "Version 11 Changes:" \n "" \n "- Made MAT a 3-player team, as it should have been" \n "" \n "Version 10 Changes:" \n "- Hardcoded the callsigns, no more needing to manually set them every time you start a new project. Rejoice!" \n "- Fighter Pilot callsign is now correctly set to Mage-1" \n "- Color Teams should be correctly set finally..." \n "- The SF teams are actually called SF teams now (A-SF, B-SF, etc)" \n "- Added a new trigger to auto remove any Fortify/Entrenching tools from player inventories when SafeStart ends" \n "- The Mission Title Splash font is now larger and easier to notice" \n "- Updated the garbage collection to be more strict (should make a slight improvement to performance in sustained large battles)" \n "" \n "Version 9 Changes:" \n "- Changed Infantry Fireteam size from 4 to 5" \n "- Added a trigger to automatically remove any Fortify Tools and Entrenching Tools from players when SafeStart ends (useful if you want to set up a defensive mission where players can fortify during briefing phase)" \n "- Renamed the ""Vehicle Crew"" members to ""Vehicle Commander"", ""Vehicle Gunner"", and ""Vehicle Driver""" \n "" \n "Version 8 Changes:" \n "- Fixed some wording in the Setup & Updating Instructions" \n "- Changed the Assign Gear instructions completely (much easier now)" \n "- Changed the wording of the group deployment button to ""Deploy Group""" \n "" \n "Version 7 Changes:" \n "- Removed initPlayerLocal.sqf (you will have to do the same)" \n "- Added ""Deploy Group"" action during SafeStart for leaders, created by Ferdilanz.";
+			id=1232;
 		};
 	};
 };
