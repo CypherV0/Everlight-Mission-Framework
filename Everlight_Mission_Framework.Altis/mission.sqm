@@ -21,14 +21,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=922;
+		nextID=968;
 	};
 	class Camera
 	{
-		pos[]={14732.373,231.04247,16696.59};
-		dir[]={-0.0071563381,-0.99994999,0.006984442};
-		up[]={-0.71561378,0.00999978,0.69842464};
-		aside[]={0.69845957,0,0.71564955};
+		pos[]={14739.314,230.79543,16690.803};
+		dir[]={-0.007183637,-0.99994999,0.0069563617};
+		up[]={-0.71834356,0.00999978,0.69561666};
+		aside[]={0.69565147,0,0.7183795};
 	};
 };
 binarizationWanted=0;
@@ -19973,8 +19973,8 @@ class Mission
 			};
 			class Attributes
 			{
-				name="echo1";
-				init="echo1 setGroupIDGlobal [""Echo""];";
+				name="extra1";
+				init="extra1 setGroupIDGlobal [""Extra""];";
 			};
 			id=1175;
 			class CustomAttributes
@@ -20001,7 +20001,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="Echo";
+							value="Extra";
 						};
 					};
 				};
@@ -21519,7 +21519,7 @@ class Mission
 			class Attributes
 			{
 				name="deltaSF";
-				init="alphaSF setGroupIDGlobal [""D-SF""];" \n "this setVariable [""BFT_groupMarker_visible"", true]; " \n "this setVariable [""BFT_groupMarker_type"", ""recon""]; " \n "this setVariable [""BFT_groupMarker_color"", ""ColorRed""];";
+				init="deltaSF setGroupIDGlobal [""D-SF""];" \n "this setVariable [""BFT_groupMarker_visible"", true]; " \n "this setVariable [""BFT_groupMarker_type"", ""recon""]; " \n "this setVariable [""BFT_groupMarker_color"", ""ColorRed""];";
 			};
 			id=1192;
 			class CustomAttributes
@@ -23064,7 +23064,7 @@ class Mission
 			class Attributes
 			{
 				name="echoSF";
-				init="bravoSF setGroupIDGlobal [""E-SF""];" \n "this setVariable [""BFT_groupMarker_visible"", true]; " \n "this setVariable [""BFT_groupMarker_type"", ""recon""]; " \n "this setVariable [""BFT_groupMarker_color"", ""ColorBlue""];";
+				init="echoSF setGroupIDGlobal [""E-SF""];" \n "this setVariable [""BFT_groupMarker_visible"", true]; " \n "this setVariable [""BFT_groupMarker_type"", ""recon""]; " \n "this setVariable [""BFT_groupMarker_color"", ""ColorBlue""];";
 			};
 			id=1199;
 			class CustomAttributes
@@ -24609,7 +24609,7 @@ class Mission
 			class Attributes
 			{
 				name="foxtrotSF";
-				init="charlieSF setGroupIDGlobal [""F-SF""];" \n "this setVariable [""BFT_groupMarker_visible"", true]; " \n "this setVariable [""BFT_groupMarker_type"", ""recon""]; " \n "this setVariable [""BFT_groupMarker_color"", ""ColorGUER""];";
+				init="foxtrotSF setGroupIDGlobal [""F-SF""];" \n "this setVariable [""BFT_groupMarker_visible"", true]; " \n "this setVariable [""BFT_groupMarker_type"", ""recon""]; " \n "this setVariable [""BFT_groupMarker_color"", ""ColorGUER""];";
 			};
 			id=1206;
 			class CustomAttributes
