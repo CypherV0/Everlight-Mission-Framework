@@ -1,6 +1,6 @@
 //Compatible with ACE Advanced Medical
 
-tooltip = "Serbia Modern Digital w/NVGs by Ferdilanz";
+tooltip = "Serbia Modern Digital by Ferdilanz";
 
 class baseMan {// Weaponless baseclass
     displayName = "Unarmed";
@@ -12,7 +12,7 @@ class baseMan {// Weaponless baseclass
     goggles[] = {"G_Combat_Goggles_tna_F", "rhsusf_oakley_goggles_blk", "rhsusf_shemagh_gogg_grn", "rhsusf_shemagh2_gogg_grn", "rhsusf_shemagh2_grn"};
     hmd[] =
     {
-        "UK3CB_ANPVS7"// "rhsusf_ANPVS_15"
+        "UK3CB_ANPVS7"
     };
     // Leave empty to remove all. "Default" > leave original item.
 
@@ -72,22 +72,21 @@ class r : baseMan
     bipod[] = {};
     scope[] = {"cup_optic_compm2_low", "rhsusf_acc_rx01", "cup_optic_ac11704_black", "sma_barska", "cup_optic_zddot"};
     silencer[] = {"rhsusf_acc_sfmb556"};
-    attachment[] = {};
+    attachment[] = {"rhs_acc_perst1ik"};
     sidearmWeapon[] = {};
     magazines[] = {
-        LIST_8("rhsgref_30rnd_556x45_m21"),
+        LIST_7("rhsgref_30rnd_556x45_m21"),
         LIST_3("rhsgref_30rnd_556x45_m21_t"),
+        LIST_2("rhssaf_mag_brd_m83_white"),
+        LIST_2("rhssaf_mag_br_m84")
     };
     items[] = {
         LIST_10("ACE_fieldDressing"),
         LIST_2("ACE_morphine"),
         LIST_2("ACE_tourniquet"),
         "evlt_medical_advancedAid",
+        "ACE_Flashlight_XL50",
         "ACRE_PRC343"
-    };
-    backpackItems[] = {
-        LIST_2("rhssaf_mag_brd_m83_white"),
-        LIST_2("rhssaf_mag_br_m84")
     };
 };
 class rm : r
@@ -209,7 +208,7 @@ class aar : r
         "UK3CB_GAF_B_B_ENG_DIGI"
     };
     primaryWeapon[] = {"rhs_weap_m21s_pr"};
-    backpackItems[] +=
+    backpackItems[] =
     {
         LIST_5("rhsusf_200rnd_556x45_mixed_box")
     };
@@ -227,13 +226,15 @@ class mark : r
     magazines[] = {
         LIST_10("rhs_10Rnd_762x54mmR_7N14"),
         LIST_5("rhssaf_mag_15Rnd_9x19_FMJ"),
+        LIST_2("rhssaf_mag_brd_m83_white"),
+        LIST_2("rhssaf_mag_br_m75")
     };
 };
 class mg : r
 {
     displayName = "MMG Gunner";
     primaryWeapon[] = {"hlc_lmg_mg42kws_b"};
-    attachment[] = {"everlight_x2000_point"};
+    attachment[] = {"rhs_acc_perst1ik_ris"};
     scope[] = {"sma_eotech552"};
     vest[] = {
         "UK3CB_TKA_B_V_GA_HEAVY_WDL"
@@ -257,10 +258,6 @@ class mga : r
 {
     displayName = "MMG Assistant";
     primaryWeapon[] = {"rhs_weap_m21s_pr"};
-    magazines[] += {
-        LIST_2("rhssaf_mag_brd_m83_white"),
-        LIST_2("rhssaf_mag_br_m84")
-    };
     backpackItems[] =
     {
         LIST_2("hlc_200Rnd_792x57_M_MG42")
@@ -271,10 +268,6 @@ class mgam : r
 {
     displayName = "MMG Ammo Man";
     primaryWeapon[] = {"rhs_weap_m21s_pr"};
-    magazines[] += {
-        LIST_2("rhssaf_mag_brd_m83_white"),
-        LIST_2("rhssaf_mag_br_m84")
-    };
     backpackItems[] =
     {
         LIST_2("hlc_200Rnd_792x57_M_MG42")
@@ -291,7 +284,7 @@ class mat : r
     };
     magazines[] += {"rhs_mag_smaw_HEAA"};
     items[] += {"ACRE_PRC152"};
-    backpackItems[] = {LIST_2("rhs_mag_smaw_HEAA")};
+    backpackItems[] = {"rhs_mag_smaw_HEAA"};
 };
 class mata : r
 {
@@ -321,9 +314,13 @@ class matam : r
 class hat : r
 {
     displayName = "HAT Gunner";
-    primaryWeapon[] = {"rhs_weap_scorpion"};
+    backpack[] = {};
+    primaryWeapon[] = {"rhs_weap_m21s_pr"};
     magazines[] = {
-        LIST_15("rhsgref_20rnd_765x17_vz61")
+        LIST_4("rhsgref_30rnd_556x45_m21"),
+        LIST_3("rhsgref_30rnd_556x45_m21_t"),
+        "rhssaf_mag_brd_m83_white",
+        "rhssaf_mag_br_m84"
     };
     secondaryWeapon[] = {"ace_compat_rhs_afrf3_kornet_carry"};
     items[] += {"ACRE_PRC152"};
@@ -343,7 +340,6 @@ class hata : r
 class hatam : r
 {
     displayName = "HAT Ammo Man";
-    primaryWeapon[] = {"rhs_weap_m21s_pr"};
     backpack[] = {
         "UK3CB_GAF_B_B_ENG_DIGI"
     };
@@ -358,7 +354,7 @@ class smg : r
     vest[] = {
         "V_TacVest_oli"
     };
-    primaryWeapon[] = {"rhs_weap_m92"};
+    primaryWeapon[] = {"rhs_weap_scorpion"};
     scope[] = {};
     attachment[] = {};
     bipod[] = {};
@@ -366,7 +362,7 @@ class smg : r
     sidearmWeapon[] = {"hgun_Pistol_Signal_F"};
     magazines[] =
     {
-        LIST_3("rhssaf_30Rnd_762x39mm_M67"),
+        LIST_8("rhsgref_20rnd_765x17_vz61"),
         "6Rnd_RedSignal_F",
         "rhssaf_mag_brd_m83_red",
         "ACE_HandFlare_Red",

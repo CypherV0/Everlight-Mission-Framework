@@ -75,8 +75,10 @@ class r : baseMan
     attachment[] = {};
     sidearmWeapon[] = {};
     magazines[] = {
-        LIST_8("rhssaf_30Rnd_762x39mm_M67"),
+        LIST_7("rhssaf_30Rnd_762x39mm_M67"),
         LIST_3("rhssaf_30Rnd_762x39mm_M78_tracer"),
+        LIST_2("rhssaf_mag_brd_m83_white"),
+        LIST_2("rhssaf_mag_br_m75")
     };
     items[] = {
         LIST_10("ACE_fieldDressing"),
@@ -84,10 +86,6 @@ class r : baseMan
         LIST_2("ACE_tourniquet"),
         "evlt_medical_advancedAid",
         "ACRE_PRC343"
-    };
-    backpackItems[] = {
-        LIST_2("rhssaf_mag_brd_m83_white"),
-        LIST_2("rhssaf_mag_br_m75")
     };
 };
 class rm : r
@@ -211,7 +209,7 @@ class aar : r
         "UK3CB_GAF_B_B_ENG_DIGI"
     };
     primaryWeapon[] = {"rhs_weap_m70b3n"};
-    backpackItems[] +=
+    backpackItems[] =
     {
         LIST_5("rhsusf_200rnd_556x45_mixed_box")
     };
@@ -229,6 +227,8 @@ class mark : r
     magazines[] = {
         LIST_10("rhsgref_10Rnd_792x57_m76"),
         LIST_5("rhs_mag_762x25_8"),
+        LIST_2("rhssaf_mag_brd_m83_white"),
+        LIST_2("rhssaf_mag_br_m75")
     };
 };
 class mg : r
@@ -258,10 +258,6 @@ class mga : r
 {
     displayName = "MMG Assistant";
     primaryWeapon[] = {"rhs_weap_m92"};
-    magazines[] += {
-        LIST_2("rhssaf_mag_brd_m83_white"),
-        LIST_2("rhssaf_mag_br_m75")
-    };
     backpackItems[] =
     {
         LIST_2("hlc_200Rnd_792x57_M_MG42")
@@ -272,10 +268,6 @@ class mgam : r
 {
     displayName = "MMG Ammo Man";
     primaryWeapon[] = {"rhs_weap_m92"};
-    magazines[] += {
-        LIST_2("rhssaf_mag_brd_m83_white"),
-        LIST_2("rhssaf_mag_br_m75")
-    };
     backpackItems[] =
     {
         LIST_2("hlc_200Rnd_792x57_M_MG42")
@@ -290,9 +282,9 @@ class mat : r
     backpack[] = {
         "UK3CB_GAF_B_B_ENG_DIGI"
     };
-    magazines[] += {"rhs_mag_maaws_HEAT"};
+    magazines[] += {"MRAWS_HEAT_F"};
     items[] += {"ACRE_PRC152"};
-    backpackItems[] = {LIST_2("rhs_mag_maaws_HEAT")};
+    backpackItems[] = {"MRAWS_HEAT_F"};
 };
 class mata : r
 {
@@ -303,7 +295,7 @@ class mata : r
     };
     backpackItems[] =
     {
-        LIST_2("rhs_mag_maaws_HEAT")
+        LIST_4("MRAWS_HEAT_F")
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
@@ -316,15 +308,19 @@ class matam : r
     };
     backpackItems[] =
     {
-        LIST_3("rhs_mag_maaws_HEAT")
+        LIST_4("MRAWS_HEAT_F")
     };
 };
 class hat : r
 {
     displayName = "HAT Gunner";
-    primaryWeapon[] = {"rhs_weap_scorpion"};
+    backpack[] = {};
+    primaryWeapon[] = {"rhs_weap_m92"};
     magazines[] = {
-        LIST_15("rhsgref_20rnd_765x17_vz61")
+        LIST_4("rhssaf_30Rnd_762x39mm_M67"),
+        LIST_3("rhssaf_30Rnd_762x39mm_M78_tracer"),
+        "rhssaf_mag_brd_m83_white",
+        "rhssaf_mag_br_m75"
     };
     secondaryWeapon[] = {"ace_compat_rhs_afrf3_kornet_carry"};
     items[] += {"ACRE_PRC152"};
@@ -344,7 +340,6 @@ class hata : r
 class hatam : r
 {
     displayName = "HAT Ammo Man";
-    primaryWeapon[] = {"rhs_weap_m92"};
     backpack[] = {
         "UK3CB_GAF_B_B_ENG_DIGI"
     };
