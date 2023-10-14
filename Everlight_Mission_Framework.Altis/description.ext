@@ -339,6 +339,24 @@ class CfgLoadouts
 		displayName = "Middle East Guerrillas"; // (Spaces allowed)
 		#include "loadouts\MiddleEast_Guerrillas.hpp" // (No spaces)
 	};
+		
+	class Serbia_ModernDigital // (No spaces)
+	{
+		displayName = "Serbian Army"; // (Spaces allowed)
+		#include "loadouts\Serbia_ModernDigital.hpp" // (No spaces)
+	};
+
+	class Serbia_ModernDigitalNVG // (No spaces)
+	{
+		displayName = "Serbian Army w/NVG"; // (Spaces allowed)
+		#include "loadouts\Serbia_ModernDigitalNVG.hpp" // (No spaces)
+	};
+
+	class Serbia_YugoOakleaf // (No spaces)
+	{
+		displayName = "Yugoslavian Army"; // (Spaces allowed)
+		#include "loadouts\Serbia_YugoOakleaf.hpp" // (No spaces)
+	};
 
 };
 
