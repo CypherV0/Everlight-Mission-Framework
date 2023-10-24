@@ -148,6 +148,35 @@ class pm : m
     displayName = "Platoon Medic";
     items[] += {"ACRE_PRC152"};
 };
+class ar : r
+{
+    displayName = "Automatic Rifleman";
+    primaryWeapon[] = {"rhs_weap_m4a1_blockII_KAC_bk"};
+    bipod[] = {"rhsusf_acc_grip1"};
+    silencer[] = {"rhsusf_acc_nt4_black"};
+    magazines[] =
+    {
+        LIST_3("rhs_mag_100Rnd_556x45_Mk262_cmag"),
+        LIST_2("hlc_15Rnd_9x19_SD_P226"),
+        LIST_2("rhs_mag_m67"),
+        LIST_2("SmokeShell")
+    };
+    backpackItems[] =
+    {
+        LIST_4("rhs_mag_100Rnd_556x45_Mk262_cmag")
+    };
+    sidearmWeapon[] = {"hlc_pistol_P226R_Combat"};
+    sidearmAttachments[] = {"hlc_optic_hp", "hlc_acc_dbalpl", "hlc_muzzle_tirant9s"};
+};
+class aar : r
+{
+    displayName = "Asst. Automatic Rifleman";
+    backpackItems[] =
+    {
+        LIST_4("rhs_mag_100Rnd_556x45_Mk262_cmag")
+    };
+    linkedItems[] += {"rhssaf_zrak_rd7j"};
+};
 class smg : r
 {
     displayName = "SMG Base (Not for play)";
@@ -235,11 +264,11 @@ class jp : baseMan
     backpack[] = {"B_Parachute"};
     headgear[] = {"H_PilotHelmetFighter_B"};
     goggles[] = {"default"};
-    sidearmWeapon[] = {"hlc_pistol_P226R_357Combat"};
+    sidearmWeapon[] = {"hlc_pistol_P226R_Combat"};
     sidearmAttachments[] = {"hlc_optic_hp", "hlc_acc_dbalpl", "hlc_muzzle_octane9"};
     magazines[] =
     {
-        LIST_2("hlc_12Rnd_357SIG_B_P226")
+        LIST_2("hlc_15Rnd_9x19_SD_P226")
     };
     items[] =
     {
