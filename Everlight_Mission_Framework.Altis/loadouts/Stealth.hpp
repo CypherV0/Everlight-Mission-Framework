@@ -161,7 +161,7 @@ class ar : r
     magazines[] =
     {
         LIST_3("rhs_mag_100Rnd_556x45_Mk262_cmag"),
-        LIST_2("hlc_15Rnd_9x19_SD_P226"),
+        LIST_2("hlc_12Rnd_357SIG_B_P226"),
         LIST_2("rhs_mag_m67"),
         LIST_2("SmokeShell")
     };
@@ -169,7 +169,7 @@ class ar : r
     {
         LIST_4("rhs_mag_100Rnd_556x45_Mk262_cmag")
     };
-    sidearmWeapon[] = {"hlc_pistol_P226R_Combat"};
+    sidearmWeapon[] = {"hlc_pistol_P226R_357Combat"};
     sidearmAttachments[] = {"hlc_optic_hp", "hlc_acc_dbalpl", "hlc_muzzle_tirant9s"};
 };
 class aar : r
@@ -268,11 +268,11 @@ class jp : baseMan
     backpack[] = {"B_Parachute"};
     headgear[] = {"H_PilotHelmetFighter_B"};
     goggles[] = {"default"};
-    sidearmWeapon[] = {"hlc_pistol_P226R_Combat"};
+    sidearmWeapon[] = {"hlc_pistol_P226R_357Combat"};
     sidearmAttachments[] = {"hlc_optic_hp", "hlc_acc_dbalpl", "hlc_muzzle_octane9"};
     magazines[] =
     {
-        LIST_2("hlc_15Rnd_9x19_SD_P226")
+        LIST_2("hlc_12Rnd_357SIG_B_P226")
     };
     items[] =
     {
