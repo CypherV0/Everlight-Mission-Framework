@@ -117,7 +117,13 @@ class ftl : r
     vest[] = {
         "CUP_V_PMC_IOTV_Black_TL"
     };
-    magazines[] += {LIST_3("hlc_15Rnd_9x19_SD_P226")};
+    backpackItems[] +=
+    {
+        LIST_10("rhs_mag_M433_HEDP"),
+        LIST_5("1Rnd_Smoke_Grenade_shell"),
+        "ACE_Chemlight_IR",
+        "B_IR_Grenade"
+    };
     linkedItems[] =
     {
         "ItemMap",
@@ -125,9 +131,7 @@ class ftl : r
         "ItemWatch",
         "rhssaf_zrak_rd7j",
     };
-    sidearmWeapon[] = {"hlc_pistol_P226R_Combat"};
-    sidearmAttachments[] = {"hlc_optic_hp", "hlc_acc_dbalpl", "hlc_muzzle_tirant9s"};
-
+    sidearmWeapon[] = {"rhs_weap_M320"};
 };
 class sl : ftl
 {
