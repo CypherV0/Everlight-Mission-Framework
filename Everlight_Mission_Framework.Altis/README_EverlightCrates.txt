@@ -1,0 +1,324 @@
+Title = "Everlight Crates Addon"
+description = "Everlight Crates updated for ACE Logistics"
+author = "Ferdilanz"
+
+FT Crate: 	The main Crate to supply 1 Fireteam with ammunition and equipment.
+	Model variants:
+				FT Crate 			(x21)
+				AR Crate 			(x5)
+				MMG Crate 			(x5)
+				LAT Crate 			(x1)
+				MAT Crate 			(x2)
+				HAT Crate 			(x4)
+				Explosives Crate 	(x1)
+				Flare Crate			(x2)
+				Empty FT Crate		(x1)
+
+	Cargo Statistics:
+				Cargo Mass: 		2 units
+				Contains items:		True
+				Has Cargo space: 	False
+					Cargo space:	0 units
+				Can be Loaded: 		True
+				Slingloadable:		False
+				Can Carry?:			True
+				Can Drag?:			True
+				Can Rename?:		True
+				Rearm Source:		False
+				Refuel Source:		False
+				Repair Source:		False
+				Augments traits:	False
+
+AR Crate: 	An Autorifleman's supply Crate, enough to supply 2 Fireteams.
+	Content Variants:
+				MG-36
+				M249
+				HK-416
+				RPK-74
+				RPK-762
+	Cargo Statistics:
+				Cargo Mass: 		2 units
+				Contains items:		True
+				Has Cargo space: 	False
+					Cargo space:	0 units
+				Can be Loaded: 		True
+				Slingloadable:		False
+				Can Carry?:			True
+				Can Drag?:			True
+				Can Rename?:		True
+				Rearm Source:		False
+				Refuel Source:		False
+				Repair Source:		False
+				Augments traits:	False
+
+MMG Crate: 	The Medium Machinegun Crates can supply the Platoon-attached MMG Team with rifle-caliber belted ammunition.
+	Content Variants:
+				MG-3
+				M84
+				PKM/PKP
+				M240/M60
+				MG-42
+	Cargo Statistics:
+				Cargo Mass: 		2 units
+				Contains items:		True
+				Has Cargo space: 	False
+					Cargo space:	0 units
+				Can be Loaded: 		True
+				Slingloadable:		False
+				Can Carry?:			True
+				Can Drag?:			True
+				Can Rename?:		True
+				Rearm Source:		False
+				Refuel Source:		False
+				Repair Source:		False
+				Augments traits:	False
+
+LAT Crate: 	The Light Anti-Tank Crate can supply the Platoon-attached LAT with PG-7VS rocket-propelled grenades.
+	Content Variants:
+				RPG-7V
+	Cargo Statistics:
+				Cargo Mass: 		2 units
+				Contains items:		True
+				Has Cargo space: 	False
+					Cargo space:	0 units
+				Can be Loaded: 		True
+				Slingloadable:		False
+				Can Carry?:			True
+				Can Drag?:			True
+				Can Rename?:		True
+				Rearm Source:		False
+				Refuel Source:		False
+				Repair Source:		False
+				Augments traits:	False
+
+MAT Crate: 	A Medium Anti-Tank Crate can supply rockets to reloadable rocket launchers that the Platoon-attached MAT Team is equipped to use.
+	Content Variants:
+				MAAWS
+				Carl Gustaf
+	Cargo Statistics:
+				Cargo Mass: 		2 units
+				Contains items:		True
+				Has Cargo space: 	False
+					Cargo space:	0 units
+				Can be Loaded: 		True
+				Slingloadable:		False
+				Can Carry?:			True
+				Can Drag?:			True
+				Can Rename?:		True
+				Rearm Source:		False
+				Refuel Source:		False
+				Repair Source:		False
+				Augments traits:	False
+
+HAT Crate: 	The Heavy Anti-Tank Crates can supply an emplaced or man-portable Missile launcher used by the Platoon-attached HAT Team.
+	Content Variants:
+				TOW
+				9M133 Kornet
+				Metis
+				FGM-148 Javelin
+	Cargo Statistics:
+				Cargo Mass: 		2 units
+				Contains items:		True
+				Has Cargo space: 	False
+					Cargo space:	0 units
+				Can be Loaded: 		True
+				Slingloadable:		False
+				Can Carry?:			True
+				Can Drag?:			True
+				Can Rename?:		True
+				Rearm Source:		False
+				Refuel Source:		False
+				Repair Source:		False
+				Augments traits:	False
+
+Explosives Crate: Supplies a Squad with placed explosives and switches to detonate them.
+	Cargo Statistics:
+				Cargo Mass: 		2 units
+				Contains items:		True
+				Has Cargo space: 	False
+					Cargo space:	0 units
+				Can be Loaded: 		True
+				Slingloadable:		False
+				Can Carry?:			True
+				Can Drag?:			True
+				Can Rename?:		True
+				Rearm Source:		False
+				Refuel Source:		False
+				Repair Source:		False
+				Augments traits:	False
+
+Flare Crate: Contains flares for the 2 underbarrel grenade-launcher variants.
+	Content Variants:
+				M203
+				GP-25
+	Cargo Statistics:
+				Cargo Mass: 		2 units
+				Contains items:		True
+				Has Cargo space: 	False
+					Cargo space:	0 units
+				Can be Loaded: 		True
+				Slingloadable:		False
+				Can Carry?:			True
+				Can Drag?:			True
+				Can Rename?:		True
+				Rearm Source:		False
+				Refuel Source:		False
+				Repair Source:		False
+				Augments traits:	False
+
+Empty FT Crate: An empty crate to customize loadouts and test with other Logistics Crates.
+	Cargo Statistics:
+				Cargo Mass: 		2 units
+				Contains items:		True
+				Has Cargo space: 	False
+					Cargo space:	0 units
+				Can be Loaded: 		True
+				Slingloadable:		False
+				Can Carry?:			True
+				Can Drag?:			True
+				Can Rename?:		True
+				Rearm Source:		False
+				Refuel Source:		False
+				Repair Source:		False
+				Augments traits:	False
+
+RAT Crate:	A Rifleman Anti-Tank Crate containing 2 single-use rocket launchers to supply 1 Fireteam. Best used against ground vehicles with armor.
+	Model variants:
+				RAT Crate			(x5)
+					Content Variants:
+						RPG-75
+						M72A6
+						M72A7
+						RBR-M80
+						M136
+				AA Missile Crate 	(x2)
+	Cargo Statistics:
+				Cargo Mass: 		2 units
+				Contains items:		True
+				Has Cargo space: 	False
+					Cargo space:	0 units
+				Can be Loaded: 		True
+				Slingloadable:		False
+				Can Carry?:			True
+				Can Drag?:			True
+				Can Rename?:		True
+				Rearm Source:		False
+				Refuel Source:		False
+				Repair Source:		False
+				Augments traits:	False
+
+AA Missile Crate: Contains 2 reloadable Missile Launchers to counter air-based threats. Best used against close, slow-moving targets.
+	Content Variants:
+				FIM-92F	Stinger
+				9K38 	Igla
+	Cargo Statistics:
+				Cargo Mass: 		2 units
+				Contains items:		True
+				Has Cargo space: 	False
+					Cargo space:	0 units
+				Can be Loaded: 		True
+				Slingloadable:		False
+				Can Carry?:			True
+				Can Drag?:			True
+				Can Rename?:		True
+				Rearm Source:		False
+				Refuel Source:		False
+				Repair Source:		False
+				Augments traits:	False
+
+Medical Crate:	A crate containing 1 Squad's worth of medical supplies.
+	Cargo Statistics:
+				Cargo Mass: 		2 units
+				Contains items:		True
+				Has Cargo space: 	False
+					Cargo space:	0 units
+				Can be Loaded: 		True
+				Slingloadable:		False
+				Can Carry?:			True
+				Can Drag?:			True
+				Can Rename?:		True
+				Rearm Source:		False
+				Refuel Source:		False
+				Repair Source:		False
+				Augments traits:	False
+
+Vehicle Service Crate: A slingloadable crate that can service every type of vehicle (Repair, Rearm, and Refuel).
+	Cargo Statistics:
+				Cargo Mass: 		6 units
+				Contains items:		True
+					Contents:
+						1x Toolkit
+				Has Cargo space: 	True
+					Cargo space:	6 units
+				Can be Loaded: 		True
+				Slingloadable:		True
+				Can Carry?:			False
+				Can Drag?:			True
+				Can Rename?:		False
+				Rearm Source:		True
+					Capacity:		5000 points
+				Refuel Source:		True
+					Capacity:		Infinite Liters
+				Repair Source:		True
+				Augments traits:	False
+
+Squad Crate: 	An empty pallet-strapped box on a pallet with enough supplies for a Squad.
+	Crate Intent:
+				2 FT Crate
+				1 Medical Crate
+				1 Specialist Crate (Optional)
+	Cargo Statistics:
+				Cargo Mass: 		6 units
+				Contains items:		False
+				Has Cargo space: 	True
+					Cargo space:	8 units
+				Can be Loaded: 		True
+				Slingloadable:		True
+				Can Carry?:			False
+				Can Drag?:			True
+				Can Rename?:		False
+				Rearm Source:		False
+				Refuel Source:		False
+				Repair Source:		False
+				Augments traits:	False
+
+Platoon Crate:	An empty cargo-netted pallet with enough cargo space for a whole Platoon's supplies. 
+	Crate Intent:
+				6 FT Crates 
+				3 Medical Crates
+				x Specialist Crates (Optional)
+	Cargo Statistics:
+				Cargo Mass: 		8 units
+				Contains items:		False
+				Has Cargo space: 	True
+					Cargo space:	32 units
+				Can be Loaded: 		True
+				Slingloadable:		True
+				Can Carry?:			False
+				Can Drag?:			True
+				Can Rename?:		False
+				Rearm Source:		False
+				Refuel Source:		False
+				Repair Source:		False
+				Augments traits:	False
+
+Company Crate: 	A cargo container big enough to contain an entire Company's supplies.
+	Crate Intent:
+				12 FT Crates 
+				6 Medical Crates
+				x Specialist Crates (Optional)
+				1 Vehicle Service Crate
+	Cargo Statistics:
+				Cargo Mass: 		20 units
+				Contains items:		False
+				Has Cargo space: 	True
+					Cargo space:	52 units
+				Can be Loaded: 		True
+				Slingloadable:		True
+				Can Carry?:			False
+				Can Drag?:			False
+				Can Rename?:		False
+				Rearm Source:		False
+				Refuel Source:		False
+				Repair Source:		False
+				Augments traits:	False
