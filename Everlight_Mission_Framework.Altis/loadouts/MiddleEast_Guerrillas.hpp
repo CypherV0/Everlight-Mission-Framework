@@ -75,16 +75,16 @@ class r : baseMan
         "CUP_V_B_GER_Carrier_Rig_2_Brown"
     };
     primaryWeapon[] = {
-        "uk3cb_enfield_no4"
+        "CUP_srifle_M14"
     };
     secondaryWeapon[] = {};
     bipod[] = {};
     scope[] = {};
     silencer[] = {};
-    attachment[] = {};
+    attachment[] = {"Everlight_X2000_point"};
     sidearmWeapon[] = {};
     magazines[] = {
-        LIST_10("uk3cb_no4_enfield_303_10Rnd_magazine"),
+        LIST_10("ACE_10Rnd_762x51_Mag_Tracer"),
         LIST_2("rhs_mag_f1"),
         LIST_2("SmokeShell")
     };
@@ -99,7 +99,7 @@ class rm : r
 {
     displayName = "Rifleman (Extra Ammo)";
     magazines[] += {
-        LIST_5("uk3cb_no4_enfield_303_10Rnd_magazine")
+        LIST_5("ACE_10Rnd_762x51_Mag_Tracer")
     };
 };
 class rat : r
@@ -112,12 +112,12 @@ class mark : r
 {
     displayName = "Platoon Marksman";
     primaryWeapon[] = {
-        "uk3cb_enfield_no4t"
+        "CUP_srifle_M14"
     };
-    scope[] = {"uk3cb_optic_no32_distressed"};
+    scope[] = {"optic_KHS_old"};
     sidearmWeapon[] = {"rhs_weap_pya"};
     magazines[] = {
-        LIST_10("uk3cb_no4_enfield_303_10Rnd_magazine"),
+        LIST_10("ACE_10Rnd_762x51_Mag_Tracer"),
         LIST_5("rhs_mag_9x19_17"),
         LIST_2("rhs_mag_f1"),
         LIST_2("SmokeShell")
@@ -128,8 +128,9 @@ class g : r
     displayName = "Grenadier";
     sidearmWeapon[] = {};
     magazines[] += {
-      LIST_5("uk3cb_1rnd_riflegrenade_mas_ap"),
-      LIST_5("uk3cb_1rnd_riflegrenade_mas_flare")};
+      LIST_10("rhs_mag_M433_HEDP"),
+      LIST_5("1Rnd_Smoke_Grenade_shell"),
+      "rhs_weap_m79"};
     secondaryWeapon[] = {};
 };
 class m : r
@@ -167,8 +168,9 @@ class ftl : g
     magazines[] +=
     {
         LIST_2("rhs_mag_9x19_17"),
-        "SmokeShellBlue",
-        "SmokeShellRed"
+        LIST_5("ACE_40mm_Flare_white"),
+        LIST_2("1Rnd_SmokeBlue_Grenade_shell"),
+        LIST_2("1Rnd_SmokeRed_Grenade_shell")
     };
     items[] += {"ACRE_PRC343"};
     linkedItems[] =

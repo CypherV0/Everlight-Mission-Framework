@@ -70,13 +70,13 @@ class r : baseMan
         "usm_vest_lbe_rmp"
     };
     primaryWeapon[] = {
-        "UK3CB_M14"
+        "CUP_srifle_M14"
     };
     secondaryWeapon[] = {};
     bipod[] = {};
     scope[] = {};
     silencer[] = {};
-    attachment[] = {};
+    attachment[] = {"Everlight_X2000_point"};
     sidearmWeapon[] = {};
     magazines[] = {
         LIST_10("rhsusf_20Rnd_762x51_m62_Mag"),
@@ -114,7 +114,7 @@ class g : r
         "usm_vest_lbe_gr"
     };
     primaryWeapon[] = {
-        "UK3CB_M14"
+        "CUP_srifle_M14"
     };
     backpack[] = {"CUP_B_AlicePack_Khaki"};
     backpackItems[] = {
