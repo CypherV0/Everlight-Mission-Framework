@@ -358,6 +358,12 @@ class CfgLoadouts
 		#include "loadouts\Serbia_YugoOakleaf.hpp" // (No spaces)
 	};
 
+	class US_2035_Woodland // (No spaces)
+	{
+		displayName = "US 2035 - Woodland"; // (Spaces allowed)
+		#include "loadouts\US_2035_Woodland.hpp" // (No spaces)
+	};
+
 };
 
 ////////////////////////////////////////////////////////////////////////////////
