@@ -21,14 +21,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1083;
+		nextID=1129;
 	};
 	class Camera
 	{
-		pos[]={14740.934,237.93634,16690.129};
-		dir[]={-0.0071416846,-0.99994999,0.0069994247};
-		up[]={-0.71414846,0.00999978,0.69992286};
-		aside[]={0.69995785,0,0.71418417};
+		pos[]={14730.846,229.79698,16699.404};
+		dir[]={-0.0071590547,-0.99994999,0.0069816569};
+		up[]={-0.7158854,0.00999978,0.6981461};
+		aside[]={0.69818103,0,0.71592122};
 	};
 };
 binarizationWanted=0;
@@ -64,6 +64,7 @@ addons[]=
 	"rhssaf_c_gear",
 	"evlt_medical",
 	"UK3CB_Factions_TKA_B",
+	"ace_compat_rhs_usf3_javelin",
 	"A3_Characters_F_Jets",
 	"ace_optics",
 	"acre_main",
@@ -81,13 +82,14 @@ addons[]=
 	"ace_nightvision",
 	"STOP_BLUFOR_Config",
 	"A3_Weapons_F_Items",
+	"ace_arsenal",
 	"SMA_Eotech_552"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=41;
+		items=42;
 		class Item0
 		{
 			className="Desert";
@@ -206,7 +208,7 @@ class AddonsMetaData
 		class Item17
 		{
 			className="ace_compat_rhs_usf3";
-			name="ACE3 - RHS USF Compatibility";
+			name="ACE3 - RHS USAF Compatibility";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
@@ -361,6 +363,13 @@ class AddonsMetaData
 		};
 		class Item40
 		{
+			className="ace_arsenal";
+			name="ACE3 - Arsenal";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item41
+		{
 			className="SMA_Eotech_552";
 			name="SMA_Eotech_552";
 			author="Specialist Military Arms";
@@ -413,14 +422,14 @@ class CustomAttributes
 		name="TMF_ORBAT_Settings";
 		class Attribute0
 		{
-			property="TMF_ORBATRenameFakeAttribute";
-			expression="false";
+			property="TMF_ORBATMarkersFT_Directional";
+			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
 			class Value
 			{
 				class data
 				{
 					singleType="BOOL";
-					value=1;
+					value=0;
 				};
 			};
 		};
@@ -465,19 +474,6 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
-			property="TMF_ORBATMarkersFT_Directional";
-			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
-			class Value
-			{
-				class data
-				{
-					singleType="BOOL";
-					value=0;
-				};
-			};
-		};
-		class Attribute5
-		{
 			property="TMF_ORBATSettings";
 			expression="false";
 			class Value
@@ -486,6 +482,19 @@ class CustomAttributes
 				{
 					singleType="STRING";
 					value="[[1,[[0,"""","""","""",""Platoon"",0],[]]]]";
+				};
+			};
+		};
+		class Attribute5
+		{
+			property="TMF_ORBATRenameFakeAttribute";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					singleType="BOOL";
+					value=1;
 				};
 			};
 		};
@@ -2362,8 +2371,8 @@ class Mission
 			{
 				position[]={14662.65,17.91,16703.586};
 			};
-			title="Version 16";
-			description="Version 16 Changes:" \n "" \n "- Added 3x new loadouts: Serbian Army, Serbian Army NVGs, Yugoslavian Army" \n "(By Ferdilanz)" \n "- Removed redundant pre-made ammo/med/etc crates because they are now searchable in the Asset Browser under ""Everlight Crates"".";
+			title="Version 17";
+			description="Version 17 Changes:" \n "" \n "- Updated a few group marker colors" \n "- Added/Edited factions";
 			id=325;
 		};
 		class Item31
@@ -5132,7 +5141,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
 					class Value
 					{
 						class data
@@ -5732,7 +5741,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
 					class Value
 					{
 						class data
@@ -7109,7 +7118,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
 					class Value
 					{
 						class data
@@ -8486,7 +8495,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
 					class Value
 					{
 						class data
@@ -9086,7 +9095,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
 					class Value
 					{
 						class data
@@ -10463,7 +10472,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
 					class Value
 					{
 						class data
@@ -11840,7 +11849,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
 					class Value
 					{
 						class data
@@ -12574,7 +12583,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
 					class Value
 					{
 						class data
@@ -13338,7 +13347,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
 					class Value
 					{
 						class data
@@ -14090,7 +14099,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
 					class Value
 					{
 						class data
@@ -14374,7 +14383,7 @@ class Mission
 			class Attributes
 			{
 				name="mage1";
-				init="mage1 setGroupIDGlobal [""Mage-1""];" \n "this setVariable [""BFT_groupMarker_visible"", true]; " \n "this setVariable [""BFT_groupMarker_type"", ""plane""]; " \n "this setVariable [""BFT_groupMarker_color"", ""ColorWEST""];";
+				init="mage1 setGroupIDGlobal [""Mage-1""];" \n "this setVariable [""BFT_groupMarker_visible"", true]; " \n "this setVariable [""BFT_groupMarker_type"", ""plane""]; " \n "this setVariable [""BFT_groupMarker_color"", ""ColorOrange""];";
 			};
 			id=1166;
 			class CustomAttributes
@@ -14382,7 +14391,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
 					class Value
 					{
 						class data
@@ -14938,7 +14947,7 @@ class Mission
 			class Attributes
 			{
 				name="falcon1";
-				init="falcon1 setGroupIDGlobal [""Fal-1""];" \n "this setVariable [""BFT_groupMarker_visible"", true]; " \n "this setVariable [""BFT_groupMarker_type"", ""air""]; " \n "this setVariable [""BFT_groupMarker_color"", ""ColorWEST""];";
+				init="falcon1 setGroupIDGlobal [""Fal-1""];" \n "this setVariable [""BFT_groupMarker_visible"", true]; " \n "this setVariable [""BFT_groupMarker_type"", ""air""]; " \n "this setVariable [""BFT_groupMarker_color"", ""ColorOrange""];";
 			};
 			id=1168;
 			class CustomAttributes
@@ -14946,7 +14955,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
 					class Value
 					{
 						class data
@@ -15720,7 +15729,7 @@ class Mission
 			class Attributes
 			{
 				name="thunder1";
-				init="thunder1 setGroupIDGlobal [""T-1""];" \n "this setVariable [""BFT_groupMarker_visible"", true]; " \n "this setVariable [""BFT_groupMarker_type"", ""armor""]; " \n "this setVariable [""BFT_groupMarker_color"", ""ColorOrange""];";
+				init="thunder1 setGroupIDGlobal [""T-1""];" \n "this setVariable [""BFT_groupMarker_visible"", true]; " \n "this setVariable [""BFT_groupMarker_type"", ""armor""]; " \n "this setVariable [""BFT_groupMarker_color"", ""ColorOPFOR""];";
 			};
 			id=1171;
 			class CustomAttributes
@@ -15728,7 +15737,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
 					class Value
 					{
 						class data
@@ -19226,7 +19235,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
 					class Value
 					{
 						class data
@@ -20771,7 +20780,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
 					class Value
 					{
 						class data
@@ -22316,7 +22325,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
 					class Value
 					{
 						class data
@@ -23840,7 +23849,7 @@ class Mission
 			class Attributes
 			{
 				name="foxtrotSF";
-				init="foxtrotSF setGroupIDGlobal [""F-SF""];" \n "this setVariable [""BFT_groupMarker_visible"", true]; " \n "this setVariable [""BFT_groupMarker_type"", ""recon""]; " \n "this setVariable [""BFT_groupMarker_color"", ""ColorGUER""];";
+				init="foxtrotSF setGroupIDGlobal [""F-SF""];" \n "this setVariable [""BFT_groupMarker_visible"", true]; " \n "this setVariable [""BFT_groupMarker_type"", ""recon""]; " \n "this setVariable [""BFT_groupMarker_color"", ""ColorGreen""];";
 			};
 			id=1206;
 			class CustomAttributes
@@ -23861,7 +23870,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
 					class Value
 					{
 						class data
@@ -24478,7 +24487,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
 					class Value
 					{
 						class data
@@ -24512,7 +24521,7 @@ class Mission
 				position[]={14675.366,17.91,16691.391};
 			};
 			title="Previous Versions";
-			description="Version 15 Changes:" \n "" \n "- Gave a Rank to any leaders, pilots, and crew that require a 152 Radio" \n "- Added a ""Take 152"" code to the comms file which will only work for units of Rank Sergeant and above" \n "- Changed the SF Teams to Delta, Echo, and Foxtrot " \n "" \n "Version 14 Changes:" \n "" \n "- Added another slot to standard Fireteams" \n "" \n "Version 13 Changes:" \n "" \n "- Added custom Fortify" \n "- Updated Medical Crates" \n "- Updated loadouts for new Medical and Flashlights overhauls" \n "" \n "Version 12 Changes:" \n "" \n "- Updated Optics Crates to be arsenal-based, and they now have Optics, Facewear, and Grips/Bipods." \n "- Removed AK Optics Crate as it's no longer relevant" \n "- Updated Medical Crate contents to reflect the changes to the Medic loadout" \n "- Combined the admin slots into a group" \n "" \n "Version 11 Changes:" \n "" \n "- Made MAT a 3-player team, as it should have been" \n "" \n "Version 10 Changes:" \n "- Hardcoded the callsigns, no more needing to manually set them every time you start a new project. Rejoice!" \n "- Fighter Pilot callsign is now correctly set to Mage-1" \n "- Color Teams should be correctly set finally..." \n "- The SF teams are actually called SF teams now (A-SF, B-SF, etc)" \n "- Added a new trigger to auto remove any Fortify/Entrenching tools from player inventories when SafeStart ends" \n "- The Mission Title Splash font is now larger and easier to notice" \n "- Updated the garbage collection to be more strict (should make a slight improvement to performance in sustained large battles)" \n "" \n "Version 9 Changes:" \n "- Changed Infantry Fireteam size from 4 to 5" \n "- Added a trigger to automatically remove any Fortify Tools and Entrenching Tools from players when SafeStart ends (useful if you want to set up a defensive mission where players can fortify during briefing phase)" \n "- Renamed the ""Vehicle Crew"" members to ""Vehicle Commander"", ""Vehicle Gunner"", and ""Vehicle Driver""" \n "" \n "Version 8 Changes:" \n "- Fixed some wording in the Setup & Updating Instructions" \n "- Changed the Assign Gear instructions completely (much easier now)" \n "- Changed the wording of the group deployment button to ""Deploy Group""" \n "" \n "Version 7 Changes:" \n "- Removed initPlayerLocal.sqf (you will have to do the same)" \n "- Added ""Deploy Group"" action during SafeStart for leaders, created by Ferdilanz.";
+			description="Version 16 Changes:" \n "" \n "- Added 3x new loadouts: Serbian Army, Serbian Army NVGs, Yugoslavian Army" \n "(By Ferdilanz)" \n "- Removed redundant pre-made ammo/med/etc crates because they are now searchable in the Asset Browser under ""Everlight Crates""." \n "" \n "Version 15 Changes:" \n "" \n "- Gave a Rank to any leaders, pilots, and crew that require a 152 Radio" \n "- Added a ""Take 152"" code to the comms file which will only work for units of Rank Sergeant and above" \n "- Changed the SF Teams to Delta, Echo, and Foxtrot " \n "" \n "Version 14 Changes:" \n "" \n "- Added another slot to standard Fireteams" \n "" \n "Version 13 Changes:" \n "" \n "- Added custom Fortify" \n "- Updated Medical Crates" \n "- Updated loadouts for new Medical and Flashlights overhauls" \n "" \n "Version 12 Changes:" \n "" \n "- Updated Optics Crates to be arsenal-based, and they now have Optics, Facewear, and Grips/Bipods." \n "- Removed AK Optics Crate as it's no longer relevant" \n "- Updated Medical Crate contents to reflect the changes to the Medic loadout" \n "- Combined the admin slots into a group" \n "" \n "Version 11 Changes:" \n "" \n "- Made MAT a 3-player team, as it should have been" \n "" \n "Version 10 Changes:" \n "- Hardcoded the callsigns, no more needing to manually set them every time you start a new project. Rejoice!" \n "- Fighter Pilot callsign is now correctly set to Mage-1" \n "- Color Teams should be correctly set finally..." \n "- The SF teams are actually called SF teams now (A-SF, B-SF, etc)" \n "- Added a new trigger to auto remove any Fortify/Entrenching tools from player inventories when SafeStart ends" \n "- The Mission Title Splash font is now larger and easier to notice" \n "- Updated the garbage collection to be more strict (should make a slight improvement to performance in sustained large battles)" \n "" \n "Version 9 Changes:" \n "- Changed Infantry Fireteam size from 4 to 5" \n "- Added a trigger to automatically remove any Fortify Tools and Entrenching Tools from players when SafeStart ends (useful if you want to set up a defensive mission where players can fortify during briefing phase)" \n "- Renamed the ""Vehicle Crew"" members to ""Vehicle Commander"", ""Vehicle Gunner"", and ""Vehicle Driver""" \n "" \n "Version 8 Changes:" \n "- Fixed some wording in the Setup & Updating Instructions" \n "- Changed the Assign Gear instructions completely (much easier now)" \n "- Changed the wording of the group deployment button to ""Deploy Group""" \n "" \n "Version 7 Changes:" \n "- Removed initPlayerLocal.sqf (you will have to do the same)" \n "- Added ""Deploy Group"" action during SafeStart for leaders, created by Ferdilanz.";
 			id=1232;
 		};
 	};
