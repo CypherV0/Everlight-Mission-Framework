@@ -364,6 +364,12 @@ class CfgLoadouts
 		#include "loadouts\US_2035_Woodland.hpp" // (No spaces)
 	};
 
+	class Ukraine // (No spaces)
+	{
+		displayName = "Ukraine Army"; // (Spaces allowed)
+		#include "loadouts\Ukraine.hpp" // (No spaces)
+	};
+
 };
 
 ////////////////////////////////////////////////////////////////////////////////
