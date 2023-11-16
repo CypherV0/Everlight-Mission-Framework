@@ -172,7 +172,6 @@ class ftl : g
 class sl : ftl
 {
     displayName = "Squad Leader";
-    backpack[] = {"usm_pack_st128_prc77"};
     items[] += {"ACRE_PRC152"};
 };
 class pl : sl
