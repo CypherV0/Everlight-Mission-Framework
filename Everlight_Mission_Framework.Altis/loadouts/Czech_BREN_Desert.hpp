@@ -80,7 +80,7 @@ class r : baseMan
     magazines[] = {
         LIST_7("CUP_30Rnd_556x45_XM8"),
         LIST_3("CUP_30Rnd_TE1_Green_Tracer_556x45_XM8"),
-        "rhs_mag_f1",
+        "rhs_mag_m67",
         "SmokeShell"
     };
     items[] = {
@@ -188,14 +188,14 @@ class ar : r
     bipod[] = {};
     magazines[] =
     {
-        LIST_2("150Rnd_762x51_Box_Tracer"),
+        LIST_2("rhsusf_200rnd_556x45_mixed_box"),
         LIST_2("rhssaf_mag_15Rnd_9x19_FMJ"),
-        "rhs_mag_f1",
+        "rhs_mag_m67",
         "SmokeShell"
     };
     backpackItems[] =
     {
-        LIST_5("150Rnd_762x51_Box_Tracer")
+        LIST_5("rhsusf_200rnd_556x45_mixed_box")
     };
     sidearmWeapon[] = {"rhs_weap_cz99"};
     sidearmAttachments[] = {};
@@ -205,18 +205,18 @@ class aar : r
     displayName = "Asst. Automatic Rifleman";
     backpackItems[] =
     {
-        LIST_5("150Rnd_762x51_Box_Tracer")
+        LIST_5("rhsusf_200rnd_556x45_mixed_box")
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
 class mg : r
 {
     displayName = "MMG Gunner";
-    primaryWeapon[] = {"rhs_weap_m84"};
+    primaryWeapon[] = {"hlc_lmg_mk48"};
     bipod[] = {};
     magazines[] =
     {
-        LIST_2("rhssaf_250Rnd_762x54R"),
+        LIST_2("UK3CB_MG3_250rnd_762x51_RT"),
         LIST_2("rhssaf_mag_15Rnd_9x19_FMJ"),
         "SmokeShell"
     };
@@ -229,7 +229,7 @@ class mga : r
     displayName = "MMG Assistant";
     backpackItems[] =
     {
-        LIST_2("rhssaf_250Rnd_762x54R")
+        LIST_2("UK3CB_MG3_250rnd_762x51_RT")
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
@@ -238,7 +238,7 @@ class mgam : r
     displayName = "MMG Ammo Man";
     backpackItems[] =
     {
-        LIST_2("rhssaf_250Rnd_762x54R")
+        LIST_2("UK3CB_MG3_250rnd_762x51_RT")
     };
 };
 class mat : r
