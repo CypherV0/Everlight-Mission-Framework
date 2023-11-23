@@ -161,22 +161,6 @@ class rat : r
     secondaryWeapon[] = {"rhs_weap_M136"};
     secondaryAttachments[] = {"rhs_acc_at4_handler"};
 };
-class mark : r
-{
-    displayName = "Platoon Marksman";
-    primaryWeapon[] = {
-        "rhs_weap_m14ebrri"
-    };
-    scope[] = {"cup_optic_sb_11_4x20_pm"};
-    sidearmWeapon[] = {"hlc_pistol_P226R_357Combat"};
-    sidearmAttachments[] = {"hlc_optic_siglite"};
-    magazines[] = {
-        LIST_10("rhsusf_20Rnd_762x51_m62_Mag"),
-        LIST_5("hlc_12Rnd_357SIG_B_P226"),
-        LIST_2("rhs_mag_m67"),
-        LIST_2("SmokeShell")
-    };
-};
 class g : r
 {
     displayName = "Grenadier";

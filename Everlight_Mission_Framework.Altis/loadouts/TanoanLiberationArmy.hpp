@@ -120,21 +120,6 @@ class rat : r
     secondaryWeapon[] = {"rhs_weap_rpg75"};
     secondaryAttachments[] = {};
 };
-class mark : r
-{
-    displayName = "Platoon Marksman";
-    primaryWeapon[] = {
-        "rhs_weap_m38_rail"
-    };
-    scope[] = {"hlc_optic_vomz"};
-    sidearmWeapon[] = {"rhs_weap_pya"};
-    magazines[] = {
-        LIST_10("rhsgref_5Rnd_762x54_m38"),
-        LIST_5("rhs_mag_9x19_17"),
-        LIST_2("rhs_mag_rgo"),
-        LIST_2("rhs_mag_rdg2_white")
-    };
-};
 class g : r
 {
     displayName = "Grenadier";

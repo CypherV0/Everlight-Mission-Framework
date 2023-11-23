@@ -90,8 +90,8 @@ class r : baseMan
     attachment[] = {};
     sidearmWeapon[] = {};
     magazines[] = {
-        LIST_7("rhs_30Rnd_545x39_7N6M_AK"),
-        LIST_3("rhs_30Rnd_545x39_AK_green"),
+        LIST_7("rhs_30Rnd_545x39_7N10_plum_AK"),
+        LIST_3("rhs_30Rnd_545x39_AK_plum_green"),
         LIST_2("rhs_mag_rgo"),
         LIST_2("rhs_mag_rdg2_white")
     };
@@ -107,7 +107,7 @@ class rm : r
 {
     displayName = "Rifleman (Extra Ammo)";
     magazines[] += {
-        LIST_5("rhs_30Rnd_545x39_7N6M_AK")
+        LIST_5("rhs_30Rnd_545x39_7N10_plum_AK")
     };
 };
 class rat : r
@@ -115,7 +115,7 @@ class rat : r
     displayName = "Rifleman AT";
     backpackItems[] =
     {
-        LIST_5("rhs_30Rnd_545x39_7N6M_AK")
+        LIST_5("rhs_30Rnd_545x39_7N10_plum_AK")
     };
     secondaryWeapon[] = {"rhs_weap_rpg26"};
     secondaryAttachments[] = {};
@@ -159,8 +159,8 @@ class m : r
         "UK3CB_KDF_B_B_Sidor_MD_OLI"
     };
     magazines[] = {
-        LIST_7("rhs_30Rnd_545x39_7N6M_AK"),
-        LIST_3("rhs_30Rnd_545x39_AK_green"),
+        LIST_7("rhs_30Rnd_545x39_7N10_plum_AK"),
+        LIST_3("rhs_30Rnd_545x39_AK_plum_green"),
         LIST_2("rhs_mag_rdg2_white")
     };
     backpackItems[] = {
@@ -349,7 +349,7 @@ class smg : r
     sidearmWeapon[] = {"hgun_Pistol_Signal_F"};
     magazines[] =
     {
-        LIST_3("rhs_30Rnd_545x39_7N6M_AK"),
+        LIST_3("rhs_30Rnd_545x39_7N10_plum_AK"),
         "6Rnd_RedSignal_F",
         "SmokeShellRed",
         "ACE_HandFlare_Red",

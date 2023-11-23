@@ -127,7 +127,7 @@ class m : r
     insignias[] = {"MedB"};
     magazines[] = {
         LIST_6("rhs_30Rnd_762x39mm_polymer"),
-        LIST_2("rhs_30Rnd_762x39mm_polymer_tracer"),
+        LIST_2("rhs_30Rnd_762x39mm_polymer_Tracer_Red"),
         LIST_2("SmokeShell")
     };
     backpackItems[] = {
@@ -204,7 +204,7 @@ class aar : r
     backpack[] = {"B_Kitbag_rgr"};
     backpackItems[] =
     {
-        LIST_8("rhsusf_200rnd_556x45_mixed_box")
+        LIST_8("rhs_75Rnd_762x39mm_tracer")
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
