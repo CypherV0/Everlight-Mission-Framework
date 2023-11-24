@@ -233,7 +233,7 @@ class mg : r
     bipod[] = {};
     magazines[] =
     {
-        LIST_4("rhsusf_100Rnd_762x51_m62_tracer"),
+        LIST_6("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
         LIST_2("rhsusf_mag_15Rnd_9x19_FMJ"),
         LIST_2("rhs_mag_m67"),
         LIST_2("SmokeShell")
@@ -248,7 +248,7 @@ class mga : r
     backpack[] = {"UK3CB_CW_US_B_LATE_B_RIF_04"};
     backpackItems[] =
     {
-        LIST_7("rhsusf_100Rnd_762x51_m62_tracer")
+        LIST_7("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
@@ -258,7 +258,7 @@ class mgam : r
     backpack[] = {"UK3CB_LSM_B_B_CARRYALL_OLI"};
     backpackItems[] =
     {
-        LIST_7("rhsusf_100Rnd_762x51_m62_tracer")
+        LIST_7("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
     };
 };
 class mat : r
@@ -266,10 +266,14 @@ class mat : r
     displayName = "MAT Gunner";
     backpack[] = {"UK3CB_CW_US_B_LATE_B_RIF_04"};
     secondaryWeapon[] = {"rhs_weap_maaws"};
-    secondaryAttachments[] = {};
-    magazines[] += {"MRAWS_HEAT_F"};
+    secondaryAttachments[] = {"rhs_optic_maaws"};
+    magazines[] += {"rhs_mag_maaws_HEAT"};
     items[] += {"ACRE_PRC152"};
-    backpackItems[] = {"MRAWS_HEAT_F"};
+    backpackItems[] = 
+    {
+        LIST_2("rhs_mag_maaws_HEDP"),
+        "rhs_mag_maaws_HEAT"
+    };
 };
 class mata : r
 {
@@ -277,7 +281,8 @@ class mata : r
     backpack[] = {"UK3CB_CW_US_B_LATE_B_RIF_04"};
     backpackItems[] =
     {
-        LIST_4("MRAWS_HEAT_F")
+        LIST_2("rhs_mag_maaws_HEAT"),
+        "rhs_mag_maaws_HEDP"
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
@@ -286,7 +291,8 @@ class matam : r
     displayName = "MAT Ammo Man";
     backpackItems[] =
     {
-        LIST_4("MRAWS_HEAT_F")
+        LIST_2("rhs_mag_maaws_HEAT"),
+        "rhs_mag_maaws_HEDP"
     };
 };
 class smg : r

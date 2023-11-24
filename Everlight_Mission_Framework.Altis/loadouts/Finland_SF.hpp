@@ -201,15 +201,33 @@ class aar : r
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
-class lat : r
+class mat : r
 {
-    displayName = "LAT";
+    displayName = "MAT Gunner";
+    backpack[] = {"MNP_B_RUW_CA"};
     secondaryWeapon[] = {"rhs_weap_rpg7"};
     secondaryAttachments[] = {"rhs_acc_pgo7v"};
-    magazines[] +=
+    magazines[] += {"rhs_rpg7_PG7VS_mag"};
+    items[] += {"ACRE_PRC152"};
+    backpackItems[] =
     {
-        "rhs_rpg7_PG7VS_mag"
+        LIST_4("rhs_rpg7_PG7VS_mag")
     };
+};
+class mata : r
+{
+    displayName = "MAT Assistant";
+    backpack[] = {"MNP_B_RUW_CA"};
+    backpackItems[] =
+    {
+        LIST_4("rhs_rpg7_PG7VS_mag")
+    };
+    linkedItems[] += {"rhssaf_zrak_rd7j"};
+};
+class matam : r
+{
+    displayName = "MAT Ammo Man";
+    backpack[] = {"MNP_B_RUW_CA"};
     backpackItems[] =
     {
         LIST_4("rhs_rpg7_PG7VS_mag")

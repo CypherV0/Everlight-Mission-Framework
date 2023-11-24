@@ -208,11 +208,12 @@ class aar : r
 class mg : r
 {
     displayName = "MMG Gunner";
+    backpack[] = {"B_Carryall_blk"};
     primaryWeapon[] = {"rhs_weap_m240B"};
     bipod[] = {};
     magazines[] =
     {
-        LIST_3("rhsusf_100Rnd_762x51_m62_tracer"),
+        LIST_3("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
         LIST_2("hlc_12Rnd_357SIG_B_P226"),
         "rhs_mag_m67",
         "SmokeShell"
@@ -224,18 +225,20 @@ class mg : r
 class mga : r
 {
     displayName = "MMG Assistant";
+    backpack[] = {"B_Carryall_blk"};
     backpackItems[] =
     {
-        LIST_7("rhsusf_100Rnd_762x51_m62_tracer")
+        LIST_7("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
 class mgam : r
 {
     displayName = "MMG Ammo Man";
+    backpack[] = {"B_Carryall_blk"};
     backpackItems[] =
     {
-        LIST_7("rhsusf_100Rnd_762x51_m62_tracer")
+        LIST_7("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
     };
 };
 class smg : r

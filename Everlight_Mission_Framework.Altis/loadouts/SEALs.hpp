@@ -210,12 +210,13 @@ class aar : r
 class mg : r
 {
     displayName = "MMG Gunner";
+    backpack[] = {"B_Carryall_green_F"};
     primaryWeapon[] = {"rhs_weap_m240B"};
     attachment[] = {"everlight_x2000_point"};
     bipod[] = {};
     magazines[] =
     {
-        LIST_4("rhsusf_100Rnd_762x51_m62_tracer"),
+        LIST_6("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
         LIST_2("hlc_12Rnd_357SIG_B_P226"),
         LIST_2("rhs_mag_m67"),
         LIST_2("SmokeShell")
@@ -227,44 +228,55 @@ class mg : r
 class mga : r
 {
     displayName = "MMG Assistant";
+    backpack[] = {"B_Carryall_green_F"};
     backpackItems[] =
     {
-        LIST_7("rhsusf_100Rnd_762x51_m62_tracer")
+        LIST_7("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
 class mgam : r
 {
     displayName = "MMG Ammo Man";
+    backpack[] = {"B_Carryall_green_F"};
     backpackItems[] =
     {
-        LIST_7("rhsusf_100Rnd_762x51_m62_tracer")
+        LIST_7("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
     };
 };
 class mat : r
 {
     displayName = "MAT Gunner";
-    secondaryWeapon[] = {"launch_MRAWS_green_rail_F"};
-    secondaryAttachments[] = {};
-    magazines[] += {"MRAWS_HEAT_F"};
+    backpack[] = {"B_Carryall_green_F"};
+    secondaryWeapon[] = {"rhs_weap_maaws"};
+    secondaryAttachments[] = {"rhs_optic_maaws"};
+    magazines[] += {"rhs_mag_maaws_HEAT"};
     items[] += {"ACRE_PRC152"};
-    backpackItems[] = {"MRAWS_HEAT_F"};
+    backpackItems[] = 
+    {
+        LIST_2("rhs_mag_maaws_HEDP"),
+        "rhs_mag_maaws_HEAT"
+    };
 };
 class mata : r
 {
     displayName = "MAT Assistant";
+    backpack[] = {"B_Carryall_green_F"};
     backpackItems[] =
     {
-        LIST_4("MRAWS_HEAT_F")
+        LIST_2("rhs_mag_maaws_HEAT"),
+        "rhs_mag_maaws_HEDP"
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
 class matam : r
 {
     displayName = "MAT Ammo Man";
+    backpack[] = {"B_Carryall_green_F"};
     backpackItems[] =
     {
-        LIST_4("MRAWS_HEAT_F")
+        LIST_2("rhs_mag_maaws_HEAT"),
+        "rhs_mag_maaws_HEDP"
     };
 };
 class smg : r

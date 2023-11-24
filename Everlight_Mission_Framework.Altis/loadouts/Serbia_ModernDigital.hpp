@@ -232,6 +232,9 @@ class mark : r
 class mg : r
 {
     displayName = "MMG Gunner";
+    backpack[] = {
+        "UK3CB_GAF_B_B_ENG_DIGI"
+    };
     primaryWeapon[] = {"hlc_lmg_mg42kws_b"};
     attachment[] = {"everlight_x2000_point"};
     scope[] = {"sma_eotech552"};
@@ -256,6 +259,9 @@ class mg : r
 class mga : r
 {
     displayName = "MMG Assistant";
+    backpack[] = {
+        "UK3CB_GAF_B_B_ENG_DIGI"
+    };
     primaryWeapon[] = {"rhs_weap_m21s_pr"};
     backpackItems[] =
     {
@@ -266,6 +272,9 @@ class mga : r
 class mgam : r
 {
     displayName = "MMG Ammo Man";
+    backpack[] = {
+        "UK3CB_GAF_B_B_ENG_DIGI"
+    };
     primaryWeapon[] = {"rhs_weap_m21s_pr"};
     backpackItems[] =
     {
@@ -313,7 +322,6 @@ class matam : r
 class hat : r
 {
     displayName = "HAT Gunner";
-    backpack[] = {};
     primaryWeapon[] = {"rhs_weap_m21s_pr"};
     magazines[] = {
         LIST_4("rhsgref_30rnd_556x45_m21"),

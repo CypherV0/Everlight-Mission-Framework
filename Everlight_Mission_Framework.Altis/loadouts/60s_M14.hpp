@@ -199,7 +199,7 @@ class ar : r
     backpack[] = {"CUP_B_AlicePack_Khaki"};
     magazines[] =
     {
-        LIST_6("rhsusf_100Rnd_762x51_m62_tracer"),
+        LIST_6("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
         LIST_2("rhsusf_mag_7x45acp_MHP"),
         "rhs_mag_m67",
         "SmokeShell"
@@ -213,7 +213,7 @@ class aar : r
     backpack[] = {"usm_pack_alice"};
     backpackItems[] =
     {
-        LIST_8("rhsusf_100Rnd_762x51_m62_tracer")
+        LIST_6("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
@@ -221,17 +221,22 @@ class mat : r
 {
     displayName = "MAT Gunner";
     secondaryWeapon[] = {"rhs_weap_maaws"};
-    secondaryAttachments[] = {"rhs_optic_maaws"};
-    magazines[] += {"MRAWS_HEAT_F"};
+    secondaryAttachments[] = {};
+    magazines[] += {"rhs_mag_maaws_HEAT"};
     items[] += {"ACRE_PRC152"};
-    backpackItems[] = {"MRAWS_HEAT_F"};
+    backpackItems[] = 
+    {
+        LIST_2("rhs_mag_maaws_HEDP"),
+        "rhs_mag_maaws_HEAT"
+    };
 };
 class mata : r
 {
     displayName = "MAT Assistant";
     backpackItems[] =
     {
-        LIST_4("MRAWS_HEAT_F")
+        LIST_2("rhs_mag_maaws_HEAT"),
+        "rhs_mag_maaws_HEDP"
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
@@ -240,7 +245,8 @@ class matam : r
     displayName = "MAT Ammo Man";
     backpackItems[] =
     {
-        LIST_4("MRAWS_HEAT_F")
+        LIST_2("rhs_mag_maaws_HEAT"),
+        "rhs_mag_maaws_HEDP"
     };
 };
 class smg : r

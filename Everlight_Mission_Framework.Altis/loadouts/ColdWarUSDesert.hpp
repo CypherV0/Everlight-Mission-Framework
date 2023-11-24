@@ -198,7 +198,7 @@ class ar : r
     backpack[] = {"CUP_B_AlicePack_Khaki"};
     magazines[] =
     {
-        LIST_6("rhsusf_100Rnd_762x51_m62_tracer"),
+        LIST_6("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
         LIST_2("rhsusf_mag_15Rnd_9x19_JHP"),
         "rhs_mag_m67",
         "SmokeShell"
@@ -212,13 +212,14 @@ class aar : r
     backpack[] = {"usm_pack_alice"};
     backpackItems[] =
     {
-        LIST_8("rhsusf_100Rnd_762x51_m62_tracer")
+        LIST_6("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
 class hat : r
 {
     displayName = "HAT Gunner";
+    backpack[] = {"CUP_B_AlicePack_Khaki"};
     secondaryWeapon[] = {"ace_compat_rhs_usf3_tow_carry"};
     items[] += {"ACRE_PRC152"};
     linkedItems[] += {"rhssaf_zrak_rd7j"};
@@ -226,6 +227,7 @@ class hat : r
 class hata : r
 {
     displayName = "HAT Assistant";
+    backpack[] = {"CUP_B_AlicePack_Khaki"};
     secondaryWeapon[] = {"ace_csw_m220CarryTripod"};
     backpackItems[] =
     {
@@ -236,6 +238,7 @@ class hata : r
 class hatam : r
 {
     displayName = "HAT Ammo Man";
+    backpack[] = {"CUP_B_AlicePack_Khaki"};
     backpackItems[] =
     {
         "ace_compat_rhs_usf3_mag_TOW2A"
@@ -244,27 +247,36 @@ class hatam : r
 class mat : r
 {
     displayName = "MAT Gunner";
+    backpack[] = {"CUP_B_AlicePack_Khaki"};
     secondaryWeapon[] = {"rhs_weap_maaws"};
-    secondaryAttachments[] = {"rhs_optic_maaws"};
-    magazines[] += {"MRAWS_HEAT_F"};
+    secondaryAttachments[] = {};
+    magazines[] += {"rhs_mag_maaws_HEAT"};
     items[] += {"ACRE_PRC152"};
-    backpackItems[] = {"MRAWS_HEAT_F"};
+    backpackItems[] = 
+    {
+        LIST_2("rhs_mag_maaws_HEDP"),
+        "rhs_mag_maaws_HEAT"
+    };
 };
 class mata : r
 {
     displayName = "MAT Assistant";
+    backpack[] = {"CUP_B_AlicePack_Khaki"};
     backpackItems[] =
     {
-        LIST_4("MRAWS_HEAT_F")
+        LIST_2("rhs_mag_maaws_HEAT"),
+        "rhs_mag_maaws_HEDP"
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
 class matam : r
 {
     displayName = "MAT Ammo Man";
+    backpack[] = {"CUP_B_AlicePack_Khaki"};
     backpackItems[] =
     {
-        LIST_4("MRAWS_HEAT_F")
+        LIST_2("rhs_mag_maaws_HEAT"),
+        "rhs_mag_maaws_HEDP"
     };
 };
 class smg : r

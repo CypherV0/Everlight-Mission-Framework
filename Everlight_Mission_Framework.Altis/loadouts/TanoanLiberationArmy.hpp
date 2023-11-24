@@ -232,14 +232,38 @@ class aar : r
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
-class lat : r
+class mat : r
 {
-    displayName = "LAT";
+    displayName = "MAT Gunner";
+    backpack[] = {
+        "UK3CB_LSM_B_B_CARRYALL_KHK"
+    };
     secondaryWeapon[] = {"rhs_weap_rpg7"};
-    secondaryAttachments[] = {"rhs_acc_pgo7v"};
-    magazines[] +=
+    secondaryAttachments[] = {};
+    magazines[] += {"rhs_rpg7_PG7VS_mag"};
+    items[] += {"ACRE_PRC152"};
+    backpackItems[] =
     {
-        "rhs_rpg7_PG7VS_mag"
+        LIST_4("rhs_rpg7_PG7VS_mag")
+    };
+};
+class mata : r
+{
+    displayName = "MAT Assistant";
+    backpack[] = {
+        "UK3CB_LSM_B_B_CARRYALL_KHK"
+    };
+    backpackItems[] =
+    {
+        LIST_4("rhs_rpg7_PG7VS_mag")
+    };
+    linkedItems[] += {"rhssaf_zrak_rd7j"};
+};
+class matam : r
+{
+    displayName = "MAT Ammo Man";
+    backpack[] = {
+        "UK3CB_LSM_B_B_CARRYALL_KHK"
     };
     backpackItems[] =
     {
@@ -255,6 +279,9 @@ class hat : r
 class hata : r
 {
     displayName = "HAT Assistant";
+    backpack[] = {
+        "UK3CB_LSM_B_B_CARRYALL_KHK"
+    };
     backpackItems[] =
     {
         LIST_4("ace_compat_rhs_afrf3_mag_9m1331")
@@ -264,6 +291,9 @@ class hata : r
 class hatam : r
 {
     displayName = "HAT Ammo Man";
+    backpack[] = {
+        "UK3CB_LSM_B_B_CARRYALL_KHK"
+    };
     backpackItems[] =
     {
         LIST_4("ace_compat_rhs_afrf3_mag_9m1331")

@@ -234,6 +234,9 @@ class mark : r
 class mg : r
 {
     displayName = "MMG Gunner";
+    backpack[] = {
+        "UK3CB_GAF_B_B_ENG_DIGI"
+    };
     primaryWeapon[] = {"rhs_weap_mg42"};
     scope[] = {"sma_eotech552"};
     vest[] = {
@@ -257,6 +260,9 @@ class mg : r
 class mga : r
 {
     displayName = "MMG Assistant";
+    backpack[] = {
+        "UK3CB_GAF_B_B_ENG_DIGI"
+    };
     primaryWeapon[] = {"rhs_weap_m92"};
     backpackItems[] =
     {
@@ -267,6 +273,9 @@ class mga : r
 class mgam : r
 {
     displayName = "MMG Ammo Man";
+    backpack[] = {
+        "UK3CB_GAF_B_B_ENG_DIGI"
+    };
     primaryWeapon[] = {"rhs_weap_m92"};
     backpackItems[] =
     {
@@ -282,9 +291,13 @@ class mat : r
     backpack[] = {
         "UK3CB_GAF_B_B_ENG_DIGI"
     };
-    magazines[] += {"MRAWS_HEAT_F"};
+    magazines[] += {"rhs_mag_maaws_HEAT"};
     items[] += {"ACRE_PRC152"};
-    backpackItems[] = {"MRAWS_HEAT_F"};
+    backpackItems[] = 
+    {
+        LIST_2("rhs_mag_maaws_HEDP"),
+        "rhs_mag_maaws_HEAT"
+    };
 };
 class mata : r
 {
@@ -295,7 +308,8 @@ class mata : r
     };
     backpackItems[] =
     {
-        LIST_4("MRAWS_HEAT_F")
+        LIST_2("rhs_mag_maaws_HEAT"),
+        "rhs_mag_maaws_HEDP"
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
@@ -308,7 +322,8 @@ class matam : r
     };
     backpackItems[] =
     {
-        LIST_4("MRAWS_HEAT_F")
+        LIST_2("rhs_mag_maaws_HEAT"),
+        "rhs_mag_maaws_HEDP"
     };
 };
 class hat : r

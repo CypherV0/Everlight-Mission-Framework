@@ -210,6 +210,7 @@ class aar : r
 class mg : r
 {
     displayName = "MMG Gunner";
+    backpack[] = {"UK3CB_LNM_B_B_CARRYALL_FLK_02"};
     primaryWeapon[] = {"UK3CB_MG3_KWS_B"};
     attachment[] = {"everlight_x2000_point"};
     bipod[] = {};
@@ -246,27 +247,36 @@ class mgam : r
 class mat : r
 {
     displayName = "MAT Gunner";
-    secondaryWeapon[] = {"launch_MRAWS_green_rail_F"};
-    secondaryAttachments[] = {};
-    magazines[] += {"MRAWS_HEAT_F"};
+    backpack[] = {"UK3CB_LNM_B_B_CARRYALL_FLK_02"};
+    secondaryWeapon[] = {"rhs_weap_maaws"};
+    secondaryAttachments[] = {"rhs_optic_maaws"};
+    magazines[] += {"rhs_mag_maaws_HEAT"};
     items[] += {"ACRE_PRC152"};
-    backpackItems[] = {"MRAWS_HEAT_F"};
+    backpackItems[] = 
+    {
+        LIST_2("rhs_mag_maaws_HEDP"),
+        "rhs_mag_maaws_HEAT"
+    };
 };
 class mata : r
 {
     displayName = "MAT Assistant";
+    backpack[] = {"UK3CB_LNM_B_B_CARRYALL_FLK_02"};
     backpackItems[] =
     {
-        LIST_4("MRAWS_HEAT_F")
+        LIST_2("rhs_mag_maaws_HEAT"),
+        "rhs_mag_maaws_HEDP"
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
 class matam : r
 {
     displayName = "MAT Ammo Man";
+    backpack[] = {"UK3CB_LNM_B_B_CARRYALL_FLK_02"};
     backpackItems[] =
     {
-        LIST_4("MRAWS_HEAT_F")
+        LIST_2("rhs_mag_maaws_HEAT"),
+        "rhs_mag_maaws_HEDP"
     };
 };
 class smg : r
