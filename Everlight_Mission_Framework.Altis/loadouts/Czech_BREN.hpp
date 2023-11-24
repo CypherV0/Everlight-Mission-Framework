@@ -216,20 +216,24 @@ class mg : r
     bipod[] = {};
     magazines[] =
     {
-        LIST_2("UK3CB_MG3_250rnd_762x51_RT"),
+        LIST_3("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
         LIST_2("rhssaf_mag_15Rnd_9x19_FMJ"),
         "SmokeShell"
     };
     items[] += {"ACRE_PRC152"};
     sidearmWeapon[] = {"rhs_weap_cz99"};
     sidearmAttachments[] = {};
+    backpackItems[] =
+    {
+        LIST_5("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
+    };
 };
 class mga : r
 {
     displayName = "MMG Assistant";
     backpackItems[] =
     {
-        LIST_2("UK3CB_MG3_250rnd_762x51_RT")
+        LIST_5("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
@@ -238,7 +242,7 @@ class mgam : r
     displayName = "MMG Ammo Man";
     backpackItems[] =
     {
-        LIST_2("UK3CB_MG3_250rnd_762x51_RT")
+        LIST_5("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
     };
 };
 class mat : r
