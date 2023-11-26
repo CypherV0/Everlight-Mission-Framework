@@ -207,17 +207,21 @@ class mg : r
 {
     displayName = "MMG Gunner";
     backpack[] = {"B_Carryall_oli"};
-    primaryWeapon[] = {"rhs_weap_m84"};
+    primaryWeapon[] = {"rhs_weap_pkm"};
     bipod[] = {};
     magazines[] =
     {
-        LIST_2("rhssaf_250Rnd_762x54R"),
+        LIST_2("rhs_100Rnd_762x54mmR_green"),
         LIST_2("rhssaf_mag_15Rnd_9x19_FMJ"),
         "SmokeShell"
     };
     items[] += {"ACRE_PRC152"};
     sidearmWeapon[] = {"rhs_weap_cz99"};
     sidearmAttachments[] = {};
+    backpackItems[] =
+    {
+        LIST_4("rhs_100Rnd_762x54mmR_green")
+    };
 };
 class mga : r
 {
@@ -225,7 +229,7 @@ class mga : r
     backpack[] = {"B_Carryall_oli"};
     backpackItems[] =
     {
-        LIST_2("rhssaf_250Rnd_762x54R")
+        LIST_4("rhs_100Rnd_762x54mmR_green")
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
@@ -235,7 +239,7 @@ class mgam : r
     backpack[] = {"B_Carryall_oli"};
     backpackItems[] =
     {
-        LIST_2("rhssaf_250Rnd_762x54R")
+        LIST_4("rhs_100Rnd_762x54mmR_green")
     };
 };
 class mat : r

@@ -236,8 +236,8 @@ class mg : r
     backpack[] = {
         "UK3CB_GAF_B_B_ENG_DIGI"
     };
-    primaryWeapon[] = {"hlc_lmg_mg42kws_b"};
-    attachment[] = {"rhs_acc_perst1ik_ris"};
+    primaryWeapon[] = {"rhs_weap_pkm"};
+    attachment[] = {};
     scope[] = {"sma_eotech552"};
     vest[] = {
         "UK3CB_TKA_B_V_GA_HEAVY_WDL"
@@ -246,15 +246,15 @@ class mg : r
     magazines[] =
     {
         LIST_2("rhssaf_mag_15Rnd_9x19_FMJ"),
+        LIST_3("rhs_100Rnd_762x54mmR_green"),
         "rhssaf_mag_brd_m83_white",
-        "rhssaf_mag_br_m84",
-        "hlc_200Rnd_792x57_M_MG42"
+        "rhssaf_mag_br_m84"
     };
     items[] += {"ACRE_PRC152"};
     sidearmWeapon[] = {"rhs_weap_cz99"};
     sidearmAttachments[] = {};
     backpackItems[] = {
-        LIST_2("hlc_200Rnd_792x57_M_MG42")
+        LIST_4("rhs_100Rnd_762x54mmR_green")
     };
 };
 class mga : r
@@ -266,7 +266,7 @@ class mga : r
     primaryWeapon[] = {"rhs_weap_m21s_pr"};
     backpackItems[] =
     {
-        LIST_2("hlc_200Rnd_792x57_M_MG42")
+        LIST_4("rhs_100Rnd_762x54mmR_green")
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
@@ -279,7 +279,7 @@ class mgam : r
     primaryWeapon[] = {"rhs_weap_m21s_pr"};
     backpackItems[] =
     {
-        LIST_2("hlc_200Rnd_792x57_M_MG42")
+        LIST_4("rhs_100Rnd_762x54mmR_green")
     };
 };
 class mat : r
