@@ -21,14 +21,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1198;
+		nextID=1221;
 	};
 	class Camera
 	{
-		pos[]={14732.969,227.46806,16697.055};
-		dir[]={-0.0071713477,-0.99994999,0.0069690295};
-		up[]={-0.71711469,0.00999978,0.69688344};
-		aside[]={0.69691831,0,0.71715057};
+		pos[]={14742.999,233.93538,16691.176};
+		dir[]={-0.0071638492,-0.99994999,0.0069767372};
+		up[]={-0.71636486,0.00999978,0.69765419};
+		aside[]={0.69768906,0,0.71640068};
 	};
 };
 binarizationWanted=0;
@@ -412,7 +412,7 @@ class ScenarioData
 	wreckRemovalMaxTime=3600;
 	corpseManagerMode=3;
 	corpseLimit=10;
-	corpseRemovalMaxTime=60.000004;
+	corpseRemovalMaxTime=60;
 	minPlayerDistance=25;
 };
 class CustomAttributes
@@ -461,8 +461,8 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="TMF_ORBATMarkersFT_Directional";
-			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
+			property="TMF_ORBATMarkersFT";
+			expression="false";
 			class Value
 			{
 				class data
@@ -474,8 +474,8 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
-			property="TMF_ORBATMarkersFT";
-			expression="false";
+			property="TMF_ORBATMarkersFT_Directional";
+			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
 			class Value
 			{
 				class data
@@ -599,7 +599,7 @@ class CustomAttributes
 				class data
 				{
 					singleType="STRING";
-					value="[[""Briefing"",[1,3],""briefing\briefing_blufor.sqf""],[""Comms"",[1,3],""briefing\comms.sqf""],[""Roster"",[1,3],""briefing\roster.sqf""],[""Keybinds"",[1,3],""briefing\keybinds.sqf""]]";
+					value="[[""Briefing"",[1,3],""briefing\briefing_blufor.sqf""],[""Comms"",[1,3],""briefing\comms.sqf""],[""Roster"",[1,3],""briefing\roster.sqf""],[""Keybinds"",[1,3],""briefing\keybinds.sqf""],[""Rules"",[1],""briefing\rules.sqf""]]";
 				};
 			};
 		};
@@ -636,6 +636,164 @@ class CustomAttributes
 		nAttributes=1;
 	};
 	class Category4
+	{
+		name="TMF_Spectator_Settings";
+		class Attribute0
+		{
+			property="TMF_Spectator_AllSides";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					singleType="BOOL";
+					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="TMF_Spectator_AllowFPCam";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					singleType="BOOL";
+					value=1;
+				};
+			};
+		};
+		class Attribute2
+		{
+			property="TMF_Spectator_AllowFollowCam";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					singleType="BOOL";
+					value=1;
+				};
+			};
+		};
+		class Attribute3
+		{
+			property="TMF_Spectator_AllowFreeCam";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					singleType="BOOL";
+					value=1;
+				};
+			};
+		};
+		nAttributes=4;
+	};
+	class Category5
+	{
+		name="TMF_AutoTestAttributes";
+		class Attribute0
+		{
+			property="TMF_AutoTest_MissionSummary";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					singleType="BOOL";
+					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="TMF_AutoTest_Test";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					singleType="BOOL";
+					value=1;
+				};
+			};
+		};
+		class Attribute2
+		{
+			property="TMF_AutoTest_MinPlayer";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					singleType="BOOL";
+					value=1;
+				};
+			};
+		};
+		class Attribute3
+		{
+			property="TMF_AutoTest_MissionName";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					singleType="BOOL";
+					value=1;
+				};
+			};
+		};
+		class Attribute4
+		{
+			property="TMF_AutoTest_MaxPlayer";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					singleType="BOOL";
+					value=1;
+				};
+			};
+		};
+		class Attribute5
+		{
+			property="TMF_autoTest_Author";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					singleType="BOOL";
+					value=1;
+				};
+			};
+		};
+		nAttributes=6;
+	};
+	class Category6
+	{
+		name="CUP_StaticLine_Section";
+		class Attribute0
+		{
+			property="CUP_Static_Line";
+			expression="missionNamespace setVariable ['CUP_Jumping_Condition', _value, true];";
+			class Value
+			{
+				class data
+				{
+					singleType="BOOL";
+					value=0;
+				};
+			};
+		};
+		nAttributes=1;
+	};
+	class Category7
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -992,10 +1150,212 @@ class CustomAttributes
 		};
 		nAttributes=18;
 	};
-	class Category5
+	class Category8
 	{
 		name="Scenario";
 		class Attribute0
+		{
+			property="ENH_Briefing_Independent_Execution";
+			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_Independent_Execution'; waitUntil {!isNull player}; if (side player == independent) then {player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_EXECUTION_TITLE', _this call BIS_fnc_localize]]}}};";
+			class Value
+			{
+				class data
+				{
+					singleType="STRING";
+					value="";
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="ENH_Briefing_Independent_Mission";
+			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_Independent_Mission'; waitUntil {!isNull player}; if (side player == independent) then {player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_MISSION_TITLE', _this call BIS_fnc_localize]]}}};";
+			class Value
+			{
+				class data
+				{
+					singleType="STRING";
+					value="";
+				};
+			};
+		};
+		class Attribute2
+		{
+			property="ENH_environmentVolume";
+			expression="if (!is3DEN && hasInterface) then {0 fadeEnvironment _value}";
+			class Value
+			{
+				class data
+				{
+					singleType="SCALAR";
+					value=1;
+				};
+			};
+		};
+		class Attribute3
+		{
+			property="ENH_Briefing_Civilian_Mission";
+			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_Civilian_Mission'; waitUntil {!isNull player}; if (side player == civilian) then {player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_MISSION_TITLE', _this call BIS_fnc_localize]]}}};";
+			class Value
+			{
+				class data
+				{
+					singleType="STRING";
+					value="";
+				};
+			};
+		};
+		class Attribute4
+		{
+			property="Init";
+			expression="if !(is3DEN) then {[] call compile _value;};";
+			class Value
+			{
+				class data
+				{
+					singleType="STRING";
+					value="";
+				};
+			};
+		};
+		class Attribute5
+		{
+			property="EnableTargetDebug";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					singleType="SCALAR";
+					value=0;
+				};
+			};
+		};
+		class Attribute6
+		{
+			property="ENH_radioVolume";
+			expression="if (!is3DEN && hasInterface) then {0 fadeRadio _value}";
+			class Value
+			{
+				class data
+				{
+					singleType="SCALAR";
+					value=1;
+				};
+			};
+		};
+		class Attribute7
+		{
+			property="ENH_Briefing_BLUFOR_Situation";
+			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_BLUFOR_Situation'; waitUntil {!isNull player}; if (side player == west) then {player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_SITUATION_TITLE', _this call BIS_fnc_localize]]}}};";
+			class Value
+			{
+				class data
+				{
+					singleType="STRING";
+					value="";
+				};
+			};
+		};
+		class Attribute8
+		{
+			property="cba_settings_hash";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					singleType="ARRAY";
+					class value
+					{
+						items=4;
+						class Item0
+						{
+							class data
+							{
+								singleType="STRING";
+								value="#CBA_HASH#";
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								singleType="ARRAY";
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								singleType="ARRAY";
+							};
+						};
+						class Item3
+						{
+							class data
+							{
+								nil=1;
+								singleType="ANY";
+							};
+						};
+					};
+				};
+			};
+		};
+		class Attribute9
+		{
+			property="ENH_Briefing_Civilian_Signal";
+			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_Civilian_Signal'; waitUntil {!isNull player}; if (side player == civilian) then {player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_SIGNAL_TITLE', _this call BIS_fnc_localize]]}}};";
+			class Value
+			{
+				class data
+				{
+					singleType="STRING";
+					value="";
+				};
+			};
+		};
+		class Attribute10
+		{
+			property="EnableDebugConsole";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					singleType="SCALAR";
+					value=1;
+				};
+			};
+		};
+		class Attribute11
+		{
+			property="ENH_Briefing_Civilian_Situation";
+			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_Civilian_Situation'; waitUntil {!isNull player}; if (side player == civilian) then {player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_SITUATION_TITLE', _this call BIS_fnc_localize]]}}};";
+			class Value
+			{
+				class data
+				{
+					singleType="STRING";
+					value="";
+				};
+			};
+		};
+		class Attribute12
+		{
+			property="ENH_Briefing_Independent_Situation";
+			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_Independent_Situation'; waitUntil {!isNull player}; if (side player == independent) then {player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_SITUATION_TITLE', _this call BIS_fnc_localize]]}}};";
+			class Value
+			{
+				class data
+				{
+					singleType="STRING";
+					value="";
+				};
+			};
+		};
+		class Attribute13
 		{
 			property="ENH_Briefing_OPFOR_Signal";
 			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_OPFOR_Signal'; waitUntil {!isNull player}; if (side player == east) then {player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_SIGNAL_TITLE', _this call BIS_fnc_localize]]}}};";
@@ -1008,7 +1368,469 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute1
+		class Attribute14
+		{
+			property="TMF_common_introText";
+			expression="[_value] call tmf_common_fnc_intro";
+			class Value
+			{
+				class data
+				{
+					singleType="BOOL";
+					value=0;
+				};
+			};
+		};
+		class Attribute15
+		{
+			property="cba_settings_hasSettingsFile";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					singleType="BOOL";
+					value=0;
+				};
+			};
+		};
+		class Attribute16
+		{
+			property="ENH_randomMusic";
+			expression="if (!is3DEN && !(_value isEqualTo []) && hasInterface) then {playMusic (selectRandom _value)}";
+			class Value
+			{
+				class data
+				{
+					singleType="ARRAY";
+				};
+			};
+		};
+		class Attribute17
+		{
+			property="ENH_introText";
+			expression="        if (!is3DEN && (_value # 0) > 0 && hasInterface) then        {          _value spawn          {            scriptName 'ENH_Attribute_IntroText';            params ['_delay', '_l1', '_l2', '_l3', '_type'];            _l1 = _l1 call BIS_fnc_localize;            _l2 = _l2 call BIS_fnc_localize;            _l3 = _l3 call BIS_fnc_localize;            uiSleep _delay;            switch (_type) do            {              case 0:              {                private _text = parseText format                [                  ""<t align='right' size='1.6'><t font='PuristaBold' size='1.8'>%1<br/></t>%2<br/>%3</t>"",                  _l1,                  _l2,                  _l3                ];                [_text, true] spawn BIS_fnc_textTiles;              };              case 1:              {                [_l1, _l2, _l3] spawn BIS_fnc_infoText;              };              case 2:              {                [_l1, _l2, _l3] spawn BIS_fnc_EXP_camp_SITREP;              };            };          };        }";
+			class Value
+			{
+				class data
+				{
+					singleType="ARRAY";
+					class value
+					{
+						items=5;
+						class Item0
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=0;
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								singleType="STRING";
+								value="(Your Title)";
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								singleType="STRING";
+								value="by Cypher";
+							};
+						};
+						class Item3
+						{
+							class data
+							{
+								singleType="STRING";
+								value="07:00";
+							};
+						};
+						class Item4
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=0;
+							};
+						};
+					};
+				};
+			};
+		};
+		class Attribute18
+		{
+			property="ENH_Briefing_BLUFOR_Mission";
+			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_BLUFOR_Mission'; waitUntil {!isNull player}; if (side player == west) then {player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_MISSION_TITLE', _this call BIS_fnc_localize]]}}};";
+			class Value
+			{
+				class data
+				{
+					singleType="STRING";
+					value="";
+				};
+			};
+		};
+		class Attribute19
+		{
+			property="ENH_Briefing_Independent_Signal";
+			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_Independent_Signal'; waitUntil {!isNull player}; if (side player == independent) then {player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_SIGNAL_TITLE', _this call BIS_fnc_localize]]}}};";
+			class Value
+			{
+				class data
+				{
+					singleType="STRING";
+					value="";
+				};
+			};
+		};
+		class Attribute20
+		{
+			property="ENH_musicVolume";
+			expression="if (!is3DEN && hasInterface) then {0 fadeMusic _value}";
+			class Value
+			{
+				class data
+				{
+					singleType="SCALAR";
+					value=1;
+				};
+			};
+		};
+		class Attribute21
+		{
+			property="ENH_AddObjectsToZeus";
+			expression="    if (!is3DEN && isServer && _value && !(allCurators isEqualTo [])) then    {      0 spawn      {        scriptName 'ENH_Attribute_AddObjectsToZeus';        while {true} do        {          {          _x addCuratorEditableObjects            [              entities [[], ['Logic'], true],              true            ];          } count allCurators;          sleep 60;        };      };    }";
+			class Value
+			{
+				class data
+				{
+					singleType="BOOL";
+					value=0;
+				};
+			};
+		};
+		class Attribute22
+		{
+			property="ENH_Briefing_OPFOR_Mission";
+			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_OPFOR_Mission'; waitUntil {!isNull player}; if (side player == east) then {player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_MISSION_TITLE', _this call BIS_fnc_localize]]}}};";
+			class Value
+			{
+				class data
+				{
+					singleType="STRING";
+					value="";
+				};
+			};
+		};
+		class Attribute23
+		{
+			property="ENH_Airdrop";
+			expression="        if (!is3DEN && !((_value # 0) isEqualTo []) && isServer) then        {          _value spawn          {            scriptName 'ENH_Attribute_Airdrop';            params ['_classes', '_center', '_condition', '_alt', '_r', '_side'];            _condition = compile _condition;            waitUntil {sleep 1; call _condition};            private _group = createGroup _side;            playSound3D ['A3\Data_F_Warlords\sfx\flyby.wss', objNull, false, _center vectorAdd [0, 0, 100], 2.5];            ENH_Airdrop_Units = [];            {              _center set [2, _center # 2 + random [-20, 0, 20]];              private _unit = _group createUnit [_x, _center, [], 0, 'NONE'];              private _para = createVehicle ['Steerable_Parachute_F', _center getPos [_r * sqrt random 1, random 360], [], 0, 'FLY'];              _unit moveInDriver _para;              ENH_Airdrop_Units pushBack _unit;            } forEach _classes;          };        }";
+			class Value
+			{
+				class data
+				{
+					singleType="ARRAY";
+					class value
+					{
+						items=6;
+						class Item0
+						{
+							class data
+							{
+								singleType="ARRAY";
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								singleType="ARRAY";
+								class value
+								{
+									items=3;
+									class Item0
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=0;
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=0;
+										};
+									};
+									class Item2
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=0;
+										};
+									};
+								};
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								singleType="STRING";
+								value="false";
+							};
+						};
+						class Item3
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=500;
+							};
+						};
+						class Item4
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=200;
+							};
+						};
+						class Item5
+						{
+							class data
+							{
+								singleType="SIDE";
+								value="WEST";
+							};
+						};
+					};
+				};
+			};
+		};
+		class Attribute24
+		{
+			property="ENH_Briefing_OPFOR_Execution";
+			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_OPFOR_Execution'; waitUntil {!isNull player}; if (side player == east) then {player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_EXECUTION_TITLE', _this call BIS_fnc_localize]]}}};";
+			class Value
+			{
+				class data
+				{
+					singleType="STRING";
+					value="";
+				};
+			};
+		};
+		class Attribute25
+		{
+			property="ENH_mapIndicators";
+			expression="if (!is3DEN && !(_value isEqualTo [false, false, false, false]) && hasInterface) then {disableMapIndicators _value}";
+			class Value
+			{
+				class data
+				{
+					singleType="ARRAY";
+					class value
+					{
+						items=4;
+						class Item0
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=1;
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=1;
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=1;
+							};
+						};
+						class Item3
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=1;
+							};
+						};
+					};
+				};
+			};
+		};
+		class Attribute26
+		{
+			property="ENH_Briefing_BLUFOR_Signal";
+			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_BLUFOR_Signal'; waitUntil {!isNull player}; if (side player == west) then {player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_SIGNAL_TITLE', _this call BIS_fnc_localize]]}}};";
+			class Value
+			{
+				class data
+				{
+					singleType="STRING";
+					value="";
+				};
+			};
+		};
+		class Attribute27
+		{
+			property="ENH_missionEnding_casualties";
+			expression="        if (!is3DEN && isServer && (_value # 1) != 'enddefault') then        {          ENH_Casualties_Threshold = _value param [0, 5];          ENH_Casualties_Debriefing = _value param [1, 'enddefault'];          ENH_Casualties_IsWin = _value param [2, false];          ENH_Casualties_Side = _value param [3];          ENH_Casualties_Counter = 0;                    addMissionEventHandler ['EntityKilled',          {            params ['_killed', '_killer'];            if (side group _killed isEqualTo ENH_Casualties_side) then            {              ENH_Casualties_Counter = ENH_Casualties_Counter + 1;            };            if (ENH_Casualties_Counter >= ENH_Casualties_Threshold) exitWith            {              [ENH_Casualties_Debriefing, ENH_Casualties_IsWin] remoteExecCall ['BIS_fnc_endMission', 0];            };          }];        };";
+			class Value
+			{
+				class data
+				{
+					singleType="ARRAY";
+					class value
+					{
+						items=4;
+						class Item0
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=5;
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								singleType="STRING";
+								value="enddefault";
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=0;
+							};
+						};
+						class Item3
+						{
+							class data
+							{
+								singleType="SIDE";
+								value="WEST";
+							};
+						};
+					};
+				};
+			};
+		};
+		class Attribute28
+		{
+			property="ENH_establisingShot";
+			expression="if (!is3DEN && !((_value # 0) isEqualTo [0, 0, 0]) && hasInterface) then {_value spawn BIS_fnc_establishingShot}";
+			class Value
+			{
+				class data
+				{
+					singleType="ARRAY";
+					class value
+					{
+						items=6;
+						class Item0
+						{
+							class data
+							{
+								singleType="ARRAY";
+								class value
+								{
+									items=3;
+									class Item0
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=0;
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=0;
+										};
+									};
+									class Item2
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=0;
+										};
+									};
+								};
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								singleType="STRING";
+								value="Bozcaada";
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=500;
+							};
+						};
+						class Item3
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=200;
+							};
+						};
+						class Item4
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=60;
+							};
+						};
+						class Item5
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=0;
+							};
+						};
+					};
+				};
+			};
+		};
+		class Attribute29
 		{
 			property="ENH_ambientFlyby";
 			expression="      if (isServer && !is3DEN && !((_value # 0) isEqualTo [])) then      {        ENH_AmbientFlyby_Enabled = true;        _value spawn        {          scriptName 'ENH_Attribute_AmbientFlyby';          params ['_classes', '_startPos', '_endPos', '_alt', '_speed', '_side', '_delay'];          while {ENH_AmbientFlyby_Enabled} do          {            sleep _delay;            [_startPos, _endPos, _alt, _speed, selectRandom _classes, _side] call BIS_fnc_ambientFlyby;          };        };      }";
@@ -1133,48 +1955,10 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute2
+		class Attribute30
 		{
-			property="ENH_randomMusic";
-			expression="if (!is3DEN && !(_value isEqualTo []) && hasInterface) then {playMusic (selectRandom _value)}";
-			class Value
-			{
-				class data
-				{
-					singleType="ARRAY";
-				};
-			};
-		};
-		class Attribute3
-		{
-			property="EnableDebugConsole";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					singleType="SCALAR";
-					value=1;
-				};
-			};
-		};
-		class Attribute4
-		{
-			property="ENH_environmentVolume";
-			expression="if (!is3DEN && hasInterface) then {0 fadeEnvironment _value}";
-			class Value
-			{
-				class data
-				{
-					singleType="SCALAR";
-					value=1;
-				};
-			};
-		};
-		class Attribute5
-		{
-			property="ENH_Briefing_BLUFOR_Situation";
-			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_BLUFOR_Situation'; waitUntil {!isNull player}; if (side player == west) then {player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_SITUATION_TITLE', _this call BIS_fnc_localize]]}}};";
+			property="ENH_Briefing_BLUFOR_Execution";
+			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_BLUFOR_Execution'; waitUntil {!isNull player}; if (side player == west) then {player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_EXECUTION_TITLE', _this call BIS_fnc_localize]]}}};";
 			class Value
 			{
 				class data
@@ -1184,20 +1968,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute6
-		{
-			property="ENH_Briefing_OPFOR_Situation";
-			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_OPFOR_Situation'; waitUntil {!isNull player}; if (side player == east) then {player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_SITUATION_TITLE', _this call BIS_fnc_localize]]}}};";
-			class Value
-			{
-				class data
-				{
-					singleType="STRING";
-					value="";
-				};
-			};
-		};
-		class Attribute7
+		class Attribute31
 		{
 			property="ENH_SPR";
 			expression="if (!is3DEN && _value # 0 > 0 && !isMultiplayer) then      {        ENH_SPR_Ruleset = _value param [0, 0];        ENH_SPR_Delay = _value param [1, 20];        ENH_SPR_CanDie = _value param [2, false];        ENH_SPR_RestoreLoadout = _value param [3, false];        ENH_SPR_OnRespawnCode = compile (_value param [4, '']);        ENH_SPR_Positions =        [          allMapMarkers select {'respawn_east' in toLower _x} apply {getMarkerPos _x},          allMapMarkers select {'respawn_west' in toLower _x} apply {getMarkerPos _x},          allMapMarkers select {'respawn_guerilla' in toLower _x} apply {getMarkerPos _x},          allMapMarkers select {'respawn_civilian' in toLower _x} apply {getMarkerPos _x}        ];        {          _x setVariable ['ENH_SPR_OriginalSide', side group _x];          _x setVariable ['ENH_SPR_OriginalLoadout', getUnitLoadout _x];          _x addEventHandler ['handleDamage',          {            params ['_unit', '', '_damage', '', '', '_index'];            if (!alive _unit || lifeState _unit isEqualTo 'INCAPACITATED') exitWith {0};            if (_unit getVariable ['ENH_SPR_Tickets', 0] == 0) then            {              _unit removeEventHandler ['handleDamage', _thisEventHandler];              _damage;            };            if (ENH_SPR_CanDie && _index in [1, 2] && _damage >= 1) exitWith            {              _unit removeEventHandler ['handleDamage', _thisEventHandler];              1;            };            if (_index < 8 && (_damage min 0.95) == 0.95) then            {              setAccTime 1;              _unit allowDamage false;              _unit setCaptive true;              _unit setUnconscious true;              _unit setVariable ['ENH_SPR_Tickets', (_unit getVariable ['ENH_SPR_Tickets', 0]) - 1];              if (isPlayer _unit) then {enableTeamSwitch false} else {removeSwitchableUnit _unit};              moveOut _unit;              _unit spawn ENH_fnc_SPR_respawnTimer;            };            _damage min 0.95;          }];        } forEach (allUnits select {_x getVariable ['ENH_SPR_Tickets', 0] > 0});                ENH_fnc_SPR_respawn =        {          scriptName 'ENH_Attribute_SPR_Respawn';          params ['_unit'];          if (isPlayer _unit) then {enableTeamSwitch true} else {addSwitchableUnit _unit};          if (ENH_SPR_RestoreLoadout) then {_unit setUnitLoadout (_unit getVariable 'ENH_SPR_OriginalLoadout')};          private _sideID = (_unit getVariable 'ENH_SPR_OriginalSide') call BIS_fnc_sideID;          private _positions = ENH_SPR_Positions select _sideID;          if (_positions isNotEqualTo []) then          {            switch (ENH_SPR_Ruleset) do            {              case 3:              {                _unit setPos (([_positions, [], {_unit distance _x}, 'ASCEND'] call BIS_fnc_sortBy) select 0);              };              case 2:              {                _unit setPos selectRandom _positions;              };            };          };          _unit setUnconscious false;          _unit allowDamage true;          _unit setDamage 0;          _unit switchMove '';          _unit call ENH_SPR_OnRespawnCode;          _unit spawn          {            sleep 8;            _this setCaptive false;          };        };                ENH_fnc_SPR_respawnTimer =        {          scriptName 'ENH_Attribute_SPR_RespawnTimer';          params ['_unit'];          private _respawnTime = time + ENH_SPR_Delay;          if (isPlayer _unit) then          {            private _ctrlRespawnTimer = (call BIS_fnc_displayMission) ctrlCreate ['RscStructuredText',-1];            _ctrlRespawnTimer ctrlSetPosition [0.25, 0, 0.5, 0.06];            _ctrlRespawnTimer ctrlSetBackgroundColor [0, 0, 0, 0.1];            _ctrlRespawnTimer ctrlCommit 0;            ENH_SPR_OriginalVolume = [soundVolume, musicVolume, radioVolume, speechVolume, environmentVolume];            0 cutText ['', 'BLACK OUT', 0.3];            0.3 fadeSound 0;            0.3 fadeMusic 0;            0.3 fadeRadio 0;            0.3 fadeSpeech 0;            0.3 fadeEnvironment 0;            showChat false;            while {time < _respawnTime} do            {              _ctrlRespawnTimer ctrlSetStructuredText parseText format ['<t size=''1.25'' color=''#218a36'' align=''center''>%1</t>', [(_respawnTime - time), 'HH:MM'] call BIS_fnc_timeToString];              sleep 0.1;            };            ctrlDelete _ctrlRespawnTimer;            0 cutText ['', 'BLACK IN', 8];            8 fadeSound (ENH_SPR_OriginalVolume # 0);            8 fadeMusic (ENH_SPR_OriginalVolume # 1);            8 fadeRadio (ENH_SPR_OriginalVolume # 2);            8 fadeSpeech (ENH_SPR_OriginalVolume # 3);            8 fadeEnvironment (ENH_SPR_OriginalVolume # 4);            showChat true;            [              ['Respawned'],              [format ['GRID: %1', mapGridPosition _unit]],              [format ['Tickets left: %1', _unit getVariable 'ENH_SPR_Tickets']]            ] spawn BIS_fnc_EXP_camp_SITREP;          }          else          {            private _respawnEH = -1;            if ((side player getFriend (_unit getVariable 'ENH_SPR_OriginalSide')) >= 0.6) then            {              _respawnEH = addMissionEventHandler              [                'draw3D',                {                  drawIcon3D ['\a3\Modules_f\data\portraitRespawn_ca.paa', [0.13, 0.54, 0.21, 0.8], ASLToAGL ((_thisArgs # 0) modelToWorldVisualWorld [0, 0, 1]), 1, 1, 0, str round ((_thisArgs # 1) - time), 2];                },                [_unit, _respawnTime]              ];            };            sleep ENH_SPR_Delay;            removeMissionEventHandler ['draw3D', _respawnEH];            [str _unit, 'onEachFrame'] call BIS_fnc_removeStackedEventHandler;          };          _unit call ENH_fnc_SPR_respawn;        };      }";
@@ -1253,33 +2024,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute8
-		{
-			property="ENH_AddObjectsToZeus";
-			expression="    if (!is3DEN && isServer && _value && !(allCurators isEqualTo [])) then    {      0 spawn      {        scriptName 'ENH_Attribute_AddObjectsToZeus';        while {true} do        {          {          _x addCuratorEditableObjects            [              entities [[], ['Logic'], true],              true            ];          } count allCurators;          sleep 60;        };      };    }";
-			class Value
-			{
-				class data
-				{
-					singleType="BOOL";
-					value=0;
-				};
-			};
-		};
-		class Attribute9
-		{
-			property="Init";
-			expression="if !(is3DEN) then {[] call compile _value;};";
-			class Value
-			{
-				class data
-				{
-					singleType="STRING";
-					value="";
-				};
-			};
-		};
-		class Attribute10
+		class Attribute32
 		{
 			property="ENH_soundVolume";
 			expression="if (!is3DEN && hasInterface) then {0 fadeSound _value}";
@@ -1292,157 +2037,10 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute11
+		class Attribute33
 		{
-			property="ENH_establisingShot";
-			expression="if (!is3DEN && !((_value # 0) isEqualTo [0, 0, 0]) && hasInterface) then {_value spawn BIS_fnc_establishingShot}";
-			class Value
-			{
-				class data
-				{
-					singleType="ARRAY";
-					class value
-					{
-						items=6;
-						class Item0
-						{
-							class data
-							{
-								singleType="ARRAY";
-								class value
-								{
-									items=3;
-									class Item0
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=0;
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=0;
-										};
-									};
-									class Item2
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=0;
-										};
-									};
-								};
-							};
-						};
-						class Item1
-						{
-							class data
-							{
-								singleType="STRING";
-								value="Bozcaada";
-							};
-						};
-						class Item2
-						{
-							class data
-							{
-								singleType="SCALAR";
-								value=500;
-							};
-						};
-						class Item3
-						{
-							class data
-							{
-								singleType="SCALAR";
-								value=200;
-							};
-						};
-						class Item4
-						{
-							class data
-							{
-								singleType="SCALAR";
-								value=60;
-							};
-						};
-						class Item5
-						{
-							class data
-							{
-								singleType="SCALAR";
-								value=0;
-							};
-						};
-					};
-				};
-			};
-		};
-		class Attribute12
-		{
-			property="ENH_introText";
-			expression="        if (!is3DEN && (_value # 0) > 0 && hasInterface) then        {          _value spawn          {            scriptName 'ENH_Attribute_IntroText';            params ['_delay', '_l1', '_l2', '_l3', '_type'];            _l1 = _l1 call BIS_fnc_localize;            _l2 = _l2 call BIS_fnc_localize;            _l3 = _l3 call BIS_fnc_localize;            uiSleep _delay;            switch (_type) do            {              case 0:              {                private _text = parseText format                [                  ""<t align='right' size='1.6'><t font='PuristaBold' size='1.8'>%1<br/></t>%2<br/>%3</t>"",                  _l1,                  _l2,                  _l3                ];                [_text, true] spawn BIS_fnc_textTiles;              };              case 1:              {                [_l1, _l2, _l3] spawn BIS_fnc_infoText;              };              case 2:              {                [_l1, _l2, _l3] spawn BIS_fnc_EXP_camp_SITREP;              };            };          };        }";
-			class Value
-			{
-				class data
-				{
-					singleType="ARRAY";
-					class value
-					{
-						items=5;
-						class Item0
-						{
-							class data
-							{
-								singleType="SCALAR";
-								value=0;
-							};
-						};
-						class Item1
-						{
-							class data
-							{
-								singleType="STRING";
-								value="(Your Title)";
-							};
-						};
-						class Item2
-						{
-							class data
-							{
-								singleType="STRING";
-								value="by Cypher";
-							};
-						};
-						class Item3
-						{
-							class data
-							{
-								singleType="STRING";
-								value="07:00";
-							};
-						};
-						class Item4
-						{
-							class data
-							{
-								singleType="SCALAR";
-								value=0;
-							};
-						};
-					};
-				};
-			};
-		};
-		class Attribute13
-		{
-			property="ENH_Briefing_BLUFOR_Signal";
-			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_BLUFOR_Signal'; waitUntil {!isNull player}; if (side player == west) then {player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_SIGNAL_TITLE', _this call BIS_fnc_localize]]}}};";
+			property="ENH_Briefing_OPFOR_Situation";
+			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_OPFOR_Situation'; waitUntil {!isNull player}; if (side player == east) then {player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_SITUATION_TITLE', _this call BIS_fnc_localize]]}}};";
 			class Value
 			{
 				class data
@@ -1452,159 +2050,10 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute14
+		class Attribute34
 		{
-			property="cba_settings_hash";
-			expression="false";
-			class Value
-			{
-				class data
-				{
-					singleType="ARRAY";
-					class value
-					{
-						items=4;
-						class Item0
-						{
-							class data
-							{
-								singleType="STRING";
-								value="#CBA_HASH#";
-							};
-						};
-						class Item1
-						{
-							class data
-							{
-								singleType="ARRAY";
-							};
-						};
-						class Item2
-						{
-							class data
-							{
-								singleType="ARRAY";
-							};
-						};
-						class Item3
-						{
-							class data
-							{
-								nil=1;
-								singleType="ANY";
-							};
-						};
-					};
-				};
-			};
-		};
-		class Attribute15
-		{
-			property="TMF_common_introText";
-			expression="[_value] call tmf_common_fnc_intro";
-			class Value
-			{
-				class data
-				{
-					singleType="BOOL";
-					value=0;
-				};
-			};
-		};
-		class Attribute16
-		{
-			property="ENH_Airdrop";
-			expression="        if (!is3DEN && !((_value # 0) isEqualTo []) && isServer) then        {          _value spawn          {            scriptName 'ENH_Attribute_Airdrop';            params ['_classes', '_center', '_condition', '_alt', '_r', '_side'];            _condition = compile _condition;            waitUntil {sleep 1; call _condition};            private _group = createGroup _side;            playSound3D ['A3\Data_F_Warlords\sfx\flyby.wss', objNull, false, _center vectorAdd [0, 0, 100], 2.5];            ENH_Airdrop_Units = [];            {              _center set [2, _center # 2 + random [-20, 0, 20]];              private _unit = _group createUnit [_x, _center, [], 0, 'NONE'];              private _para = createVehicle ['Steerable_Parachute_F', _center getPos [_r * sqrt random 1, random 360], [], 0, 'FLY'];              _unit moveInDriver _para;              ENH_Airdrop_Units pushBack _unit;            } forEach _classes;          };        }";
-			class Value
-			{
-				class data
-				{
-					singleType="ARRAY";
-					class value
-					{
-						items=6;
-						class Item0
-						{
-							class data
-							{
-								singleType="ARRAY";
-							};
-						};
-						class Item1
-						{
-							class data
-							{
-								singleType="ARRAY";
-								class value
-								{
-									items=3;
-									class Item0
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=0;
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=0;
-										};
-									};
-									class Item2
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=0;
-										};
-									};
-								};
-							};
-						};
-						class Item2
-						{
-							class data
-							{
-								singleType="STRING";
-								value="false";
-							};
-						};
-						class Item3
-						{
-							class data
-							{
-								singleType="SCALAR";
-								value=500;
-							};
-						};
-						class Item4
-						{
-							class data
-							{
-								singleType="SCALAR";
-								value=200;
-							};
-						};
-						class Item5
-						{
-							class data
-							{
-								singleType="SIDE";
-								value="WEST";
-							};
-						};
-					};
-				};
-			};
-		};
-		class Attribute17
-		{
-			property="ENH_Briefing_BLUFOR_Execution";
-			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_BLUFOR_Execution'; waitUntil {!isNull player}; if (side player == west) then {player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_EXECUTION_TITLE', _this call BIS_fnc_localize]]}}};";
+			property="ENH_Briefing_Civilian_Execution";
+			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_Civilian_Execution'; waitUntil {!isNull player}; if (side player == civilian) then {player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_EXECUTION_TITLE', _this call BIS_fnc_localize]]}}};";
 			class Value
 			{
 				class data
@@ -1614,194 +2063,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute18
-		{
-			property="ENH_missionEnding_casualties";
-			expression="        if (!is3DEN && isServer && (_value # 1) != 'enddefault') then        {          ENH_Casualties_Threshold = _value param [0, 5];          ENH_Casualties_Debriefing = _value param [1, 'enddefault'];          ENH_Casualties_IsWin = _value param [2, false];          ENH_Casualties_Side = _value param [3];          ENH_Casualties_Counter = 0;                    addMissionEventHandler ['EntityKilled',          {            params ['_killed', '_killer'];            if (side group _killed isEqualTo ENH_Casualties_side) then            {              ENH_Casualties_Counter = ENH_Casualties_Counter + 1;            };            if (ENH_Casualties_Counter >= ENH_Casualties_Threshold) exitWith            {              [ENH_Casualties_Debriefing, ENH_Casualties_IsWin] remoteExecCall ['BIS_fnc_endMission', 0];            };          }];        };";
-			class Value
-			{
-				class data
-				{
-					singleType="ARRAY";
-					class value
-					{
-						items=4;
-						class Item0
-						{
-							class data
-							{
-								singleType="SCALAR";
-								value=5;
-							};
-						};
-						class Item1
-						{
-							class data
-							{
-								singleType="STRING";
-								value="enddefault";
-							};
-						};
-						class Item2
-						{
-							class data
-							{
-								singleType="BOOL";
-								value=0;
-							};
-						};
-						class Item3
-						{
-							class data
-							{
-								singleType="SIDE";
-								value="WEST";
-							};
-						};
-					};
-				};
-			};
-		};
-		class Attribute19
-		{
-			property="ENH_Briefing_OPFOR_Execution";
-			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_OPFOR_Execution'; waitUntil {!isNull player}; if (side player == east) then {player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_EXECUTION_TITLE', _this call BIS_fnc_localize]]}}};";
-			class Value
-			{
-				class data
-				{
-					singleType="STRING";
-					value="";
-				};
-			};
-		};
-		class Attribute20
-		{
-			property="ENH_Briefing_BLUFOR_Mission";
-			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_BLUFOR_Mission'; waitUntil {!isNull player}; if (side player == west) then {player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_MISSION_TITLE', _this call BIS_fnc_localize]]}}};";
-			class Value
-			{
-				class data
-				{
-					singleType="STRING";
-					value="";
-				};
-			};
-		};
-		class Attribute21
-		{
-			property="ENH_Briefing_OPFOR_Mission";
-			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_OPFOR_Mission'; waitUntil {!isNull player}; if (side player == east) then {player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_MISSION_TITLE', _this call BIS_fnc_localize]]}}};";
-			class Value
-			{
-				class data
-				{
-					singleType="STRING";
-					value="";
-				};
-			};
-		};
-		class Attribute22
-		{
-			property="ENH_musicVolume";
-			expression="if (!is3DEN && hasInterface) then {0 fadeMusic _value}";
-			class Value
-			{
-				class data
-				{
-					singleType="SCALAR";
-					value=1;
-				};
-			};
-		};
-		class Attribute23
-		{
-			property="ENH_mapIndicators";
-			expression="if (!is3DEN && !(_value isEqualTo [false, false, false, false]) && hasInterface) then {disableMapIndicators _value}";
-			class Value
-			{
-				class data
-				{
-					singleType="ARRAY";
-					class value
-					{
-						items=4;
-						class Item0
-						{
-							class data
-							{
-								singleType="BOOL";
-								value=1;
-							};
-						};
-						class Item1
-						{
-							class data
-							{
-								singleType="BOOL";
-								value=1;
-							};
-						};
-						class Item2
-						{
-							class data
-							{
-								singleType="BOOL";
-								value=1;
-							};
-						};
-						class Item3
-						{
-							class data
-							{
-								singleType="BOOL";
-								value=1;
-							};
-						};
-					};
-				};
-			};
-		};
-		class Attribute24
-		{
-			property="cba_settings_hasSettingsFile";
-			expression="false";
-			class Value
-			{
-				class data
-				{
-					singleType="BOOL";
-					value=0;
-				};
-			};
-		};
-		class Attribute25
-		{
-			property="EnableTargetDebug";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					singleType="SCALAR";
-					value=0;
-				};
-			};
-		};
-		class Attribute26
-		{
-			property="ENH_radioVolume";
-			expression="if (!is3DEN && hasInterface) then {0 fadeRadio _value}";
-			class Value
-			{
-				class data
-				{
-					singleType="SCALAR";
-					value=1;
-				};
-			};
-		};
-		nAttributes=27;
+		nAttributes=35;
 	};
 };
 class Mission
@@ -2371,8 +2633,8 @@ class Mission
 			{
 				position[]={14662.65,17.91,16703.586};
 			};
-			title="Version 18";
-			description="Version 18 Changes:" \n "" \n "- Added slots for Valkyrie crew (IFV/APC callsign)" \n "- Added slots for Reaper (CAS callsign)" \n "- Adjusted group marker colors" \n "- Updated several loadouts" \n "- Removed Stealth loadout";
+			title="Version 19";
+			description="Version 19 Changes:" \n "" \n "- Added rules page to map diary" \n "- Added Vehicle Spawner infrastructure (ask Cypher for tutorial)";
 			id=325;
 		};
 		class Item31
@@ -4288,7 +4550,7 @@ class Mission
 				position[]={14675.366,17.91,16691.391};
 			};
 			title="Previous Versions";
-			description="Version 17 Changes:" \n "" \n "- Updated a few group marker colors" \n "- Added/Edited factions" \n "" \n "Version 16 Changes:" \n "" \n "- Added 3x new loadouts: Serbian Army, Serbian Army NVGs, Yugoslavian Army" \n "(By Ferdilanz)" \n "- Removed redundant pre-made ammo/med/etc crates because they are now searchable in the Asset Browser under ""Everlight Crates""." \n "" \n "Version 15 Changes:" \n "" \n "- Gave a Rank to any leaders, pilots, and crew that require a 152 Radio" \n "- Added a ""Take 152"" code to the comms file which will only work for units of Rank Sergeant and above" \n "- Changed the SF Teams to Delta, Echo, and Foxtrot " \n "" \n "Version 14 Changes:" \n "" \n "- Added another slot to standard Fireteams" \n "" \n "Version 13 Changes:" \n "" \n "- Added custom Fortify" \n "- Updated Medical Crates" \n "- Updated loadouts for new Medical and Flashlights overhauls" \n "" \n "Version 12 Changes:" \n "" \n "- Updated Optics Crates to be arsenal-based, and they now have Optics, Facewear, and Grips/Bipods." \n "- Removed AK Optics Crate as it's no longer relevant" \n "- Updated Medical Crate contents to reflect the changes to the Medic loadout" \n "- Combined the admin slots into a group" \n "" \n "Version 11 Changes:" \n "" \n "- Made MAT a 3-player team, as it should have been" \n "" \n "Version 10 Changes:" \n "- Hardcoded the callsigns, no more needing to manually set them every time you start a new project. Rejoice!" \n "- Fighter Pilot callsign is now correctly set to Mage-1" \n "- Color Teams should be correctly set finally..." \n "- The SF teams are actually called SF teams now (A-SF, B-SF, etc)" \n "- Added a new trigger to auto remove any Fortify/Entrenching tools from player inventories when SafeStart ends" \n "- The Mission Title Splash font is now larger and easier to notice" \n "- Updated the garbage collection to be more strict (should make a slight improvement to performance in sustained large battles)" \n "" \n "Version 9 Changes:" \n "- Changed Infantry Fireteam size from 4 to 5" \n "- Added a trigger to automatically remove any Fortify Tools and Entrenching Tools from players when SafeStart ends (useful if you want to set up a defensive mission where players can fortify during briefing phase)" \n "- Renamed the ""Vehicle Crew"" members to ""Vehicle Commander"", ""Vehicle Gunner"", and ""Vehicle Driver""" \n "" \n "Version 8 Changes:" \n "- Fixed some wording in the Setup & Updating Instructions" \n "- Changed the Assign Gear instructions completely (much easier now)" \n "- Changed the wording of the group deployment button to ""Deploy Group""" \n "" \n "Version 7 Changes:" \n "- Removed initPlayerLocal.sqf (you will have to do the same)" \n "- Added ""Deploy Group"" action during SafeStart for leaders, created by Ferdilanz.";
+			description="Version 18 Changes:" \n "" \n "- Added slots for Valkyrie crew (IFV/APC callsign)" \n "- Added slots for Reaper (CAS callsign)" \n "- Adjusted group marker colors" \n "- Updated several loadouts" \n "- Removed Stealth loadout" \n "" \n "Version 17 Changes:" \n "" \n "- Updated a few group marker colors" \n "- Added/Edited factions" \n "" \n "Version 16 Changes:" \n "" \n "- Added 3x new loadouts: Serbian Army, Serbian Army NVGs, Yugoslavian Army" \n "(By Ferdilanz)" \n "- Removed redundant pre-made ammo/med/etc crates because they are now searchable in the Asset Browser under ""Everlight Crates""." \n "" \n "Version 15 Changes:" \n "" \n "- Gave a Rank to any leaders, pilots, and crew that require a 152 Radio" \n "- Added a ""Take 152"" code to the comms file which will only work for units of Rank Sergeant and above" \n "- Changed the SF Teams to Delta, Echo, and Foxtrot " \n "" \n "Version 14 Changes:" \n "" \n "- Added another slot to standard Fireteams" \n "" \n "Version 13 Changes:" \n "" \n "- Added custom Fortify" \n "- Updated Medical Crates" \n "- Updated loadouts for new Medical and Flashlights overhauls" \n "" \n "Version 12 Changes:" \n "" \n "- Updated Optics Crates to be arsenal-based, and they now have Optics, Facewear, and Grips/Bipods." \n "- Removed AK Optics Crate as it's no longer relevant" \n "- Updated Medical Crate contents to reflect the changes to the Medic loadout" \n "- Combined the admin slots into a group" \n "" \n "Version 11 Changes:" \n "" \n "- Made MAT a 3-player team, as it should have been" \n "" \n "Version 10 Changes:" \n "- Hardcoded the callsigns, no more needing to manually set them every time you start a new project. Rejoice!" \n "- Fighter Pilot callsign is now correctly set to Mage-1" \n "- Color Teams should be correctly set finally..." \n "- The SF teams are actually called SF teams now (A-SF, B-SF, etc)" \n "- Added a new trigger to auto remove any Fortify/Entrenching tools from player inventories when SafeStart ends" \n "- The Mission Title Splash font is now larger and easier to notice" \n "- Updated the garbage collection to be more strict (should make a slight improvement to performance in sustained large battles)" \n "" \n "Version 9 Changes:" \n "- Changed Infantry Fireteam size from 4 to 5" \n "- Added a trigger to automatically remove any Fortify Tools and Entrenching Tools from players when SafeStart ends (useful if you want to set up a defensive mission where players can fortify during briefing phase)" \n "- Renamed the ""Vehicle Crew"" members to ""Vehicle Commander"", ""Vehicle Gunner"", and ""Vehicle Driver""" \n "" \n "Version 8 Changes:" \n "- Fixed some wording in the Setup & Updating Instructions" \n "- Changed the Assign Gear instructions completely (much easier now)" \n "- Changed the wording of the group deployment button to ""Deploy Group""" \n "" \n "Version 7 Changes:" \n "- Removed initPlayerLocal.sqf (you will have to do the same)" \n "- Added ""Deploy Group"" action during SafeStart for leaders, created by Ferdilanz.";
 			id=1232;
 		};
 		class Item48
@@ -6319,7 +6581,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14694.928,17.911438,16742.434};
-						angles[]={-0,5.2720289,0};
+						angles[]={0,5.2720289,0};
 					};
 					side="West";
 					flags=4;
@@ -7696,7 +7958,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14706.717,17.911438,16753.129};
-						angles[]={-0,5.3137078,0};
+						angles[]={0,5.3137078,0};
 					};
 					side="West";
 					flags=4;
@@ -9673,7 +9935,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14704.391,17.911438,16733.281};
-						angles[]={-0,5.2720289,0};
+						angles[]={0,5.2720289,0};
 					};
 					side="West";
 					flags=4;
@@ -11050,7 +11312,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14717.086,17.911438,16744.857};
-						angles[]={-0,5.3137078,0};
+						angles[]={0,5.3137078,0};
 					};
 					side="West";
 					flags=4;
@@ -12152,7 +12414,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14739.704,17.911438,16763.885};
-						angles[]={-0,5.5316639,0};
+						angles[]={0,5.5316639,0};
 					};
 					side="West";
 					flags=4;
@@ -14461,7 +14723,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14737.697,17.911438,16744.848};
-						angles[]={-0,5.3940969,0};
+						angles[]={0,5.3940969,0};
 					};
 					side="West";
 					flags=6;
@@ -14721,7 +14983,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14739.841,17.911438,16744.701};
-						angles[]={-0,5.3940969,0};
+						angles[]={0,5.3940969,0};
 					};
 					side="West";
 					flags=4;
@@ -15025,7 +15287,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14727.775,17.911438,16734.832};
-						angles[]={-0,5.3940969,0};
+						angles[]={0,5.3940969,0};
 					};
 					side="West";
 					flags=6;
@@ -15285,7 +15547,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14729.919,17.911438,16734.686};
-						angles[]={-0,5.3940969,0};
+						angles[]={0,5.3940969,0};
 					};
 					side="West";
 					flags=4;
@@ -17936,7 +18198,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14731.832,17.911438,16783.639};
-						angles[]={-0,5.2117438,0};
+						angles[]={0,5.2117438,0};
 					};
 					side="West";
 					flags=4;
@@ -19481,7 +19743,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14745.199,17.911438,16795.676};
-						angles[]={-0,5.379436,0};
+						angles[]={0,5.379436,0};
 					};
 					side="West";
 					flags=4;
@@ -21026,7 +21288,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14745.07,17.911438,16783.656};
-						angles[]={-0,5.2117438,0};
+						angles[]={0,5.2117438,0};
 					};
 					side="West";
 					flags=4;
