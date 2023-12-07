@@ -274,6 +274,12 @@ class CfgLoadouts
 		#include "loadouts\Finland.hpp" // (No spaces)
 	};
 
+	class Finland_Summer // (No spaces)
+	{
+		displayName = "Finnish Infantry (Summer)"; // (Spaces allowed)
+		#include "loadouts\Finland_Summer.hpp" // (No spaces)
+	};
+
 	class Finland_SF // (No spaces)
 	{
 		displayName = "Finnish SF"; // (Spaces allowed)
