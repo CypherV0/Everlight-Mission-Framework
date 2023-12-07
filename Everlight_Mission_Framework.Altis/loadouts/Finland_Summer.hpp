@@ -9,7 +9,7 @@ class baseMan {// Weaponless baseclass
     vest[] = {};
     headgear[] = {};
     backpack[] = {};
-    goggles[] = {"None", "rhs_googles_black", "rhsusf_oakley_goggles_blk", "rhsusf_shemagh2_gogg_white", "G_Spectacles", "UK3CB_G_Neck_Shemag"};
+    goggles[] = {"None", "rhs_googles_black", "rhsusf_oakley_goggles_blk", "rhsusf_shemagh2_gogg_grn", "G_Spectacles", "UK3CB_G_Neck_Shemag_Oli"};
     hmd[] =
     {
         // "rhsusf_ANPVS_15"
