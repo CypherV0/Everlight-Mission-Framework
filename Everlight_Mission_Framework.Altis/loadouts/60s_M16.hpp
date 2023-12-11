@@ -83,7 +83,7 @@ class r : baseMan
         LIST_2("SmokeShell")
     };
     items[] = {
-        LIST_10("ACE_fieldDressing"),
+        LIST_5("ACE_fieldDressing"),
         LIST_2("ACE_morphine"),
         LIST_2("ACE_tourniquet"),
         "evlt_medical_advancedAid"
@@ -319,7 +319,7 @@ class hpst : smg
     hmd[] = {"ACE_NVG_Wide_Black"};
     goggles[] = {"default"};
     items[] = {
-        LIST_10("ACE_fieldDressing"),
+        LIST_5("ACE_fieldDressing"),
         LIST_2("ACE_morphine"),
         LIST_2("ACE_tourniquet"),
         "evlt_medical_advancedAid",
@@ -343,7 +343,7 @@ class jp : baseMan
     };
     items[] =
     {
-        LIST_10("ACE_fieldDressing"),
+        LIST_5("ACE_fieldDressing"),
         LIST_2("ACE_morphine"),
         LIST_2("ACE_tourniquet"),
         LIST_2("ACRE_PRC152"),

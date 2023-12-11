@@ -89,7 +89,7 @@ class r : baseMan
         LIST_2("SmokeShell")
     };
     items[] = {
-        LIST_10("ACE_fieldDressing"),
+        LIST_5("ACE_fieldDressing"),
         LIST_2("ACE_morphine"),
         LIST_2("ACE_tourniquet"),
         "evlt_medical_advancedAid"
