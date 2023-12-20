@@ -4,11 +4,10 @@ author = "Ferdilanz"
 
 FT Crate: 	The main Crate to supply 1 Fireteam with ammunition and equipment.
 	Model variants:
-				FT Crate 			(x21)
+				FT Crate 			(x14)
 				AR Crate 			(x5)
 				MMG Crate 			(x5)
-				LAT Crate 			(x1)
-				MAT Crate 			(x2)
+				MAT Crate 			(x3)
 				HAT Crate 			(x4)
 				Explosives Crate 	(x1)
 				Flare Crate			(x2)
@@ -73,28 +72,10 @@ MMG Crate: 	The Medium Machinegun Crates can supply the Platoon-attached MMG Tea
 				Repair Source:		False
 				Augments traits:	False
 
-LAT Crate: 	The Light Anti-Tank Crate can supply the Platoon-attached LAT with PG-7VS rocket-propelled grenades.
-	Content Variants:
-				RPG-7V
-	Cargo Statistics:
-				Cargo Mass: 		2 units
-				Contains items:		True
-				Has Cargo space: 	False
-					Cargo space:	0 units
-				Can be Loaded: 		True
-				Slingloadable:		False
-				Can Carry?:			True
-				Can Drag?:			True
-				Can Rename?:		True
-				Rearm Source:		False
-				Refuel Source:		False
-				Repair Source:		False
-				Augments traits:	False
-
 MAT Crate: 	A Medium Anti-Tank Crate can supply rockets to reloadable rocket launchers that the Platoon-attached MAT Team is equipped to use.
 	Content Variants:
 				MAAWS
-				Carl Gustaf
+				RPG-7V
 	Cargo Statistics:
 				Cargo Mass: 		2 units
 				Contains items:		True
@@ -114,7 +95,7 @@ HAT Crate: 	The Heavy Anti-Tank Crates can supply an emplaced or man-portable Mi
 	Content Variants:
 				TOW
 				9M133 Kornet
-				Metis
+				Metis-M
 				FGM-148 Javelin
 	Cargo Statistics:
 				Cargo Mass: 		2 units
