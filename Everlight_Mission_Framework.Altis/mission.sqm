@@ -13,7 +13,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=1521;
+		nextID=1593;
 	};
 	class MarkerIDProvider
 	{
@@ -21,14 +21,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1221;
+		nextID=1323;
 	};
 	class Camera
 	{
-		pos[]={14742.999,233.93538,16691.176};
-		dir[]={-0.0071638492,-0.99994999,0.0069767372};
-		up[]={-0.71636486,0.00999978,0.69765419};
-		aside[]={0.69768906,0,0.71640068};
+		pos[]={14744.12,247.86061,16680.326};
+		dir[]={-0.0071406015,-0.99994999,0.0070005292};
+		up[]={-0.71404016,0.00999978,0.70003331};
+		aside[]={0.70006835,0,0.71407586};
 	};
 };
 binarizationWanted=0;
@@ -83,13 +83,20 @@ addons[]=
 	"STOP_BLUFOR_Config",
 	"A3_Weapons_F_Items",
 	"ace_arsenal",
-	"SMA_Eotech_552"
+	"SMA_Eotech_552",
+	"A3_Structures_F_Mil_Helipads",
+	"CUP_WarfareBuildings",
+	"CUP_StandaloneTerrains_Core_Faction",
+	"A3_Ui_F",
+	"A3_Supplies_F_Heli_Slingload",
+	"ace_rearm",
+	"ace_cargo"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=42;
+		items=49;
 		class Item0
 		{
 			className="Desert";
@@ -374,6 +381,51 @@ class AddonsMetaData
 			name="SMA_Eotech_552";
 			author="Specialist Military Arms";
 		};
+		class Item42
+		{
+			className="A3_Structures_F_Mil";
+			name="Arma 3 - Military Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item43
+		{
+			className="CUP_WarfareBuildings";
+			name="CUP_WarfareBuildings";
+		};
+		class Item44
+		{
+			className="CUP_StandaloneTerrains_Core_Faction";
+			name="CUP_StandaloneTerrains_Core_Faction";
+		};
+		class Item45
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item46
+		{
+			className="A3_Supplies_F_Heli";
+			name="Arma 3 Helicopters - Ammoboxes and Supplies";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item47
+		{
+			className="ace_rearm";
+			name="ACE3 - Rearm";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item48
+		{
+			className="ace_cargo";
+			name="ACE3 - Cargo";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
 	};
 };
 class DynamicSimulation
@@ -393,7 +445,8 @@ dlcs[]=
 	"UK3CB_Factions",
 	"Jets",
 	"Kart",
-	"SMA"
+	"SMA",
+	"Heli"
 };
 randomSeed=13568944;
 class ScenarioData
@@ -2150,7 +2203,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=70;
+		items=75;
 		class Item0
 		{
 			dataType="Comment";
@@ -2488,7 +2541,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14773.388,17.91,16650.785};
+				position[]={14785.687,17.91,16713.59};
 			};
 			id=301;
 			type="ModuleCurator_F";
@@ -2554,7 +2607,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14777.938,17.91,16655.436};
+				position[]={14790.237,17.91,16718.24};
 			};
 			id=302;
 			type="ModuleCurator_F";
@@ -2620,7 +2673,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14772.667,17.91,16656.15};
+				position[]={14784.966,17.91,16718.955};
 			};
 			title="Game Master Modules";
 			description="Don't edit or delete these!";
@@ -2633,8 +2686,8 @@ class Mission
 			{
 				position[]={14662.65,17.91,16703.586};
 			};
-			title="Version 19";
-			description="Version 19 Changes:" \n "" \n "- Added rules page to map diary" \n "- Added Vehicle Spawner infrastructure (ask Cypher for tutorial)";
+			title="Version 20";
+			description="Version 20 Changes:" \n "" \n "- Reduced loadout bandages from 10 to 5" \n "- Edited several loadouts" \n "- Added Vehicle Spawners";
 			id=325;
 		};
 		class Item31
@@ -4468,7 +4521,7 @@ class Mission
 		class Item43
 		{
 			dataType="Trigger";
-			position[]={14782.674,17.91,16718.18};
+			position[]={14725.76,17.91,16620.205};
 			class Attributes
 			{
 				text="Everlight Fortify";
@@ -4486,7 +4539,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14781.225,17.91,16719.791};
+				position[]={14724.311,17.91,16621.816};
 			};
 			title="Fortify";
 			description="If you aren't planning to let players fortify, you can delete this crate and trigger. If you DO want players to be able to fortify during SafeStart (great for a defense in depth mission), leave these alone but move the crate to the staging area so players can use it. Don't worry, they will automatically be removed when SafeStart ends.";
@@ -4511,7 +4564,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14783.388,18.291529,16720.922};
+						position[]={14726.474,18.291529,16622.947};
 					};
 					side="Empty";
 					flags=4;
@@ -4550,7 +4603,7 @@ class Mission
 				position[]={14675.366,17.91,16691.391};
 			};
 			title="Previous Versions";
-			description="Version 18 Changes:" \n "" \n "- Added slots for Valkyrie crew (IFV/APC callsign)" \n "- Added slots for Reaper (CAS callsign)" \n "- Adjusted group marker colors" \n "- Updated several loadouts" \n "- Removed Stealth loadout" \n "" \n "Version 17 Changes:" \n "" \n "- Updated a few group marker colors" \n "- Added/Edited factions" \n "" \n "Version 16 Changes:" \n "" \n "- Added 3x new loadouts: Serbian Army, Serbian Army NVGs, Yugoslavian Army" \n "(By Ferdilanz)" \n "- Removed redundant pre-made ammo/med/etc crates because they are now searchable in the Asset Browser under ""Everlight Crates""." \n "" \n "Version 15 Changes:" \n "" \n "- Gave a Rank to any leaders, pilots, and crew that require a 152 Radio" \n "- Added a ""Take 152"" code to the comms file which will only work for units of Rank Sergeant and above" \n "- Changed the SF Teams to Delta, Echo, and Foxtrot " \n "" \n "Version 14 Changes:" \n "" \n "- Added another slot to standard Fireteams" \n "" \n "Version 13 Changes:" \n "" \n "- Added custom Fortify" \n "- Updated Medical Crates" \n "- Updated loadouts for new Medical and Flashlights overhauls" \n "" \n "Version 12 Changes:" \n "" \n "- Updated Optics Crates to be arsenal-based, and they now have Optics, Facewear, and Grips/Bipods." \n "- Removed AK Optics Crate as it's no longer relevant" \n "- Updated Medical Crate contents to reflect the changes to the Medic loadout" \n "- Combined the admin slots into a group" \n "" \n "Version 11 Changes:" \n "" \n "- Made MAT a 3-player team, as it should have been" \n "" \n "Version 10 Changes:" \n "- Hardcoded the callsigns, no more needing to manually set them every time you start a new project. Rejoice!" \n "- Fighter Pilot callsign is now correctly set to Mage-1" \n "- Color Teams should be correctly set finally..." \n "- The SF teams are actually called SF teams now (A-SF, B-SF, etc)" \n "- Added a new trigger to auto remove any Fortify/Entrenching tools from player inventories when SafeStart ends" \n "- The Mission Title Splash font is now larger and easier to notice" \n "- Updated the garbage collection to be more strict (should make a slight improvement to performance in sustained large battles)" \n "" \n "Version 9 Changes:" \n "- Changed Infantry Fireteam size from 4 to 5" \n "- Added a trigger to automatically remove any Fortify Tools and Entrenching Tools from players when SafeStart ends (useful if you want to set up a defensive mission where players can fortify during briefing phase)" \n "- Renamed the ""Vehicle Crew"" members to ""Vehicle Commander"", ""Vehicle Gunner"", and ""Vehicle Driver""" \n "" \n "Version 8 Changes:" \n "- Fixed some wording in the Setup & Updating Instructions" \n "- Changed the Assign Gear instructions completely (much easier now)" \n "- Changed the wording of the group deployment button to ""Deploy Group""" \n "" \n "Version 7 Changes:" \n "- Removed initPlayerLocal.sqf (you will have to do the same)" \n "- Added ""Deploy Group"" action during SafeStart for leaders, created by Ferdilanz.";
+			description="Version 19 Changes:" \n "" \n "- Added rules page to map diary" \n "- Added Vehicle Spawner infrastructure (ask Cypher for tutorial)" \n "" \n "Version 18 Changes:" \n "" \n "- Added slots for Valkyrie crew (IFV/APC callsign)" \n "- Added slots for Reaper (CAS callsign)" \n "- Adjusted group marker colors" \n "- Updated several loadouts" \n "- Removed Stealth loadout" \n "" \n "Version 17 Changes:" \n "" \n "- Updated a few group marker colors" \n "- Added/Edited factions" \n "" \n "Version 16 Changes:" \n "" \n "- Added 3x new loadouts: Serbian Army, Serbian Army NVGs, Yugoslavian Army" \n "(By Ferdilanz)" \n "- Removed redundant pre-made ammo/med/etc crates because they are now searchable in the Asset Browser under ""Everlight Crates""." \n "" \n "Version 15 Changes:" \n "" \n "- Gave a Rank to any leaders, pilots, and crew that require a 152 Radio" \n "- Added a ""Take 152"" code to the comms file which will only work for units of Rank Sergeant and above" \n "- Changed the SF Teams to Delta, Echo, and Foxtrot " \n "" \n "Version 14 Changes:" \n "" \n "- Added another slot to standard Fireteams" \n "" \n "Version 13 Changes:" \n "" \n "- Added custom Fortify" \n "- Updated Medical Crates" \n "- Updated loadouts for new Medical and Flashlights overhauls" \n "" \n "Version 12 Changes:" \n "" \n "- Updated Optics Crates to be arsenal-based, and they now have Optics, Facewear, and Grips/Bipods." \n "- Removed AK Optics Crate as it's no longer relevant" \n "- Updated Medical Crate contents to reflect the changes to the Medic loadout" \n "- Combined the admin slots into a group" \n "" \n "Version 11 Changes:" \n "" \n "- Made MAT a 3-player team, as it should have been" \n "" \n "Version 10 Changes:" \n "- Hardcoded the callsigns, no more needing to manually set them every time you start a new project. Rejoice!" \n "- Fighter Pilot callsign is now correctly set to Mage-1" \n "- Color Teams should be correctly set finally..." \n "- The SF teams are actually called SF teams now (A-SF, B-SF, etc)" \n "- Added a new trigger to auto remove any Fortify/Entrenching tools from player inventories when SafeStart ends" \n "- The Mission Title Splash font is now larger and easier to notice" \n "- Updated the garbage collection to be more strict (should make a slight improvement to performance in sustained large battles)" \n "" \n "Version 9 Changes:" \n "- Changed Infantry Fireteam size from 4 to 5" \n "- Added a trigger to automatically remove any Fortify Tools and Entrenching Tools from players when SafeStart ends (useful if you want to set up a defensive mission where players can fortify during briefing phase)" \n "- Renamed the ""Vehicle Crew"" members to ""Vehicle Commander"", ""Vehicle Gunner"", and ""Vehicle Driver""" \n "" \n "Version 8 Changes:" \n "- Fixed some wording in the Setup & Updating Instructions" \n "- Changed the Assign Gear instructions completely (much easier now)" \n "- Changed the wording of the group deployment button to ""Deploy Group""" \n "" \n "Version 7 Changes:" \n "- Removed initPlayerLocal.sqf (you will have to do the same)" \n "- Added ""Deploy Group"" action during SafeStart for leaders, created by Ferdilanz.";
 			id=1232;
 		};
 		class Item48
@@ -26151,6 +26204,2129 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item70
+		{
+			dataType="Layer";
+			name="Spawner (Boats)";
+			class Entities
+			{
+				items=10;
+				class Item0
+				{
+					dataType="Layer";
+					name="23rd Tracked Vehicle Spawner";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Layer";
+							name="Tracked Vehicle Spawner";
+							class Entities
+							{
+								items=1;
+								class Item0
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={15079.045,17.936192,16738.908};
+										angles[]={0.023993526,6.0213857,0};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										name="VS_Boat_Pad1";
+									};
+									id=1523;
+									type="Land_JumpTarget_F";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+							};
+							id=1522;
+						};
+					};
+					id=1521;
+				};
+				class Item1
+				{
+					dataType="Layer";
+					name="23rd Tracked Vehicle Spawner_1";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Layer";
+							name="Tracked Vehicle Spawner_1";
+							class Entities
+							{
+								items=1;
+								class Item0
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={15093.957,17.980953,16681.412};
+										angles[]={0.0026520467,6.0213857,6.2818484};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										name="VS_Boat_Pad2";
+									};
+									id=1526;
+									type="Land_JumpTarget_F";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+							};
+							id=1525;
+						};
+					};
+					id=1524;
+				};
+				class Item2
+				{
+					dataType="Layer";
+					name="23rd Tracked Vehicle Spawner_2";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Layer";
+							name="Tracked Vehicle Spawner_2";
+							class Entities
+							{
+								items=1;
+								class Item0
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={15108.889,18.005207,16623.902};
+										angles[]={6.2818937,6.0213857,0};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										name="VS_Boat_Pad3";
+									};
+									id=1529;
+									type="Land_JumpTarget_F";
+									atlOffset=1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+							};
+							id=1528;
+							atlOffset=1.9073486e-006;
+						};
+					};
+					id=1527;
+					atlOffset=1.9073486e-006;
+				};
+				class Item3
+				{
+					dataType="Comment";
+					class PositionInfo
+					{
+						position[]={15103.514,18.934933,16701.045};
+					};
+					title="ALL FACTIONS Boats";
+					description="Be aware of the map markers that are attached to these spawners - only move the spawners in the map view so you can move the markers with them." \n "" \n "Place at the edge of water with the pads in the water.";
+					id=1530;
+					atlOffset=0.99493217;
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15100.451,19.670193,16745.092};
+						angles[]={0,4.4505897,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						name="VS_Boat_Spawner1";
+					};
+					id=1531;
+					type="USMC_WarfareBVehicleServicePoint";
+					atlOffset=0.24599457;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_refuel_fuelCargo";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this, _value] call ace_refuel_fnc_makeSource}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=-10;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isRepairFacility";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isMedicalFacility";
+							expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_rearm_rearmCargo";
+							expression="if (_value != (if (isNumber (configOf _this >> 'ace_rearm_defaultSupply')) then {getNumber (configOf _this >> 'ace_rearm_defaultSupply')} else {(if (getAmmoCargo _this > 0) then {getAmmoCargo _this} else {-1})})) then {[_this, _value] call ace_rearm_fnc_makeSource}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=10000;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15115.363,19.356297,16687.598};
+						angles[]={0.0026520467,4.4505897,6.2805333};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						name="VS_Boat_Spawner2";
+					};
+					id=1532;
+					type="USMC_WarfareBVehicleServicePoint";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_refuel_fuelCargo";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this, _value] call ace_refuel_fnc_makeSource}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=-10;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isRepairFacility";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isMedicalFacility";
+							expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_rearm_rearmCargo";
+							expression="if (_value != (if (isNumber (configOf _this >> 'ace_rearm_defaultSupply')) then {getNumber (configOf _this >> 'ace_rearm_defaultSupply')} else {(if (getAmmoCargo _this > 0) then {getAmmoCargo _this} else {-1})})) then {[_this, _value] call ace_rearm_fnc_makeSource}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=10000;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15130.295,19.34399,16630.086};
+						angles[]={6.2765174,4.4505897,6.2805333};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						name="VS_Boat_Spawner3";
+					};
+					id=1533;
+					type="USMC_WarfareBVehicleServicePoint";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_refuel_fuelCargo";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this, _value] call ace_refuel_fnc_makeSource}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=-10;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isRepairFacility";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isMedicalFacility";
+							expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_rearm_rearmCargo";
+							expression="if (_value != (if (isNumber (configOf _this >> 'ace_rearm_defaultSupply')) then {getNumber (configOf _this >> 'ace_rearm_defaultSupply')} else {(if (getAmmoCargo _this > 0) then {getAmmoCargo _this} else {-1})})) then {[_this, _value] call ace_rearm_fnc_makeSource}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=10000;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item7
+				{
+					dataType="Marker";
+					position[]={15100.449,18.02,16745.094};
+					name="marker_0";
+					type="b_naval";
+					id=1534;
+				};
+				class Item8
+				{
+					dataType="Marker";
+					position[]={15115.366,17.952093,16687.596};
+					name="marker_1";
+					type="b_naval";
+					id=1535;
+				};
+				class Item9
+				{
+					dataType="Marker";
+					position[]={15130.298,17.939774,16630.084};
+					name="marker_2";
+					type="b_naval";
+					id=1536;
+				};
+			};
+			id=1537;
+			atlOffset=-0.011613846;
+		};
+		class Item71
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={14795.181,17.91,16639.451};
+			};
+			title="Vehicle Spawners";
+			description="Check your map view and find the spawners along the airfield";
+			id=1538;
+		};
+		class Item72
+		{
+			dataType="Layer";
+			name="Spawner (US Armor)";
+			class Entities
+			{
+				items=10;
+				class Item0
+				{
+					dataType="Layer";
+					name="23rd Tracked Vehicle Spawner_3";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Layer";
+							name="Tracked Vehicle Spawner_3";
+							class Entities
+							{
+								items=1;
+								class Item0
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={14971.842,17.9,16629.07};
+										angles[]={0,6.0213857,0};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										name="VS_US_Armor_Pad1";
+									};
+									id=1541;
+									type="Land_JumpTarget_F";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+							};
+							id=1540;
+						};
+					};
+					id=1539;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15004.631,17.996796,16637.643};
+						angles[]={0,4.4505897,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						name="VS_US_Armor_Spawner1";
+					};
+					id=1542;
+					type="USMC_WarfareBHeavyFactory";
+					atlOffset=0.21624184;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_refuel_fuelCargo";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this, _value] call ace_refuel_fnc_makeSource}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=-10;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isRepairFacility";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isMedicalFacility";
+							expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_rearm_rearmCargo";
+							expression="if (_value != (if (isNumber (configOf _this >> 'ace_rearm_defaultSupply')) then {getNumber (configOf _this >> 'ace_rearm_defaultSupply')} else {(if (getAmmoCargo _this > 0) then {getAmmoCargo _this} else {-1})})) then {[_this, _value] call ace_rearm_fnc_makeSource}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=10000;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15019.543,17.996796,16580.148};
+						angles[]={0,4.4505897,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+						name="VS_US_Armor_Spawner2";
+					};
+					id=1554;
+					type="USMC_WarfareBHeavyFactory";
+					atlOffset=0.25000191;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_refuel_fuelCargo";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this, _value] call ace_refuel_fnc_makeSource}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=-10;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isRepairFacility";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isMedicalFacility";
+							expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_rearm_rearmCargo";
+							expression="if (_value != (if (isNumber (configOf _this >> 'ace_rearm_defaultSupply')) then {getNumber (configOf _this >> 'ace_rearm_defaultSupply')} else {(if (getAmmoCargo _this > 0) then {getAmmoCargo _this} else {-1})})) then {[_this, _value] call ace_rearm_fnc_makeSource}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=10000;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item3
+				{
+					dataType="Layer";
+					name="23rd Tracked Vehicle Spawner_4";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Layer";
+							name="Tracked Vehicle Spawner_4";
+							class Entities
+							{
+								items=1;
+								class Item0
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={14986.754,17.98,16571.576};
+										angles[]={0,6.0213857,0};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										name="VS_US_Armor_Pad2";
+									};
+									id=1545;
+									type="Land_JumpTarget_F";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+							};
+							id=1544;
+						};
+					};
+					id=1543;
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15034.475,17.996796,16522.637};
+						angles[]={0,4.4505897,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+						name="VS_US_Armor_Spawner3";
+					};
+					id=1553;
+					type="USMC_WarfareBHeavyFactory";
+					atlOffset=0.30945206;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_refuel_fuelCargo";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this, _value] call ace_refuel_fnc_makeSource}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=-10;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isRepairFacility";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isMedicalFacility";
+							expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_rearm_rearmCargo";
+							expression="if (_value != (if (isNumber (configOf _this >> 'ace_rearm_defaultSupply')) then {getNumber (configOf _this >> 'ace_rearm_defaultSupply')} else {(if (getAmmoCargo _this > 0) then {getAmmoCargo _this} else {-1})})) then {[_this, _value] call ace_rearm_fnc_makeSource}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=10000;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item5
+				{
+					dataType="Marker";
+					position[]={15034.613,18.220001,16522.59};
+					name="marker_13";
+					type="b_armor";
+					id=1552;
+					atlOffset=0.30963516;
+				};
+				class Item6
+				{
+					dataType="Layer";
+					name="23rd Tracked Vehicle Spawner_5";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Layer";
+							name="Tracked Vehicle Spawner_5";
+							class Entities
+							{
+								items=1;
+								class Item0
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={15001.686,17.955265,16514.066};
+										angles[]={6.2805333,6.0213857,6.2818484};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										name="VS_US_Armor_Pad3";
+									};
+									id=1548;
+									type="Land_JumpTarget_F";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+							};
+							id=1547;
+						};
+					};
+					id=1546;
+				};
+				class Item7
+				{
+					dataType="Marker";
+					position[]={15004.417,17.977745,16637.906};
+					name="marker_11";
+					type="b_armor";
+					id=1550;
+				};
+				class Item8
+				{
+					dataType="Marker";
+					position[]={15019.634,18.220001,16580.129};
+					name="marker_12";
+					type="b_armor";
+					id=1551;
+					atlOffset=0.25000191;
+				};
+				class Item9
+				{
+					dataType="Comment";
+					class PositionInfo
+					{
+						position[]={14999.896,17.969999,16575.334};
+					};
+					title="US Armor";
+					description="Be aware of the map markers that are attached to these spawners - only move the spawners in the map view so you can move the markers with them.";
+					id=1549;
+					atlOffset=-0.010000229;
+				};
+			};
+			id=1555;
+			atlOffset=0.075090408;
+		};
+		class Item73
+		{
+			dataType="Layer";
+			name="Spawner (US Heli)";
+			class Entities
+			{
+				items=13;
+				class Item0
+				{
+					dataType="Layer";
+					name="23rd Tracked Vehicle Spawner_6";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Layer";
+							name="Tracked Vehicle Spawner_6";
+							class Entities
+							{
+								items=1;
+								class Item0
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={14848.854,17.9,16514.164};
+										angles[]={0,6.0213857,0};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										name="VS_US_Heli_Pad1";
+									};
+									id=1558;
+									type="Land_HelipadCircle_F";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+							};
+							id=1557;
+						};
+					};
+					id=1556;
+				};
+				class Item1
+				{
+					dataType="Marker";
+					position[]={14886.413,18.450001,16460.234};
+					name="marker_4";
+					type="b_air";
+					id=1570;
+				};
+				class Item2
+				{
+					dataType="Marker";
+					position[]={14901.354,18.450001,16402.75};
+					name="marker_5";
+					type="b_air";
+					id=1571;
+				};
+				class Item3
+				{
+					dataType="Layer";
+					name="23rd Tracked Vehicle Spawner_7";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Layer";
+							name="Tracked Vehicle Spawner_7";
+							class Entities
+							{
+								items=1;
+								class Item0
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={14863.766,17.922392,16456.67};
+										angles[]={0.0026520467,6.0213857,0.010664274};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										name="VS_US_Heli_Pad2";
+									};
+									id=1561;
+									type="Land_HelipadCircle_F";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+							};
+							id=1560;
+						};
+					};
+					id=1559;
+				};
+				class Item4
+				{
+					dataType="Layer";
+					name="23rd Tracked Vehicle Spawner_8";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Layer";
+							name="Tracked Vehicle Spawner_8";
+							class Entities
+							{
+								items=1;
+								class Item0
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={14878.697,17.940001,16399.158};
+										angles[]={0,6.0213857,0};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										name="VS_US_Heli_Pad3";
+									};
+									id=1564;
+									type="Land_HelipadCircle_F";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+							};
+							id=1563;
+						};
+					};
+					id=1562;
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14863.317,19.211504,16512.678};
+						angles[]={0,2.8883455,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=1572;
+					type="B_Slingload_01_Ammo_F";
+					atlOffset=-0.050533295;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="hideObject";
+							expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14878.248,19.550463,16455.211};
+						angles[]={6.2020988,2.8883455,0.26205495};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=1573;
+					type="B_Slingload_01_Ammo_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="hideObject";
+							expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14893.102,19.5403,16397.826};
+						angles[]={6.2020988,2.8883455,0.26205495};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=1574;
+					type="B_Slingload_01_Ammo_F";
+					atlOffset=1.9073486e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="hideObject";
+							expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item8
+				{
+					dataType="Comment";
+					class PositionInfo
+					{
+						position[]={14874.488,17.950001,16474.053};
+					};
+					title="US Heli";
+					description="Be aware of the map markers that are attached to these spawners - only move the spawners in the map view so you can move the markers with them." \n "" \n "You may notice the heli spawners have an additional object. It is required.";
+					id=1565;
+					atlOffset=0.091501236;
+				};
+				class Item9
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14871.496,24.198149,16517.723};
+						angles[]={0,4.4505897,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						name="VS_US_Heli_Spawner1";
+					};
+					id=1566;
+					type="USMC_WarfareBAircraftFactory";
+					atlOffset=0.24261284;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_refuel_fuelCargo";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this, _value] call ace_refuel_fnc_makeSource}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=-10;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isRepairFacility";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isMedicalFacility";
+							expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_rearm_rearmCargo";
+							expression="if (_value != (if (isNumber (configOf _this >> 'ace_rearm_defaultSupply')) then {getNumber (configOf _this >> 'ace_rearm_defaultSupply')} else {(if (getAmmoCargo _this > 0) then {getAmmoCargo _this} else {-1})})) then {[_this, _value] call ace_rearm_fnc_makeSource}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=10000;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item10
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14886.408,24.198149,16460.23};
+						angles[]={0,4.4505897,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+						name="VS_US_Heli_Spawner2";
+					};
+					id=1567;
+					type="USMC_WarfareBAircraftFactory";
+					atlOffset=0.25;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_refuel_fuelCargo";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this, _value] call ace_refuel_fnc_makeSource}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=-10;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isRepairFacility";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isMedicalFacility";
+							expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_rearm_rearmCargo";
+							expression="if (_value != (if (isNumber (configOf _this >> 'ace_rearm_defaultSupply')) then {getNumber (configOf _this >> 'ace_rearm_defaultSupply')} else {(if (getAmmoCargo _this > 0) then {getAmmoCargo _this} else {-1})})) then {[_this, _value] call ace_rearm_fnc_makeSource}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=10000;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item11
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14901.34,24.198149,16402.719};
+						angles[]={0,4.4505897,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+						name="VS_US_Heli_Spawner3";
+					};
+					id=1568;
+					type="USMC_WarfareBAircraftFactory";
+					atlOffset=0.26690865;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_refuel_fuelCargo";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this, _value] call ace_refuel_fnc_makeSource}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=-10;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isRepairFacility";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isMedicalFacility";
+							expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_rearm_rearmCargo";
+							expression="if (_value != (if (isNumber (configOf _this >> 'ace_rearm_defaultSupply')) then {getNumber (configOf _this >> 'ace_rearm_defaultSupply')} else {(if (getAmmoCargo _this > 0) then {getAmmoCargo _this} else {-1})})) then {[_this, _value] call ace_rearm_fnc_makeSource}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=10000;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item12
+				{
+					dataType="Marker";
+					position[]={14871.508,18.450001,16517.738};
+					name="marker_3";
+					type="b_air";
+					id=1569;
+				};
+			};
+			id=1575;
+			atlOffset=0.41050911;
+		};
+		class Item74
+		{
+			dataType="Layer";
+			name="Spawner (US Motorized)";
+			class Entities
+			{
+				items=10;
+				class Item0
+				{
+					dataType="Layer";
+					name="23rd Tracked Vehicle Spawner_9";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Layer";
+							name="Tracked Vehicle Spawner_9";
+							class Entities
+							{
+								items=1;
+								class Item0
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={14713.807,17.85,16401.506};
+										angles[]={0,6.0213857,0};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										name="VS_US_Motor_Pad1";
+									};
+									id=1578;
+									type="Land_JumpTarget_F";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="ace_refuel_fuelCargo";
+											expression="if (_value != (if (isNumber (configOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this, _value] call ace_refuel_fnc_makeSource}";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=-1;
+												};
+											};
+										};
+										class Attribute2
+										{
+											property="ace_isRepairFacility";
+											expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0;
+												};
+											};
+										};
+										class Attribute3
+										{
+											property="ace_isMedicalFacility";
+											expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										class Attribute4
+										{
+											property="ace_refuel_hooks";
+											expression="if (_value isNotEqualTo (if (isArray (configOf _this >> ""ace_refuel_hooks"")) then {getArray (configOf _this >> ""ace_refuel_hooks"") select 0} else {[0, 0, 0]})) then {_this setVariable ['ace_refuel_hooks', [_value], true]}";
+											class Value
+											{
+												class data
+												{
+													singleType="ARRAY";
+													class value
+													{
+														items=3;
+														class Item0
+														{
+															class data
+															{
+																singleType="SCALAR";
+																value=0;
+															};
+														};
+														class Item1
+														{
+															class data
+															{
+																singleType="SCALAR";
+																value=0;
+															};
+														};
+														class Item2
+														{
+															class data
+															{
+																singleType="SCALAR";
+																value=0;
+															};
+														};
+													};
+												};
+											};
+										};
+										class Attribute5
+										{
+											property="ace_rearm_rearmCargo";
+											expression="if (_value != (if (isNumber (configOf _this >> 'ace_rearm_defaultSupply')) then {getNumber (configOf _this >> 'ace_rearm_defaultSupply')} else {(if (getAmmoCargo _this > 0) then {getAmmoCargo _this} else {-1})})) then {[_this, _value] call ace_rearm_fnc_makeSource}";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=-1;
+												};
+											};
+										};
+										nAttributes=6;
+									};
+								};
+							};
+							id=1577;
+						};
+					};
+					id=1576;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14761.508,17.298086,16352.584};
+						angles[]={0,4.4505897,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+						name="VS_US_Motor_Spawner2";
+					};
+					id=1589;
+					type="USMC_WarfareBLightFactory";
+					atlOffset=0.25;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_refuel_fuelCargo";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this, _value] call ace_refuel_fnc_makeSource}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=-10;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isRepairFacility";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isMedicalFacility";
+							expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_rearm_rearmCargo";
+							expression="if (_value != (if (isNumber (configOf _this >> 'ace_rearm_defaultSupply')) then {getNumber (configOf _this >> 'ace_rearm_defaultSupply')} else {(if (getAmmoCargo _this > 0) then {getAmmoCargo _this} else {-1})})) then {[_this, _value] call ace_rearm_fnc_makeSource}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=10000;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14776.439,17.298086,16295.07};
+						angles[]={0,4.4505897,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+						name="VS_US_Motor_Spawner3";
+					};
+					id=1590;
+					type="USMC_WarfareBLightFactory";
+					atlOffset=0.25;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_refuel_fuelCargo";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this, _value] call ace_refuel_fnc_makeSource}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=-10;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isRepairFacility";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isMedicalFacility";
+							expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_rearm_rearmCargo";
+							expression="if (_value != (if (isNumber (configOf _this >> 'ace_rearm_defaultSupply')) then {getNumber (configOf _this >> 'ace_rearm_defaultSupply')} else {(if (getAmmoCargo _this > 0) then {getAmmoCargo _this} else {-1})})) then {[_this, _value] call ace_rearm_fnc_makeSource}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=10000;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item3
+				{
+					dataType="Marker";
+					position[]={14746.6,18.1,16410.076};
+					name="marker_8";
+					type="b_motor_inf";
+					id=1585;
+					atlOffset=0.249897;
+				};
+				class Item4
+				{
+					dataType="Layer";
+					name="23rd Tracked Vehicle Spawner_10";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Layer";
+							name="Tracked Vehicle Spawner_10";
+							class Entities
+							{
+								items=1;
+								class Item0
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={14728.719,17.869774,16344.011};
+										angles[]={6.2778587,6.0213857,6.2818484};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										name="VS_US_Motor_Pad2";
+									};
+									id=1581;
+									type="Land_JumpTarget_F";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+							};
+							id=1580;
+						};
+					};
+					id=1579;
+				};
+				class Item5
+				{
+					dataType="Marker";
+					position[]={14761.506,18.1,16352.594};
+					name="marker_9";
+					type="b_motor_inf";
+					id=1586;
+					atlOffset=0.25;
+				};
+				class Item6
+				{
+					dataType="Marker";
+					position[]={14776.421,18.1,16295.064};
+					name="marker_10";
+					type="b_motor_inf";
+					id=1587;
+					atlOffset=0.25;
+				};
+				class Item7
+				{
+					dataType="Layer";
+					name="23rd Tracked Vehicle Spawner_11";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Layer";
+							name="Tracked Vehicle Spawner_11";
+							class Entities
+							{
+								items=1;
+								class Item0
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={14743.65,17.82,16286.501};
+										angles[]={0,6.0213857,0};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										name="VS_US_Motor_Pad3";
+									};
+									id=1584;
+									type="Land_JumpTarget_F";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+							};
+							id=1583;
+						};
+					};
+					id=1582;
+				};
+				class Item8
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14746.596,17.298086,16410.078};
+						angles[]={0,4.4505897,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						name="VS_US_Motor_Spawner1";
+					};
+					id=1591;
+					type="USMC_WarfareBLightFactory";
+					atlOffset=0.2498951;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_refuel_fuelCargo";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this, _value] call ace_refuel_fnc_makeSource}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=-1;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isRepairFacility";
+							expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {(parseNumber (getRepairCargo _this > 0))})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isMedicalFacility";
+							expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_rearm_rearmCargo";
+							expression="if (_value != (if (isNumber (configOf _this >> 'ace_rearm_defaultSupply')) then {getNumber (configOf _this >> 'ace_rearm_defaultSupply')} else {(if (getAmmoCargo _this > 0) then {getAmmoCargo _this} else {-1})})) then {[_this, _value] call ace_rearm_fnc_makeSource}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=-1;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item9
+				{
+					dataType="Comment";
+					class PositionInfo
+					{
+						position[]={14743.075,17.85,16347.326};
+					};
+					title="US Motorized";
+					description="Be aware of the map markers that are attached to these spawners - only move the spawners in the map view so you can move the markers with them.";
+					id=1588;
+					atlOffset=-0.0025653839;
+				};
+			};
+			id=1592;
+			atlOffset=0.075271606;
 		};
 	};
 };
