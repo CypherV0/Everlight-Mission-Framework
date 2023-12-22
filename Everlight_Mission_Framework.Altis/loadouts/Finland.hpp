@@ -176,18 +176,19 @@ class pm : m
 class ar : r
 {
     displayName = "Automatic Rifleman";
-    primaryWeapon[] = {"rhs_weap_minimi_para_railed"};
-    bipod[] = {"rhsusf_acc_kac_grip_saw_bipod"};
+    backpack[] = {"CUP_O_RUS_Patrol_bag_Green"};
+    primaryWeapon[] = {"CUP_lmg_PKM_top_rail_B50_vfg"};
+    bipod[] = {};
     magazines[] =
     {
-        LIST_2("rhsusf_200rnd_556x45_mixed_box"),
+        LIST_2("rhs_100Rnd_762x54mmR"),
         LIST_2("rhs_mag_9x19_17"),
         LIST_2("rhs_mag_m67"),
         LIST_2("SmokeShell")
     };
     backpackItems[] =
     {
-        LIST_3("rhsusf_200rnd_556x45_mixed_box")
+        LIST_4("rhs_100Rnd_762x54mmR")
     };
     sidearmWeapon[] = {"rhs_weap_pya"};
     sidearmAttachments[] = {};
@@ -195,9 +196,10 @@ class ar : r
 class aar : r
 {
     displayName = "Asst. Automatic Rifleman";
+    backpack[] = {"CUP_O_RUS_Patrol_bag_Green"};
     backpackItems[] =
     {
-        LIST_3("rhsusf_200rnd_556x45_mixed_box")
+        LIST_4("rhs_100Rnd_762x54mmR")
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
@@ -305,16 +307,15 @@ class smg : r
     vest[] = {
         "V_TacVest_oli"
     };
-    primaryWeapon[] = {"CUP_smg_vityaz"};
+    primaryWeapon[] = {"CUP_smg_MP5A5"};
     scope[] = {};
     attachment[] = {};
     bipod[] = {};
-    backpack[] = {"B_FieldPack_oli"};
     backpackItems[] = {};
     sidearmWeapon[] = {"hgun_Pistol_Signal_F"};
     magazines[] =
     {
-        LIST_3("CUP_30Rnd_9x19_Vityaz"),
+        LIST_3("CUP_30Rnd_9x19_MP5"),
         "6Rnd_RedSignal_F",
         "SmokeShellRed",
         "ACE_HandFlare_Red",
