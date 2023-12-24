@@ -21,7 +21,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1425;
+		nextID=1476;
 	};
 	class Camera
 	{
@@ -514,8 +514,8 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="TMF_ORBATMarkersFT";
-			expression="false";
+			property="TMF_ORBATMarkersFT_Directional";
+			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
 			class Value
 			{
 				class data
@@ -527,8 +527,8 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
-			property="TMF_ORBATMarkersFT_Directional";
-			expression="missionNamespace setVariable ['TMF_ORBAT_MarkersFT_Directional',_value,true];";
+			property="TMF_ORBATMarkersFT";
+			expression="false";
 			class Value
 			{
 				class data
@@ -1208,8 +1208,8 @@ class CustomAttributes
 		name="Scenario";
 		class Attribute0
 		{
-			property="ENH_Briefing_Independent_Execution";
-			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_Independent_Execution'; waitUntil {!isNull player}; if (side player == independent) then {player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_EXECUTION_TITLE', _this call BIS_fnc_localize]]}}};";
+			property="ENH_Briefing_Civilian_Execution";
+			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_Civilian_Execution'; waitUntil {!isNull player}; if (side player == civilian) then {player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_EXECUTION_TITLE', _this call BIS_fnc_localize]]}}};";
 			class Value
 			{
 				class data
@@ -2105,8 +2105,8 @@ class CustomAttributes
 		};
 		class Attribute34
 		{
-			property="ENH_Briefing_Civilian_Execution";
-			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_Civilian_Execution'; waitUntil {!isNull player}; if (side player == civilian) then {player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_EXECUTION_TITLE', _this call BIS_fnc_localize]]}}};";
+			property="ENH_Briefing_Independent_Execution";
+			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_Independent_Execution'; waitUntil {!isNull player}; if (side player == independent) then {player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_EXECUTION_TITLE', _this call BIS_fnc_localize]]}}};";
 			class Value
 			{
 				class data
@@ -2203,7 +2203,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=75;
+		items=73;
 		class Item0
 		{
 			dataType="Comment";
@@ -2687,7 +2687,7 @@ class Mission
 				position[]={14662.65,17.91,16703.586};
 			};
 			title="Version 20";
-			description="Version 20 Changes:" \n "" \n "- Reduced loadout bandages from 10 to 5" \n "- Edited several loadouts" \n "- Added Vehicle Spawners";
+			description="Version 20 Changes:" \n "" \n "- Added ""Customize"" action for all players to change optics and facewear without ever needing the crates!" \n "- Removed obsolete crates from template" \n "- Reduced loadout bandages from 10 to 5" \n "- Edited several loadouts" \n "- Added Vehicle Spawners to the template mission for copy/paste";
 			id=325;
 		};
 		class Item31
@@ -2782,17 +2782,6 @@ class Mission
 		};
 		class Item36
 		{
-			dataType="Comment";
-			class PositionInfo
-			{
-				position[]={14703.971,17.91,16643.008};
-			};
-			title="Optics & Facewear";
-			description="Same Optics, but includes Facewear options for players to customize via ACE Interact.";
-			id=379;
-		};
-		class Item37
-		{
 			dataType="Layer";
 			name="Optics with WINTER Facewear";
 			class Entities
@@ -2820,18 +2809,7 @@ class Mission
 			id=383;
 			atlOffset=185.97;
 		};
-		class Item38
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
-				position[]={14712.405,17.91,16634.861};
-			};
-			title="Optics & Winter Facewear";
-			description="Same Optics, but includes Winter Facewear options for players to customize via ACE Interact.";
-			id=384;
-		};
-		class Item39
+		class Item37
 		{
 			dataType="Trigger";
 			position[]={14752.193,17.91,16675.461};
@@ -2846,7 +2824,7 @@ class Mission
 			id=385;
 			type="EmptyDetector";
 		};
-		class Item40
+		class Item38
 		{
 			dataType="Trigger";
 			position[]={14754.91,17.91,16672.939};
@@ -2862,7 +2840,7 @@ class Mission
 			id=395;
 			type="EmptyDetector";
 		};
-		class Item41
+		class Item39
 		{
 			dataType="Layer";
 			name="Optics with Facewear";
@@ -2887,806 +2865,6 @@ class Mission
 								{
 									dataType="Layer";
 									name="Optics Crate_3";
-									class Entities
-									{
-										items=1;
-										class Item0
-										{
-											dataType="Object";
-											class PositionInfo
-											{
-												position[]={14703.359,18.291529,16642.785};
-												angles[]={0,4.629416,0};
-											};
-											side="Empty";
-											flags=4;
-											class Attributes
-											{
-											};
-											id=401;
-											type="Box_NATO_Equip_F";
-											class CustomAttributes
-											{
-												class Attribute0
-												{
-													property="ace_arsenal_attribute";
-													expression="if (!is3DEN) then {[_this, +_value] call ace_arsenal_fnc_attributeInit}";
-													class Value
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="ARRAY";
-																		class value
-																		{
-																			items=91;
-																			class Item0
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="G_Aviator";
-																				};
-																			};
-																			class Item1
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhs_googles_black";
-																				};
-																			};
-																			class Item2
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhs_googles_clear";
-																				};
-																			};
-																			class Item3
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhs_ess_black";
-																				};
-																			};
-																			class Item4
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="dvk_tacg_shem_altcsat";
-																				};
-																			};
-																			class Item5
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="G_Blindfold_01_black_F";
-																				};
-																			};
-																			class Item6
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="G_Combat";
-																				};
-																			};
-																			class Item7
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_G_ESS_BLK_Dark";
-																				};
-																			};
-																			class Item8
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_G_TK_RoundGlasses_blk";
-																				};
-																			};
-																			class Item9
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_shemagh2_tan";
-																				};
-																			};
-																			class Item10
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_shemagh2_od";
-																				};
-																			};
-																			class Item11
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_shemagh2_grn";
-																				};
-																			};
-																			class Item12
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_oakley_goggles_blk";
-																				};
-																			};
-																			class Item13
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="G_Spectacles";
-																				};
-																			};
-																			class Item14
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="dvk_tacg_altcsat";
-																				};
-																			};
-																			class Item15
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="G_Spectacles_Tinted";
-																				};
-																			};
-																			class Item16
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhs_googles_orange";
-																				};
-																			};
-																			class Item17
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhs_googles_yellow";
-																				};
-																			};
-																			class Item18
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="dvk_tacg_o_shem_altcsat";
-																				};
-																			};
-																			class Item19
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_shemagh2_gogg_grn";
-																				};
-																			};
-																			class Item20
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_shemagh2_gogg_od";
-																				};
-																			};
-																			class Item21
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_shemagh2_gogg_tan";
-																				};
-																			};
-																			class Item22
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_oakley_goggles_ylw";
-																				};
-																			};
-																			class Item23
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_oakley_goggles_clr";
-																				};
-																			};
-																			class Item24
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="G_Squares";
-																				};
-																			};
-																			class Item25
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="G_Squares_Tinted";
-																				};
-																			};
-																			class Item26
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhs_facewear_6m2_1";
-																				};
-																			};
-																			class Item27
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhs_facewear_6m2";
-																				};
-																			};
-																			class Item28
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_1p63";
-																				};
-																			};
-																			class Item29
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhs_acc_1p63";
-																				};
-																			};
-																			class Item30
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_1P87_RIS";
-																				};
-																			};
-																			class Item31
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhs_acc_1p87";
-																				};
-																			};
-																			class Item32
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_1P87_RIS_desert";
-																				};
-																			};
-																			class Item33
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_1P87_RIS_woodland";
-																				};
-																			};
-																			class Item34
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_MicroT1";
-																				};
-																			};
-																			class Item35
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_MicroT1_coyote";
-																				};
-																			};
-																			class Item36
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_MicroT1_low";
-																				};
-																			};
-																			class Item37
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_MicroT1_low_coyote";
-																				};
-																			};
-																			class Item38
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_MicroT1_low_OD";
-																				};
-																			};
-																			class Item39
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_MicroT1_OD";
-																				};
-																			};
-																			class Item40
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_AC11704_Black";
-																				};
-																			};
-																			class Item41
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_AC11704_Coyote";
-																				};
-																			};
-																			class Item42
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_AC11704_Jungle";
-																				};
-																			};
-																			class Item43
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_AC11704_OD";
-																				};
-																			};
-																			class Item44
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_AC11704_Tan";
-																				};
-																			};
-																			class Item45
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_HoloBlack";
-																				};
-																			};
-																			class Item46
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_HoloDesert";
-																				};
-																			};
-																			class Item47
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_HoloWdl";
-																				};
-																			};
-																			class Item48
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="SMA_eotech552";
-																				};
-																			};
-																			class Item49
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="SMA_eotech552_kf";
-																				};
-																			};
-																			class Item50
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_Eotech553_Black";
-																				};
-																			};
-																			class Item51
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_Eotech553_Coyote";
-																				};
-																			};
-																			class Item52
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_Eotech533Grey";
-																				};
-																			};
-																			class Item53
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_Eotech553_OD";
-																				};
-																			};
-																			class Item54
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_Eotech533";
-																				};
-																			};
-																			class Item55
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="SMA_eotech";
-																				};
-																			};
-																			class Item56
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="SMA_eotech_G";
-																				};
-																			};
-																			class Item57
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="SMA_eotech_T";
-																				};
-																			};
-																			class Item58
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_Kobra";
-																				};
-																			};
-																			class Item59
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_eotech_552";
-																				};
-																			};
-																			class Item60
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_eotech_552_d";
-																				};
-																			};
-																			class Item61
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_eotech_552_wd";
-																				};
-																			};
-																			class Item62
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_CompM2_Black";
-																				};
-																			};
-																			class Item63
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_CompM2_Coyote";
-																				};
-																			};
-																			class Item64
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_CompM2_Desert";
-																				};
-																			};
-																			class Item65
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_CompM2_OD";
-																				};
-																			};
-																			class Item66
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_CompM2_Woodland2";
-																				};
-																			};
-																			class Item67
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_CompM2_Woodland";
-																				};
-																			};
-																			class Item68
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="SMA_MICRO_T2";
-																				};
-																			};
-																			class Item69
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="SMA_MICRO_T2_LM";
-																				};
-																			};
-																			class Item70
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_mrds";
-																				};
-																			};
-																			class Item71
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_mrds_fwd";
-																				};
-																			};
-																			class Item72
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhs_acc_okp7_dovetail";
-																				};
-																			};
-																			class Item73
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhs_acc_pkas";
-																				};
-																			};
-																			class Item74
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="SMA_BARSKA";
-																				};
-																			};
-																			class Item75
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="SMA_AIMPOINT";
-																				};
-																			};
-																			class Item76
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="SMA_CMORE";
-																				};
-																			};
-																			class Item77
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_T1_low_fwd";
-																				};
-																			};
-																			class Item78
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_T1_high";
-																				};
-																			};
-																			class Item79
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="sma_spitfire_01_black";
-																				};
-																			};
-																			class Item80
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_eotech_xps3";
-																				};
-																			};
-																			class Item81
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_compm4";
-																				};
-																			};
-																			class Item82
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_grip2";
-																				};
-																			};
-																			class Item83
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_grip2_tan";
-																				};
-																			};
-																			class Item84
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_grip2_wd";
-																				};
-																			};
-																			class Item85
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_rvg_blk";
-																				};
-																			};
-																			class Item86
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_kac_grip";
-																				};
-																			};
-																			class Item87
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_harris_bipod";
-																				};
-																			};
-																			class Item88
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_kac_grip_saw_bipod";
-																				};
-																			};
-																			class Item89
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_grip4_bipod";
-																				};
-																			};
-																			class Item90
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="bipod_01_F_blk";
-																				};
-																			};
-																		};
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=0;
-																	};
-																};
-															};
-														};
-													};
-												};
-												class Attribute1
-												{
-													property="ammoBox";
-													expression="[_this,_value] call bis_fnc_initAmmoBox;";
-													class Value
-													{
-														class data
-														{
-															singleType="STRING";
-															value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-														};
-													};
-												};
-												nAttributes=2;
-											};
-										};
-									};
 									id=400;
 								};
 							};
@@ -3698,7 +2876,7 @@ class Mission
 			};
 			id=402;
 		};
-		class Item42
+		class Item40
 		{
 			dataType="Layer";
 			name="Optics with WINTER Facewear";
@@ -3723,790 +2901,6 @@ class Mission
 								{
 									dataType="Layer";
 									name="Optics Crate_4";
-									class Entities
-									{
-										items=1;
-										class Item0
-										{
-											dataType="Object";
-											class PositionInfo
-											{
-												position[]={14712.01,18.291529,16634.443};
-												angles[]={0,4.629416,0};
-											};
-											side="Empty";
-											flags=4;
-											class Attributes
-											{
-											};
-											id=406;
-											type="Box_NATO_Equip_F";
-											class CustomAttributes
-											{
-												class Attribute0
-												{
-													property="ace_arsenal_attribute";
-													expression="if (!is3DEN) then {[_this, +_value] call ace_arsenal_fnc_attributeInit}";
-													class Value
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="ARRAY";
-																		class value
-																		{
-																			items=89;
-																			class Item0
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="G_Aviator";
-																				};
-																			};
-																			class Item1
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhs_googles_black";
-																				};
-																			};
-																			class Item2
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhs_googles_clear";
-																				};
-																			};
-																			class Item3
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhs_ess_black";
-																				};
-																			};
-																			class Item4
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="G_Blindfold_01_black_F";
-																				};
-																			};
-																			class Item5
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="G_Combat";
-																				};
-																			};
-																			class Item6
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_G_ESS_BLK_Dark";
-																				};
-																			};
-																			class Item7
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_G_TK_RoundGlasses_blk";
-																				};
-																			};
-																			class Item8
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_oakley_goggles_blk";
-																				};
-																			};
-																			class Item9
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="G_Spectacles";
-																				};
-																			};
-																			class Item10
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="dvk_tacg_altcsat";
-																				};
-																			};
-																			class Item11
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="G_Spectacles_Tinted";
-																				};
-																			};
-																			class Item12
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhs_googles_orange";
-																				};
-																			};
-																			class Item13
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhs_googles_yellow";
-																				};
-																			};
-																			class Item14
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_oakley_goggles_ylw";
-																				};
-																			};
-																			class Item15
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_oakley_goggles_clr";
-																				};
-																			};
-																			class Item16
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="G_Squares";
-																				};
-																			};
-																			class Item17
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="G_Squares_Tinted";
-																				};
-																			};
-																			class Item18
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhs_facewear_6m2_1";
-																				};
-																			};
-																			class Item19
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhs_facewear_6m2";
-																				};
-																			};
-																			class Item20
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="UK3CB_G_Balaclava_WIN_ALT";
-																				};
-																			};
-																			class Item21
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="UK3CB_G_Balaclava2_WIN";
-																				};
-																			};
-																			class Item22
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="dvk_tacg_shem_w_altcsat";
-																				};
-																			};
-																			class Item23
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="G_Blindfold_01_white_F";
-																				};
-																			};
-																			class Item24
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_shemagh2_white";
-																				};
-																			};
-																			class Item25
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_shemagh2_gogg_white";
-																				};
-																			};
-																			class Item26
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_grip2";
-																				};
-																			};
-																			class Item27
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_grip2_tan";
-																				};
-																			};
-																			class Item28
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_grip2_wd";
-																				};
-																			};
-																			class Item29
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_harris_bipod";
-																				};
-																			};
-																			class Item30
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="bipod_01_F_blk";
-																				};
-																			};
-																			class Item31
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_kac_grip";
-																				};
-																			};
-																			class Item32
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_kac_grip_saw_bipod";
-																				};
-																			};
-																			class Item33
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_rvg_blk";
-																				};
-																			};
-																			class Item34
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_grip4_bipod";
-																				};
-																			};
-																			class Item35
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhs_acc_1p63";
-																				};
-																			};
-																			class Item36
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_1p63";
-																				};
-																			};
-																			class Item37
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_1P87_RIS";
-																				};
-																			};
-																			class Item38
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhs_acc_1p87";
-																				};
-																			};
-																			class Item39
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_1P87_RIS_desert";
-																				};
-																			};
-																			class Item40
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_1P87_RIS_woodland";
-																				};
-																			};
-																			class Item41
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_MicroT1";
-																				};
-																			};
-																			class Item42
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_MicroT1_coyote";
-																				};
-																			};
-																			class Item43
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_MicroT1_low";
-																				};
-																			};
-																			class Item44
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_MicroT1_low_coyote";
-																				};
-																			};
-																			class Item45
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_MicroT1_low_OD";
-																				};
-																			};
-																			class Item46
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_MicroT1_OD";
-																				};
-																			};
-																			class Item47
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_AC11704_Black";
-																				};
-																			};
-																			class Item48
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_AC11704_Coyote";
-																				};
-																			};
-																			class Item49
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_AC11704_Jungle";
-																				};
-																			};
-																			class Item50
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_AC11704_OD";
-																				};
-																			};
-																			class Item51
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_AC11704_Tan";
-																				};
-																			};
-																			class Item52
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_HoloBlack";
-																				};
-																			};
-																			class Item53
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_HoloDesert";
-																				};
-																			};
-																			class Item54
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_HoloWdl";
-																				};
-																			};
-																			class Item55
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="SMA_eotech552";
-																				};
-																			};
-																			class Item56
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="SMA_eotech552_kf";
-																				};
-																			};
-																			class Item57
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_Eotech553_Black";
-																				};
-																			};
-																			class Item58
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_Eotech553_Coyote";
-																				};
-																			};
-																			class Item59
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_Eotech533Grey";
-																				};
-																			};
-																			class Item60
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_Eotech553_OD";
-																				};
-																			};
-																			class Item61
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_Eotech533";
-																				};
-																			};
-																			class Item62
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="SMA_eotech";
-																				};
-																			};
-																			class Item63
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="SMA_eotech_G";
-																				};
-																			};
-																			class Item64
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="SMA_eotech_T";
-																				};
-																			};
-																			class Item65
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_Kobra";
-																				};
-																			};
-																			class Item66
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_eotech_552";
-																				};
-																			};
-																			class Item67
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_eotech_552_d";
-																				};
-																			};
-																			class Item68
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_eotech_552_wd";
-																				};
-																			};
-																			class Item69
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_CompM2_Black";
-																				};
-																			};
-																			class Item70
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_CompM2_Coyote";
-																				};
-																			};
-																			class Item71
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_CompM2_Desert";
-																				};
-																			};
-																			class Item72
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_CompM2_OD";
-																				};
-																			};
-																			class Item73
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_CompM2_Woodland2";
-																				};
-																			};
-																			class Item74
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="CUP_optic_CompM2_Woodland";
-																				};
-																			};
-																			class Item75
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_compm4";
-																				};
-																			};
-																			class Item76
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="SMA_MICRO_T2";
-																				};
-																			};
-																			class Item77
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="SMA_MICRO_T2_LM";
-																				};
-																			};
-																			class Item78
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_mrds";
-																				};
-																			};
-																			class Item79
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_mrds_fwd";
-																				};
-																			};
-																			class Item80
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhs_acc_okp7_dovetail";
-																				};
-																			};
-																			class Item81
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhs_acc_pkas";
-																				};
-																			};
-																			class Item82
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="SMA_BARSKA";
-																				};
-																			};
-																			class Item83
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="SMA_CMORE";
-																				};
-																			};
-																			class Item84
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="SMA_AIMPOINT";
-																				};
-																			};
-																			class Item85
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_T1_high";
-																				};
-																			};
-																			class Item86
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_T1_low_fwd";
-																				};
-																			};
-																			class Item87
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="sma_spitfire_01_black";
-																				};
-																			};
-																			class Item88
-																			{
-																				class data
-																				{
-																					singleType="STRING";
-																					value="rhsusf_acc_eotech_xps3";
-																				};
-																			};
-																		};
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=0;
-																	};
-																};
-															};
-														};
-													};
-												};
-												class Attribute1
-												{
-													property="ammoBox";
-													expression="[_this,_value] call bis_fnc_initAmmoBox;";
-													class Value
-													{
-														class data
-														{
-															singleType="STRING";
-															value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-														};
-													};
-												};
-												nAttributes=2;
-											};
-										};
-									};
 									id=405;
 								};
 							};
@@ -4518,10 +2912,10 @@ class Mission
 			};
 			id=407;
 		};
-		class Item43
+		class Item41
 		{
 			dataType="Trigger";
-			position[]={14725.76,17.91,16620.205};
+			position[]={14706.051,17.91,16635.672};
 			class Attributes
 			{
 				text="Everlight Fortify";
@@ -4534,25 +2928,25 @@ class Mission
 			id=408;
 			type="EmptyDetector";
 		};
-		class Item44
+		class Item42
 		{
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14724.311,17.91,16621.816};
+				position[]={14704.602,17.91,16637.283};
 			};
 			title="Fortify";
 			description="If you aren't planning to let players fortify, you can delete this crate and trigger. If you DO want players to be able to fortify during SafeStart (great for a defense in depth mission), leave these alone but move the crate to the staging area so players can use it. Don't worry, they will automatically be removed when SafeStart ends.";
 			id=409;
 		};
-		class Item45
+		class Item43
 		{
 			dataType="Layer";
 			name="Spectator Screen";
 			id=411;
 			atlOffset=185.97;
 		};
-		class Item46
+		class Item44
 		{
 			dataType="Layer";
 			name="Building Tools Crate";
@@ -4564,7 +2958,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14726.474,18.291529,16622.947};
+						position[]={14706.765,18.291529,16638.414};
 					};
 					side="Empty";
 					flags=4;
@@ -4595,7 +2989,7 @@ class Mission
 			};
 			id=953;
 		};
-		class Item47
+		class Item45
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -4606,7 +3000,7 @@ class Mission
 			description="Version 19 Changes:" \n "" \n "- Added rules page to map diary" \n "- Added Vehicle Spawner infrastructure (ask Cypher for tutorial)" \n "" \n "Version 18 Changes:" \n "" \n "- Added slots for Valkyrie crew (IFV/APC callsign)" \n "- Added slots for Reaper (CAS callsign)" \n "- Adjusted group marker colors" \n "- Updated several loadouts" \n "- Removed Stealth loadout" \n "" \n "Version 17 Changes:" \n "" \n "- Updated a few group marker colors" \n "- Added/Edited factions" \n "" \n "Version 16 Changes:" \n "" \n "- Added 3x new loadouts: Serbian Army, Serbian Army NVGs, Yugoslavian Army" \n "(By Ferdilanz)" \n "- Removed redundant pre-made ammo/med/etc crates because they are now searchable in the Asset Browser under ""Everlight Crates""." \n "" \n "Version 15 Changes:" \n "" \n "- Gave a Rank to any leaders, pilots, and crew that require a 152 Radio" \n "- Added a ""Take 152"" code to the comms file which will only work for units of Rank Sergeant and above" \n "- Changed the SF Teams to Delta, Echo, and Foxtrot " \n "" \n "Version 14 Changes:" \n "" \n "- Added another slot to standard Fireteams" \n "" \n "Version 13 Changes:" \n "" \n "- Added custom Fortify" \n "- Updated Medical Crates" \n "- Updated loadouts for new Medical and Flashlights overhauls" \n "" \n "Version 12 Changes:" \n "" \n "- Updated Optics Crates to be arsenal-based, and they now have Optics, Facewear, and Grips/Bipods." \n "- Removed AK Optics Crate as it's no longer relevant" \n "- Updated Medical Crate contents to reflect the changes to the Medic loadout" \n "- Combined the admin slots into a group" \n "" \n "Version 11 Changes:" \n "" \n "- Made MAT a 3-player team, as it should have been" \n "" \n "Version 10 Changes:" \n "- Hardcoded the callsigns, no more needing to manually set them every time you start a new project. Rejoice!" \n "- Fighter Pilot callsign is now correctly set to Mage-1" \n "- Color Teams should be correctly set finally..." \n "- The SF teams are actually called SF teams now (A-SF, B-SF, etc)" \n "- Added a new trigger to auto remove any Fortify/Entrenching tools from player inventories when SafeStart ends" \n "- The Mission Title Splash font is now larger and easier to notice" \n "- Updated the garbage collection to be more strict (should make a slight improvement to performance in sustained large battles)" \n "" \n "Version 9 Changes:" \n "- Changed Infantry Fireteam size from 4 to 5" \n "- Added a trigger to automatically remove any Fortify Tools and Entrenching Tools from players when SafeStart ends (useful if you want to set up a defensive mission where players can fortify during briefing phase)" \n "- Renamed the ""Vehicle Crew"" members to ""Vehicle Commander"", ""Vehicle Gunner"", and ""Vehicle Driver""" \n "" \n "Version 8 Changes:" \n "- Fixed some wording in the Setup & Updating Instructions" \n "- Changed the Assign Gear instructions completely (much easier now)" \n "- Changed the wording of the group deployment button to ""Deploy Group""" \n "" \n "Version 7 Changes:" \n "- Removed initPlayerLocal.sqf (you will have to do the same)" \n "- Added ""Deploy Group"" action during SafeStart for leaders, created by Ferdilanz.";
 			id=1232;
 		};
-		class Item48
+		class Item46
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -4616,7 +3010,7 @@ class Mission
 			title="Heli CAS Pilot";
 			id=1236;
 		};
-		class Item49
+		class Item47
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -4626,7 +3020,7 @@ class Mission
 			title="IFV/APC Crew";
 			id=1237;
 		};
-		class Item50
+		class Item48
 		{
 			dataType="Group";
 			side="West";
@@ -5515,7 +3909,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item51
+		class Item49
 		{
 			dataType="Group";
 			side="West";
@@ -6116,7 +4510,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item52
+		class Item50
 		{
 			dataType="Group";
 			side="West";
@@ -7498,7 +5892,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item53
+		class Item51
 		{
 			dataType="Group";
 			side="West";
@@ -8880,7 +7274,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item54
+		class Item52
 		{
 			dataType="Group";
 			side="West";
@@ -9481,7 +7875,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item55
+		class Item53
 		{
 			dataType="Group";
 			side="West";
@@ -10863,7 +9257,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item56
+		class Item54
 		{
 			dataType="Group";
 			side="West";
@@ -12245,7 +10639,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item57
+		class Item55
 		{
 			dataType="Group";
 			side="West";
@@ -12981,7 +11375,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item58
+		class Item56
 		{
 			dataType="Group";
 			side="West";
@@ -13747,7 +12141,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item59
+		class Item57
 		{
 			dataType="Group";
 			side="West";
@@ -14501,7 +12895,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item60
+		class Item58
 		{
 			dataType="Group";
 			side="West";
@@ -14793,7 +13187,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item61
+		class Item59
 		{
 			dataType="Group";
 			side="West";
@@ -15358,7 +13752,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item62
+		class Item60
 		{
 			dataType="Group";
 			side="West";
@@ -15923,7 +14317,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item63
+		class Item61
 		{
 			dataType="Group";
 			side="West";
@@ -16707,7 +15101,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item64
+		class Item62
 		{
 			dataType="Group";
 			side="West";
@@ -17491,7 +15885,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item65
+		class Item63
 		{
 			dataType="Group";
 			side="West";
@@ -19041,7 +17435,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item66
+		class Item64
 		{
 			dataType="Group";
 			side="West";
@@ -20591,7 +18985,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item67
+		class Item65
 		{
 			dataType="Group";
 			side="West";
@@ -22141,7 +20535,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item68
+		class Item66
 		{
 			dataType="Group";
 			side="West";
@@ -25655,7 +24049,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item69
+		class Item67
 		{
 			dataType="Group";
 			side="West";
@@ -26272,7 +24666,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item70
+		class Item68
 		{
 			dataType="Layer";
 			name="Spawner (Boats)";
@@ -26743,18 +25137,18 @@ class Mission
 			id=1537;
 			atlOffset=-0.011613846;
 		};
-		class Item71
+		class Item69
 		{
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14795.181,17.91,16639.451};
+				position[]={14779.792,17.91,16647.275};
 			};
 			title="Vehicle Spawners";
 			description="Check your map view and find the spawners along the airfield";
 			id=1538;
 		};
-		class Item72
+		class Item70
 		{
 			dataType="Layer";
 			name="Spawner (US Armor)";
@@ -27224,7 +25618,7 @@ class Mission
 			id=1555;
 			atlOffset=0.075090408;
 		};
-		class Item73
+		class Item71
 		{
 			dataType="Layer";
 			name="Spawner (US Heli)";
@@ -27832,7 +26226,7 @@ class Mission
 			id=1575;
 			atlOffset=0.41050911;
 		};
-		class Item74
+		class Item72
 		{
 			dataType="Layer";
 			name="Spawner (US Motorized)";
