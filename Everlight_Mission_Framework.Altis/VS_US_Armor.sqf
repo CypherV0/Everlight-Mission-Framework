@@ -383,6 +383,27 @@ _action = ["Fireteam Crate (AK-762)", "Fireteam Crate (AK-762)", "", {
 }, {true}, {}, [], [0, 0, 0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner1, 0, ["Armor Factory", "Logistics", "Ammo - Fireteam"], _action] call ace_interact_menu_fnc_addActionToObject;
 
+//AK-762/PK Crate
+_action = ["Fireteam Crate (AK-762/PK)", "Fireteam Crate (AK-762/PK)", "", {
+    _vehArray = nearestObjects [VS_US_Armor_Pad1, ["Car", "Helicopter", "Motorcycle", "Plane", "Ship", "TrackedAPC", "Tank", "WheeledAPC"], 15];
+    if (count _vehArray > 0) then {
+        _veh = _vehArray select 0;
+        ["EVLT_Fireteam_FinlandArmy_crate", _veh] call ace_cargo_fnc_loadItem;
+        hintSilent "Cargo loaded";
+    } else {
+        _player = player;
+        _crate = createVehicle ["EVLT_Fireteam_FinlandArmy_crate", getPosATL _player, [], 0, "CAN_COLLIDE"];
+        _crate allowDamage false;
+
+        [_player, _crate] spawn {
+            params ["_player", "_crate"];
+            waitUntil {!isNull _crate};
+            [_player, _crate] call ace_dragging_fnc_startCarry;
+        };
+    }
+}, {true}, {}, [], [0, 0, 0], 100] call ace_interact_menu_fnc_createAction;
+[VS_US_Armor_Spawner1, 0, ["Armor Factory", "Logistics", "Ammo - Fireteam"], _action] call ace_interact_menu_fnc_addActionToObject;
+
 //FAL Crate
 _action = ["Fireteam Crate (FAL)", "Fireteam Crate (FAL)", "", {
     _vehArray = nearestObjects [VS_US_Armor_Pad1, ["Car", "Helicopter", "Motorcycle", "Plane", "Ship", "TrackedAPC", "Tank", "WheeledAPC"], 15];
@@ -1158,6 +1179,27 @@ _action = ["Fireteam Crate (AK-762)", "Fireteam Crate (AK-762)", "", {
     } else {
         _player = player;
         _crate = createVehicle ["EVLT_Fireteam_AK762_crate", getPosATL _player, [], 0, "CAN_COLLIDE"];
+        _crate allowDamage false;
+
+        [_player, _crate] spawn {
+            params ["_player", "_crate"];
+            waitUntil {!isNull _crate};
+            [_player, _crate] call ace_dragging_fnc_startCarry;
+        };
+    }
+}, {true}, {}, [], [0, 0, 0], 100] call ace_interact_menu_fnc_createAction;
+[VS_US_Armor_Spawner2, 0, ["Armor Factory", "Logistics", "Ammo - Fireteam"], _action] call ace_interact_menu_fnc_addActionToObject;
+
+//AK-762/PK Crate
+_action = ["Fireteam Crate (AK-762/PK)", "Fireteam Crate (AK-762/PK)", "", {
+    _vehArray = nearestObjects [VS_US_Armor_Pad2, ["Car", "Helicopter", "Motorcycle", "Plane", "Ship", "TrackedAPC", "Tank", "WheeledAPC"], 15];
+    if (count _vehArray > 0) then {
+        _veh = _vehArray select 0;
+        ["EVLT_Fireteam_FinlandArmy_crate", _veh] call ace_cargo_fnc_loadItem;
+        hintSilent "Cargo loaded";
+    } else {
+        _player = player;
+        _crate = createVehicle ["EVLT_Fireteam_FinlandArmy_crate", getPosATL _player, [], 0, "CAN_COLLIDE"];
         _crate allowDamage false;
 
         [_player, _crate] spawn {
@@ -1945,6 +1987,27 @@ _action = ["Fireteam Crate (AK-762)", "Fireteam Crate (AK-762)", "", {
     } else {
         _player = player;
         _crate = createVehicle ["EVLT_Fireteam_AK762_crate", getPosATL _player, [], 0, "CAN_COLLIDE"];
+        _crate allowDamage false;
+
+        [_player, _crate] spawn {
+            params ["_player", "_crate"];
+            waitUntil {!isNull _crate};
+            [_player, _crate] call ace_dragging_fnc_startCarry;
+        };
+    }
+}, {true}, {}, [], [0, 0, 0], 100] call ace_interact_menu_fnc_createAction;
+[VS_US_Armor_Spawner3, 0, ["Armor Factory", "Logistics", "Ammo - Fireteam"], _action] call ace_interact_menu_fnc_addActionToObject;
+
+//AK-762/PK Crate
+_action = ["Fireteam Crate (AK-762/PK)", "Fireteam Crate (AK-762/PK)", "", {
+    _vehArray = nearestObjects [VS_US_Armor_Pad3, ["Car", "Helicopter", "Motorcycle", "Plane", "Ship", "TrackedAPC", "Tank", "WheeledAPC"], 15];
+    if (count _vehArray > 0) then {
+        _veh = _vehArray select 0;
+        ["EVLT_Fireteam_FinlandArmy_crate", _veh] call ace_cargo_fnc_loadItem;
+        hintSilent "Cargo loaded";
+    } else {
+        _player = player;
+        _crate = createVehicle ["EVLT_Fireteam_FinlandArmy_crate", getPosATL _player, [], 0, "CAN_COLLIDE"];
         _crate allowDamage false;
 
         [_player, _crate] spawn {
