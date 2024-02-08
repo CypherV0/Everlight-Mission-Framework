@@ -64,7 +64,7 @@ class r : baseMan
         "MNP_Vest_FIN_1", "MNP_Vest_FIN_2"
     };
     primaryWeapon[] = {
-        "rhs_weap_ak103_zenitco01"
+        "KAR_RIFLE_RK62M2"
     };
     secondaryWeapon[] = {};
     bipod[] = {"rhsusf_acc_grip2"};
@@ -108,14 +108,10 @@ class rat : r
 class g : r
 {
     displayName = "Grenadier";
-    primaryWeapon[] = {
-        "rhs_weap_ak103_gp25"
-    };
-    sidearmWeapon[] = {};
+    sidearmWeapon[] = {"rhs_weap_M320"};
     backpackItems[] = {
-      LIST_10("rhs_VOG25"),
-      LIST_5("rhs_GRD40_White")};
-    secondaryWeapon[] = {};
+      LIST_10("rhs_mag_M433_HEDP"),
+      LIST_5("1Rnd_Smoke_Grenade_shell")};
 };
 class m : r
 {
@@ -143,8 +139,8 @@ class ftl : g
     displayName = "Fireteam Leader";
     backpackItems[] +=
     {
-        LIST_5("rhs_GRD40_Green"),
-        LIST_5("rhs_GRD40_Red")
+        LIST_5("1Rnd_SmokeBlue_Grenade_shell"),
+        LIST_5("1Rnd_SmokeRed_Grenade_shell")
     };
     linkedItems[] =
     {
