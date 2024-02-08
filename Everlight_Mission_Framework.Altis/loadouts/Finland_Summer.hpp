@@ -67,9 +67,9 @@ class r : baseMan
         "KAR_RIFLE_RK62M2"
     };
     secondaryWeapon[] = {};
-    bipod[] = {"rhsusf_acc_grip2"};
-    scope[] = {};
-    silencer[] = {"rhs_acc_dtk"};
+    bipod[] = {};
+    scope[] = {"sma_eotech552", "sma_eotech", "rhsusf_acc_compm4"};
+    silencer[] = {"CUP_muzzle_mfsup_SCAR_H"};
     attachment[] = {
         "everlight_x2000_point"
     };
