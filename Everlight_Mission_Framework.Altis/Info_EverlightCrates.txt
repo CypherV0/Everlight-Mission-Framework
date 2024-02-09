@@ -7,7 +7,7 @@ FT Crate: 	The main Crate to supply 1 Fireteam with ammunition and equipment.
 				FT Crate 			(x14)
 				AR Crate 			(x5)
 				MMG Crate 			(x5)
-				MAT Crate 			(x3)
+				MAT Crate 			(x2)
 				HAT Crate 			(x4)
 				Explosives Crate 	(x1)
 				Flare Crate			(x2)
