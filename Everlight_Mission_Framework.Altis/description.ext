@@ -390,3 +390,31 @@ class CfgDebriefingSections {
 };
 
 ////////////////////////////////////////////////////////////////////////////////
+
+disableChannels[] = {
+	{
+		0,		// Global
+		true,	// text chat is disabled
+		true	// voice chat is disabled
+	},
+	{
+		2,		// Command
+		true,	// text chat is disabled
+		true	// voice chat is disabled
+	},
+	{
+		3,		// Group
+		true,	// text chat is disabled
+		true	// voice chat is disabled
+	},
+	{
+		4,		// Vehicle
+		true,	// text chat is disabled
+		true	// voice chat is disabled
+	},
+	{
+		5,		// Direct
+		true,	// text chat is disabled
+		true	// voice chat is disabled
+	}
+};
