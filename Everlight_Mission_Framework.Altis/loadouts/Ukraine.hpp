@@ -126,8 +126,8 @@ class m : r
     code = "_this setUnitTrait [""Medic"", true];";
     insignias[] = {"MedB"};
     magazines[] = {
-        LIST_6("rhs_30Rnd_762x39mm_polymer"),
-        LIST_2("rhs_30Rnd_762x39mm_polymer_Tracer_Red"),
+        LIST_7("rhs_30Rnd_762x39mm_polymer"),
+        LIST_3("rhs_30Rnd_762x39mm_polymer_tracer"),
         LIST_2("SmokeShell")
     };
     backpackItems[] = {
