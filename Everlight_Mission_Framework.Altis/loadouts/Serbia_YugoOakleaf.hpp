@@ -211,7 +211,7 @@ class aar : r
     primaryWeapon[] = {"rhs_weap_m70b3n"};
     backpackItems[] =
     {
-        LIST_5("rhsusf_200rnd_556x45_mixed_box")
+        LIST_8("rhs_75Rnd_762x39mm_tracer")
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
