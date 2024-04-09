@@ -376,6 +376,12 @@ class CfgLoadouts
 		#include "loadouts\Ukraine.hpp" // (No spaces)
 	};
 
+	class China_Infantry // (No spaces)
+	{
+		displayName = "Chinese Infantry"; // (Spaces allowed)
+		#include "loadouts\China_Infantry.hpp" // (No spaces)
+	};
+
 };
 
 ////////////////////////////////////////////////////////////////////////////////
