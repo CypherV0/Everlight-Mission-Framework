@@ -382,6 +382,42 @@ class CfgLoadouts
 		#include "loadouts\China_Infantry.hpp" // (No spaces)
 	};
 
+	class US_Army_FutureSoldier // (No spaces)
+	{
+		displayName = "US Army Future Soldier"; // (Spaces allowed)
+		#include "loadouts\US_Army_FutureSoldier.hpp" // (No spaces)
+	};
+
+	class Australian_Infantry // (No spaces)
+	{
+		displayName = "Australian Infantry"; // (Spaces allowed)
+		#include "loadouts\Australian_Infantry.hpp" // (No spaces)
+	};
+
+	class Australian_SF // (No spaces)
+	{
+		displayName = "Australian SF"; // (Spaces allowed)
+		#include "loadouts\Australian_SF.hpp" // (No spaces)
+	};
+
+	class British_Armed_Forces // (No spaces)
+	{
+		displayName = "British Armed Forces"; // (Spaces allowed)
+		#include "loadouts\British_Armed_Forces.hpp" // (No spaces)
+	};
+
+	class French_Infantry // (No spaces)
+	{
+		displayName = "French Infantry"; // (Spaces allowed)
+		#include "loadouts\French_Infantry.hpp" // (No spaces)
+	};
+
+	class Korean_SF // (No spaces)
+	{
+		displayName = "Korean SF"; // (Spaces allowed)
+		#include "loadouts\Korean_SF.hpp" // (No spaces)
+	};
+
 };
 
 ////////////////////////////////////////////////////////////////////////////////
