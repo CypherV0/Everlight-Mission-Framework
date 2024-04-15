@@ -1,11 +1,11 @@
 //Compatible with ACE Advanced Medical
 
-tooltip = "Israeli Defense Force by Cypher";
+tooltip = "Australian SF by Cypher";
 
 class baseMan {// Weaponless baseclass
     displayName = "Unarmed";
     // All randomized.
-    uniform[] = {"MNP_CombatUniform_ISR"};
+    uniform[] = {"MNP_CombatUniform_Australia","MNP_CombatUniform_Australia_S"};
     vest[] = {};
     headgear[] = {};
     backpack[] = {};
@@ -56,23 +56,18 @@ class baseMan {// Weaponless baseclass
 class r : baseMan
 {
     displayName = "Rifleman";
-    backpack[] = {"B_Kitbag_rgr"};
+    backpack[] = {"B_AssaultPack_rgr","B_Kitbag_rgr"};
     headgear[] = {
-        "usm_helmet_pasgt_ceswd_odg",
-        "usm_helmet_pasgt_ce_odg"
-
+        "MNP_Helmet_Australia"
     };
     vest[] = {
-        "MNP_Vest_ISRKahki_2",
-        "MNP_Vest_ISRKahki_1"
+        "MNP_Vest_Australia"
     };
     primaryWeapon[] = {
-        "SMA_TavorBLK_F",
+        "SMA_AUG_A3_F",
     };
     secondaryWeapon[] = {};
-    bipod[] = {
-        "rhsusf_acc_kac_grip",
-    };
+    bipod[] = {};
     scope[] = {"sma_eotech552", "sma_eotech", "rhsusf_acc_compm4"};
     silencer[] = {};
     attachment[] = {
@@ -107,22 +102,27 @@ class rat : r
     {
         LIST_5("rhs_mag_30Rnd_556x45_M855A1_Stanag")
     };
-    secondaryWeapon[] = {"rhs_weap_M136"};
-    secondaryAttachments[] = {"rhs_acc_at4_handler"};
+    secondaryWeapon[] = {"rhs_weap_m72a7"};
+    secondaryAttachments[] = {};
 };
 class g : r
 {
     displayName = "Grenadier";
-    sidearmWeapon[] = {"rhs_weap_M320"};
+    primaryWeapon[] = {
+        "SMA_AUG_EGLM"
+    };
+    bipod[] = {};
     backpackItems[] = {
       LIST_10("rhs_mag_M433_HEDP"),
       LIST_5("1Rnd_Smoke_Grenade_shell")};
+    secondaryWeapon[] = {};
 };
 class m : r
 {
     displayName = "Medic";
     code = "_this setUnitTrait [""Medic"", true];";
     insignias[] = {"MedB"};
+    backpack[] = {"UK3CB_ION_B_B_RIF_MED_OLI"};
     magazines[] = {
         LIST_7("rhs_mag_30Rnd_556x45_M855A1_Stanag"),
         LIST_3("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
@@ -141,6 +141,7 @@ class m : r
 class ftl : g
 {
     displayName = "Fireteam Leader";
+    magazines[] += {"hlc_12Rnd_357SIG_B_P226"};
     backpackItems[] +=
     {
         LIST_5("1Rnd_SmokeBlue_Grenade_shell"),
@@ -153,8 +154,8 @@ class ftl : g
         "ItemWatch",
         "rhssaf_zrak_rd7j",
     };
-    sidearmWeapon[] = {"rhs_weap_M320"};
-    sidearmAttachments[] = {};
+    sidearmWeapon[] = {"hlc_pistol_P226R_357Combat"};
+    sidearmAttachments[] = {"hlc_optic_siglite"};
 };
 class sl : ftl
 {
@@ -178,8 +179,8 @@ class pm : m
 class ar : r
 {
     displayName = "Automatic Rifleman";
-    primaryWeapon[] = {"rhs_weap_m249_pip_S_para"};
-    bipod[] = {"rhsusf_acc_grip4_bipod"};
+    primaryWeapon[] = {"rhs_weap_minimi_para_railed"};
+    bipod[] = {"rhsusf_acc_saw_bipod"};
     magazines[] =
     {
         LIST_3("rhsusf_200rnd_556x45_mixed_box"),
@@ -206,7 +207,7 @@ class aar : r
 class hat : r
 {
     displayName = "HAT Gunner";
-    backpack[] = {"B_Carryall_oli"};
+    backpack[] = {"UK3CB_LSM_B_B_CARRYALL_OLI"};
     secondaryWeapon[] = {"rhs_weap_fgm148"};
     magazines[] += {"rhs_fgm148_magazine_AT"};
     items[] += {"ACRE_PRC152"};
@@ -214,7 +215,7 @@ class hat : r
 class hata : r
 {
     displayName = "HAT Assistant";
-    backpack[] = {"B_Carryall_oli"};
+    backpack[] = {"UK3CB_LSM_B_B_CARRYALL_OLI"};
     backpackItems[] =
     {
         "rhs_fgm148_magazine_AT"
@@ -224,7 +225,7 @@ class hata : r
 class hatam : r
 {
     displayName = "HAT Ammo Man";
-    backpack[] = {"B_Carryall_oli"};
+    backpack[] = {"UK3CB_LSM_B_B_CARRYALL_OLI"};
     backpackItems[] =
     {
         "rhs_fgm148_magazine_AT"
@@ -233,8 +234,8 @@ class hatam : r
 class mg : r
 {
     displayName = "MMG Gunner";
-    backpack[] = {"B_Carryall_oli"};
-    primaryWeapon[] = {"rhs_weap_m240B"};
+    backpack[] = {"UK3CB_LSM_B_B_CARRYALL_OLI"};
+    primaryWeapon[] = {"rhs_weap_fnmag"};
     attachment[] = {"everlight_x2000_point"};
     bipod[] = {};
     magazines[] =
@@ -251,7 +252,7 @@ class mg : r
 class mga : r
 {
     displayName = "MMG Assistant";
-    backpack[] = {"B_Carryall_oli"};
+    backpack[] = {"UK3CB_LSM_B_B_CARRYALL_OLI"};
     backpackItems[] =
     {
         LIST_7("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
@@ -261,7 +262,7 @@ class mga : r
 class mgam : r
 {
     displayName = "MMG Ammo Man";
-    backpack[] = {"B_Carryall_oli"};
+    backpack[] = {"UK3CB_LSM_B_B_CARRYALL_OLI"};
     backpackItems[] =
     {
         LIST_7("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
@@ -270,7 +271,7 @@ class mgam : r
 class mat : r
 {
     displayName = "MAT Gunner";
-    backpack[] = {"B_Carryall_oli"};
+    backpack[] = {"UK3CB_LSM_B_B_CARRYALL_OLI"};
     secondaryWeapon[] = {"rhs_weap_maaws"};
     secondaryAttachments[] = {"rhs_optic_maaws"};
     magazines[] += {"rhs_mag_maaws_HEAT"};
@@ -284,7 +285,7 @@ class mat : r
 class mata : r
 {
     displayName = "MAT Assistant";
-    backpack[] = {"B_Carryall_oli"};
+    backpack[] = {"UK3CB_LSM_B_B_CARRYALL_OLI"};
     backpackItems[] =
     {
         LIST_2("rhs_mag_maaws_HEAT"),
@@ -295,7 +296,7 @@ class mata : r
 class matam : r
 {
     displayName = "MAT Ammo Man";
-    backpack[] = {"B_Carryall_oli"};
+    backpack[] = {"UK3CB_LSM_B_B_CARRYALL_OLI"};
     backpackItems[] =
     {
         LIST_2("rhs_mag_maaws_HEAT"),

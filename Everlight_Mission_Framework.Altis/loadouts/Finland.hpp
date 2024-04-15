@@ -68,7 +68,7 @@ class r : baseMan
     };
     secondaryWeapon[] = {};
     bipod[] = {};
-    scope[] = {"sma_eotech552", "sma_eotech", "rhsusf_acc_compm4"};
+    scope[] = {"rhs_acc_rakursPM", "rhs_acc_1p87", "rhs_acc_okp7_picatinny"};
     silencer[] = {"CUP_muzzle_mfsup_SCAR_H"};
     attachment[] = {
         "everlight_x2000_point"
