@@ -41,6 +41,9 @@ _action = ["Assault Boat","Assault Boat","\A3\boat_F\Boat_Transport_01\data\UI\m
             "CAN_COLLIDE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";
@@ -65,6 +68,9 @@ _action = ["RHIB (Unarmed)","RHIB (Unarmed)","\A3\Boat_F_Exp\Boat_Transport_02\D
             "CAN_COLLIDE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";
@@ -89,6 +95,9 @@ _action = ["RHIB (M2)","RHIB (M2)","\UK3CB_Factions\addons\UK3CB_Factions_Vehicl
             "CAN_COLLIDE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";
@@ -113,6 +122,9 @@ _action = ["RHIB Gunboat (M2/Mk19)","RHIB Gunboat (M2/Mk19)","\UK3CB_Factions\ad
             "CAN_COLLIDE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";
@@ -137,6 +149,9 @@ _action = ["Landing Craft","Landing Craft","\cup\watervehicles\cup_watervehicles
             "CAN_COLLIDE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";
@@ -187,6 +202,9 @@ _action = ["Assault Boat","Assault Boat","\A3\boat_F\Boat_Transport_01\data\UI\m
             "CAN_COLLIDE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";
@@ -211,6 +229,9 @@ _action = ["RHIB (Unarmed)","RHIB (Unarmed)","\A3\Boat_F_Exp\Boat_Transport_02\D
             "CAN_COLLIDE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";
@@ -235,6 +256,9 @@ _action = ["RHIB (M2)","RHIB (M2)","\UK3CB_Factions\addons\UK3CB_Factions_Vehicl
             "CAN_COLLIDE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";
@@ -259,6 +283,9 @@ _action = ["RHIB Gunboat (M2/Mk19)","RHIB Gunboat (M2/Mk19)","\UK3CB_Factions\ad
             "CAN_COLLIDE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";
@@ -283,6 +310,9 @@ _action = ["Landing Craft","Landing Craft","\cup\watervehicles\cup_watervehicles
             "CAN_COLLIDE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";
@@ -333,6 +363,9 @@ _action = ["Assault Boat","Assault Boat","\A3\boat_F\Boat_Transport_01\data\UI\m
             "CAN_COLLIDE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";
@@ -357,6 +390,9 @@ _action = ["RHIB (Unarmed)","RHIB (Unarmed)","\A3\Boat_F_Exp\Boat_Transport_02\D
             "CAN_COLLIDE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";
@@ -381,6 +417,9 @@ _action = ["RHIB (M2)","RHIB (M2)","\UK3CB_Factions\addons\UK3CB_Factions_Vehicl
             "CAN_COLLIDE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";
@@ -405,6 +444,9 @@ _action = ["RHIB Gunboat (M2/Mk19)","RHIB Gunboat (M2/Mk19)","\UK3CB_Factions\ad
             "CAN_COLLIDE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";
@@ -429,6 +471,9 @@ _action = ["Landing Craft","Landing Craft","\cup\watervehicles\cup_watervehicles
             "CAN_COLLIDE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";

@@ -41,6 +41,9 @@ _action = ["AH-6M","AH-6M","rhsusf\addons\rhsusf_melb\Data\ui\map_melb_ah_6m_l_c
             "NONE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";
@@ -65,6 +68,9 @@ _action = ["MH-6M","MH-6M","rhsusf\addons\rhsusf_melb\Data\ui\map_melb_mh_6m_ca.
             "NONE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";
@@ -89,6 +95,9 @@ _action = ["UH-1H","UH-1H","rhsgref\addons\rhsgref_air\uh1h\ui\icon_uh1h_ca.paa"
             "NONE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";
@@ -113,6 +122,9 @@ _action = ["UH-60M","UH-60M","\rhsusf\addons\rhsusf_a2port_air\data\mapico\Icon_
             "NONE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";
@@ -137,6 +149,9 @@ _action = ["CH-47F","CH-47F","\rhsusf\addons\rhsusf_a2port_air\data\mapico\Icon_
             "NONE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";
@@ -807,6 +822,9 @@ _action = ["AH-6M","AH-6M","rhsusf\addons\rhsusf_melb\Data\ui\map_melb_ah_6m_l_c
             "NONE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";
@@ -831,6 +849,9 @@ _action = ["MH-6M","MH-6M","rhsusf\addons\rhsusf_melb\Data\ui\map_melb_mh_6m_ca.
             "NONE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";
@@ -855,6 +876,9 @@ _action = ["UH-1H","UH-1H","rhsgref\addons\rhsgref_air\uh1h\ui\icon_uh1h_ca.paa"
             "NONE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";
@@ -879,6 +903,9 @@ _action = ["UH-60M","UH-60M","\rhsusf\addons\rhsusf_a2port_air\data\mapico\Icon_
             "NONE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";
@@ -903,6 +930,9 @@ _action = ["CH-47F","CH-47F","\rhsusf\addons\rhsusf_a2port_air\data\mapico\Icon_
             "NONE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";
@@ -1573,6 +1603,9 @@ _action = ["AH-6M","AH-6M","rhsusf\addons\rhsusf_melb\Data\ui\map_melb_ah_6m_l_c
             "NONE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";
@@ -1597,6 +1630,9 @@ _action = ["MH-6M","MH-6M","rhsusf\addons\rhsusf_melb\Data\ui\map_melb_mh_6m_ca.
             "NONE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";
@@ -1621,6 +1657,9 @@ _action = ["UH-1H","UH-1H","rhsgref\addons\rhsgref_air\uh1h\ui\icon_uh1h_ca.paa"
             "NONE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";
@@ -1645,6 +1684,9 @@ _action = ["UH-60M","UH-60M","\rhsusf\addons\rhsusf_a2port_air\data\mapico\Icon_
             "NONE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";
@@ -1669,6 +1711,9 @@ _action = ["CH-47F","CH-47F","\rhsusf\addons\rhsusf_a2port_air\data\mapico\Icon_
             "NONE"
         ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
     } else {
         // If there's a vehicle on the pad, display a hint
         hintSilent "Pad is blocked. Cannot spawn vehicle.";

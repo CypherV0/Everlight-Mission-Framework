@@ -27,6 +27,9 @@ _action = ["M1A2 (TUSK I)","M1A2 (TUSK I)","\rhsusf\addons\rhsusf_m1a2\icons\M1A
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner1, 0, ["Armor Factory", "MBT"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -43,6 +46,9 @@ _action = ["M60A3","M60A3","\UK3CB_Factions\addons\UK3CB_Factions_Vehicles\armou
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner1, 0, ["Armor Factory", "MBT"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -63,6 +69,9 @@ _pad1 = getPosATL VS_US_Armor_Pad1;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner1, 0, ["Armor Factory","IFV"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -79,6 +88,9 @@ _pad1 = getPosATL VS_US_Armor_Pad1;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner1, 0, ["Armor Factory","IFV"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -95,6 +107,9 @@ _pad1 = getPosATL VS_US_Armor_Pad1;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner1, 0, ["Armor Factory","IFV"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -115,6 +130,9 @@ _pad1 = getPosATL VS_US_Armor_Pad1;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner1, 0, ["Armor Factory", "APC"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -131,6 +149,9 @@ _pad1 = getPosATL VS_US_Armor_Pad1;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner1, 0, ["Armor Factory", "APC"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -147,6 +168,9 @@ _pad1 = getPosATL VS_US_Armor_Pad1;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner1, 0, ["Armor Factory", "APC"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -167,6 +191,9 @@ _pad1 = getPosATL VS_US_Armor_Pad1;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner1, 0, ["Armor Factory", "Special"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -183,6 +210,9 @@ _pad1 = getPosATL VS_US_Armor_Pad1;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner1, 0, ["Armor Factory", "Special"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -834,6 +864,9 @@ _action = ["M1A2 (TUSK I)","M1A2 (TUSK I)","\rhsusf\addons\rhsusf_m1a2\icons\M1A
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner2, 0, ["Armor Factory", "MBT"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -850,6 +883,9 @@ _action = ["M60A3","M60A3","\UK3CB_Factions\addons\UK3CB_Factions_Vehicles\armou
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner2, 0, ["Armor Factory", "MBT"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -870,6 +906,9 @@ _Pad2 = getPosATL VS_US_Armor_Pad2;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner2, 0, ["Armor Factory","IFV"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -886,6 +925,9 @@ _Pad2 = getPosATL VS_US_Armor_Pad2;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner2, 0, ["Armor Factory","IFV"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -902,6 +944,9 @@ _Pad2 = getPosATL VS_US_Armor_Pad2;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner2, 0, ["Armor Factory","IFV"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -922,6 +967,9 @@ _Pad2 = getPosATL VS_US_Armor_Pad2;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner2, 0, ["Armor Factory", "APC"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -938,6 +986,9 @@ _Pad2 = getPosATL VS_US_Armor_Pad2;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner2, 0, ["Armor Factory", "APC"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -954,6 +1005,9 @@ _Pad2 = getPosATL VS_US_Armor_Pad2;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner2, 0, ["Armor Factory", "APC"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -974,6 +1028,9 @@ _Pad2 = getPosATL VS_US_Armor_Pad2;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner2, 0, ["Armor Factory", "Special"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -990,6 +1047,9 @@ _Pad2 = getPosATL VS_US_Armor_Pad2;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner2, 0, ["Armor Factory", "Special"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1642,6 +1702,9 @@ _action = ["M1A2 (TUSK I)","M1A2 (TUSK I)","\rhsusf\addons\rhsusf_m1a2\icons\M1A
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner3, 0, ["Armor Factory", "MBT"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1658,6 +1721,9 @@ _action = ["M60A3","M60A3","\UK3CB_Factions\addons\UK3CB_Factions_Vehicles\armou
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner3, 0, ["Armor Factory", "MBT"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1678,6 +1744,9 @@ _Pad3 = getPosATL VS_US_Armor_Pad3;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner3, 0, ["Armor Factory","IFV"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1694,6 +1763,9 @@ _Pad3 = getPosATL VS_US_Armor_Pad3;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner3, 0, ["Armor Factory","IFV"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1710,6 +1782,9 @@ _Pad3 = getPosATL VS_US_Armor_Pad3;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner3, 0, ["Armor Factory","IFV"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1730,6 +1805,9 @@ _Pad3 = getPosATL VS_US_Armor_Pad3;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner3, 0, ["Armor Factory", "APC"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1746,6 +1824,9 @@ _Pad3 = getPosATL VS_US_Armor_Pad3;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner3, 0, ["Armor Factory", "APC"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1762,6 +1843,9 @@ _Pad3 = getPosATL VS_US_Armor_Pad3;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner3, 0, ["Armor Factory", "APC"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1782,6 +1866,9 @@ _Pad3 = getPosATL VS_US_Armor_Pad3;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner3, 0, ["Armor Factory", "Special"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1798,6 +1885,9 @@ _Pad3 = getPosATL VS_US_Armor_Pad3;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Armor_Spawner3, 0, ["Armor Factory", "Special"], _action] call ace_interact_menu_fnc_addActionToObject;
 

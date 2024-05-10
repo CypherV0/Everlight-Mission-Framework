@@ -27,6 +27,9 @@ _action = ["HMMWV (Unarmed)","HMMWV (Unarmed)","\rhsusf\addons\rhsusf_hmmwv\icon
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner1, 0, ["Vehicle Factory", "Light"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -43,6 +46,9 @@ _action = ["HMMWV (M2)","HMMWV (M2)","\rhsusf\addons\rhsusf_hmmwv\icons\ico_m102
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner1, 0, ["Vehicle Factory", "Light"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -59,6 +65,9 @@ _action = ["HMMWV (Mk19)","HMMWV (Mk19)","\rhsusf\addons\rhsusf_hmmwv\icons\ico_
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner1, 0, ["Vehicle Factory", "Light"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -75,6 +84,9 @@ _action = ["HMMWV (2D/Open)","HMMWV (2D/Open)","\rhsusf\addons\rhsusf_hmmwv\icon
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner1, 0, ["Vehicle Factory", "Light"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -91,6 +103,9 @@ _action = ["HMMWV (4D/Open)","HMMWV (4D/Open)","\rhsusf\addons\rhsusf_hmmwv\icon
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner1, 0, ["Vehicle Factory", "Light"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -107,6 +122,9 @@ _action = ["MTV","MTV","\rhsusf\addons\rhsusf_c_fmtv\data\ico\ico_m1083.paa",{
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner1, 0, ["Vehicle Factory", "Light"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -127,6 +145,9 @@ _pad1 = getPosATL VS_US_Motor_Pad1;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner1, 0, ["Vehicle Factory","Medium"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -143,6 +164,9 @@ _pad1 = getPosATL VS_US_Motor_Pad1;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner1, 0, ["Vehicle Factory","Medium"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -159,6 +183,9 @@ _pad1 = getPosATL VS_US_Motor_Pad1;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner1, 0, ["Vehicle Factory","Medium"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -175,6 +202,9 @@ _pad1 = getPosATL VS_US_Motor_Pad1;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner1, 0, ["Vehicle Factory","Medium"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -191,6 +221,9 @@ _pad1 = getPosATL VS_US_Motor_Pad1;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner1, 0, ["Vehicle Factory","Medium"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -211,6 +244,9 @@ _pad1 = getPosATL VS_US_Motor_Pad1;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner1, 0, ["Vehicle Factory", "Heavy"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -227,6 +263,9 @@ _pad1 = getPosATL VS_US_Motor_Pad1;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner1, 0, ["Vehicle Factory", "Heavy"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -247,6 +286,9 @@ _pad1 = getPosATL VS_US_Motor_Pad1;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner1, 0, ["Vehicle Factory", "Weapon Carriers"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -263,6 +305,9 @@ _pad1 = getPosATL VS_US_Motor_Pad1;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner1, 0, ["Vehicle Factory", "Weapon Carriers"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -283,6 +328,9 @@ _pad1 = getPosATL VS_US_Motor_Pad1;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner1, 0, ["Vehicle Factory", "Logistics"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -931,6 +979,9 @@ _action = ["HMMWV (Unarmed)","HMMWV (Unarmed)","\rhsusf\addons\rhsusf_hmmwv\icon
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner2, 0, ["Vehicle Factory", "Light"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -947,6 +998,9 @@ _action = ["HMMWV (M2)","HMMWV (M2)","\rhsusf\addons\rhsusf_hmmwv\icons\ico_m102
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner2, 0, ["Vehicle Factory", "Light"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -963,6 +1017,9 @@ _action = ["HMMWV (Mk19)","HMMWV (Mk19)","\rhsusf\addons\rhsusf_hmmwv\icons\ico_
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner2, 0, ["Vehicle Factory", "Light"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -979,6 +1036,9 @@ _action = ["HMMWV (2D/Open)","HMMWV (2D/Open)","\rhsusf\addons\rhsusf_hmmwv\icon
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner2, 0, ["Vehicle Factory", "Light"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -995,6 +1055,9 @@ _action = ["HMMWV (4D/Open)","HMMWV (4D/Open)","\rhsusf\addons\rhsusf_hmmwv\icon
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner2, 0, ["Vehicle Factory", "Light"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1011,6 +1074,9 @@ _action = ["MTV","MTV","\rhsusf\addons\rhsusf_c_fmtv\data\ico\ico_m1083.paa",{
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner2, 0, ["Vehicle Factory", "Light"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1031,6 +1097,9 @@ _Pad2 = getPosATL VS_US_Motor_Pad2;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner2, 0, ["Vehicle Factory","Medium"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1047,6 +1116,9 @@ _Pad2 = getPosATL VS_US_Motor_Pad2;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner2, 0, ["Vehicle Factory","Medium"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1063,6 +1135,9 @@ _Pad2 = getPosATL VS_US_Motor_Pad2;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner2, 0, ["Vehicle Factory","Medium"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1079,6 +1154,9 @@ _Pad2 = getPosATL VS_US_Motor_Pad2;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner2, 0, ["Vehicle Factory","Medium"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1095,6 +1173,9 @@ _Pad2 = getPosATL VS_US_Motor_Pad2;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner2, 0, ["Vehicle Factory","Medium"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1115,6 +1196,9 @@ _Pad2 = getPosATL VS_US_Motor_Pad2;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner2, 0, ["Vehicle Factory", "Heavy"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1131,6 +1215,9 @@ _Pad2 = getPosATL VS_US_Motor_Pad2;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner2, 0, ["Vehicle Factory", "Heavy"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1151,6 +1238,9 @@ _Pad2 = getPosATL VS_US_Motor_Pad2;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner2, 0, ["Vehicle Factory", "Weapon Carriers"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1167,6 +1257,9 @@ _Pad2 = getPosATL VS_US_Motor_Pad2;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner2, 0, ["Vehicle Factory", "Weapon Carriers"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1187,6 +1280,9 @@ _Pad2 = getPosATL VS_US_Motor_Pad2;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner2, 0, ["Vehicle Factory", "Logistics"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1835,6 +1931,9 @@ _action = ["HMMWV (Unarmed)","HMMWV (Unarmed)","\rhsusf\addons\rhsusf_hmmwv\icon
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner3, 0, ["Vehicle Factory", "Light"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1851,6 +1950,9 @@ _action = ["HMMWV (M2)","HMMWV (M2)","\rhsusf\addons\rhsusf_hmmwv\icons\ico_m102
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner3, 0, ["Vehicle Factory", "Light"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1867,6 +1969,9 @@ _action = ["HMMWV (Mk19)","HMMWV (Mk19)","\rhsusf\addons\rhsusf_hmmwv\icons\ico_
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner3, 0, ["Vehicle Factory", "Light"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1883,6 +1988,9 @@ _action = ["HMMWV (2D/Open)","HMMWV (2D/Open)","\rhsusf\addons\rhsusf_hmmwv\icon
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner3, 0, ["Vehicle Factory", "Light"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1899,6 +2007,9 @@ _action = ["HMMWV (4D/Open)","HMMWV (4D/Open)","\rhsusf\addons\rhsusf_hmmwv\icon
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner3, 0, ["Vehicle Factory", "Light"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1915,6 +2026,9 @@ _action = ["MTV","MTV","\rhsusf\addons\rhsusf_c_fmtv\data\ico\ico_m1083.paa",{
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner3, 0, ["Vehicle Factory", "Light"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1935,6 +2049,9 @@ _Pad3 = getPosATL VS_US_Motor_Pad3;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner3, 0, ["Vehicle Factory","Medium"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1951,6 +2068,9 @@ _Pad3 = getPosATL VS_US_Motor_Pad3;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner3, 0, ["Vehicle Factory","Medium"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1967,6 +2087,9 @@ _Pad3 = getPosATL VS_US_Motor_Pad3;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner3, 0, ["Vehicle Factory","Medium"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1983,6 +2106,9 @@ _Pad3 = getPosATL VS_US_Motor_Pad3;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner3, 0, ["Vehicle Factory","Medium"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -1999,6 +2125,9 @@ _Pad3 = getPosATL VS_US_Motor_Pad3;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner3, 0, ["Vehicle Factory","Medium"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -2019,6 +2148,9 @@ _Pad3 = getPosATL VS_US_Motor_Pad3;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner3, 0, ["Vehicle Factory", "Heavy"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -2035,6 +2167,9 @@ _Pad3 = getPosATL VS_US_Motor_Pad3;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner3, 0, ["Vehicle Factory", "Heavy"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -2055,6 +2190,9 @@ _Pad3 = getPosATL VS_US_Motor_Pad3;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner3, 0, ["Vehicle Factory", "Weapon Carriers"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -2071,6 +2209,9 @@ _Pad3 = getPosATL VS_US_Motor_Pad3;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner3, 0, ["Vehicle Factory", "Weapon Carriers"], _action] call ace_interact_menu_fnc_addActionToObject;
 
@@ -2091,6 +2232,9 @@ _Pad3 = getPosATL VS_US_Motor_Pad3;
              "NONE"
          ];
         _veh setDir _dir;
+        clearWeaponCargoGlobal _veh;
+        clearMagazineCargoGlobal _veh;
+        clearItemCargoGlobal _veh;
   },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner3, 0, ["Vehicle Factory", "Logistics"], _action] call ace_interact_menu_fnc_addActionToObject;
 
