@@ -83,18 +83,18 @@ class r : baseMan
         "CUP_V_B_BAF_DPM_Osprey_Mk3_Rifleman"
     };
     primaryWeapon[] = {
-        "hlc_rifle_G36CV",
+        "rhs_weap_g36c",
     };
     secondaryWeapon[] = {};
     bipod[] = {};
-    scope[] = {"sma_eotech552", "sma_eotech"};
+    scope[] = {"sma_eotech552"};
     silencer[] = {"rhsusf_acc_sfmb556"};
     attachment[] = {
         "acc_pointer_ir"
     };
     sidearmWeapon[] = {};
     magazines[] = {
-        LIST_10("hlc_30rnd_556x45_EPR_G36"),
+        LIST_10("rhssaf_30rnd_556x45_EPR_G36"),
         LIST_2("rhs_mag_m67"),
         LIST_2("SmokeShell")
     };
@@ -111,7 +111,7 @@ class rm : r
 {
     displayName = "Rifleman (Extra Ammo)";
     magazines[] += {
-        LIST_5("hlc_30rnd_556x45_EPR_G36")
+        LIST_5("rhssaf_30rnd_556x45_EPR_G36")
     };
 };
 class rat : r
@@ -119,7 +119,7 @@ class rat : r
     displayName = "Rifleman AT";
     backpackItems[] =
     {
-        LIST_5("hlc_30rnd_556x45_EPR_G36")
+        LIST_5("rhssaf_30rnd_556x45_EPR_G36")
     };
     secondaryWeapon[] = {"rhs_weap_M136"};
     secondaryAttachments[] = {"rhs_acc_at4_handler"};
@@ -128,7 +128,7 @@ class g : r
 {
     displayName = "Grenadier";
     primaryWeapon[] = {
-        "hlc_rifle_G36VAG36"
+        "rhs_weap_g36kv_ag36"
     };
     vest[] = {
         "CUP_V_B_BAF_DPM_Osprey_Mk3_Grenadier"
@@ -148,7 +148,7 @@ class m : r
         "CUP_V_B_BAF_DPM_Osprey_Mk3_Medic"
     };
     magazines[] = {
-        LIST_10("hlc_30rnd_556x45_EPR_G36"),
+        LIST_10("rhssaf_30rnd_556x45_EPR_G36"),
         LIST_2("SmokeShell")
     };
     backpackItems[] = {
@@ -164,11 +164,11 @@ class m : r
 class ftl : g
 {
     displayName = "Fireteam Leader";
-    magazines[] += {"hlc_12Rnd_357SIG_B_P226"};
+    magazines[] += {"rhsusf_mag_17Rnd_9x19_FMJ"};
     backpackItems[] +=
     {
         LIST_5("rhs_mag_M433_HEDP"),
-        LIST_5("hlc_30rnd_556x45_EPR_G36")
+        LIST_5("rhssaf_30rnd_556x45_EPR_G36")
     };
     linkedItems[] =
     {
@@ -177,8 +177,8 @@ class ftl : g
         "ItemWatch",
         "rhssaf_zrak_rd7j",
     };
-    sidearmWeapon[] = {"hlc_pistol_P226R_357Combat"};
-    sidearmAttachments[] = {"hlc_optic_siglite"};
+    sidearmWeapon[] = {"rhsusf_weap_glock17g4"};
+    sidearmAttachments[] = {};
 };
 class sl : ftl
 {
@@ -214,7 +214,7 @@ class ar : r
     magazines[] =
     {
         LIST_3("rhsusf_200Rnd_556x45_box"),
-        LIST_2("hlc_12Rnd_357SIG_B_P226"),
+        LIST_2("rhsusf_mag_17Rnd_9x19_FMJ"),
         LIST_2("rhs_mag_m67"),
         LIST_2("SmokeShell")
     };
@@ -222,8 +222,8 @@ class ar : r
     {
         LIST_2("rhsusf_200Rnd_556x45_box")
     };
-    sidearmWeapon[] = {"hlc_pistol_P226R_357Combat"};
-    sidearmAttachments[] = {"hlc_optic_siglite"};
+    sidearmWeapon[] = {"rhsusf_weap_glock17g4"};
+    sidearmAttachments[] = {};
 };
 class aar : r
 {
@@ -297,11 +297,11 @@ class jp : baseMan
     backpack[] = {"B_Parachute"};
     headgear[] = {"H_PilotHelmetFighter_B"};
     goggles[] = {"default"};
-    sidearmWeapon[] = {"hlc_pistol_P226R_357Combat"};
-    sidearmAttachments[] = {"hlc_optic_siglite"};
+    sidearmWeapon[] = {"rhsusf_weap_glock17g4"};
+    sidearmAttachments[] = {};
     magazines[] =
     {
-        LIST_2("hlc_12Rnd_357SIG_B_P226")
+        LIST_2("rhsusf_mag_17Rnd_9x19_FMJ")
     };
     items[] =
     {

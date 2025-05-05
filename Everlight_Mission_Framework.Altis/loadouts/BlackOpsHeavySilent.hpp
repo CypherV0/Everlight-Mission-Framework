@@ -142,7 +142,7 @@ class m : r
 class ftl : g
 {
     displayName = "Fireteam Leader";
-    magazines[] += {"hlc_12Rnd_357SIG_B_P226"};
+    magazines[] += {"rhsusf_mag_17Rnd_9x19_FMJ"};
     backpackItems[] +=
     {
         LIST_5("rhs_mag_M433_HEDP"),
@@ -155,8 +155,8 @@ class ftl : g
         "ItemWatch",
         "rhssaf_zrak_rd7j",
     };
-    sidearmWeapon[] = {"hlc_pistol_P226R_357Combat"};
-    sidearmAttachments[] = {"hlc_optic_hp", "hlc_acc_dbalpl", "hlc_muzzle_octane9"};
+    sidearmWeapon[] = {"rhsusf_weap_glock17g4"};
+    sidearmAttachments[] = {"CUP_acc_Glock17_Flashlight", "muzzle_snds_L"};
 
 };
 class sl : ftl
@@ -187,7 +187,7 @@ class ar : r
     magazines[] =
     {
         LIST_3("rhsusf_200rnd_556x45_mixed_box"),
-        LIST_2("hlc_12Rnd_357SIG_B_P226"),
+        LIST_2("rhsusf_mag_17Rnd_9x19_FMJ"),
         LIST_2("rhs_mag_m67"),
         LIST_2("SmokeShell")
     };
@@ -195,8 +195,8 @@ class ar : r
     {
         LIST_2("rhsusf_200rnd_556x45_mixed_box")
     };
-    sidearmWeapon[] = {"hlc_pistol_P226R_357Combat"};
-    sidearmAttachments[] = {"hlc_optic_hp", "hlc_acc_dbalpl", "hlc_muzzle_octane9"};
+    sidearmWeapon[] = {"rhsusf_weap_glock17g4"};
+    sidearmAttachments[] = {"CUP_acc_Glock17_Flashlight", "muzzle_snds_L"};
 };
 class aar : r
 {
@@ -294,11 +294,11 @@ class jp : baseMan
     backpack[] = {"B_Parachute"};
     headgear[] = {"H_PilotHelmetFighter_B"};
     goggles[] = {"default"};
-    sidearmWeapon[] = {"hlc_pistol_P226R_357Combat"};
-    sidearmAttachments[] = {"hlc_optic_hp", "hlc_acc_dbalpl", "hlc_muzzle_octane9"};
+    sidearmWeapon[] = {"rhsusf_weap_glock17g4"};
+    sidearmAttachments[] = {"CUP_acc_Glock17_Flashlight", "muzzle_snds_L"};
     magazines[] =
     {
-        LIST_2("hlc_12Rnd_357SIG_B_P226")
+        LIST_2("rhsusf_mag_17Rnd_9x19_FMJ")
     };
     items[] =
     {

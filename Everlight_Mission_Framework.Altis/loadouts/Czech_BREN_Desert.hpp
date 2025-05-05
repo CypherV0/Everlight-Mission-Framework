@@ -213,7 +213,7 @@ class mg : r
 {
     displayName = "MMG Gunner";
     backpack[] = {"B_Carryall_cbr"};
-    primaryWeapon[] = {"hlc_lmg_mk48"};
+    primaryWeapon[] = {"CUP_lmg_Mk48"};
     bipod[] = {};
     magazines[] =
     {
@@ -370,11 +370,11 @@ class jp : baseMan
     backpack[] = {"B_Parachute"};
     headgear[] = {"H_PilotHelmetFighter_I"};
     goggles[] = {"default"};
-    sidearmWeapon[] = {"hlc_pistol_P226R_357Combat"};
-    sidearmAttachments[] = {"hlc_optic_siglite"};
+    sidearmWeapon[] = {"rhsusf_weap_glock17g4"};
+    sidearmAttachments[] = {};
     magazines[] =
     {
-        LIST_2("hlc_12Rnd_357SIG_B_P226")
+        LIST_2("rhsusf_mag_17Rnd_9x19_FMJ")
     };
     items[] =
     {

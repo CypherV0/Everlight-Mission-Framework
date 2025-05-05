@@ -142,7 +142,7 @@ class ftl : g
     magazines[] += {"rhssaf_mag_15Rnd_9x19_FMJ"};
     backpackItems[] +=
     {
-        LIST_5("hlc_GRD_blue"),
+        LIST_5("rhs_GRD40_Green"),
         LIST_5("rhs_GRD40_Red")
     };
     linkedItems[] =

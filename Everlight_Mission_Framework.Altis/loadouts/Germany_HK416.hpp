@@ -144,7 +144,7 @@ class m : r
 class ftl : g
 {
     displayName = "Fireteam Leader";
-    magazines[] += {"hlc_12Rnd_357SIG_B_P226"};
+    magazines[] += {"rhsusf_mag_17Rnd_9x19_FMJ"};
     backpackItems[] +=
     {
         LIST_5("1Rnd_SmokeBlue_Grenade_shell"),
@@ -157,8 +157,8 @@ class ftl : g
         "ItemWatch",
         "rhssaf_zrak_rd7j",
     };
-    sidearmWeapon[] = {"hlc_pistol_P226R_357Combat"};
-    sidearmAttachments[] = {"hlc_optic_siglite"};
+    sidearmWeapon[] = {"rhsusf_weap_glock17g4"};
+    sidearmAttachments[] = {};
 };
 class sl : ftl
 {
@@ -187,7 +187,7 @@ class ar : r
     magazines[] =
     {
         LIST_3("rhsusf_200rnd_556x45_mixed_box"),
-        LIST_2("hlc_12Rnd_357SIG_B_P226"),
+        LIST_2("rhsusf_mag_17Rnd_9x19_FMJ"),
         "rhs_mag_m67",
         "SmokeShell"
     };
@@ -195,8 +195,8 @@ class ar : r
     {
         LIST_2("rhsusf_200rnd_556x45_mixed_box")
     };
-    sidearmWeapon[] = {"hlc_pistol_P226R_357Combat"};
-    sidearmAttachments[] = {"hlc_optic_siglite"};
+    sidearmWeapon[] = {"rhsusf_weap_glock17g4"};
+    sidearmAttachments[] = {};
 };
 class aar : r
 {
@@ -217,13 +217,13 @@ class mg : r
     magazines[] =
     {
         LIST_2("UK3CB_MG3_250rnd_762x51_RT"),
-        LIST_2("hlc_12Rnd_357SIG_B_P226"),
+        LIST_2("rhsusf_mag_17Rnd_9x19_FMJ"),
         "rhs_mag_m67",
         "SmokeShell"
     };
     items[] += {"ACRE_PRC152"};
-    sidearmWeapon[] = {"hlc_pistol_P226R_357Combat"};
-    sidearmAttachments[] = {"hlc_optic_siglite"};
+    sidearmWeapon[] = {"rhsusf_weap_glock17g4"};
+    sidearmAttachments[] = {};
 };
 class mga : r
 {
@@ -366,11 +366,11 @@ class jp : baseMan
     backpack[] = {"B_Parachute"};
     headgear[] = {"H_PilotHelmetFighter_B"};
     goggles[] = {"default"};
-    sidearmWeapon[] = {"hlc_pistol_P226R_357Combat"};
-    sidearmAttachments[] = {"hlc_optic_siglite"};
+    sidearmWeapon[] = {"rhsusf_weap_glock17g4"};
+    sidearmAttachments[] = {};
     magazines[] =
     {
-        LIST_2("hlc_12Rnd_357SIG_B_P226")
+        LIST_2("rhsusf_mag_17Rnd_9x19_FMJ")
     };
     items[] =
     {

@@ -141,7 +141,7 @@ class ftl : g
     magazines[] += {"rhs_mag_762x25_8"};
     backpackItems[] +=
     {
-        LIST_5("hlc_GRD_blue"),
+        LIST_5("rhs_GRD40_Green"),
         LIST_5("rhs_GRD40_Red")
     };
     linkedItems[] =
@@ -186,7 +186,7 @@ class ar : r
     };
     primaryWeapon[] = {"CUP_arifle_RPK74"};
     attachment[] = {"everlight_x2000_point"};
-    silencer[] = {"hlc_muzzle_sf3p_762"};
+    silencer[] = {};
     bipod[] = {};
     magazines[] =
     {
@@ -248,13 +248,13 @@ class mg : r
         LIST_2("rhs_mag_762x25_8"),
         "rhssaf_mag_brd_m83_white",
         "rhssaf_mag_br_m75",
-        "hlc_200Rnd_792x57_M_MG42"
+        "rhsgref_296Rnd_792x57_SmK_alltracers_belt"
     };
     items[] += {"ACRE_PRC152"};
     sidearmWeapon[] = {"rhs_weap_tt33"};
     sidearmAttachments[] = {};
     backpackItems[] = {
-        LIST_2("hlc_200Rnd_792x57_M_MG42")
+        LIST_2("rhsgref_296Rnd_792x57_SmK_alltracers_belt")
     };
 };
 class mga : r
@@ -266,7 +266,7 @@ class mga : r
     primaryWeapon[] = {"rhs_weap_m92"};
     backpackItems[] =
     {
-        LIST_2("hlc_200Rnd_792x57_M_MG42")
+        LIST_2("rhsgref_296Rnd_792x57_SmK_alltracers_belt")
     };
     linkedItems[] += {"rhssaf_zrak_rd7j"};
 };
@@ -279,7 +279,7 @@ class mgam : r
     primaryWeapon[] = {"rhs_weap_m92"};
     backpackItems[] =
     {
-        LIST_2("hlc_200Rnd_792x57_M_MG42")
+        LIST_2("rhsgref_296Rnd_792x57_SmK_alltracers_belt")
     };
 };
 class mat : r

@@ -126,7 +126,7 @@ class mark : r
     primaryWeapon[] = {
         "rhs_weap_m76"
     };
-    scope[] = {"hlc_optic_pso1"};
+    scope[] = {"rhs_acc_pso1m21"};
     sidearmWeapon[] = {"rhs_weap_pya"};
     magazines[] = {
         LIST_10("rhssaf_10Rnd_792x57_m76_tracer"),
@@ -435,11 +435,11 @@ class jp : baseMan
     backpack[] = {"B_Parachute"};
     headgear[] = {"UK3CB_TKA_O_H_zsh7a_Des_alt"};
     goggles[] = {"default"};
-    sidearmWeapon[] = {"hlc_pistol_P226R_357Combat"};
-    sidearmAttachments[] = {"hlc_optic_siglite"};
+    sidearmWeapon[] = {"rhsusf_weap_glock17g4"};
+    sidearmAttachments[] = {};
     magazines[] =
     {
-        LIST_2("hlc_12Rnd_357SIG_B_P226")
+        LIST_2("rhsusf_mag_17Rnd_9x19_FMJ")
     };
     items[] =
     {
