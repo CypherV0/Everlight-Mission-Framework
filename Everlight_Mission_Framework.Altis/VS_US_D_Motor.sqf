@@ -273,25 +273,6 @@ _pad1 = getPosATL VS_US_Motor_Pad1;
 _action = ["Weapon Carriers","Weapon Carriers","",{},{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner1, 0, ["Vehicle Factory"], _action] call ace_interact_menu_fnc_addActionToObject;
 
-//HMMWV Avenger
-_action = ["HMMWV Avenger","HMMWV Avenger","\CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\data\ui\icomap_nM1025_CA.paa",{
-_pad1 = getPosATL VS_US_Motor_Pad1;
-     _dir = getDir VS_US_Motor_Pad1;
-        _veh = createVehicle
-         [
-             "CUP_B_nM1097_AVENGER_USMC_DES",
-             _pad1,
-             [],
-             0,
-             "NONE"
-         ];
-        _veh setDir _dir;
-        clearWeaponCargoGlobal _veh;
-        clearMagazineCargoGlobal _veh;
-        clearItemCargoGlobal _veh;
-  },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
-[VS_US_Motor_Spawner1, 0, ["Vehicle Factory", "Weapon Carriers"], _action] call ace_interact_menu_fnc_addActionToObject;
-
 //HMMWV (TOW)
 _action = ["HMMWV (TOW)","HMMWV (TOW)","\rhsusf\addons\rhsusf_hmmwv\icons\ico_m1025_m2.paa",{
 _pad1 = getPosATL VS_US_Motor_Pad1;
@@ -1225,25 +1206,6 @@ _Pad2 = getPosATL VS_US_Motor_Pad2;
 _action = ["Weapon Carriers","Weapon Carriers","",{},{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner2, 0, ["Vehicle Factory"], _action] call ace_interact_menu_fnc_addActionToObject;
 
-//HMMWV Avenger
-_action = ["HMMWV Avenger","HMMWV Avenger","\CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\data\ui\icomap_nM1025_CA.paa",{
-_Pad2 = getPosATL VS_US_Motor_Pad2;
-     _dir = getDir VS_US_Motor_Pad2;
-        _veh = createVehicle
-         [
-             "CUP_B_nM1097_AVENGER_USMC_DES",
-             _Pad2,
-             [],
-             0,
-             "NONE"
-         ];
-        _veh setDir _dir;
-        clearWeaponCargoGlobal _veh;
-        clearMagazineCargoGlobal _veh;
-        clearItemCargoGlobal _veh;
-  },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
-[VS_US_Motor_Spawner2, 0, ["Vehicle Factory", "Weapon Carriers"], _action] call ace_interact_menu_fnc_addActionToObject;
-
 //HMMWV (TOW)
 _action = ["HMMWV (TOW)","HMMWV (TOW)","\rhsusf\addons\rhsusf_hmmwv\icons\ico_m1025_m2.paa",{
 _Pad2 = getPosATL VS_US_Motor_Pad2;
@@ -2176,25 +2138,6 @@ _Pad3 = getPosATL VS_US_Motor_Pad3;
 //Create Weapon Carrier Branch
 _action = ["Weapon Carriers","Weapon Carriers","",{},{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_US_Motor_Spawner3, 0, ["Vehicle Factory"], _action] call ace_interact_menu_fnc_addActionToObject;
-
-//HMMWV Avenger
-_action = ["HMMWV Avenger","HMMWV Avenger","\CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\data\ui\icomap_nM1025_CA.paa",{
-_Pad3 = getPosATL VS_US_Motor_Pad3;
-     _dir = getDir VS_US_Motor_Pad3;
-        _veh = createVehicle
-         [
-             "CUP_B_nM1097_AVENGER_USMC_DES",
-             _Pad3,
-             [],
-             0,
-             "NONE"
-         ];
-        _veh setDir _dir;
-        clearWeaponCargoGlobal _veh;
-        clearMagazineCargoGlobal _veh;
-        clearItemCargoGlobal _veh;
-  },{true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
-[VS_US_Motor_Spawner3, 0, ["Vehicle Factory", "Weapon Carriers"], _action] call ace_interact_menu_fnc_addActionToObject;
 
 //HMMWV (TOW)
 _action = ["HMMWV (TOW)","HMMWV (TOW)","\rhsusf\addons\rhsusf_hmmwv\icons\ico_m1025_m2.paa",{

@@ -132,33 +132,6 @@ _action = ["RHIB Gunboat (M2/Mk19)","RHIB Gunboat (M2/Mk19)","\UK3CB_Factions\ad
 }, {true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_Boat_Spawner1, 0, ["Boat Factory", "Boats"], _action] call ace_interact_menu_fnc_addActionToObject;
 
-//Landing Craft
-_action = ["Landing Craft","Landing Craft","\cup\watervehicles\cup_watervehicles_lcvp\data\ui\map_lcvp_ca.paa",{
-    _pad1 = getPosATL VS_Boat_Pad1;
-    _dir = getDir VS_Boat_Pad1;
-    // Check if there's already a vehicle on the pad
-    _vehiclesOnPad = nearestObjects [_pad1, ["AllVehicles"], 10];
-    if (count _vehiclesOnPad == 0) then {
-        // If no vehicles on the pad, spawn a new one
-        _veh = createVehicle
-        [
-            "CUP_I_LCVP_RACS",
-            _pad1,
-            [],
-            0,
-            "CAN_COLLIDE"
-        ];
-        _veh setDir _dir;
-        clearWeaponCargoGlobal _veh;
-        clearMagazineCargoGlobal _veh;
-        clearItemCargoGlobal _veh;
-    } else {
-        // If there's a vehicle on the pad, display a hint
-        hintSilent "Pad is blocked. Cannot spawn vehicle.";
-    }
-}, {true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
-[VS_Boat_Spawner1, 0, ["Boat Factory", "Boats"], _action] call ace_interact_menu_fnc_addActionToObject;
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////US Boat Factory 2//////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -293,33 +266,6 @@ _action = ["RHIB Gunboat (M2/Mk19)","RHIB Gunboat (M2/Mk19)","\UK3CB_Factions\ad
 }, {true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
 [VS_Boat_Spawner2, 0, ["Boat Factory", "Boats"], _action] call ace_interact_menu_fnc_addActionToObject;
 
-//Landing Craft
-_action = ["Landing Craft","Landing Craft","\cup\watervehicles\cup_watervehicles_lcvp\data\ui\map_lcvp_ca.paa",{
-    _pad1 = getPosATL VS_Boat_Pad2;
-    _dir = getDir VS_Boat_Pad2;
-    // Check if there's already a vehicle on the pad
-    _vehiclesOnPad = nearestObjects [_pad1, ["AllVehicles"], 10];
-    if (count _vehiclesOnPad == 0) then {
-        // If no vehicles on the pad, spawn a new one
-        _veh = createVehicle
-        [
-            "CUP_I_LCVP_RACS",
-            _pad1,
-            [],
-            0,
-            "CAN_COLLIDE"
-        ];
-        _veh setDir _dir;
-        clearWeaponCargoGlobal _veh;
-        clearMagazineCargoGlobal _veh;
-        clearItemCargoGlobal _veh;
-    } else {
-        // If there's a vehicle on the pad, display a hint
-        hintSilent "Pad is blocked. Cannot spawn vehicle.";
-    }
-}, {true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
-[VS_Boat_Spawner2, 0, ["Boat Factory", "Boats"], _action] call ace_interact_menu_fnc_addActionToObject;
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////US Boat Factory 3//////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -438,33 +384,6 @@ _action = ["RHIB Gunboat (M2/Mk19)","RHIB Gunboat (M2/Mk19)","\UK3CB_Factions\ad
         _veh = createVehicle
         [
             "UK3CB_MDF_B_RHIB_Gunboat",
-            _pad1,
-            [],
-            0,
-            "CAN_COLLIDE"
-        ];
-        _veh setDir _dir;
-        clearWeaponCargoGlobal _veh;
-        clearMagazineCargoGlobal _veh;
-        clearItemCargoGlobal _veh;
-    } else {
-        // If there's a vehicle on the pad, display a hint
-        hintSilent "Pad is blocked. Cannot spawn vehicle.";
-    }
-}, {true},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
-[VS_Boat_Spawner3, 0, ["Boat Factory", "Boats"], _action] call ace_interact_menu_fnc_addActionToObject;
-
-//Landing Craft
-_action = ["Landing Craft","Landing Craft","\cup\watervehicles\cup_watervehicles_lcvp\data\ui\map_lcvp_ca.paa",{
-    _pad1 = getPosATL VS_Boat_Pad3;
-    _dir = getDir VS_Boat_Pad3;
-    // Check if there's already a vehicle on the pad
-    _vehiclesOnPad = nearestObjects [_pad1, ["AllVehicles"], 10];
-    if (count _vehiclesOnPad == 0) then {
-        // If no vehicles on the pad, spawn a new one
-        _veh = createVehicle
-        [
-            "CUP_I_LCVP_RACS",
             _pad1,
             [],
             0,
