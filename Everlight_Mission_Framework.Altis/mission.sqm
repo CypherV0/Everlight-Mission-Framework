@@ -28,14 +28,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2700;
+		nextID=2802;
 	};
 	class Camera
 	{
-		pos[]={14742.256,232.49683,16689.914};
-		dir[]={-0.007241183,-0.99994999,0.006896439};
-		up[]={-0.72409797,0.00999978,0.68962455};
-		aside[]={0.68965906,0,0.72413421};
+		pos[]={14730.819,227.38487,16698.502};
+		dir[]={-0.010425859,-0.9998942,0.010152147};
+		up[]={-0.71637279,0.014532057,0.69756562};
+		aside[]={0.69763941,-8.1490725e-10,0.71644849};
 	};
 };
 binarizationWanted=0;
@@ -4753,7 +4753,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14702.104,17.91,16744.143};
+				position[]={14703.963,17.91,16743.02};
 			};
 			title="Infantry Squads";
 			description="Made up of 1 Squad Lead element and 2 Fireteams. The Fireteams are then divided into 2 color teams (already done, don't worry).";
@@ -7080,7 +7080,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14704.45,17.911438,16739.732};
+						position[]={14707.389,17.911438,16738.162};
 					};
 					side="West";
 					flags=7;
@@ -7206,7 +7206,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14706.568,17.911438,16739.357};
+						position[]={14709.507,17.911438,16737.787};
 					};
 					side="West";
 					flags=5;
@@ -7377,7 +7377,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14701.782,17.911438,16733.797};
+						position[]={14704.721,17.911438,16732.227};
 					};
 					side="West";
 					flags=7;
@@ -7503,7 +7503,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14701.968,17.911438,16730.16};
+						position[]={14704.906,17.911438,16728.59};
 					};
 					side="West";
 					flags=5;
@@ -7616,7 +7616,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14702.132,17.911438,16726.299};
+						position[]={14705.07,17.911438,16724.729};
 					};
 					side="West";
 					flags=5;
@@ -7729,7 +7729,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14705.201,17.911438,16733};
+						position[]={14708.14,17.911438,16731.43};
 					};
 					side="West";
 					flags=5;
@@ -7842,7 +7842,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14708.174,17.911438,16731.854};
+						position[]={14711.112,17.911438,16730.283};
 					};
 					side="West";
 					flags=5;
@@ -7955,7 +7955,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14711.466,17.911438,16730.652};
+						position[]={14714.404,17.911438,16729.082};
 					};
 					side="West";
 					flags=5;
@@ -8113,7 +8113,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14712.543,17.911438,16743.85};
+						position[]={14715.481,17.911438,16742.279};
 					};
 					side="West";
 					flags=7;
@@ -8239,7 +8239,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14712.729,17.911438,16740.213};
+						position[]={14715.667,17.911438,16738.643};
 					};
 					side="West";
 					flags=5;
@@ -8352,7 +8352,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14712.893,17.911438,16736.352};
+						position[]={14715.831,17.911438,16734.781};
 					};
 					side="West";
 					flags=5;
@@ -8465,7 +8465,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14715.962,17.911438,16743.053};
+						position[]={14718.9,17.911438,16741.482};
 					};
 					side="West";
 					flags=5;
@@ -8578,7 +8578,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14718.935,17.911438,16741.906};
+						position[]={14721.873,17.911438,16740.336};
 					};
 					side="West";
 					flags=5;
@@ -8691,7 +8691,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14722.117,17.911438,16740.793};
+						position[]={14725.056,17.911438,16739.223};
 					};
 					side="West";
 					flags=5;
@@ -16297,7 +16297,7 @@ class Mission
 					class Attributes
 					{
 						init="this addAction [""<t color='#00FF00'>Customize</t>"", { execVM ""openWhitelistedArsenal.sqf""; }, nil, 25, false, true, """", ""cameraOn == _target"", -1, false];";
-						description="R";
+						description="R@Extra Slots";
 						isPlayable=1;
 					};
 					id=2696;
@@ -16305,19 +16305,6 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
-						{
-							property="TMF_assignGear_full";
-							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[""rm"",""us_army_ocp"",true]";
-								};
-							};
-						};
-						class Attribute1
 						{
 							property="TMF_SpecialistMarker";
 							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
@@ -16330,46 +16317,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
-						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[[""ACRE_PRC343"",[1,1]],[""ACRE_PRC152"",1],[""ACRE_PRC117F"",1]]";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="TMF_assignGear_role";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="rm";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="TMF_assignGear_enabled";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=1;
-								};
-							};
-						};
-						class Attribute5
+						class Attribute1
 						{
 							property="TMF_assignGear_faction";
 							expression="false";
@@ -16382,7 +16330,85 @@ class Mission
 								};
 							};
 						};
-						nAttributes=6;
+						class Attribute2
+						{
+							property="TMF_assignGear_enabled";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="acre_sys_radio_edenSetup";
+							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="[[""ACRE_PRC343"",[1,1]],[""ACRE_PRC152"",1],[""ACRE_PRC117F"",1]]";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.98000002;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male05ENG";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="TMF_assignGear_full";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="[""rm"",""us_army_ocp"",true]";
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="TMF_assignGear_role";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="rm";
+								};
+							};
+						};
+						nAttributes=8;
 					};
 				};
 				class Item1
